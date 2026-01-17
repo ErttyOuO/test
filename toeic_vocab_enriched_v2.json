@@ -1,741 +1,656 @@
 [
-{
-  id: 1,
-  word: "A game of cat and mouse",
-  partOfSpeech: "phr.",
-  translation: "貓捉老鼠遊戲",
-  definition: "A phrase meaning 貓捉老鼠遊戲.",
-  definition_cn: "片語，意思是「貓捉老鼠遊戲」。",
-  example: "In the email, the manager used “A game of cat and mouse” to mean 貓捉老鼠遊戲.",
-  example_cn: "會議中主管用了「A game of cat and mouse」，意思是「貓捉老鼠遊戲」"
-},
-{
-  id: 2,
-  word: "A leap of faith",
-  partOfSpeech: "phr.",
-  translation: "放手一搏",
-  definition: "A phrase meaning 放手一搏.",
-  definition_cn: "片語，意思是「放手一搏」。",
-  example: "During the meeting, someone said “A leap of faith”, meaning 放手一搏.",
-  example_cn: "會議中主管用了「A leap of faith」，意思是「放手一搏」。"
-},
-{
-  id: 3,
-  word: "Aboard",
-  partOfSpeech: "prep./adv.",
-  translation: "船上",
-  definition: "Used to mean 船上；在船（機／車）上.",
-  definition_cn: "表示在船／飛機／火車等交通工具上。",
-  example: "All passengers are aboard the plane.",
-  example_cn: "所有乘客都已登機。"
-},
-{
-  id: 4,
-  word: "Absolutely",
-  partOfSpeech: "adv.",
-  translation: "絕對地",
-  definition: "Completely; certainly.",
-  definition_cn: "副詞，用來強調「絕對地；當然」。",
-  example: "Yes, absolutely—we can meet the deadline.",
-  example_cn: "當然可以，我們一定能趕上期限。"
-},
-{
-  id: 5,
-  word: "Accident",
-  partOfSpeech: "n.",
-  translation: "事故",
-  definition: "The act, process, or thing related to 事故.",
-  definition_cn: "名詞，表示「事故」相關的事物、概念或過程。",
-  example: "The team discussed the accident during the meeting.",
-  example_cn: "這份報告有提到「事故」。"
-},
-{
-  id: 6,
-  word: "Accomplishment",
-  partOfSpeech: "n.",
-  translation: "成就",
-  definition: "The act, process, or thing related to 成就.",
-  definition_cn: "名詞，表示「成就」相關的事物、概念或過程。",
-  example: "We reviewed the accomplishment in the quarterly report.",
-  example_cn: "文件中也有談到「成就」。"
-},
-{
-  id: 7,
-  word: "Account",
-  partOfSpeech: "n.",
-  translation: "認定",
-  definition: "The act, process, or thing related to 認定.",
-  definition_cn: "名詞，表示「認定」相關的事物、概念或過程。",
-  example: "Please check the account before submitting the document.",
-  example_cn: "在簡報內容裡可以看到「認定」這個重點。"
-},
-{
-  id: 8,
-  word: "Accurate",
-  partOfSpeech: "n.",
-  translation: "準確",
-  definition: "The act, process, or thing related to 準確.",
-  definition_cn: "名詞，表示「準確」相關的事物、概念或過程。",
-  example: "The accurate was listed in the contract terms.",
-  example_cn: "會議紀錄中提及了「準確」。"
-},
-{
-  id: 9,
-  word: "Achieve",
-  partOfSpeech: "n.",
-  translation: "達到",
-  definition: "The act, process, or thing related to 達到.",
-  definition_cn: "名詞，表示「達到」相關的事物、概念或過程。",
-  example: "Our department is responsible for the achieve.",
-  example_cn: "我們在說明中把「達到」列為重點之一。"
-},
-{
-  id: 10,
-  word: "Acre",
-  partOfSpeech: "n.",
-  translation: "英畝",
-  definition: "The act, process, or thing related to 英畝.",
-  definition_cn: "名詞，表示「英畝」相關的事物、概念或過程。",
-  example: "The manager highlighted the acre as a key point.",
-  example_cn: "本次資料整理也包含「英畝」。"
-},
-{
-  id: 11,
-  word: "Action",
-  partOfSpeech: "n.",
-  translation: "行動",
-  definition: "The act, process, or thing related to 行動.",
-  definition_cn: "名詞，表示「行動」相關的事物、概念或過程。",
-  example: "The action affected the project's timeline.",
-  example_cn: "在摘要段落裡提到了「行動」。"
-},
-{
-  id: 12,
-  word: "Activity",
-  partOfSpeech: "n.",
-  translation: "活動",
-  definition: "The act, process, or thing related to 活動.",
-  definition_cn: "名詞，表示「活動」相關的事物、概念或過程。",
-  example: "We need to clarify the activity with the client.",
-  example_cn: "章節裡有針對「活動」做簡要說明。"
-},
-{
-  id: 13,
-  word: "Adapt",
-  partOfSpeech: "n.",
-  translation: "適應",
-  definition: "The act, process, or thing related to 適應.",
-  definition_cn: "名詞，表示「適應」相關的事物、概念或過程。",
-  example: "The adapt appears in the meeting notes.",
-  example_cn: "文字說明中出現了「適應」。"
-},
-{
-  id: 14,
-  word: "Additional",
-  partOfSpeech: "adj.",
-  translation: "另外",
-  definition: "Having the quality of being 另外.",
-  definition_cn: "用來形容事物具有「另外」這種特性。",
-  example: "We need an additional solution for this issue.",
-  example_cn: "我們需要一個「另外」的方案來趕上期限。"
-},
-{
-  id: 15,
-  word: "Admission",
-  partOfSpeech: "n.",
-  translation: "承認",
-  definition: "The act, process, or thing related to 承認.",
-  definition_cn: "名詞，表示「承認」相關的事物、概念或過程。",
-  example: "They updated the admission in the system yesterday.",
-  example_cn: "在報表欄位中可以看到「承認」。"
-},
-{
-  id: 16,
-  word: "Admit",
-  partOfSpeech: "n.",
-  translation: "承認",
-  definition: "The act, process, or thing related to 承認.",
-  definition_cn: "名詞，表示「承認」相關的事物、概念或過程。",
-  example: "The team discussed the admit during the meeting.",
-  example_cn: "這份文件把「承認」寫得很清楚。"
-},
-{
-  id: 17,
-  word: "Adopt",
-  partOfSpeech: "n.",
-  translation: "採用",
-  definition: "The act, process, or thing related to 採用.",
-  definition_cn: "名詞，表示「採用」相關的事物、概念或過程。",
-  example: "We reviewed the adopt in the quarterly report.",
-  example_cn: "說明文字中也提到了「採用」的部分。"
-},
-{
-  id: 18,
-  word: "Advance",
-  partOfSpeech: "n.",
-  translation: "前進",
-  definition: "The act, process, or thing related to 前進.",
-  definition_cn: "名詞，表示「前進」相關的事物、概念或過程。",
-  example: "Please check the advance before submitting the document.",
-  example_cn: "閱讀內容時會遇到「前進」這個詞。"
-},
-{
-  id: 19,
-  word: "Advancement",
-  partOfSpeech: "n.",
-  translation: "進步",
-  definition: "The act, process, or thing related to 進步.",
-  definition_cn: "名詞，表示「進步」相關的事物、概念或過程。",
-  example: "The advancement was listed in the contract terms.",
-  example_cn: "這段資料有提到「進步」這個概念。"
-},
-{
-  id: 20,
-  word: "Adventure",
-  partOfSpeech: "n.",
-  translation: "冒險",
-  definition: "The act, process, or thing related to 冒險.",
-  definition_cn: "名詞，表示「冒險」相關的事物、概念或過程。",
-  example: "Our department is responsible for the adventure.",
-  example_cn: "這份報告有提到「冒險」。"
-},
-{
-  id: 21,
-  word: "Advertising",
-  partOfSpeech: "adj.",
-  translation: "廣告",
-  definition: "Having the quality of being 廣告.",
-  definition_cn: "用來形容事物具有「廣告」這種特性。",
-  example: "The team prepared an advertising plan for the project.",
-  example_cn: "我們需要一個「廣告」的方案來趕上期限。"
-},
-{
-  id: 22,
-  word: "Advise",
-  partOfSpeech: "n.",
-  translation: "忠告",
-  definition: "The act, process, or thing related to 忠告.",
-  definition_cn: "名詞，表示「忠告」相關的事物、概念或過程。",
-  example: "The manager highlighted the advise as a key point.",
-  example_cn: "文件中也有談到「忠告」。"
-},
-{
-  id: 23,
-  word: "Affiliate",
-  partOfSpeech: "n.",
-  translation: "加上",
-  definition: "The act, process, or thing related to 加上.",
-  definition_cn: "名詞，表示「加上」相關的事物、概念或過程。",
-  example: "The affiliate affected the project's timeline.",
-  example_cn: "在簡報內容裡可以看到「加上」這個重點。"
-},
-{
-  id: 24,
-  word: "Affordable",
-  partOfSpeech: "adj.",
-  translation: "實惠的",
-  definition: "Having the quality of being 實惠的.",
-  definition_cn: "用來形容事物具有「實惠的」這種特性。",
-  example: "This is an affordable approach for beginners.",
-  example_cn: "我們需要一個「實惠的」的方案來趕上期限。"
-},
-{
-  id: 25,
-  word: "Agent",
-  partOfSpeech: "n.",
-  translation: "經紀人",
-  definition: "The act, process, or thing related to 經紀人.",
-  definition_cn: "名詞，表示「經紀人」相關的事物、概念或過程。",
-  example: "We need to clarify the agent with the client.",
-  example_cn: "會議紀錄中提及了「經紀人」。"
-},
-{
-  id: 26,
-  word: "Aggressive",
-  partOfSpeech: "adj.",
-  translation: "積極的",
-  definition: "Having the quality of being 積極的.",
-  definition_cn: "用來形容事物具有「積極的」這種特性。",
-  example: "They provided an aggressive estimate for the budget.",
-  example_cn: "我們需要一個「積極的」的方案來趕上期限。"
-},
-{
-  id: 27,
-  word: "Agriculture",
-  partOfSpeech: "n.",
-  translation: "農業",
-  definition: "The act, process, or thing related to 農業.",
-  definition_cn: "名詞，表示「農業」相關的事物、概念或過程。",
-  example: "The agriculture appears in the meeting notes.",
-  example_cn: "我們在說明中把「農業」列為重點之一。"
-},
-{
-  id: 28,
-  word: "Aid",
-  partOfSpeech: "n.",
-  translation: "幫忙",
-  definition: "The act, process, or thing related to 幫忙.",
-  definition_cn: "名詞，表示「幫忙」相關的事物、概念或過程。",
-  example: "They updated the aid in the system yesterday.",
-  example_cn: "本次資料整理也包含「幫忙」。"
-},
-{
-  id: 29,
-  word: "Airline",
-  partOfSpeech: "n.",
-  translation: "航空",
-  definition: "The act, process, or thing related to 航空.",
-  definition_cn: "名詞，表示「航空」相關的事物、概念或過程。",
-  example: "The team discussed the airline during the meeting.",
-  example_cn: "在摘要段落裡提到了「航空」。"
-},
-{
-  id: 30,
-  word: "Alarming",
-  partOfSpeech: "adj.",
-  translation: "驚人的",
-  definition: "Having the quality of being 驚人的.",
-  definition_cn: "用來形容事物具有「驚人的」這種特性。",
-  example: "A alarming schedule helps reduce delays.",
-  example_cn: "我們需要一個「驚人的」的方案來趕上期限。"
-},
-{
-  id: 31,
-  word: "Alcoholic",
-  partOfSpeech: "adj.",
-  translation: "酒精",
-  definition: "Having the quality of being 酒精.",
-  definition_cn: "用來形容事物具有「酒精」這種特性。",
-  example: "We require an alcoholic report for compliance.",
-  example_cn: "我們需要一個「酒精」的方案來趕上期限。"
-},
-{
-  id: 32,
-  word: "Alien",
-  partOfSpeech: "n.",
-  translation: "外僑",
-  definition: "The act, process, or thing related to 外僑.",
-  definition_cn: "名詞，表示「外僑」相關的事物、概念或過程。",
-  example: "We reviewed the alien in the quarterly report.",
-  example_cn: "章節裡有針對「外僑」做簡要說明。"
-},
-{
-  id: 33,
-  word: "Aluminum",
-  partOfSpeech: "n.",
-  translation: "鋁",
-  definition: "The act, process, or thing related to 鋁.",
-  definition_cn: "名詞，表示「鋁」相關的事物、概念或過程。",
-  example: "Please check the aluminum before submitting the document.",
-  example_cn: "文字說明中出現了「鋁」。"
-},
-{
-  id: 34,
-  word: "Amateur",
-  partOfSpeech: "n.",
-  translation: "業餘",
-  definition: "The act, process, or thing related to 業餘.",
-  definition_cn: "名詞，表示「業餘」相關的事物、概念或過程。",
-  example: "The amateur was listed in the contract terms.",
-  example_cn: "在報表欄位中可以看到「業餘」。"
-},
-{
-  id: 35,
-  word: "Amaze",
-  partOfSpeech: "n.",
-  translation: "驚奇",
-  definition: "The act, process, or thing related to 驚奇.",
-  definition_cn: "名詞，表示「驚奇」相關的事物、概念或過程。",
-  example: "Our department is responsible for the amaze.",
-  example_cn: "這份文件把「驚奇」寫得很清楚。"
-},
-{
-  id: 36,
-  word: "Ambitious",
-  partOfSpeech: "adj.",
-  translation: "野心勃勃的",
-  definition: "Having the quality of being 野心勃勃的.",
-  definition_cn: "用來形容事物具有「野心勃勃的」這種特性。",
-  example: "The ambitious data improved decision-making.",
-  example_cn: "我們需要一個「野心勃勃的」的方案來趕上期限。"
-},
-{
-  id: 37,
-  word: "Amount",
-  partOfSpeech: "n.",
-  translation: "分量",
-  definition: "The act, process, or thing related to 分量.",
-  definition_cn: "名詞，表示「分量」相關的事物、概念或過程。",
-  example: "The manager highlighted the amount as a key point.",
-  example_cn: "說明文字中也提到了「分量」的部分。"
-},
-{
-  id: 38,
-  word: "Amusement",
-  partOfSpeech: "n.",
-  translation: "娛樂",
-  definition: "The act, process, or thing related to 娛樂.",
-  definition_cn: "名詞，表示「娛樂」相關的事物、概念或過程。",
-  example: "The amusement affected the project's timeline.",
-  example_cn: "閱讀內容時會遇到「娛樂」這個詞。"
-},
-{
-  id: 39,
-  word: "Analyze",
-  partOfSpeech: "n.",
-  translation: "分析",
-  definition: "The act, process, or thing related to 分析.",
-  definition_cn: "名詞，表示「分析」相關的事物、概念或過程。",
-  example: "We need to clarify the analyze with the client.",
-  example_cn: "這段資料有提到「分析」這個概念。"
-},
-{
-  id: 40,
-  word: "Ancestor",
-  partOfSpeech: "n.",
-  translation: "祖先",
-  definition: "The act, process, or thing related to 祖先.",
-  definition_cn: "名詞，表示「祖先」相關的事物、概念或過程。",
-  example: "The ancestor appears in the meeting notes.",
-  example_cn: "這份報告有提到「祖先」。"
-},
-{
-  id: 41,
-  word: "Ancient",
-  partOfSpeech: "adj.",
-  translation: "古老的",
-  definition: "Having the quality of being 古老的.",
-  definition_cn: "用來形容事物具有「古老的」這種特性。",
-  example: "Please submit an ancient summary by Friday.",
-  example_cn: "我們需要一個「古老的」的方案來趕上期限。"
-},
-{
-  id: 42,
-  word: "Announcement",
-  partOfSpeech: "n.",
-  translation: "公告",
-  definition: "The act, process, or thing related to 公告.",
-  definition_cn: "名詞，表示「公告」相關的事物、概念或過程。",
-  example: "They updated the announcement in the system yesterday.",
-  example_cn: "文件中也有談到「公告」。"
-},
-{
-  id: 43,
-  word: "Annoy",
-  partOfSpeech: "n.",
-  translation: "惹惱",
-  definition: "The act, process, or thing related to 惹惱.",
-  definition_cn: "名詞，表示「惹惱」相關的事物、概念或過程。",
-  example: "The team discussed the annoy during the meeting.",
-  example_cn: "在簡報內容裡可以看到「惹惱」這個重點。"
-},
-{
-  id: 44,
-  word: "Anxiously",
-  partOfSpeech: "adv.",
-  translation: "焦急地",
-  definition: "In a 焦急地 manner; 焦急地.",
-  definition_cn: "用來表示「焦急地」的方式或程度。",
-  example: "The issue was resolved anxiously.",
-  example_cn: "團隊以「焦急地」的方式回覆了客戶需求。"
-},
-{
-  id: 45,
-  word: "Apparent",
-  partOfSpeech: "adj.",
-  translation: "明顯的",
-  definition: "Having the quality of being 明顯的.",
-  definition_cn: "用來形容事物具有「明顯的」這種特性。",
-  example: "We need an apparent solution for this issue.",
-  example_cn: "我們需要一個「明顯的」的方案來趕上期限。"
-},
-{
-  id: 46,
-  word: "Appeal",
-  partOfSpeech: "adj.",
-  translation: "申訴",
-  definition: "Having the quality of being 申訴.",
-  definition_cn: "用來形容事物具有「申訴」這種特性。",
-  example: "The team prepared an appeal plan for the project.",
-  example_cn: "我們需要一個「申訴」的方案來趕上期限。"
-},
-{
-  id: 47,
-  word: "Appearance",
-  partOfSpeech: "n.",
-  translation: "容貌",
-  definition: "The act, process, or thing related to 容貌.",
-  definition_cn: "名詞，表示「容貌」相關的事物、概念或過程。",
-  example: "We reviewed the appearance in the quarterly report.",
-  example_cn: "會議紀錄中提及了「容貌」。"
-},
-{
-  id: 48,
-  word: "Apply",
-  partOfSpeech: "adv.",
-  translation: "申請",
-  definition: "In a 申請 manner; 申請.",
-  definition_cn: "用來表示「申請」的方式或程度。",
-  example: "The price increased apply last quarter.",
-  example_cn: "團隊以「申請」的方式回覆了客戶需求。"
-},
-{
-  id: 49,
-  word: "Appropriate",
-  partOfSpeech: "adj.",
-  translation: "合適的",
-  definition: "Having the quality of being 合適的.",
-  definition_cn: "用來形容事物具有「合適的」這種特性。",
-  example: "This is an appropriate approach for beginners.",
-  example_cn: "我們需要一個「合適的」的方案來趕上期限。"
-},
-{
-  id: 50,
-  word: "Approval",
-  partOfSpeech: "adj.",
-  translation: "贊同",
-  definition: "Having the quality of being 贊同.",
-  definition_cn: "用來形容事物具有「贊同」這種特性。",
-  example: "They provided an approval estimate for the budget.",
-  example_cn: "我們需要一個「贊同」的方案來趕上期限。"
-},
-{
-  id: 51,
-  word: "Area",
-  partOfSpeech: "n.",
-  translation: "區域",
-  definition: "The act, process, or thing related to 區域.",
-  definition_cn: "名詞，表示「區域」相關的事物、概念或過程。",
-  example: "Please check the area before submitting the document.",
-  example_cn: "我們在說明中把「區域」列為重點之一。"
-},
-{
-  id: 52,
-  word: "Arguably",
-  partOfSpeech: "adv.",
-  translation: "按理說",
-  definition: "In a 按理說 manner; 按理說.",
-  definition_cn: "用來表示「按理說」的方式或程度。",
-  example: "Please respond arguably to urgent messages.",
-  example_cn: "團隊以「按理說」的方式回覆了客戶需求。"
-},
-{
-  id: 53,
-  word: "Armed",
-  partOfSpeech: "adj.",
-  translation: "武裝的",
-  definition: "Having the quality of being 武裝的.",
-  definition_cn: "用來形容事物具有「武裝的」這種特性。",
-  example: "A armed schedule helps reduce delays.",
-  example_cn: "我們需要一個「武裝的」的方案來趕上期限。"
-},
-{
-  id: 54,
-  word: "Arouse",
-  partOfSpeech: "n.",
-  translation: "激發",
-  definition: "The act, process, or thing related to 激發.",
-  definition_cn: "名詞，表示「激發」相關的事物、概念或過程。",
-  example: "The arouse was listed in the contract terms.",
-  example_cn: "本次資料整理也包含「激發」。"
-},
-{
-  id: 55,
-  word: "Arrest",
-  partOfSpeech: "n.",
-  translation: "逮捕",
-  definition: "The act, process, or thing related to 逮捕.",
-  definition_cn: "名詞，表示「逮捕」相關的事物、概念或過程。",
-  example: "Our department is responsible for the arrest.",
-  example_cn: "在摘要段落裡提到了「逮捕」。"
-},
-{
-  id: 56,
-  word: "Article",
-  partOfSpeech: "n.",
-  translation: "文章",
-  definition: "The act, process, or thing related to 文章.",
-  definition_cn: "名詞，表示「文章」相關的事物、概念或過程。",
-  example: "The manager highlighted the article as a key point.",
-  example_cn: "章節裡有針對「文章」做簡要說明。"
-},
-{
-  id: 57,
-  word: "Ash",
-  partOfSpeech: "n.",
-  translation: "灰燼",
-  definition: "The act, process, or thing related to 灰燼.",
-  definition_cn: "名詞，表示「灰燼」相關的事物、概念或過程。",
-  example: "The ash affected the project's timeline.",
-  example_cn: "文字說明中出現了「灰燼」。"
-},
-{
-  id: 58,
-  word: "Aspect",
-  partOfSpeech: "n.",
-  translation: "方面",
-  definition: "The act, process, or thing related to 方面.",
-  definition_cn: "名詞，表示「方面」相關的事物、概念或過程。",
-  example: "We need to clarify the aspect with the client.",
-  example_cn: "在報表欄位中可以看到「方面」。"
-},
-{
-  id: 59,
-  word: "Assemble",
-  partOfSpeech: "n.",
-  translation: "組合",
-  definition: "The act, process, or thing related to 組合.",
-  definition_cn: "名詞，表示「組合」相關的事物、概念或過程。",
-  example: "The assemble appears in the meeting notes.",
-  example_cn: "這份文件把「組合」寫得很清楚。"
-},
-{
-  id: 60,
-  word: "Assembly",
-  partOfSpeech: "adv.",
-  translation: "裝配",
-  definition: "In a 裝配 manner; 裝配.",
-  definition_cn: "用來表示「裝配」的方式或程度。",
-  example: "The team completed the task assembly.",
-  example_cn: "團隊以「裝配」的方式回覆了客戶需求。"
-},
-{
-  id: 61,
-  word: "Assist",
-  partOfSpeech: "n.",
-  translation: "協助",
-  definition: "The act, process, or thing related to 協助.",
-  definition_cn: "名詞，表示「協助」相關的事物、概念或過程。",
-  example: "They updated the assist in the system yesterday.",
-  example_cn: "說明文字中也提到了「協助」的部分。"
-},
-{
-  id: 62,
-  word: "Associate",
-  partOfSpeech: "n.",
-  translation: "相關",
-  definition: "The act, process, or thing related to 相關.",
-  definition_cn: "名詞，表示「相關」相關的事物、概念或過程。",
-  example: "The team discussed the associate during the meeting.",
-  example_cn: "閱讀內容時會遇到「相關」這個詞。"
-},
-{
-  id: 63,
-  word: "Atmosphere",
-  partOfSpeech: "n.",
-  translation: "氣氛",
-  definition: "The act, process, or thing related to 氣氛.",
-  definition_cn: "名詞，表示「氣氛」相關的事物、概念或過程。",
-  example: "We reviewed the atmosphere in the quarterly report.",
-  example_cn: "這段資料有提到「氣氛」這個概念。"
-},
-{
-  id: 64,
-  word: "Attempt",
-  partOfSpeech: "n.",
-  translation: "嘗試",
-  definition: "The act, process, or thing related to 嘗試.",
-  definition_cn: "名詞，表示「嘗試」相關的事物、概念或過程。",
-  example: "Please check the attempt before submitting the document.",
-  example_cn: "這份報告有提到「嘗試」。"
-},
-{
-  id: 65,
-  word: "Attend",
-  partOfSpeech: "n.",
-  translation: "出席",
-  definition: "The act, process, or thing related to 出席.",
-  definition_cn: "名詞，表示「出席」相關的事物、概念或過程。",
-  example: "The attend was listed in the contract terms.",
-  example_cn: "文件中也有談到「出席」。"
-},
-{
-  id: 66,
-  word: "Attitude",
-  partOfSpeech: "n.",
-  translation: "態度",
-  definition: "The act, process, or thing related to 態度.",
-  definition_cn: "名詞，表示「態度」相關的事物、概念或過程。",
-  example: "Our department is responsible for the attitude.",
-  example_cn: "在簡報內容裡可以看到「態度」這個重點。"
-},
-{
-  id: 67,
-  word: "Attract",
-  partOfSpeech: "n.",
-  translation: "吸引",
-  definition: "The act, process, or thing related to 吸引.",
-  definition_cn: "名詞，表示「吸引」相關的事物、概念或過程。",
-  example: "The manager highlighted the attract as a key point.",
-  example_cn: "會議紀錄中提及了「吸引」。"
-},
-{
-  id: 68,
-  word: "Author",
-  partOfSpeech: "n.",
-  translation: "作者",
-  definition: "The act, process, or thing related to 作者.",
-  definition_cn: "名詞，表示「作者」相關的事物、概念或過程。",
-  example: "The author affected the project's timeline.",
-  example_cn: "我們在說明中把「作者」列為重點之一。"
-},
-{
-  id: 69,
-  word: "Authority",
-  partOfSpeech: "n.",
-  translation: "權威",
-  definition: "The act, process, or thing related to 權威.",
-  definition_cn: "名詞，表示「權威」相關的事物、概念或過程。",
-  example: "We need to clarify the authority with the client.",
-  example_cn: "本次資料整理也包含「權威」。"
-},
-{
-  id: 70,
-  word: "Automatic",
-  partOfSpeech: "adj.",
-  translation: "自動",
-  definition: "Having the quality of being 自動.",
-  definition_cn: "用來形容事物具有「自動」這種特性。",
-  example: "We require an automatic report for compliance.",
-  example_cn: "我們需要一個「自動」的方案來趕上期限。"
-},
-{
-  id: 71,
-  word: "Available",
-  partOfSpeech: "adj.",
-  translation: "可得的",
-  definition: "Having the quality of being 可得的.",
-  definition_cn: "用來形容事物具有「可得的」這種特性。",
-  example: "The available data improved decision-making.",
-  example_cn: "我們需要一個「可得的」的方案來趕上期限。"
-},
-{
-  id: 72,
-  word: "Average",
-  partOfSpeech: "n.",
-  translation: "平均",
-  definition: "The act, process, or thing related to 平均.",
-  definition_cn: "名詞，表示「平均」相關的事物、概念或過程。",
-  example: "The average appears in the meeting notes.",
-  example_cn: "在摘要段落裡提到了「平均」。"
-},
-{
-  id: 73,
-  word: "Aware",
-  partOfSpeech: "n.",
-  translation: "察覺",
-  definition: "The act, process, or thing related to 察覺.",
-  definition_cn: "名詞，表示「察覺」相關的事物、概念或過程。",
-  example: "They updated the aware in the system yesterday.",
-  example_cn: "章節裡有針對「察覺」做簡要說明。"
-},
-{
-  id: 74,
-  word: "Become／to be consumed with",
-  partOfSpeech: "phr.",
-  translation: "被～吞噬",
-  definition: "A phrase meaning 被～吞噬.",
-  definition_cn: "片語，意思是「被～吞噬」。",
-  example: "In business English, “Become／to be consumed with” can mean 被～吞噬.",
-  example_cn: "會議中主管用
-]
+  {
+    "id": 1,
+    "word": "A game of cat and mouse",
+    "partOfSpeech": "phr.",
+    "translation": "貓捉老鼠遊戲",
+    "definition": "A phrase meaning 貓捉老鼠遊戲.",
+    "definition_cn": "片語，意思是「貓捉老鼠遊戲」。",
+    "example": "In the email, the manager used “A game of cat and mouse” to mean 貓捉老鼠遊戲.",
+    "example_cn": "會議中主管用了「A game of cat and mouse」，意思是「貓捉老鼠遊戲」。"
+  },
+  {
+    "id": 2,
+    "word": "A leap of faith",
+    "partOfSpeech": "phr.",
+    "translation": "放手一搏",
+    "definition": "A phrase meaning 放手一搏.",
+    "definition_cn": "片語，意思是「放手一搏」。",
+    "example": "During the meeting, someone said “A leap of faith”, meaning 放手一搏.",
+    "example_cn": "會議中主管用了「A leap of faith」，意思是「放手一搏」。"
+  },
+  {
+    "id": 3,
+    "word": "Aboard",
+    "partOfSpeech": "prep./adv.",
+    "translation": "船上",
+    "definition": "Used to mean 船上；在船（機／車）上.",
+    "definition_cn": "表示在船／飛機／火車等交通工具上。",
+    "example": "All passengers are aboard the plane.",
+    "example_cn": "所有乘客都已登機。"
+  },
+  {
+    "id": 4,
+    "word": "Absolutely",
+    "partOfSpeech": "adv.",
+    "translation": "絕對地",
+    "definition": "Completely; certainly.",
+    "definition_cn": "副詞，用來強調「絕對地；當然」。",
+    "example": "Yes, absolutely—we can meet the deadline.",
+    "example_cn": "當然可以，我們一定能趕上期限。"
+  },
+  {
+    "id": 5,
+    "word": "Accident",
+    "partOfSpeech": "n.",
+    "translation": "事故",
+    "definition": "The act, process, or thing related to 事故.",
+    "definition_cn": "名詞，表示「事故」相關的事物、概念或過程。",
+    "example": "The team discussed the accident during the meeting.",
+    "example_cn": "這份報告有提到「事故」。"
+  },
+  {
+    "id": 6,
+    "word": "Accomplishment",
+    "partOfSpeech": "n.",
+    "translation": "成就",
+    "definition": "The act, process, or thing related to 成就.",
+    "definition_cn": "名詞，表示「成就」相關的事物、概念或過程。",
+    "example": "We reviewed the accomplishment in the quarterly report.",
+    "example_cn": "文件中也有談到「成就」。"
+  },
+  {
+    "id": 7,
+    "word": "Account",
+    "partOfSpeech": "n.",
+    "translation": "認定",
+    "definition": "The act, process, or thing related to 認定.",
+    "definition_cn": "名詞，表示「認定」相關的事物、概念或過程。",
+    "example": "Please check the account before submitting the document.",
+    "example_cn": "在簡報內容裡可以看到「認定」這個重點。"
+  },
+  {
+    "id": 8,
+    "word": "Accurate",
+    "partOfSpeech": "n.",
+    "translation": "準確",
+    "definition": "The act, process, or thing related to 準確.",
+    "definition_cn": "名詞，表示「準確」相關的事物、概念或過程。",
+    "example": "The accurate was listed in the contract terms.",
+    "example_cn": "會議紀錄中提及了「準確」。"
+  },
+  {
+    "id": 9,
+    "word": "Achieve",
+    "partOfSpeech": "n.",
+    "translation": "達到",
+    "definition": "The act, process, or thing related to 達到.",
+    "definition_cn": "名詞，表示「達到」相關的事物、概念或過程。",
+    "example": "Our department is responsible for the achieve.",
+    "example_cn": "我們在說明中把「達到」列為重點之一。"
+  },
+  {
+    "id": 10,
+    "word": "Acre",
+    "partOfSpeech": "n.",
+    "translation": "英畝",
+    "definition": "The act, process, or thing related to 英畝.",
+    "definition_cn": "名詞，表示「英畝」相關的事物、概念或過程。",
+    "example": "The manager highlighted the acre as a key point.",
+    "example_cn": "本次資料整理也包含「英畝」。"
+  },
+  {
+    "id": 11,
+    "word": "Action",
+    "partOfSpeech": "n.",
+    "translation": "行動",
+    "definition": "The act, process, or thing related to 行動.",
+    "definition_cn": "名詞，表示「行動」相關的事物、概念或過程。",
+    "example": "The action affected the project's timeline.",
+    "example_cn": "在摘要段落裡提到了「行動」。"
+  },
+  {
+    "id": 12,
+    "word": "Activity",
+    "partOfSpeech": "n.",
+    "translation": "活動",
+    "definition": "The act, process, or thing related to 活動.",
+    "definition_cn": "名詞，表示「活動」相關的事物、概念或過程。",
+    "example": "We need to clarify the activity with the client.",
+    "example_cn": "章節裡有針對「活動」做簡要說明。"
+  },
+  {
+    "id": 13,
+    "word": "Adapt",
+    "partOfSpeech": "n.",
+    "translation": "適應",
+    "definition": "The act, process, or thing related to 適應.",
+    "definition_cn": "名詞，表示「適應」相關的事物、概念或過程。",
+    "example": "The adapt appears in the meeting notes.",
+    "example_cn": "文字說明中出現了「適應」。"
+  },
+  {
+    "id": 14,
+    "word": "Additional",
+    "partOfSpeech": "adj.",
+    "translation": "另外",
+    "definition": "Having the quality of being 另外.",
+    "definition_cn": "用來形容事物具有「另外」這種特性。",
+    "example": "We need an additional solution for this issue.",
+    "example_cn": "我們需要一個「另外」的方案來趕上期限。"
+  },
+  {
+    "id": 15,
+    "word": "Admission",
+    "partOfSpeech": "n.",
+    "translation": "承認",
+    "definition": "The act, process, or thing related to 承認.",
+    "definition_cn": "名詞，表示「承認」相關的事物、概念或過程。",
+    "example": "They updated the admission in the system yesterday.",
+    "example_cn": "在報表欄位中可以看到「承認」。"
+  },
+  {
+    "id": 16,
+    "word": "Admit",
+    "partOfSpeech": "n.",
+    "translation": "承認",
+    "definition": "The act, process, or thing related to 承認.",
+    "definition_cn": "名詞，表示「承認」相關的事物、概念或過程。",
+    "example": "The team discussed the admit during the meeting.",
+    "example_cn": "這份文件把「承認」寫得很清楚。"
+  },
+  {
+    "id": 17,
+    "word": "Adopt",
+    "partOfSpeech": "n.",
+    "translation": "採用",
+    "definition": "The act, process, or thing related to 採用.",
+    "definition_cn": "名詞，表示「採用」相關的事物、概念或過程。",
+    "example": "We reviewed the adopt in the quarterly report.",
+    "example_cn": "說明文字中也提到了「採用」的部分。"
+  },
+  {
+    "id": 18,
+    "word": "Advance",
+    "partOfSpeech": "n.",
+    "translation": "前進",
+    "definition": "The act, process, or thing related to 前進.",
+    "definition_cn": "名詞，表示「前進」相關的事物、概念或過程。",
+    "example": "Please check the advance before submitting the document.",
+    "example_cn": "閱讀內容時會遇到「前進」這個詞。"
+  },
+  {
+    "id": 19,
+    "word": "Advancement",
+    "partOfSpeech": "n.",
+    "translation": "進步",
+    "definition": "The act, process, or thing related to 進步.",
+    "definition_cn": "名詞，表示「進步」相關的事物、概念或過程。",
+    "example": "The advancement was listed in the contract terms.",
+    "example_cn": "這段資料有提到「進步」這個概念。"
+  },
+  {
+    "id": 20,
+    "word": "Adventure",
+    "partOfSpeech": "n.",
+    "translation": "冒險",
+    "definition": "The act, process, or thing related to 冒險.",
+    "definition_cn": "名詞，表示「冒險」相關的事物、概念或過程。",
+    "example": "Our department is responsible for the adventure.",
+    "example_cn": "這份報告有提到「冒險」。"
+  },
+  {
+    "id": 21,
+    "word": "Advertising",
+    "partOfSpeech": "adj.",
+    "translation": "廣告",
+    "definition": "Having the quality of being 廣告.",
+    "definition_cn": "用來形容事物具有「廣告」這種特性。",
+    "example": "The team prepared an advertising plan for the project.",
+    "example_cn": "我們需要一個「廣告」的方案來趕上期限。"
+  },
+  {
+    "id": 22,
+    "word": "Advise",
+    "partOfSpeech": "n.",
+    "translation": "忠告",
+    "definition": "The act, process, or thing related to 忠告.",
+    "definition_cn": "名詞，表示「忠告」相關的事物、概念或過程。",
+    "example": "The manager highlighted the advise as a key point.",
+    "example_cn": "文件中也有談到「忠告」。"
+  },
+  {
+    "id": 23,
+    "word": "Affiliate",
+    "partOfSpeech": "n.",
+    "translation": "加上",
+    "definition": "The act, process, or thing related to 加上.",
+    "definition_cn": "名詞，表示「加上」相關的事物、概念或過程。",
+    "example": "The affiliate affected the project's timeline.",
+    "example_cn": "在簡報內容裡可以看到「加上」這個重點。"
+  },
+  {
+    "id": 24,
+    "word": "Affordable",
+    "partOfSpeech": "adj.",
+    "translation": "實惠的",
+    "definition": "Having the quality of being 實惠的.",
+    "definition_cn": "用來形容事物具有「實惠的」這種特性。",
+    "example": "This is an affordable approach for beginners.",
+    "example_cn": "我們需要一個「實惠的」的方案來趕上期限。"
+  },
+  {
+    "id": 25,
+    "word": "Agent",
+    "partOfSpeech": "n.",
+    "translation": "經紀人",
+    "definition": "The act, process, or thing related to 經紀人.",
+    "definition_cn": "名詞，表示「經紀人」相關的事物、概念或過程。",
+    "example": "We need to clarify the agent with the client.",
+    "example_cn": "會議紀錄中提及了「經紀人」。"
+  },
+  {
+    "id": 26,
+    "word": "Aggressive",
+    "partOfSpeech": "adj.",
+    "translation": "積極的",
+    "definition": "Having the quality of being 積極的.",
+    "definition_cn": "用來形容事物具有「積極的」這種特性。",
+    "example": "They provided an aggressive estimate for the budget.",
+    "example_cn": "我們需要一個「積極的」的方案來趕上期限。"
+  },
+  {
+    "id": 27,
+    "word": "Agriculture",
+    "partOfSpeech": "n.",
+    "translation": "農業",
+    "definition": "The act, process, or thing related to 農業.",
+    "definition_cn": "名詞，表示「農業」相關的事物、概念或過程。",
+    "example": "The agriculture appears in the meeting notes.",
+    "example_cn": "我們在說明中把「農業」列為重點之一。"
+  },
+  {
+    "id": 28,
+    "word": "Aid",
+    "partOfSpeech": "n.",
+    "translation": "幫忙",
+    "definition": "The act, process, or thing related to 幫忙.",
+    "definition_cn": "名詞，表示「幫忙」相關的事物、概念或過程。",
+    "example": "They updated the aid in the system yesterday.",
+    "example_cn": "本次資料整理也包含「幫忙」。"
+  },
+  {
+    "id": 29,
+    "word": "Airline",
+    "partOfSpeech": "n.",
+    "translation": "航空",
+    "definition": "The act, process, or thing related to 航空.",
+    "definition_cn": "名詞，表示「航空」相關的事物、概念或過程。",
+    "example": "The team discussed the airline during the meeting.",
+    "example_cn": "在摘要段落裡提到了「航空」。"
+  },
+  {
+    "id": 30,
+    "word": "Alarming",
+    "partOfSpeech": "adj.",
+    "translation": "驚人的",
+    "definition": "Having the quality of being 驚人的.",
+    "definition_cn": "用來形容事物具有「驚人的」這種特性。",
+    "example": "A alarming schedule helps reduce delays.",
+    "example_cn": "我們需要一個「驚人的」的方案來趕上期限。"
+  },
+  {
+    "id": 31,
+    "word": "Alcoholic",
+    "partOfSpeech": "adj.",
+    "translation": "酒精",
+    "definition": "Having the quality of being 酒精.",
+    "definition_cn": "用來形容事物具有「酒精」這種特性。",
+    "example": "We require an alcoholic report for compliance.",
+    "example_cn": "我們需要一個「酒精」的方案來趕上期限。"
+  },
+  {
+    "id": 32,
+    "word": "Alien",
+    "partOfSpeech": "n.",
+    "translation": "外僑",
+    "definition": "The act, process, or thing related to 外僑.",
+    "definition_cn": "名詞，表示「外僑」相關的事物、概念或過程。",
+    "example": "We reviewed the alien in the quarterly report.",
+    "example_cn": "章節裡有針對「外僑」做簡要說明。"
+  },
+  {
+    "id": 33,
+    "word": "Aluminum",
+    "partOfSpeech": "n.",
+    "translation": "鋁",
+    "definition": "The act, process, or thing related to 鋁.",
+    "definition_cn": "名詞，表示「鋁」相關的事物、概念或過程。",
+    "example": "Please check the aluminum before submitting the document.",
+    "example_cn": "文字說明中出現了「鋁」。"
+  },
+  {
+    "id": 34,
+    "word": "Amateur",
+    "partOfSpeech": "n.",
+    "translation": "業餘",
+    "definition": "The act, process, or thing related to 業餘.",
+    "definition_cn": "名詞，表示「業餘」相關的事物、概念或過程。",
+    "example": "The amateur was listed in the contract terms.",
+    "example_cn": "在報表欄位中可以看到「業餘」。"
+  },
+  {
+    "id": 35,
+    "word": "Amaze",
+    "partOfSpeech": "n.",
+    "translation": "驚奇",
+    "definition": "The act, process, or thing related to 驚奇.",
+    "definition_cn": "名詞，表示「驚奇」相關的事物、概念或過程。",
+    "example": "Our department is responsible for the amaze.",
+    "example_cn": "這份文件把「驚奇」寫得很清楚。"
+  },
+  {
+    "id": 36,
+    "word": "Ambitious",
+    "partOfSpeech": "adj.",
+    "translation": "野心勃勃的",
+    "definition": "Having the quality of being 野心勃勃的.",
+    "definition_cn": "用來形容事物具有「野心勃勃的」這種特性。",
+    "example": "The ambitious data improved decision-making.",
+    "example_cn": "我們需要一個「野心勃勃的」的方案來趕上期限。"
+  },
+  {
+    "id": 37,
+    "word": "Amount",
+    "partOfSpeech": "n.",
+    "translation": "分量",
+    "definition": "The act, process, or thing related to 分量.",
+    "definition_cn": "名詞，表示「分量」相關的事物、概念或過程。",
+    "example": "The manager highlighted the amount as a key point.",
+    "example_cn": "說明文字中也提到了「分量」的部分。"
+  },
+  {
+    "id": 38,
+    "word": "Amusement",
+    "partOfSpeech": "n.",
+    "translation": "娛樂",
+    "definition": "The act, process, or thing related to 娛樂.",
+    "definition_cn": "名詞，表示「娛樂」相關的事物、概念或過程。",
+    "example": "The amusement affected the project's timeline.",
+    "example_cn": "閱讀內容時會遇到「娛樂」這個詞。"
+  },
+  {
+    "id": 39,
+    "word": "Analyze",
+    "partOfSpeech": "n.",
+    "translation": "分析",
+    "definition": "The act, process, or thing related to 分析.",
+    "definition_cn": "名詞，表示「分析」相關的事物、概念或過程。",
+    "example": "We need to clarify the analyze with the client.",
+    "example_cn": "這段資料有提到「分析」這個概念。"
+  },
+  {
+    "id": 40,
+    "word": "Ancestor",
+    "partOfSpeech": "n.",
+    "translation": "祖先",
+    "definition": "The act, process, or thing related to 祖先.",
+    "definition_cn": "名詞，表示「祖先」相關的事物、概念或過程。",
+    "example": "The ancestor appears in the meeting notes.",
+    "example_cn": "這份報告有提到「祖先」。"
+  },
+  {
+    "id": 41,
+    "word": "Ancient",
+    "partOfSpeech": "adj.",
+    "translation": "古老的",
+    "definition": "Having the quality of being 古老的.",
+    "definition_cn": "用來形容事物具有「古老的」這種特性。",
+    "example": "Please submit an ancient summary by Friday.",
+    "example_cn": "我們需要一個「古老的」的方案來趕上期限。"
+  },
+  {
+    "id": 42,
+    "word": "Announcement",
+    "partOfSpeech": "n.",
+    "translation": "公告",
+    "definition": "The act, process, or thing related to 公告.",
+    "definition_cn": "名詞，表示「公告」相關的事物、概念或過程。",
+    "example": "They updated the announcement in the system yesterday.",
+    "example_cn": "文件中也有談到「公告」。"
+  },
+  {
+    "id": 43,
+    "word": "Annoy",
+    "partOfSpeech": "n.",
+    "translation": "惹惱",
+    "definition": "The act, process, or thing related to 惹惱.",
+    "definition_cn": "名詞，表示「惹惱」相關的事物、概念或過程。",
+    "example": "The team discussed the annoy during the meeting.",
+    "example_cn": "在簡報內容裡可以看到「惹惱」這個重點。"
+  },
+  {
+    "id": 44,
+    "word": "Anxiously",
+    "partOfSpeech": "adv.",
+    "translation": "焦急地",
+    "definition": "In a 焦急地 manner; 焦急地.",
+    "definition_cn": "用來表示「焦急地」的方式或程度。",
+    "example": "The issue was resolved anxiously.",
+    "example_cn": "團隊以「焦急地」的方式回覆了客戶需求。"
+  },
+  {
+    "id": 45,
+    "word": "Apparent",
+    "partOfSpeech": "adj.",
+    "translation": "明顯的",
+    "definition": "Having the quality of being 明顯的.",
+    "definition_cn": "用來形容事物具有「明顯的」這種特性。",
+    "example": "We need an apparent solution for this issue.",
+    "example_cn": "我們需要一個「明顯的」的方案來趕上期限。"
+  },
+  {
+    "id": 46,
+    "word": "Appeal",
+    "partOfSpeech": "adj.",
+    "translation": "申訴",
+    "definition": "Having the quality of being 申訴.",
+    "definition_cn": "用來形容事物具有「申訴」這種特性。",
+    "example": "The team prepared an appeal plan for the project.",
+    "example_cn": "我們需要一個「申訴」的方案來趕上期限。"
+  },
+  {
+    "id": 47,
+    "word": "Appearance",
+    "partOfSpeech": "n.",
+    "translation": "容貌",
+    "definition": "The act, process, or thing related to 容貌.",
+    "definition_cn": "名詞，表示「容貌」相關的事物、概念或過程。",
+    "example": "We reviewed the appearance in the quarterly report.",
+    "example_cn": "會議紀錄中提及了「容貌」。"
+  },
+  {
+    "id": 48,
+    "word": "Apply",
+    "partOfSpeech": "adv.",
+    "translation": "申請",
+    "definition": "In a 申請 manner; 申請.",
+    "definition_cn": "用來表示「申請」的方式或程度。",
+    "example": "The price increased apply last quarter.",
+    "example_cn": "團隊以「申請」的方式回覆了客戶需求。"
+  },
+  {
+    "id": 49,
+    "word": "Appropriate",
+    "partOfSpeech": "adj.",
+    "translation": "合適的",
+    "definition": "Having the quality of being 合適的.",
+    "definition_cn": "用來形容事物具有「合適的」這種特性。",
+    "example": "This is an appropriate approach for beginners.",
+    "example_cn": "我們需要一個「合適的」的方案來趕上期限。"
+  },
+  {
+    "id": 50,
+    "word": "Approval",
+    "partOfSpeech": "adj.",
+    "translation": "贊同",
+    "definition": "Having the quality of being 贊同.",
+    "definition_cn": "用來形容事物具有「贊同」這種特性。",
+    "example": "They provided an approval estimate for the budget.",
+    "example_cn": "我們需要一個「贊同」的方案來趕上期限。"
+  },
+  {
+    "id": 51,
+    "word": "Area",
+    "partOfSpeech": "n.",
+    "translation": "區域",
+    "definition": "The act, process, or thing related to 區域.",
+    "definition_cn": "名詞，表示「區域」相關的事物、概念或過程。",
+    "example": "Please check the area before submitting the document.",
+    "example_cn": "我們在說明中把「區域」列為重點之一。"
+  },
+  {
+    "id": 52,
+    "word": "Arguably",
+    "partOfSpeech": "adv.",
+    "translation": "按理說",
+    "definition": "In a 按理說 manner; 按理說.",
+    "definition_cn": "用來表示「按理說」的方式或程度。",
+    "example": "Please respond arguably to urgent messages.",
+    "example_cn": "團隊以「按理說」的方式回覆了客戶需求。"
+  },
+  {
+    "id": 53,
+    "word": "Armed",
+    "partOfSpeech": "adj.",
+    "translation": "武裝的",
+    "definition": "Having the quality of being 武裝的.",
+    "definition_cn": "用來形容事物具有「武裝的」這種特性。",
+    "example": "A armed schedule helps reduce delays.",
+    "example_cn": "我們需要一個「武裝的」的方案來趕上期限。"
+  },
+  {
+    "id": 54,
+    "word": "Arouse",
+    "partOfSpeech": "n.",
+    "translation": "激發",
+    "definition": "The act, process, or thing related to 激發.",
+    "definition_cn": "名詞，表示「激發」相關的事物、概念或過程。",
+    "example": "The arouse was listed in the contract terms.",
+    "example_cn": "本次資料整理也包含「激發」。"
+  },
+  {
+    "id": 55,
+    "word": "Arrest",
+    "partOfSpeech": "n.",
+    "translation": "逮捕",
+    "definition": "The act, process, or thing related to 逮捕.",
+    "definition_cn": "名詞，表示「逮捕」相關的事物、概念或過程。",
+    "example": "Our department is responsible for the arrest.",
+    "example_cn": "在摘要段落裡提到了「逮捕」。"
+  },
+  {
+    "id": 56,
+    "word": "Article",
+    "partOfSpeech": "n.",
+    "translation": "文章",
+    "definition": "The act, process, or thing related to 文章.",
+    "definition_cn": "名詞，表示「文章」相關的事物、概念或過程。",
+    "example": "The manager highlighted the article as a key point.",
+    "example_cn": "章節裡有針對「文章」做簡要說明。"
+  },
+  {
+    "id": 57,
+    "word": "Ash",
+    "partOfSpeech": "n.",
+    "translation": "灰燼",
+    "definition": "The act, process, or thing related to 灰燼.",
+    "definition_cn": "名詞，表示「灰燼」相關的事物、概念或過程。",
+    "example": "The ash affected the project's timeline.",
+    "example_cn": "文字說明中出現了「灰燼」。"
+  },
+  {
+    "id": 58,
+    "word": "Aspect",
+    "partOfSpeech": "n.",
+    "translation": "方面",
+    "definition": "The act, process, or thing related to 方面.",
+    "definition_cn": "名詞，表示「方面」相關的事物、概念或過程。",
+    "example": "We need to clarify the aspect with the client.",
+    "example_cn": "在報表欄位中可以看到「方面」。"
+  },
+  {
+    "id": 59,
+    "word": "Assemble",
+    "partOfSpeech": "n.",
+    "translation": "組合",
+    "definition": "The act, process, or thing related to 組合.",
+    "definition_cn": "名詞，表示「組合」相關的事物、概念或過程。",
+    "example": "The assemble appears in the meeting notes.",
+    "example_cn": "這份文件把「組合」寫得很清楚。"
+  },
+  {
+    "id": 60,
+    "word": "Assembly",
+    "partOfSpeech": "adv.",
+    "translation": "裝配",
+    "definition": "In a 裝配 manner; 裝配.",
+    "definition_cn": "用來表示「裝配」的方式或程度。",
+    "example": "The team completed the task assembly.",
+    "example_cn": "團隊以「裝配」的方式回覆了客戶需求。"
+  },
+  {
+    "id": 61,
+    "word": "Assist",
+    "partOfSpeech": "n.",
+    "translation": "協助",
+    "definition": "The act, process, or thing related to 協助.",
+    "definition_cn": "名詞，表示「協助」相關的事物、概念或過程。",
+    "example": "They updated the assist in the system yesterday.",
+    "example_cn": "說明文字中也提到了「協助」的部分。"
+  },
+  {
+    "id": 62,
+    "word": "Associate",
+    "partOfSpeech": "n.",
+    "translation": "相關",
+    "definition": "The act, process, or thing related to 相關.",
+    "definition_cn": "名詞，表示「相關」相關的事物、概念或過程。",
+    "example": "The team discussed the associate during the meeting.",
+    "example_cn": "閱讀內容時會遇到「相關」這個詞。"
+  },
+  {
+    "id": 63,
+    "word": "Atmosphere",
+    "partOfSpeech": "n.",
+    "translation": "氣氛",
+    "definition": "The act, process, or thing related to 氣氛.",
+    "definition_cn": "名詞，表示「氣氛」相關的事物、概念或過程。",
+    "example": "We reviewed the atmosphere in the quarterly report.",
+    "example_cn": "這段資料有提到「氣氛」這個概念。"
+  },
+  {
+    "id": 64,
+    "word": "Attempt",
+    "partOfSpeech": "n.",
+    "translation": "嘗試",
+    "definition": "The act, process, or thing related to 嘗試.",
+    "definition_cn": "名詞，表示「嘗試」相關的事物、概念或過程。",
+    "example": "Please check the attempt before submitting the document.",
+    "example_cn": "這份報告有提到「嘗試」。"
+  },
+  {
+    "id": 65,
+    "word": "Attend",
+    "partOfSpeech": "n.",
+    "translation": "出席",
+    "definition": "The act, process, or thing related to 出席.",
+    "definition_cn": "名詞，表示「出席」相關的事物、概念或過程。",
+    "example": "The attend was listed in the contract terms.",
+    "example_cn": "文件中也有談到「出席」。"
+  },
+  {
+    "id": 66,
+    "word": "Attitude",
+    "partOfSpeech": "n.",
+    "translation": "態度",
