@@ -1,0 +1,5215 @@
+字彙 詞類 中文 註解 級數 學術字彙
+a art. 一(個) 後接母音開頭之字時為 an 初級
+A.M. adv. 上午 = a.m.= AM 初級
+abandon verb 拋棄、捨棄、中止 中級 L8
+abandon noun 盡情、放縱 中級 L8
+ability noun 能力、才能 初級
+able adj. 能夠的、有才能的 初級
+abnormal adj. 不正常的 中級 L2
+aboard prep./adv. 在(交通工具)上 中級
+about prep./adv. 大約、關於；大約、幾乎、在周圍 初級
+above prep./adv. 在…上面、超過、大於 初級
+above adv./adj. 上文、前文；前文述及的、上述的 初級
+abroad adv. 在國外、到國外 初級
+absence noun 缺席、不在場 中級
+absent adj. 缺席的、不在場的、心不在焉的 初級
+absolute adj./noun 完全的、絕對的；絕對 中級
+absorb verb 吸收、併入 中級
+abstract adj./noun 抽象的 中級 L6
+abstract noun 摘要 中級 L6
+abuse noun/verb 濫用、虐待 中級
+academic adj. 學術的、學業的 中級
+academy noun 學院、學會 中級 L5
+accent noun 口音、腔調 中級
+accept verb 收受、接受(提議、邀請)、同意、接納 初級
+acceptable adj. 可接受的、認可的 中級
+acceptance noun 接受、認可 中級
+accepted adj. 公認的 中級
+access noun/verb 通道、進入(的權利)；存取、到達、進入 中級 L4
+accident noun 意外事故 初級
+accidental adj. 意外的、偶然的 中級
+accommodate verb 容納 中級 L9
+accommodation noun 住宿、停留處 中級
+accompany verb 陪同、伴隨 中級 L8
+accomplish verb 完成 中級
+accord verb 贈予、授予、(與...)一致 中級
+accord noun 協議、條約 中級
+account noun 帳戶、帳號、敘述 中級
+account verb 視為、解釋、(數量或比例上)佔 中級
+accountant noun 會計師 中級
+accuracy noun 準確(度) 中級 L6
+accurate adj. 正確的、精準的 中級 L6
+accuse verb 指控 中級
+ache noun/verb 疼痛 中級
+achieve verb 達到、完成、實現 初級 L2
+achievement noun 成就、成績 中級
+acid noun/adj. 酸；酸(性)的 中級
+acquaint verb 使熟悉、使了解 中級
+acquaintance noun 認識的人、交情、(對事物的)了解 中級
+acquire verb 獲得、購得 中級 L2
+acre noun 英畝 中級
+across prep./adv. 橫過、在對面 初級
+across prep. 在...各處、遍及 初級
+act noun/verb 表演者、(戲劇的)幕；演出、扮演 初級
+act noun/verb 行為、作為；行事、表現 初級
+action noun 行動、行為、動作 初級
+active adj. 活躍的、積極的 初級
+activity noun 活動 初級
+actor noun 演員 初級
+actress noun 女演員 初級
+actual adj. 實際的、真正的 中級
+actually adv. 實際上、事實上 初級
+adapt verb (使)適應、改編 中級 L7
+add verb 加上、增加、補充說 初級
+addition noun 加法、添加、增加的人或物 初級
+additional adj. 額外的、附加的 中級
+address noun 地址、網址、位址；演講、演說 初級
+address verb 對...講話、發表演說；處理、應對 中級
+adequate adj. 足夠的、合格的 中級 L4
+adjective noun 形容詞 = adj. 中級
+adjust verb 調整；適應；整理(衣著) 中級 L5
+administration noun 管理(部門)、行政(部門)；施行、施用 中級
+admirable adj. 可欽佩的、值得讚賞的 中級
+admiration noun 欽佩、仰慕、讚賞 中級
+admire verb 欽佩、欣賞 初級
+admission noun 承認、招認；入場費；允許進入 中級
+admit verb 承認；准許進入 初級
+adopt verb 領養、接受、採納 初級
+adult noun/adj. 成年人；成年的、成熟的、僅限成人的 初級 L7
+advance verb (使)前進、使發展、促進 初級
+advance noun 前進、發展、進展 初級
+advance adj. 預先的、事先的 初級
+advanced adj. 先進的、高級的、(發展)後期的 中級
+1
+字彙 詞類 中文 註解 級數 學術字彙
+advantage noun 優點、優勢、好處 初級
+adventure noun 冒險、冒險經歷、奇遇 初級
+advertise verb 登廣告、徵聘、宣傳 = advertize 中級
+advertisement noun 廣告 = ad 初級
+advice noun 建議、忠告 初級
+advise verb 建議、忠告、正式告知 初級
+adviser noun 顧問、忠告者 = advisor 中級
+affair noun 事務、事件 初級
+affect verb 影響、(疾病)感染 初級 L2
+affection noun 喜愛、鍾愛 中級
+afford verb 買得起、承擔、提供 中級
+afraid adj. 害怕的、擔憂的 初級
+after prep./conj./adv. 在...後面；在...以後；以後、後來 初級
+afternoon noun 下午 初級
+afterward adv. 後來 =afterwards (British English) 中級
+again adv. 又、再一次 初級
+against prep. 緊貼著、倚靠著；逆著...的方向、迎著；反對、與...相反；以...為背
+景、襯托；防...、抗... 初級
+age noun 年齡、老化；時代、時期 初級
+age verb 衰老、使變老、使成熟 初級
+aged adj. …歲的、年邁的 中級
+agency noun 代理機構、政府專門機構 中級
+agent noun 代理商、代理人、經紀人 中級
+aggressive adj. 好鬥的、挑臖的；積極進取的 中級
+ago adv. 在…以前 初級
+agree verb 同意、贊成、相符 初級
+agreeable adj. 令人愉悅的、宜人的；欣然同意的、願意接受的 中級
+agreement noun 協議、意見一致、同意 中級
+agriculture noun 農業 中級
+ahead adv. 在前面、領先、提早 初級
+aid noun/verb 幫助、援助；救援物資、輔助設備 初級 L7
+aim verb/noun 計劃、瞄準；目標、瞄準 初級
+air noun 空氣、空中 初級
+air conditioner noun 冷氣機、空調 初級
+air-conditioned adj. 有空調的 中級
+aircraft noun 飛機 初級
+airline noun 航空公司 初級
+airmail noun 航空郵件 中級
+airplane noun 飛機 = plane, aeroplane (British English) 初級
+airport noun 機場 初級
+alarm noun 鬧鐘、鬧鈴裝置；警報、警報器 初級
+album noun 相簿、集郵簿、音樂專輯 初級
+alcohol noun 酒、酒精 中級
+alcoholic noun 酗酒者、酒精中毒者 中級
+alcoholic adj. 酒精的、含酒精的 中級
+alert verb 使警覺、使意識到 中級
+alert adj. 警覺的、機警的 中級
+alert noun 警報、戒備 中級
+alike adv./adj. 相似地、同樣地；相似的 初級
+alive adj. 活著的、仍然存在的 初級
+all adj./pron./adv. 全部(的/地) 初級
+alley noun 小街、小巷 中級
+allow verb 准許 初級
+allowance noun 零用錢；津貼、補助；限額、定量 零用錢 = pocket money 中級
+almost adv. 幾乎、差不多 初級
+alone adv./adj. 單獨(的)、獨自(的)、孤獨無伴(的) 初級
+along prep. 沿著 初級
+along adv. 向前、一起、來到 初級
+alongside prep./adv. 在...旁邊、與...一起 中級
+aloud adv. 大聲地 初級
+alphabet noun 字母表 初級
+already adv. 已經 初級
+also adv. 也、此外 初級
+alternative noun 可供選擇的事物 中級 L3
+alternative adj. 可替代的、可供選擇的；非傳統的、另類的 中級 L3
+although conj. 雖然 初級
+altitude noun 海拔高度 中級
+altogether adv. 全部、總共、總之 初級
+aluminium noun 鋁 中級
+always adv. 總是、一直 初級
+am verb (主語為第一人稱單數)是 初級
+amateur adj./noun 業餘的、業餘愛好的；業餘愛好者、業餘運動員 中級
+amaze verb 使驚奇 中級
+ambassador noun 大使 中級
+ambition noun 野心 中級
+ambitious adj. 有野心的、雄心勃勃的 中級
+ambulance noun 救護車 初級
+America noun 美國、美洲 初級
+American adj./noun 美國的、美洲的；美國人 初級
+amid prep. 在…中 中級
+among prep. 在...之中、在三者或以上之間 初級
+amount noun 數量 初級
+2
+字彙 詞類 中文 註解 級數 學術字彙
+amuse verb 逗樂、(使)娛樂 中級
+amusement noun 愉悅、娛樂(活動) 中級
+analysis noun 分析 中級
+analyst noun 分析者、化驗員 中級
+analyze verb 分析 = analyse (British English) 中級
+ancestor noun 祖先 中級
+ancient adj. 古代的、古老的 初級
+and conj. 和、又、加上、接連 初級
+angel noun 天使 初級
+anger noun 憤怒、怒氣 初級
+angle noun 角度、觀點 中級
+angry adj. 生氣的、憤怒的 初級
+animal noun 動物 初級
+ankle noun 腳踝 初級
+anniversary noun 週年紀念日 中級
+announce verb 宣布、公告、廣播 中級
+announcement noun 宣布、公告 中級
+announcer noun 廣播員 中級
+annoy verb 使惱怒、打擾 中級
+annual adj./noun 每年的、一年一次的；年報、年刊 中級 L4
+another pron./adj. 另一個、再一個；另外的、再一 初級
+answer noun/verb 答案、回答；答覆、作答 初級
+ant noun 螞蟻 初級
+anxiety noun 焦慮、憂慮 中級
+anxious adj. 焦慮的、不安的；渴望做某事 中級
+any pron./adj. 任何一個、一些；任何的、絲毫的 初級
+any adv. (用於否定或疑問句)稍、根本 初級
+anybody pron. 任何人 = anyone 初級
+anyhow adv. 無論如何 中級
+anymore adv. 再也不、不再 =any more 初級
+anyone pron. 任何人 = anybody 初級
+anything pron. 任何東西、任何事情 初級
+anytime adv. 在任何時候 =any time 初級
+anyway adv. 無論如何、不管怎樣、反正 初級
+anywhere adv. 任何地方 = anyplace 初級
+apart adv./adj. (空間或時間的)分隔、相隔；分離的 中級
+apartment noun 公寓 = flat (British English) 初級
+ape noun 人猿 中級
+ape verb 模仿、學...的樣子 中級
+apologize verb 道歉 = apoligise (British English) 初級
+apology noun 道歉 中級
+app noun 應用程式 中級
+apparent adj. 顯然的 中級 L4
+appeal noun 呼籲；申訴；吸引力 中級
+appeal verb 呼籲；提出申訴；對...有吸引力 中級
+appear verb 出現、顯現 初級
+appear verb 看來好像、似乎 =seem 初級
+appearance noun 出現、公開露面；外貌、外表 初級
+appetite noun 食慾、胃口 中級
+applaud verb 鼓掌、稱讚 中級
+applause noun 鼓掌、喝采 中級
+apple noun 蘋果 初級
+appliance noun 家電、器具 中級
+applicant noun 申請人 中級
+application noun 申請、申請書；用途、應用；應用軟體 中級
+apply verb 申請、請求；應用；適用；塗、敷 初級
+appoint verb 任命、安排 中級
+appointment noun 約會、預約；任命；職務 中級
+appreciate verb 欣賞、賞識；感激、感謝 初級 L8
+appreciation noun 欣賞；感激、感謝 中級
+approach noun 方式、方法 中級 L1
+approach verb 接近；接洽；著手處理 中級 L1
+appropriate adj. 合適、恰當的 中級 L2
+approval noun 贊成、批准 中級
+approve verb 贊成、批准 中級
+April noun 四月 = Apr. 初級
+apron noun 圍裙 中級
+aquarium noun 魚缸、水族館 中級
+arch noun/verb 拱門；使成弓形 中級
+architect noun 建築師 中級
+architecture noun 建築學、建築設計 中級
+are verb (主詞為we、you、they的現在式)是 初級
+area noun 地區、範圍、面積 初級 L1
+argue verb 爭吵、爭論 初級
+argument noun 爭吵、論點 中級
+arise verb 發生、由…引起 中級
+arithmetic noun/adj. 算術；算術的 中級
+arm noun 手臂、袖子、扶手 初級
+arm verb 武裝、備戰 初級
+armchair noun 扶手椅 初級
+army noun 軍隊、陸軍；大批、大群 初級
+3
+字彙 詞類 中文 註解 級數 學術字彙
+around prep./adv. 圍繞、在...附近、大約 初級
+arouse verb 激起 中級
+arrange verb 安排、籌劃；排列、佈置 初級
+arrangement noun 安排、籌備 中級
+arrest verb/noun 逮捕 初級
+arrival noun 抵達 中級
+arrive verb 到達、來臨 初級
+arrow noun 弓箭、箭號 中級
+art noun 藝術、美術 初級
+article noun 文章、報導；物品、物件、(語法)冠詞 初級
+artificial adj. 人工的、人造的 中級
+artist noun 藝術家、畫家 初級
+artistic adj. 藝術的、有藝術天賦的 中級
+as conj. 因為、當...時、以...的方式 初級
+as prep. 作為、以...的身分 初級
+as adv. 像...一樣、和...一樣 初級
+ascend verb 上升、登高 中級
+ash noun 灰燼 中級
+ashamed adj. 感到羞愧的 中級
+Asia noun 亞洲 初級
+Asian adj./noun 亞洲的、亞洲人的；亞洲人 初級
+aside adv. 在旁邊 中級
+ask verb 詢問、請求 初級
+asleep adj. 睡著的 初級
+aspect noun 方面、層面 中級 L2
+aspirin noun 阿斯匹靈 中級
+assassinate verb 暗殺 中級
+assemble verb 集合、聚集；組裝 中級 L10
+assembly noun 集會、議會；裝配 中級
+asset noun 資產 中級
+assign verb 指派、分配 中級 L6
+assist verb 協助、援助 中級 L2
+assistance noun 幫忙、援助 中級 L2
+assistant noun/adj. 助手、助理；(常用於頭銜)助理的、副的 初級
+associate verb 聯想、聯繫 中級
+associate noun 同事、合夥人 中級
+associate adj. 副的、非正式的 中級
+association noun 協會、社團、聯盟；關聯、聯想 中級
+assume verb 假定為、假設 初級 L1
+assurance noun 保證、擔保；自信 中級 L9
+assure verb 向...保證、確保 中級 L9
+astonish verb 使吃驚 中級
+astronaut noun 太空人 中級
+at prep. 在...時刻、在...地點或位置、對著 初級
+athlete noun 運動員、擅長運動的人 中級
+athletic adj. 健壯的、擅長運動的、田徑運動的 中級
+atmosphere noun 大氣、大氣層、空氣；氣氛、氛圍 中級
+atom noun 原子 中級
+atomic adj. 原子的、原子能的 中級
+attach verb 裝上、使依附 中級 L6
+attack noun/verb 攻擊、進攻、抨擊 初級
+attempt noun/verb 嘗試、企圖 中級
+attend verb 出席、參加 初級
+attention noun 注意力、關注 初級
+attitude noun 態度 中級 L4
+attract verb 吸引 中級
+attraction noun 吸引力；迷戀、愛慕 中級
+attractive adj. 誘人的、吸引人的 中級
+audience noun 聽眾、觀眾 初級
+audio adj. 聲音的、錄音的 中級
+August noun 八月 = Aug. 初級
+aunt noun 姑姑、阿姨、舅媽 = auntie= aunty 初級
+Australia noun 澳洲 初級
+author noun 作者 中級 L6
+authority noun 權力、職權；官方、當權者 中級 L1
+autobiography noun 自傳 中級
+automatic adj. 自動的 中級
+automobile noun 汽車 = auto 中級
+autumn noun 秋天 = fall 初級
+auxiliary noun 助動詞 = aux. 中級
+auxiliary noun/adj. 輔助人員；輔助的 中級
+available adj. 有空的、可獲得的 初級 L1
+avenue noun 大街；途徑、管道、方法 中級
+average adj./noun/verb 平均的；平均數；平均為 中級
+avoid verb 避免、避開 初級
+await verb 等待 中級
+awake adj./verb 醒著；醒來、喚起 中級
+awaken verb 醒來、喚醒 中級
+award noun/verb 獎、獎金、獎品；獎勵、授予 中級
+aware adj. 意識到、發覺、有...意識的 初級 L5
+away adv. 去別處、(距此)...遠、逐漸消失 初級
+4
+字彙 詞類 中文 註解 級數 學術字彙
+awful adj. 很壞的、糟糕的、令人不愉快的 中級
+awkward adj. 令人尷尬的；難對付的；笨拙的 中級
+ax verb 用斧頭劈、砍掉；裁減、撤銷、開除 = axe (British English) 中級
+ax noun 斧頭；裁減、解雇 = axe (British English) 中級
+baby noun 嬰兒、幼稚的人、(暱稱)寶貝 初級
+babysit verb 當臨時保姆 = baby-sit 初級
+babysitter noun 保姆 = baby-sitter=baby sitter 初級
+back noun/adj. 背部、後面；背部的、後面的 初級
+back adv. 回原處、返回、向後、在背面 初級
+back verb 贊助、支持；使倒退、後退 初級
+background noun 背景 中級
+backward adv./adj. 向後地、倒退地；向後的、倒退的、落後的 adv.= backwards (British English) 初級
+bacon noun 培根 中級
+bacteria noun 細菌 bacterium (singular form) 中級
+bad adj. 壞的、不好的、劣質的 初級
+badly adv. 差地、嚴重地；很、非常 初級
+badminton noun 羽毛球 初級
+bag noun 袋子、一袋(的量) 初級
+baggage noun 行李 中級
+baggy adj. (衣服)寬鬆的、寬大下垂的 中級
+bait noun/verb 魚餌、誘餌；下誘餌 中級
+bake verb 烘烤 初級
+bakery noun 麵包店 初級
+balance noun/verb 平衡、均衡；保持平衡 中級
+balcony noun 陽台、(劇院的)樓座 初級
+bald adj. 禿頭的 中級
+ball noun 球、球狀物 初級
+ballet noun 芭蕾舞、芭蕾舞劇 中級
+balloon noun 氣球 初級
+bamboo noun 竹子 中級
+ban verb/noun 禁止；禁令 中級
+banana noun 香蕉 初級
+band noun 樂團、樂隊；帶、細繩；(數目、年齡、價格等的)範圍 初級
+bandage noun/verb 繃帶；用繃帶包紮 中級
+Band-Aid noun OK繃 = band-aid 中級
+bang noun/verb 重擊、巨響；撞擊、使發出巨響 中級
+bank noun 銀行；堤、岸 初級
+banker noun 銀行家、莊家 初級
+banking noun 處理銀行帳戶事宜、銀行業 中級
+bankrupt adj./verb/noun 破產的；使破產；破產者 中級
+bar noun 條狀物、條紋、欄杆；酒吧、吧檯 初級
+bar noun/verb 障礙；阻擋、禁止 初級
+barbecue noun/verb 烤肉、烤肉架、烤肉聚會；燒烤 = Bar-B-Q = BBQ 初級
+barber noun 理髮師 初級
+barbershop noun 理髮店 中級
+bare adj./verb 赤裸的、無遮蔽的；使赤裸、使暴露 中級
+barely adv. 僅、剛好、幾乎沒有 中級
+bargain noun 特價品；協議、交易 中級
+bargain verb 特價品、協議；討價還價 中級
+bark verb/noun 吠叫、咆哮；狗吠聲 初級
+bark noun 樹皮 初級
+barn noun 穀倉 中級
+barrel noun 大桶 中級
+barrier noun 屏障、障礙物、隔閡 中級
+base verb/noun 以...為據點、將總部設在；基地、基底、基礎 初級
+base noun (棒球運動中的)壘 初級
+baseball noun 棒球 初級
+basement noun 地下室 初級
+basic adj. 基本的 初級
+basin noun 盆、水盆；流域；船塢、內灣 中級
+basis noun 基礎、根據 初級
+basket noun 籃子、線上購物籃 初級
+basketball noun 籃球 初級
+bat noun 蝙蝠 初級
+bat noun/verb 球棒、球拍；用球棒或球拍擊球 初級
+bath noun/verb 沐浴、洗澡；(給...)洗澡 動詞=bathe 初級
+bathe verb (給...)洗澡、浸泡 =bath 初級
+bathroom noun 浴室、廁所 初級
+battery noun 電池 中級
+battle noun/verb 戰爭、鬥爭；作戰、奮鬥 中級
+bay noun 灣、海灣 中級
+BC adv. 西元前 = Before Christ 中級
+be verb 是(助動詞) 初級
+beach noun 海灘、湖濱 初級
+bead noun (有孔的)珠子 中級
+beak noun 鳥喙 中級
+beam noun 光線、光束 中級
+beam verb 照射、發光；高興地微笑、眉開眼笑 中級
+bean noun 豆子、豆莢，豆科植物 初級
+bear noun 熊 初級
+bear verb 承擔、忍受、負荷；具有；生孩子、結果實 初級
+5
+字彙 詞類 中文 註解 級數 學術字彙
+beard noun 鬍鬚 初級
+beast noun (大型或野生的)動物、野獸；粗暴的人、兇殘的人 中級
+beat verb 打敗、戰勝；敲打、攪打 初級
+beat noun 跳動聲、擊鼓聲；節拍 初級
+beautiful adj. 美麗的、極好的 初級
+beauty noun 美麗、美人、美好的事物 中級
+because conj. 因為 = 'cos = cos = cuz 初級
+become verb 成為、變得 初級
+bed noun 床、床位 初級
+bedroom noun 臥室 初級
+bedtime noun 就寢時間 中級
+bee noun 蜜蜂 初級
+beef noun 牛肉 初級
+beer noun 啤酒 初級
+beetle noun 甲蟲 中級
+before prep./conj./adv. 在…之前、先於；在...以前；曾經、在前 初級
+beg verb 乞討、請求 中級
+beggar noun 乞丐 中級
+beggar verb 使貧窮、使匱乏 中級
+begin verb 開始、以...起頭 初級
+beginner noun 初學者、新手 初級
+beginning noun 開端、起點 初級
+behave verb 表現 初級
+behavior noun 行為、舉止 = behaviour (British English) 中級
+behind prep./adv. 在…後面；在背後、在原處、落後於 初級
+being noun 生命、生物；存在、生存 中級
+belief noun 相信、信念、信仰 初級
+believable adj. 可信的 中級
+believe verb 相信 初級
+bell noun 鈴、鐘 初級
+belly noun 腹部、肚子 中級
+belong verb 屬於、應在...地方 初級
+below adv./prep. 在...下面、低於 初級
+belt noun 腰帶 初級
+bench noun 長椅 初級
+bend verb/noun 使彎曲、彎腰；彎曲處、彎道 中級
+beneath prep. 在...下面 中級
+beneficial adj. 有利的、有助的 中級 L1
+benefit noun/verb 利益、好處；對...有幫助、使受惠 中級 L1
+berry noun 莓果 中級
+beside prep. 在...旁邊 初級
+besides prep./adv. 除…之外；此外、而且 初級
+best adv./adj. 最、最適當地；最好的、最適當的 初級
+best noun 最好的人或事 初級
+best verb 打敗、戰勝 初級
+bet noun/verb 賭注；打賭、賭博 中級
+better adv./adj. 更、更好地；更好的、好轉的 初級
+better noun 更好的事物、更好者 初級
+better verb 勝過、超過 初級
+between prep. 在…之間 初級
+beyond prep./adv. 遠於、超出；在更遠處 初級
+Bible noun 聖經 中級
+bicycle noun 腳踏車 = bike 初級
+bid noun/verb 出價、投標、努力爭取 中級
+big adj. 大的、年齡較大的、重大的 初級
+bill noun/verb 鈔票、帳單；開立帳單 初級
+bill noun 議案、法案 初級
+billion noun 十億 中級
+bin noun 垃圾箱、容器、箱子 中級
+bind verb 綑綁、包紮 中級
+bingo noun 賓果遊戲 中級
+biography noun 自傳 中級
+biology noun 生物學 初級
+bird noun 鳥 初級
+birth noun 出生、起源 中級
+birthday noun 生日 初級
+biscuit noun 餅乾、小麵包 中級
+bit noun 稍微、小塊、少量、一點點 初級
+bite verb/noun 咬、叮 初級
+bitter adj. 有苦味的、(天氣)嚴寒的、怨恨的、令人不快的 初級
+black adj./noun 黑色的；黑色 初級
+blackboard noun 黑板 初級
+blame verb/noun 責備 初級
+blank adj./noun 空白的；空白處、空格 初級
+blanket noun/verb 毛毯、毯子；以厚層覆蓋 初級
+bleed verb 流血 中級
+blend verb/noun 混合、使交融；混合物 中級
+bless verb 為…祝福 中級
+blessing noun 祝福、祝頌；幸事、好事 中級
+blind adj./verb 失明的、盲目的；使失明、蒙蔽 初級
+blink verb/noun 眨眼睛 中級
+6
+字彙 詞類 中文 註解 級數 學術字彙
+block noun 街區；大樓；大塊；堵塞物、障礙物 初級
+block verb 堵塞；阻擋；擋住；妨礙 初級
+blonde adj./noun 金色頭髮的；金髮女郎 = blond 中級
+blood noun 血液、血統 初級
+bloody adj. 流血的、血腥的 中級
+bloom noun/verb 花；開花、綻放 中級
+blossom noun/verb 花朵；開花 中級
+blouse noun 女襯衫 初級
+blow verb 吹；吹奏；擤鼻子；炸毀；爆裂 初級
+blow noun 吹；吹奏(樂器)；擤(鼻子)；重擊；打擊 初級
+blue adj./noun 藍色的；藍色 初級
+blue adj. 悲傷的、憂鬱的 初級
+blush verb/noun 臉紅 中級
+board verb/noun 上(交通工具)；在船上(或其他交通工具) 初級
+board noun 木板、牌子、佈告欄、黑板或白板、棋盤 初級
+board noun 董事會、理事會 初級
+board verb/noun 寄宿、住校；(住宿處提供的)伙食、膳食 初級
+boast verb/noun 吹噓、自誇 中級
+boat noun 船 初級
+body noun 身體、軀幹、屍體 初級
+boil verb (水等)沸騰 初級
+bold adj. 大膽的、勇敢無畏的；醒目的、粗體的 中級
+bomb noun/verb 炸彈；投彈於、轟炸 初級
+bond noun/verb 聯繫、關係；結合、建立關係 中級 L6
+bone noun 骨頭 初級
+bony adj. 骨的、骨瘦如柴的 中級
+book noun 書、簿冊 初級
+book verb 預訂、預約 初級
+bookcase noun 書架、書櫃 初級
+booking noun 預約、預訂 中級
+booklet noun 小冊子 中級
+bookshelf noun 書架 中級
+bookstore noun 書店 = bookshop (British English) 初級
+boot noun 靴子；猛踢、猛踹 中級
+boot verb 猛踹、猛踢；(使電腦)啟動 中級
+border noun/verb 國境、邊界；(國家或地區)與...接壤、和...毗鄰 中級
+bore verb/noun 使厭煩；煩人的人或事 中級
+bored adj. 感到無聊的、感到厭煩的 初級
+boring adj. 無聊的、乏味的 初級
+born verb/adj. 出生、產生；天生的 初級
+borrow verb 借入、借貸 初級
+boss noun 老闆、上司 初級
+both adv./adj./pron. 兩個、兩者、雙方 初級
+bother verb/noun 打擾、使人煩擾；麻煩、令人煩惱的人(或事物) 初級
+bottle noun/verb 瓶子；把(液體)裝入瓶中 初級
+bottom noun/adj./verb 底部、屁股；最底下的、最後的；到達底部、降到最低點 初級
+bottom noun 套裝的裙或褲 初級
+bounce verb/noun (使)彈起、(使)反彈；蹦蹦跳跳 中級
+bow verb/noun 鞠躬、點頭致意 初級
+bow noun 弓；(弦樂器的)琴弓；蝴蝶結 船首 (P) 中級
+bowl noun 碗、缽 初級
+bowling noun 保齡球運動 初級
+box noun/verb 箱、盒、方格；把...裝箱 初級
+boy noun 男孩 初級
+boycott verb/noun 抵制、拒絕購買或使用 中級
+boyfriend noun 男朋友 中級
+bra noun 胸罩 = brassiere 中級
+bracelet noun 手環、手鐲 中級
+brain noun 頭腦 初級
+brake noun/verb 煞車 中級
+branch noun 樹枝；支流、岔路；分支機構 初級
+branch verb 發出新枝；分岔、岔開 初級
+brand noun 品牌、商標；烙印 中級
+brand verb 打烙印於；譴責、加汙名於 中級
+brand-new adj. 全新的、嶄新的 中級
+brass noun/adj. 黃銅、黃銅製品；黃銅的、黃銅製的 中級
+brass noun/adj. 銅管樂器；銅管樂器的 中級
+brave adj. 勇敢的 初級
+bravery noun 勇敢、英勇行為 中級
+bread noun 麵包 初級
+break verb/noun 打破、弄壞；毀壞、打破、裂縫 初級
+break noun 休息時間、課間休息、假期 初級
+break verb/noun 中止、中斷 初級
+break verb 違反、違背 初級
+breakfast noun 早餐 初級
+breast noun/verb 胸部、乳房；挺胸從...中擠過 中級
+breath noun 呼氣、一次吸入的空氣 中級
+breathe verb 呼吸 中級
+breed noun 品種；交配繁殖、飼養 中級
+breed verb 品種；交配繁殖、飼養 中級
+breeze noun/verb 和風、微風；飄然而行、輕盈自信地走 中級
+7
+字彙 詞類 中文 註解 級數 學術字彙
+bribe noun/verb 賄賂 中級
+brick noun 磚塊 初級
+bride noun 新娘 中級
+bridegroom noun 新郎 = groom 中級
+bridge noun/verb 橋、橋梁；在...上架橋、縮短差異 初級
+brief adj. 簡短的、短暫的 初級 L6
+brief noun/verb 概要、簡報；簡報、向...介紹情況 初級 L6
+briefcase noun 公事包 中級
+bright adj. 明亮的、鮮豔的、快樂的；聰明的 初級
+brilliant adj. 絕妙的、聰穎的 中級
+bring verb 帶來、導致 初級
+Britain noun 英國 初級
+broad adj. 寬廣的、廣泛的 初級
+broadcast noun/verb 廣播(節目)；廣播 初級
+broke adj. 沒錢、破產 中級
+brook noun 小溪、小河 中級
+broom noun 掃帚 中級
+brother noun 兄弟 初級
+brown adj./noun/verb 棕褐色的；棕褐色；(把食物)炒成褐色 初級
+brownie noun 布朗尼、巧克力方塊蛋糕 中級
+browse verb/noun 瀏覽 中級
+brunch noun 早午餐 初級
+brush noun/verb 刷子、畫筆、刷抹；刷、擦掉 初級
+brutal adj. 殘暴的 中級
+bubble noun/verb 氣泡、泡沫；冒泡 中級
+bucket noun 水桶、提桶 = pail 初級
+bud noun/verb 花苞；發芽 中級
+budget noun/verb 預算；編列預算 中級
+buffalo noun 水牛 中級
+buffet noun 自助餐 初級
+bug noun 小蟲子；病菌；(電腦程式的)漏洞；竊聽器 初級
+bug verb 煩擾、使惱怒；裝竊聽器 初級
+build verb 建造、開闢 初級
+building noun 建築物、房子 初級
+bull noun 公牛、雄象、雄鯨 中級
+bullet noun 子彈 中級
+bulletin noun 佈告、新聞快報、(機構的)簡報 中級
+bump verb/noun 碰到、撞到；碰撞聲、撞擊聲 中級
+bun noun 小圓麵包 初級
+bunch noun 串、束、大量 中級
+bundle noun 束、捆 初級
+burden noun/verb 負荷、重擔；使擔負 中級
+bureau noun 辦公處、(政府部門的)局 中級
+burglar noun 竊賊 中級
+burn verb 燃燒、著火、發燒 初級
+burn verb/noun 燒傷、曬傷、燙傷 初級
+burst verb/noun 爆炸、迸裂；爆裂、迸發 初級
+bury verb 埋葬、掩埋 中級
+bus noun 公車、大客車 初級
+bush noun 灌木 中級
+business noun 生意、公司、商務活動、職責 初級
+businessperson noun 商人 =businessman, businesswoman 初級
+busy adj. 忙碌的、繁忙的、(電話)佔線的 初級
+but adv./conj./prep. 只有、僅僅；但是；除…以外 初級
+butcher noun 肉商、肉舖；劊子手 中級
+butcher verb 屠宰、宰殺；殺戮、屠殺 中級
+butter noun/verb 奶油；塗奶油於 初級
+butterfly noun 蝴蝶 初級
+button noun/verb 鈕扣、按鈕；扣鈕扣 初級
+buy verb/noun 買；購買、買賣 初級
+buzz verb/noun 發出嗡嗡聲；嗡嗡聲 中級
+by prep./adv. 藉由、被、在旁邊、早於；經過 初級
+cabbage noun 甘藍、包心菜、高麗菜 初級
+cabin noun 小木屋；座艙 中級
+cabinet noun 櫥櫃 初級
+cable noun/verb 電纜、纜繩、有線電視；鋪設電纜 初級
+cafe noun 咖啡館 = café 初級
+cafeteria noun 自助餐廳 初級
+cage noun/verb 籠子；關進籠子裡 初級
+cake noun 蛋糕 初級
+calculate verb 計算 中級
+calculator noun 計算機 中級
+calendar noun 日曆、曆法、行事曆 初級
+call verb/noun 打電話；打電話、通話 初級
+call verb 給...命名、稱呼、把...視為 初級
+call verb/noun 呼叫、鳴叫、召喚 初級
+calm adj./verb/noun 冷靜的、平靜的；使冷靜、使鎮靜；寧靜的狀態 初級
+camel noun 駱駝 中級
+camera noun 照相機 初級
+camp noun/verb 營地、兵營、陣營；露營、紮營 初級
+campaign noun/verb (尤指政治、商業或軍事的)專門活動、運動；發起運動 中級
+8
+字彙 詞類 中文 註解 級數 學術字彙
+campus noun 校園、校區 初級
+can aux. (助動詞)能、會、可以 初級
+Canada noun 加拿大 初級
+canal noun 運河 中級
+cancel verb 取消 初級
+cancer noun 癌症 初級
+candidate noun 候選人、申請人、應試者 中級
+candle noun 蠟燭 初級
+candy noun 糖果 = sweet (British English) 初級
+cane noun (某些植物的)莖；手杖、拐杖 中級
+canoe noun/verb 獨木舟；(划、乘)獨木舟 中級
+canvas noun 帆布 中級
+canyon noun 峽谷 中級
+cap noun/verb 便帽、蓋；用...覆蓋頂部 初級
+capable adj. 有能力的 中級 L6
+capacity noun 容量；生產能力；(尤指人或組織的)辦事能力 中級 L5
+cape noun 岬、海角；披風 中級
+capital noun 資金；首都；大寫字母 中級
+capital adj. 首要的；大寫字母的 中級
+capitalism noun 資本主義 中級
+capitalist noun/adj. 資本主義者、資本家；資本主義的 中級
+captain noun 隊長、機長、船長、上尉 初級
+caption noun/verb 說明文字；在圖片加說明文字 中級
+capture verb/noun 俘虜、捕獲 中級
+capture verb (用文字或圖像)描繪；拍攝；引起(關注、興趣) 中級
+car noun 汽車、車廂 初級
+carbon noun 碳 中級
+card noun 卡片、紙牌、賀卡 初級
+care noun/verb 照顧、擔憂、謹慎；照顧、關心、在意 初級
+career noun 職業、生涯 初級
+careful adj. 小心的、仔細的 初級
+careless adj. 粗心的、不小心的 初級
+cargo noun (船或飛機裝載的)貨物 中級
+carpenter noun 木工 中級
+carpet noun/verb 地毯；用地毯鋪地 初級
+carriage noun 四輪馬車；(火車的)車廂；貨運、運費 車廂 = coach (British English), car (American English) 中級
+carrot noun 胡蘿蔔 初級
+carry verb 背、搬運、攜帶、運送 初級
+cart noun/verb 手推車、馬車；運送、搬運 中級
+cartoon noun 卡通 初級
+carve verb 雕刻 中級
+case noun 箱、盒、容器；案件、案例 初級
+cash noun/verb 現金；兌現 初級
+cashier noun 收銀員、出納員 中級
+cast noun/verb 演員陣容；分配角色、選派角色 中級
+cast verb/noun 投、拋、擲 中級
+cast verb/noun 鑄造；鑄造物、鑄模 中級
+cast verb 投票 中級
+castle noun 城堡、堡壘 初級
+casual adj. (衣服)休閒的；不在意的、漫不經心的 中級
+casualty noun 傷亡人員 中級
+cat noun 貓、貓科動物 初級
+catalog noun/verb 目錄；編目錄 = catalogue (British English) 中級
+catch verb/noun 接住、捕捉；罹患、染病；聽見、聽清楚；趕上(交通工具)、追上 初級
+catch noun 接球；捕獲量 初級
+caterpillar noun 毛毛蟲 中級
+cattle noun 牛 中級
+cause verb/noun 導致、由於；原因、理由 初級
+cave noun/verb 洞穴；挖洞穴、使塌落 中級
+CD noun 光碟 = compact disk 初級
+cease verb/noun 停止；結束 中級 L9
+ceiling noun 天花板 初級
+celebrate verb 慶祝、祝賀、讚揚 初級
+celebration noun 慶祝、慶典、慶祝活動 中級
+cell noun 細胞；手機；小房間、牢房 手機 = cellphone 初級
+cellphone noun 手機 =cell-phone, cell, mobile phone, mobile 初級
+cement noun/verb 水泥、黏接劑；塗上水泥、黏合 中級
+cent noun 分(貨幣單位) 初級
+center noun/verb 中心點、中心區、活動中心；集中、使置中 = centre (British English) 初級
+centimeter noun 公分 = centimetre (British English)；=cm. 初級
+central adj. 中心的 初級
+century noun 一百年、世紀 初級
+cereal noun 穀物、穀類食物 初級
+ceremony noun 典禮 中級
+certain adj. 肯定的、確定的、必然的 初級
+certainly adv. 必定、當然 初級
+certificate noun/verb 證書、證明、文憑；證明、發給結業證書 中級
+chain noun/verb 鍊條、鎖鏈、束縛；用鏈條鎖、拴住 中級
+chain noun 一系列、一連串 中級
+chair noun 椅子 初級
+chair noun/verb 主持人、主席、系主任；擔任主席、主持 初級
+9
+字彙 詞類 中文 註解 級數 學術字彙
+chairperson noun 主席、董事長 = chair, chairman, chairwoman 初級
+chalk noun/verb 粉筆；用粉筆書寫 初級
+challenge noun/verb 挑戰 中級 L5
+chamber noun (有特定用途的)房間、會議室、議院 中級
+champion noun 冠軍、獲勝者 中級
+champion verb 支持、聲援、捍衛 中級
+championship noun 錦標賽、冠軍地位 中級
+chance noun 機會、可能性、巧合 初級
+change verb 改變；交換、兌換 初級
+change noun 改變；零錢 初級
+changeable adj. 易變的、善變的 中級
+channel noun 電視頻道、渠道、管道、途徑 初級 L7
+chapter noun 章節 初級 L2
+character noun 角色、人物；個性、特徵 初級
+characteristic noun/adj. 特徵、特色；獨特的、典型的 中級
+charge verb 收費；指控、控告；指示、吩咐；充電 初級
+charge noun 費用；指控、控告；職責、責任；充電量、電荷 初級
+charity noun 慈善事業、慈善機構、仁慈 中級
+charm noun 魅力、吸引力；護身符、符咒 中級
+charm verb 迷住、吸引 中級
+chart noun 圖表 初級 L8
+chase verb 追趕、追捕、追求 初級
+chat verb/noun 聊天 初級
+cheap adj./adv. 便宜的、價低質劣的；便宜地、廉價地 初級
+cheat verb/noun 欺騙、作弊；欺騙手段、騙子 初級
+check noun 支票；帳單；檢查、核對；鉤號 支票 = cheque (British English) 初級
+check verb 檢查、核對；打勾 初級
+check-in noun 辦理登機手續、入住登記 中級
+checkout noun 付款處、收銀台、退房結帳 中級
+cheek noun 臉頰 中級
+cheer verb/noun 歡呼、鼓舞；歡呼聲、歡樂 初級
+cheerful adj. 快樂的 中級
+cheese noun 起司、乳酪 初級
+chemical noun/adj. 化學製品；化學的 初級 L7
+chemist noun 化學家 中級
+chemistry noun 化學、化學特性 中級
+cherish verb 珍惜 中級
+cherry noun/adj. 櫻桃、櫻桃樹；櫻桃紅的、鮮紅色的 中級
+chess noun 西洋棋 初級
+chest noun 胸部、胸腔 中級
+chew verb/noun 咀嚼 中級
+chick noun 小雞、幼鳥 中級
+chicken noun 雞肉、雞 初級
+chief adj./noun 首要的、最主要的、首席的；領導人、首領 初級
+child noun 小孩、兒童 初級
+childbirth noun 分娩、生孩子 中級
+childhood noun 童年、孩童時期 初級
+childish adj. 孩子氣的、稚嫩的、幼稚的 初級
+childlike adj. 孩子般的、天真無邪的 初級
+chill noun/adj./verb 寒意、寒冷；寒冷的、冷颼颼的；使變冷、使冷卻 中級
+chilly adj. 冷颼颼的 中級
+chimney noun 煙囪 中級
+chin noun 下巴 初級
+China noun 中國 初級
+china noun 瓷、瓷器 中級
+Chinese noun/adj. 中文、中國人；中國的、中國人的 初級
+chip noun 炸薯條、炸洋芋片、炸玉米片；(電腦的)晶片；(缺落的)碎屑、碎片、
+(杯碟的)缺口 中級
+chip verb (使)掉碎片、打破 中級
+chocolate noun 巧克力 初級
+choice noun/adj. 選擇、選項；優質的、上等的 初級
+choke verb/noun (使)窒息、(使)哽噎、堵塞；窒息、哽噎、嗆住的聲音 中級
+choose verb 選擇、挑選 初級
+chop verb 剁、切、砍 中級
+chop noun (豬、羊)排骨、帶骨的肉塊 中級
+chopstick noun 筷子 初級
+chore noun 日常事務、乏味的例行工作 中級
+chorus noun 副歌、合唱曲、合唱團、伴唱 中級
+Christian adj./noun 基督教的、基督徒的；基督徒 中級
+Christmas noun 聖誕節 = Xmas 初級
+chubby adj. 圓胖的 初級
+church noun 教堂、教會 初級
+cigar noun 雪茄 中級
+cigarette noun 香菸 中級
+cinema noun 電影院 中級
+circle noun/verb 圓形、圓圈、圈子；畫圓圈、圈出、盤旋 初級
+circular adj. 圓的、環形的、循環的 中級
+circular noun (大量送發的)通報、傳單 中級
+circulate verb 循環、環行；傳播、傳閱、散佈 中級
+circulation noun 血液循環、消息傳播、貨幣流通 中級
+circumstance noun 條件、狀況、環境 中級 L3
+circus noun 馬戲團、馬戲表演 中級
+10
+字彙 詞類 中文 註解 級數 學術字彙
+citizen noun 公民、居民 初級
+city noun 城市 初級
+civil adj. 平民的、國家的、民事的 中級 L4
+civilian adj./noun 平民的；平民 中級
+civilization noun 文明、文明社會 中級
+civilize verb 使文明、教化 中級
+claim verb 聲稱、主張；認領、索取；索款、索賠 初級
+claim noun 說法、斷言；權利、所有權 初級
+clap verb/noun 拍手、鼓掌 初級
+clarify verb 闡明、澄清 中級 L8
+clash noun/verb 衝突、打鬥、爭論 中級
+class noun 課、班級 初級
+class noun/verb 階級、等級；把...歸類、把...分級 初級
+classic adj./noun 古典的、典型的、經典的；經典作品、名著 初級 L7
+classical adj. 古典的、經典的、傳統的 初級 L7
+classification noun 分類、類別、分類法 中級
+classify verb 分類、區分 中級
+classmate noun 同班同學 初級
+classroom noun 教室 初級
+claw noun/verb 爪、螯；用爪或指甲抓 中級
+clay noun 黏土 中級
+clean adj./verb/noun 乾淨的、清潔的；清潔、打掃；清潔、打掃 初級
+clean adj./adv. 完全的、徹底的；完全地、徹底地 初級
+cleaner noun 清潔工、吸塵器、清潔劑 中級
+clear verb 清除、清掃；使變清楚、使清晰 初級
+clear adj. 清楚的、清晰的；暢通的、無阻礙的；不接觸的、不靠近的 初級
+clear adv. 不觸及地、不靠近地 初級
+clerk noun 店員、職員 初級
+clever adj. 聰明的、機靈的、精巧的 初級
+click verb/noun 點按(滑鼠) 初級
+client noun 客戶、委託人 中級
+cliff noun 懸崖、峭壁 中級
+climate noun 氣候 初級
+climax noun/verb 頂點、高潮、最精采的部分；達到頂點、達到高潮 中級
+climb verb/noun 爬、攀登 初級
+climb verb 上升、晉升、上漲、增長 初級
+climber noun 攀登者、登山者 中級
+clinic noun 診所、醫院門診、門診時間 中級
+clip verb 修剪；(用夾子)夾住 中級
+clip noun 修剪；夾子、迴紋針；(電影或電視節目的)剪輯、片段 中級
+clock noun 時鐘 初級
+close verb 關閉(門窗)、合攏；(商點或場所)關門、不開放、停業 初級
+close verb/noun 結束、停止；結局、結尾 初級
+close adj./adv. (空間或時間上)靠近、接近 初級
+close adj. 親密的、密切的 初級
+closet noun 衣櫥、壁櫥 初級
+cloth noun 布、布料、抹布 中級
+clothe verb 給...穿衣、為...提供衣服 中級
+clothes noun 衣服 初級
+clothing noun 衣服、服裝 中級
+cloud noun 雲、雲狀物、(網路)雲端 中級
+cloud verb (雲、煙等)遮蔽、使模糊 中級
+cloudy adj. 多雲的、陰天的 初級
+clown noun/verb 小丑；扮小丑、扮傻 中級
+club noun 俱樂部、社團 初級
+clue noun 線索 中級
+clumsy adj. 笨拙的、不靈活的、笨手笨腳的 中級
+coach noun/verb 教練；培訓、指導 初級
+coal noun 煤 中級
+coarse adj. 粗糙的、不光滑的；粗俗的、粗魯無禮的 中級
+coast noun 海岸 初級
+coat noun 外套、大衣 初級
+cock noun 公雞、雄鳥 中級
+cockroach noun 蟑螂 = roach 初級
+cocktail noun 雞尾酒 中級
+cocoa noun 可可粉、熱可可 中級
+coconut noun 椰子 中級
+code noun 密碼、代碼、編碼；法規、行為準則、規範 中級 L4
+code verb 把...譯成密碼、編碼 中級 L4
+coffee noun 咖啡 初級
+coin noun 硬幣 初級
+coincidence noun 巧合、同時發生 中級
+Coke noun 可口可樂 初級
+cola noun 可樂 = Coke 初級
+cold adj./noun 冷的、冷淡的；寒冷、感冒 初級
+collapse verb/noun 倒塌、崩潰、失敗、昏倒 中級 L10
+collar noun 衣領、項圈 中級
+colleague noun 同事 中級 L10
+collect verb 收集 初級
+collection noun 收藏品、收集 初級
+college noun 大學、學院 初級
+11
+字彙 詞類 中文 註解 級數 學術字彙
+colony noun 殖民地、群體、群落 中級
+color noun/verb 顏色；著色 = colour (British English) 初級
+colored adj. 彩色的、有...色彩的 中級
+colorful adj. 色彩豐富的 = colourful (British English) 初級
+column noun (書報雜誌上的)欄、專欄；石柱、紀念柱；(人或車輛的)縱隊、長列 中級
+comb noun/verb 梳子；梳理 初級
+combination noun 組合、結合、混合 中級
+combine verb 結合、混合 中級
+come verb 來 初級
+comedian noun 喜劇演員 中級
+comedy noun 喜劇 中級
+comfort verb 安慰、撫慰 中級
+comfort noun 舒服；安慰、慰藉、令人感到安慰的人事物；舒適的設施或條件 中級
+comfortable adj. 舒適的 初級
+comic adj. 滑稽的、好笑的 初級
+comic noun 漫畫 初級
+coming adj./noun 即將到來的、下一個的；到來、來臨 中級
+command verb/noun 命令、指揮、掌握 初級
+commander noun 指揮官 中級
+comment noun/verb 評論 初級 L3
+commerce noun 商業、貿易 中級
+commercial adj./noun 商業的、商業化的、以營利為目的的；商業廣告 中級
+commission noun/verb 委任、委員會；委託 中級 L2
+commission noun 佣金、手續費 中級 L2
+commit verb 犯(罪、錯)；承諾、致力於、投入(時間或金錢) 中級 L4
+commitment noun 承諾、保證、奉獻 中級 L4
+committee noun 委員會 中級
+common adj. 常見的、共同的 初級
+communicate verb 交流、溝通 中級 L4
+communication noun 交流、溝通 中級
+communist adj./noun 共產主義的、共產黨的；共產主義者、共產黨員 中級
+community noun 社區、團體 中級 L2
+companion noun/verb 同伴、陪伴；陪伴 中級
+company noun 公司；陪伴 初級
+comparative adj./noun 相對的、比較的；(形容詞或副詞的)比較級 中級
+compare verb 比較 初級
+comparison noun 比較、對比 中級
+compete verb 競爭、參加比賽 中級
+competition noun 競賽、競爭 中級
+competitive adj. 競爭的、(價格、服務等)有競爭力的 中級
+competitor noun 競爭者、參賽者 中級
+complain verb 抱怨 初級
+complaint noun 埋怨、投訴 中級
+complete verb/adj. 完成、使完整；完全的、完整的 初級
+complex adj./noun 複雜的、難懂的；複合物、建築群、綜合大樓 中級 L2
+complicate verb 使複雜化、使費解、使(疾病)惡化 中級
+compliment noun/verb 稱讚、道賀；讚美、稱讚 中級
+compose verb 組成、構成；作曲、撰寫(信函、講稿、詩歌等) 中級
+composer noun 作曲家 中級
+composition noun 作文、作曲、作品；成分、結構 中級
+compound noun/adj./verb 化合物、複合物、複合詞；複合的；使混合 中級 L5
+compound verb 使惡化、使加劇 中級 L5
+comprehension noun 理解力、理解力測試 中級
+compute verb 計算 中級 L2
+computer noun 電腦 初級
+conceal verb 隱藏、掩飾 中級
+concentrate verb 專心、專注、集中(注意力) 中級 L4
+concentration noun 專注、重視、集中 中級
+concept noun 概念 中級 L1
+concern noun/verb 擔心、關心 初級
+concerning prep. 關於 中級
+concert noun 音樂會、演唱會 中級
+conclude verb 作出結論、斷定、結束 中級 L2
+conclusion noun 結論、結尾 中級
+concrete noun/verb 混凝土；用混凝土覆蓋 中級
+concrete adj. 具體的、有形的 中級
+condition verb 使適應、使習慣於；為...的條件；使健康、養護(頭髮、皮膚等) 中級
+condition noun 狀況、狀態；條件、環境；條款 中級
+conduct verb 執行、引導、指揮(合唱團或樂隊)；表現、舉止 中級 L2
+conduct noun 行為、舉止 中級 L2
+conductor noun (合唱團或樂隊的)指揮、列車長 中級
+cone noun 圓錐體、冰淇淋筒 中級
+conference noun 會議、研討會 中級 L4
+confess verb 承認(錯誤或罪行)、坦白 中級
+confidence noun 信心、自信 中級
+confident adj. 自信的 初級
+confine verb 限制、監禁 中級 L9
+confirm verb 確認 初級 L7
+conflict noun 衝突 初級 L5
+confront verb 面臨(困境)、克服、對抗 中級
+confrontation noun 對抗、衝突 中級
+12
+字彙 詞類 中文 註解 級數 學術字彙
+Confucius noun 孔子 初級
+confuse verb 使…困惑 初級
+confusion noun 困惑、混淆、混亂局面 中級
+congratulate verb 祝賀、道賀 中級
+congratulation noun 祝賀 初級
+congress noun 代表大會、國會、議會 中級
+conjunction noun (語法)連接詞；結合、同時發生、與...一起 中級
+connect verb 連接、和...有關聯、與(人)建立良好關係 中級
+connection noun 聯繫、關聯、連接 中級
+conquer verb 征服、戰勝 中級
+conscience noun 良心 中級
+conscious adj. 有知覺的、意識到的 中級
+consequence noun 結果、後果 中級 L2
+consequent adj. 隨之發生的 中級 L2
+conservative adj./noun 保守的；保守者 中級
+consider verb 考慮、認為 初級
+considerable adj. 相當大的、相當多的、可觀的 中級 L3
+considerate adj. 體貼的 中級
+consideration noun 考慮、需考慮之事、體貼 中級
+consist verb 在於、由…組成 中級 L1
+consistent adj. 持續的、始終如一的；一致的、吻合的 中級
+consonant noun 子音 中級
+constant adj. 連續不斷的、固定的 中級 L3
+constitute verb 組成、構成；被視為；(合法或正式地)設立、成立 中級 L1
+constitution noun 結構、構造；憲法、章程；體質、體格 中級
+construct verb/noun 建造、組成；概念、構想 中級 L2
+construction noun 建造、結構、建築物 中級
+constructive adj. 建設性的、有助益的 中級
+consult verb 諮詢、商議 中級 L5
+consultant noun 顧問 中級
+consume verb 消耗、花費；(大量地)吃、喝 中級 L2
+consumer noun 消費者、用戶 中級
+contact noun/verb 聯繫、接觸;聯繫 初級 L5
+contact lens noun 隱形眼鏡 初級
+contain verb 包含 初級
+container noun 容器 中級
+contemporary adj./noun 當代的、同時期的；同時代的人、同輩 中級 L8
+content adj./verb 滿意的、知足的；滿足於 中級
+content noun 內容、目錄 名詞常使用複數形態 中級
+contest noun/verb 比賽、競爭；競爭、爭取、爭辯 中級
+context noun 語境、上下文、(事情發生的)背景 中級 L1
+continent noun 洲、大陸 中級
+continental adj. 洲的、大陸的 中級
+continual adj. 頻繁的、連續的 中級
+continue verb 繼續 初級
+continuous adj. 不斷的、連續的 中級
+contract noun/verb 合約；訂約 初級 L1
+contrary adj./noun 相反的、完全不同的；反面、相反事物 中級 L7
+contrast noun/verb 差異、對比；對比、顯出明顯差異 中級 L4
+contribute verb 貢獻、捐款；投稿、撰稿 中級 L3
+contribution noun 貢獻、捐款、捐助；投稿 中級
+control noun/verb 控制 初級
+convenience noun 便利性、便利設施 中級
+convenience store noun 便利商店 初級
+convenient adj. 方便的 初級
+convention noun 傳統、習俗、常規；大會、會議；公約、協定 中級
+conventional adj. 遵循常規的、傳統的 中級
+conversation noun 對話 初級
+converse verb 交談 中級 L9
+convey verb 表達、傳送 中級
+convince verb 使相信、說服 中級 L10
+cook verb/noun 烹調；廚師 初級
+cooker noun 爐具 中級
+cookie noun (甜)餅乾 初級
+cool adj./verb 涼快的、酷的；使冷卻 初級
+cooperate verb 合作、配合 中級 L6
+cooperation noun 合作、配合 中級
+cooperative adj./noun 合作的、配合的；合作企業 中級
+cope verb 處理、應付 中級
+copper noun/adj. 銅、紫銅色；銅製的、紫銅色的 中級
+copy noun/verb 副本；複製 初級
+cord noun 線、繩 中級
+corn noun 玉米 初級
+corner noun 角落、轉角 初級
+corporation noun (大)公司 = Corp. 中級
+correct adj./verb 正確的；改正 初級
+correspond verb 一致、符合；通信 中級 L3
+correspondent noun 記者、通信者 中級
+corridor noun 走廊、通道 中級
+cost noun/verb 費用、成本；花費 初級
+costly adj. 昂貴的、代價高的 中級
+13
+字彙 詞類 中文 註解 級數 學術字彙
+costume noun 戲服 中級
+cottage noun 小屋 中級
+cotton noun 棉 初級
+couch noun 沙發 初級
+cough verb/noun 咳嗽 初級
+could aux. can的過去式 初級
+council noun 委員會、地方議會 中級
+count verb/noun 數、計算；計數、計算 初級
+counter noun 櫃檯、計數器 中級
+counter verb 反駁 中級
+country noun 國家；鄉下 初級
+countryside noun 鄉間 初級
+county noun 縣、郡 初級
+couple noun 一對、幾個、一對情侶或夫妻 初級 L7
+courage noun 勇氣 初級
+courageous adj. 勇敢的 中級
+course noun 課程 初級
+court noun 法庭；球場 初級
+courteous adj. 有禮貌的 中級
+courtesy noun 禮貌 中級
+cousin noun 堂(表)兄弟姊妹 初級
+cover verb/noun 遮蓋、涵蓋；覆蓋物、封面 初級
+cow noun 母牛 初級
+coward adj./noun 膽小的；懦夫 中級
+cowboy noun 牛仔 中級
+crab noun 螃蟹 初級
+crack noun/verb 裂縫；斷裂 中級
+cradle noun 搖籃、發源地 中級
+cradle verb 輕輕地抱著 中級
+craft noun 工藝、技術；船、艇、航空飛行器 中級
+cram verb 塞滿、擠滿、(考試前)死記硬背 中級
+crane noun 起重機；鶴 中級
+crane verb 探出(頭)、伸長(脖子) 中級
+crash verb 碰撞、墜毀；破產、崩盤；(電腦或系統)當機 中級
+crash noun 撞車事故、失事；碰撞聲；暴跌、倒閉；(電腦或系統)當機 中級
+crawl verb/noun 爬行、緩慢行進 中級
+crayon noun 蠟筆 初級
+crazy adj. 瘋狂的 初級
+cream noun 鮮奶油、奶霜；乳霜、護膚霜 初級
+create verb 創造 初級 L1
+creation noun 創造、創作 中級
+creative adj. 有創意的 中級
+creator noun 創造者、發明者 中級
+creature noun 生物 中級
+credit noun 讚許；(經濟上的)信用、賒帳、信用貸款；學分 中級 L2
+credit verb 把錢存進帳戶；歸功於 中級 L2
+credit card noun 信用卡 初級
+creep verb/noun 躡手躡腳、爬行 中級
+crew noun 全體工作人員 中級
+cricket noun 蟋蟀；板球 中級
+crime noun 罪行 初級
+criminal adj./noun 犯罪的；罪犯 中級
+cripple noun [冒犯]殘障人士、瘸子、跛子 中級
+cripple verb 使跛腳、使受傷致殘；嚴重損害 中級
+crisis noun 危機 初級
+crisp adj. 易碎的；酥脆的；涼爽的 中級
+crispy adj. 酥脆的 中級
+critic noun 評論家 中級
+critical adj. 批評的；至關重要的 中級
+criticism noun 批評、評論 中級
+criticize verb 批評、評論 中級
+crop noun 農作物 中級
+crop verb 剪裁、剪短 中級
+cross verb 穿越、交叉 初級
+cross noun 十字架、十字形 初級
+crossroad noun 交叉路口、十字路口 中級
+crow noun 烏鴉 中級
+crow verb 啼叫 中級
+crowd noun 人群 初級
+crowded adj. 擁擠的 初級
+crown noun/verb 皇冠；加冕 中級
+cruel adj. 殘酷的 初級
+cruelty noun 殘酷 中級
+crush verb 壓扁、壓碎 中級
+crush noun 迷戀 中級
+crutch noun 柺杖 中級
+cry verb/noun 哭泣、喊叫 初級
+crystal noun/adj. 水晶、結晶；水晶的、清澈的 中級
+cub noun (熊、獅、虎、狼等)幼獸 中級
+cucumber noun 黃瓜 中級
+cue noun/verb (給)暗示、提示 中級
+14
+字彙 詞類 中文 註解 級數 學術字彙
+cultivate verb 耕作、培養 中級
+cultural adj. 文化的 中級 L2
+culture noun 文化 初級 L2
+cunning adj. 狡猾的 中級
+cup noun 杯子 初級
+cupboard noun 櫥櫃 中級
+cure noun/verb 有療效的藥物、治療方法；治癒 初級
+curiosity noun 好奇心 中級
+curious adj. 好奇的 初級
+curl verb/noun 使捲曲；捲髮、捲曲物 中級
+current adj. 當前的 初級
+current noun 水流、氣流、電流 初級
+curse noun/verb 詛咒、咒罵 中級
+curtain noun 窗簾、幕布 初級
+curve noun/verb 曲線；使彎曲 初級
+cushion noun 軟墊 中級
+cushion verb 緩衝 中級
+custom noun 習俗 初級
+customer noun 顧客 初級
+customs noun 海關 中級
+cut verb/noun 切、割、修剪；割傷 初級
+cute adj. 可愛的 初級
+cycle noun 循環 中級 L4
+cycle verb 騎自行車 中級 L4
+cyclist noun 騎自行車者 中級
+dad noun 爸爸 = daddy= papa 初級
+daily adj./adv. 每日的；每日地 初級
+dairy noun 乳製品 中級
+dam noun/verb 水壩；築壩 中級
+damage noun/verb 損害 初級
+damn interj./verb/noun 咒罵(該死)；批評；絲毫 中級
+damp adj./noun/verb 潮濕的；濕氣；弄濕 中級
+dance verb/noun 跳舞 初級
+dancer noun 舞者 中級
+danger noun 危險 初級
+dangerous adj. 危險的 初級
+dare verb/verb(aux.) 膽敢 中級
+dark noun/adj. 黑暗；黑暗的、深色的 初級
+darling noun/adj. 親愛的 中級
+dash verb 飛奔；猛擊 中級
+dash noun 飛奔；短跑比賽；破折號 中級
+data noun 資料 datum (singular form) 初級 L1
+date noun/verb 日期、約會；寫日期、約會 初級
+daughter noun 女兒 初級
+dawn noun/verb 黎明；破曉 初級
+day noun 天、白天 初級
+daylight noun 日光 中級
+dead adj. 死亡的 初級
+deadline noun 截止期限 中級
+deaf adj. 聾的 初級
+deal verb 做生意、買賣；處理；分發、發牌 初級
+deal noun 交易、協議 初級
+dear adj./noun/interj. 親愛的；親愛的；哎呀 初級
+death noun 死亡 初級
+debate noun/verb 辯論 初級 L4
+debt noun 債、負債 初級
+decade noun 十年 中級 L7
+decay verb/noun 腐爛、衰敗 中級
+deceive verb 欺騙 中級
+December noun 十二月 = Dec. 初級
+decide verb 決定 初級
+decision noun 決定 初級
+deck noun 甲板、(船或巴士的)層 中級
+declaration noun 宣言、聲明、申報 中級
+declare verb 宣言、聲明、申報 中級
+decline verb 減少、衰退；婉拒 中級 L5
+decorate verb 裝飾 初級
+decoration noun 裝飾品 中級
+decrease verb/noun 減少 初級
+deed noun 行為、舉止 中級
+deep adj./adv. 深的；深地 初級
+deer noun 鹿 初級
+defeat noun/verb 失敗；擊敗 中級
+defend verb 防守、保衛、辯護 中級
+defense noun 防守、保衛、辯護 = defence (British English) 中級
+defensive adj. 防守的、防禦性的 中級
+deficit noun 赤字、虧損 中級
+define verb 下定義、規定 中級 L1
+definite adj. 肯定的 中級 L7
+definition noun 定義 中級
+degree noun 度、程度 初級
+15
+字彙 詞類 中文 註解 級數 學術字彙
+delay noun/verb 延誤、耽擱 初級
+delegate noun/verb 代表；授權、委託 中級
+delete verb 刪除 中級
+delicate adj. 易碎的、纖弱的 中級
+delicious adj. 美味的 初級
+delight noun/verb 愉快；使愉快 中級
+delightful adj. 令人快樂的 中級
+deliver verb 運送 初級
+delivery noun 運送 中級
+demand noun/verb 需求、要求 中級
+demanding adj. 高要求的、費時費力的 中級
+democracy noun 民主 初級
+democrat noun 民主主義者 大寫為民主黨黨員 中級
+democratic adj. 民主的 初級
+demonstrate verb 證明、示範；遊行示威 中級 L3
+demonstration noun 證明、示範；遊行示威 中級
+dense adj. 稠密的 中級
+dentist noun 牙醫 初級
+deny verb 否認 初級 L7
+depart verb 啟程、離開 中級
+department noun 部門 初級
+department store noun 百貨公司 初級
+departure noun 啟程、離開 中級
+depend verb 取決於、依靠 初級
+dependable adj. 可信賴的、可靠的 中級
+dependent adj. 依賴的、取決於 中級
+dependent noun 受扶養者 = dependant 中級
+deposit noun 訂金、存款 中級
+deposit verb 放置、付訂金、存錢 中級
+depress verb 使沮喪 中級 L10
+depression noun 沮喪、憂鬱症；蕭條、不景氣 中級
+depth noun 深度 中級
+deputy noun 副手、代理人 中級
+describe verb 描述 初級
+description noun 描述 中級
+desert verb 遺棄 初級
+desert noun 沙漠 初級
+deserve verb 值得、應得 中級
+design noun/verb 設計 初級 L2
+designer noun 設計師 中級
+desirable adj. 令人嚮往的 中級
+desire noun/verb 渴望 初級
+desk noun 書桌 初級
+despair noun/verb 絕望 中級
+desperate adj. 絕望的、極渴望的、不顧一切的 中級
+despite prep. 儘管 中級 L4
+dessert noun 甜點 初級
+destination noun 目的地 中級
+destroy verb 摧毀、破壞 中級
+destruction noun 摧毀、破壞 中級
+destructive adj. 破壞性的 中級
+detail noun/verb 細節；詳述 中級
+detailed adj. 詳細的 中級
+detect verb 發現、查出 中級 L8
+detective noun/adj. 偵探、警探；偵探的 中級
+detergent noun/adj 洗衣粉、清潔劑 中級
+determination noun 決心 中級
+determine verb 決定、下決心 初級
+develop verb 發展 初級
+development noun 發展、開發 中級
+device noun 裝置、設備 中級 L9
+devil noun 惡魔 中級
+devise verb 發明、想出 中級
+devote verb 致力、用於 中級 L9
+devoted adj. 摯愛的、忠誠的、專心致志的 中級 L9
+devotion noun 摯愛、忠誠、奉獻 中級
+dial verb/noun 撥號；撥號盤、錶面 初級
+dialect noun 方言 中級
+dialog noun 對話 = dialogue (British English) 中級
+diamond noun 鑽石；菱形 初級
+diary noun 日記 初級
+dictate verb 口述、命令、支配 中級
+dictation noun 口述、聽寫 中級
+dictionary noun 字典 初級
+die verb 死 初級
+diet noun/verb/adj. 飲食、節食；節食；飲食的、節食的 初級
+differ verb 不同 中級
+difference noun 差別 初級
+different adj. 不同的 初級
+difficult adj. 困難的 初級
+difficulty noun 困難 初級
+16
+字彙 詞類 中文 註解 級數 學術字彙
+dig verb 挖 初級
+digest verb 消化、領悟 中級
+digest noun 文摘、摘要 中級
+digestion noun 消化 中級
+digit noun 數字、位數 中級
+digital adj. 數位的 中級
+dignity noun 尊嚴、莊重 中級
+diligence noun 勤奮、用功 中級
+diligent adj. 勤奮的 初級
+dim adj./verb 暗淡的、模糊的；使變暗 中級
+dime noun 十分錢 中級
+dine verb 用餐 中級
+dining room noun 餐廳、飯廳 初級
+dinner noun 晚餐 初級
+dinosaur noun 恐龍 初級
+dip verb/noun 浸泡、蘸 中級
+diploma noun 學位證書、文憑 中級
+diplomat noun 外交官 初級
+direct adj. 直接的 初級
+direct verb 針對、指揮 初級
+direction noun 方向 初級
+director noun 導演、主管 初級
+dirt noun 塵土 中級
+dirty adj./verb 髒的；弄髒 初級
+disabled adj. 有殘疾的 中級
+disadvantage noun/verb 缺點、不利；使處於不利地位 中級
+disadvantaged adj. 弱勢的、貧困的 中級
+disagree verb 不同意 中級
+disappear verb 消失 初級
+disappoint verb 使失望 中級
+disappointment noun 失望、沮喪 中級
+disapproval noun 不贊成、反對 中級
+disapprove verb 不贊成、反對 中級
+disaster noun 災難 中級
+discard verb/noun 丟棄；被拋棄的人或物 中級
+discipline noun 紀律、訓練 中級
+discipline verb (使有)紀律、訓練、懲戒 中級
+disconnect verb 切斷、使分離 中級
+discount noun/verb 折扣；打折、排除 中級
+discourage verb 使灰心、阻止 中級
+discover verb 發現 初級
+discovery noun 發現 中級
+discuss verb 討論 初級
+discussion noun 討論 初級
+disease noun 疾病 中級
+disguise noun/verb 偽裝、掩飾 中級
+disgust verb/noun 厭惡、反感 中級
+dish noun 盤、菜餚 初級
+dishonest adj. 不誠實的 初級
+disk noun 磁碟、光碟、圓盤 = disc (British English) 中級
+dislike verb/noun 不喜歡 中級
+dismiss verb 解散、解雇、不考慮 中級
+disorder noun 障礙、失調；騷動 中級
+display verb/noun 陳列、展示 中級 L6
+dispute verb/noun 爭論、爭執 中級
+dissatisfaction noun 不滿 中級
+dissolve verb 溶解；解散、解除 中級
+distance noun 距離 初級
+distant adj. 遙遠的、冷漠的 中級
+distinct adj. 不同的、明顯的 中級 L2
+distinction noun 差別；優秀 中級 L2
+distinguish verb 區分、顯出特色 中級
+distinguished adj. 卓越的、著名的 中級
+distribute verb 分配、發送 中級 L1
+distribution noun 分配、發送 中級
+district noun 地區、行政區 中級
+distrust verb/noun 不信任 中級
+disturb verb 打擾、妨礙 中級
+disturbance noun 干擾、騷動 中級
+ditch noun 水溝 中級
+ditch verb 丟棄 中級
+dive verb/noun 跳水、潛水 中級
+divide verb 分開、劃分 初級
+divine adj. 神的、神聖的、絕妙的 中級
+division noun 分開；部門 初級
+divorce noun/verb 離婚 中級
+dizzy adj. 頭暈的 初級
+do verb 做 初級
+do aux. 助動詞 初級
+dock noun/verb 碼頭；停靠碼頭 中級
+doctor noun 醫生、博士 初級
+17
+字彙 詞類 中文 註解 級數 學術字彙
+document noun 文件 初級 L3
+dodge ball noun 躲避球 初級
+dog noun 狗 初級
+doll noun 玩偶 初級
+dollar noun 元 = buck 初級
+dolphin noun 海豚 初級
+domestic adj. 家庭的；國內的 中級 L4
+dominant adj. 主要的、佔優勢的 中級
+dominate verb 支配、統治、佔首要地位 中級 L3
+donate verb 捐贈 中級
+donkey noun 驢 初級
+door noun 門 初級
+dormitory noun 宿舍 = dorm 中級
+dose noun 一劑 中級
+dot noun 小圓點 初級
+double adj./verb/noun 雙重的；加倍；兩倍 初級
+Double Tenth Day noun 雙十節 初級
+doubt noun/verb 疑慮；懷疑、對…不確信 初級
+doubtful adj. 懷疑的、不確定的、不太可能的 中級
+doughnut noun 甜甜圈 = donut 初級
+dove noun 鴿子 中級
+down adv./prep. 向下；在下方 初級
+down adj. 情緒低落 初級
+down noun 羽絨 初級
+download verb 下載 初級
+downstairs adv./adj. 朝樓下、在樓下；樓下的 初級
+downtown adv./adj./noun 往市區；市區的；市區 初級
+downward adv. 向下 中級
+doze verb/noun 打瞌睡、小睡 中級
+dozen noun 一打 初級
+draft noun 草稿 中級 L5
+draft verb 起草、草擬；徵召入伍、徵募 中級 L5
+drag verb 拖、拉 中級
+drag noun 令人厭煩的事 中級
+dragon noun 龍 初級
+Dragon Boat Festival noun 端午節 初級
+dragonfly noun 蜻蜓 中級
+drain verb/noun 排出液體；排水管 中級
+drama noun 戲劇 初級 L8
+dramatic adj. 戲劇(性)的 中級
+draw verb 畫 初級
+drawer noun 抽屜 初級
+dread noun/verb 擔心、懼怕 中級
+dreadful adj. 可怕的、糟糕的 中級
+dream noun/verb 夢；作夢 初級
+dress verb/noun 著裝；洋裝 初級
+dressed adj. 穿好衣服的、打扮好的 中級
+dresser noun 斗櫃、衣櫃、梳妝台 初級
+drift verb/noun 漂流、漂泊 中級
+drill noun/verb 鑽(頭)、鑽孔；演習、訓練、反覆練習 中級
+drink verb/noun 喝；飲料 初級
+drip verb/noun 滴下；水滴、滴水聲 中級
+drive verb/noun 開車；車程 初級
+driver noun 駕駛員 初級
+drop verb/noun 使滴落、丟下、下降；(一)滴 初級
+drought noun 乾旱 中級
+drown verb 溺死、淹沒 中級
+drowsy adj. 昏昏欲睡的 中級
+drug noun 藥品、毒品 初級
+drugstore noun 藥局 初級
+drum noun 鼓 初級
+drunk adj./noun 酒醉的；醉漢 中級
+dry adj./verb 乾的；弄乾 初級
+dryer noun 烘乾機、吹風機 初級
+duck noun 鴨 初級
+duckling noun 小鴨 中級
+due adj. 到期的、預計的 中級
+dull adj. 枯燥乏味的、沒有光澤的 中級
+dumb adj. (口語)傻的、愚蠢的 初級
+dump verb/noun 傾倒、拋棄；垃圾場 中級
+dumpling noun 餃子 初級
+durable adj. 耐用的、持久的 中級
+duration noun 持續期間 中級 L9
+during prep. 在…期間 初級
+dusk noun 黃昏 中級
+dust noun/verb 灰塵、塵土；擦去灰塵 中級
+dusty adj. 佈滿灰塵的 中級
+duty noun 責任、職責 初級
+dye noun/verb 染料；染色 中級
+dynamic adj. 有活力的、不斷變化的 中級 L7
+dynasty noun 朝代 中級
+18
+字彙 詞類 中文 註解 級數 學術字彙
+each pron./adj./adv. 每個 初級
+eager adj. 熱切的、渴望的 中級
+eagle noun 鷹 初級
+ear noun 耳 初級
+early adj./adv. 早的；早 初級
+earn verb 賺得 初級
+earnest adj./noun 認真的、誠摯的；認真、誠摯 中級
+earnings noun 薪水、收入 中級
+earring noun 耳環 中級
+earth noun 地球 初級
+earthquake noun 地震 中級
+ease verb/noun 減輕、緩和；輕易 中級
+east noun/adv./adj. 東方；向東；東邊的 初級
+Easter noun 復活節 初級
+eastern adj. 東方的 初級
+easy adj. 容易的 初級
+eat verb 吃 初級
+echo noun/verb 回聲、共鳴；產生回聲、迴響 中級
+economic adj. 經濟的 中級 L1
+economical adj. 經濟實惠的、節約的 中級
+economics noun 經濟學 中級
+economist noun 經濟學家 中級
+economy noun 經濟 中級 L1
+edge noun 邊緣 初級
+edible adj. 可食用的 中級
+edit verb 編輯 中級 L6
+edition noun 版本 中級
+editor noun 編輯 中級
+editorial adj./noun 編輯的；社論、評論 中級
+educate verb 教育 中級
+education noun 教育 初級
+educational adj. 教育的 中級
+effect noun/verb 結果、效果；達到…的效果 初級
+effective adj. 有效的 初級
+efficiency noun 效率 中級
+efficient adj. 有效率的 中級
+effort noun 努力 初級
+egg noun 蛋 初級
+eight number/pron./noun/adj. 八 初級
+eighteen number/pron./noun/adj. 十八 初級
+eighty number/pron./noun/adj. 八十 初級
+either adv. 也(否定句) 初級
+either pron./adj./conj. (兩者中)任一個 初級
+elaborate adj./verb 詳盡的、精美的；詳盡闡述 中級
+elastic adj. 有彈性的 中級
+elbow noun/verb 手肘；用肘推 中級
+elder noun/adj. 長者；年長的 初級
+elderly adj. 年長的 中級
+elect verb 推選、選舉 初級
+election noun 選舉 初級
+electric adj. 電的 初級
+electrical adj. 電的 中級
+electrician noun 電工 中級
+electricity noun 電力 中級
+electronic adj. 電子的 中級
+electronics noun 電子學、電子儀器 中級
+elegant adj. 優雅的 中級
+element noun 元素、要素 初級 L2
+elementary adj. 初級的、基礎的 中級
+elementary school noun 小學 初級
+elephant noun 象 初級
+elevator noun 電梯 中級
+eleven number/pron./noun/adj. 十一 初級
+eliminate verb 排除、淘汰 中級 L7
+else adv./adj. 其他 初級
+elsewhere adv. (到)別處 中級
+email noun/verb 電子郵件；寄電子郵件 初級
+embarrass verb 使尷尬 初級
+embassy noun 大使館 中級
+emerge verb 浮現、顯露 中級 L4
+emergency noun 緊急、突發狀況 中級
+emotion noun 情感、情緒 初級
+emotional adj. 感情的、激起情感的 中級
+emperor noun 皇帝 中級
+emphasis noun 強調、重點 中級 L3
+emphasize verb 強調 = emphasise (British English) 初級
+empire noun 帝國 中級
+employ verb 雇用 初級
+employee noun 雇員、員工 中級
+employer noun 雇主、老闆 中級
+employment noun 工作、就業 中級
+19
+字彙 詞類 中文 註解 級數 學術字彙
+empty adj./verb 空的；使…變空 初級
+enable verb 使能夠 中級 L5
+enclose verb 圍住；(隨信)附上 中級
+encounter verb/noun 遭遇、遇到；偶遇 中級 L10
+encourage verb 鼓勵 初級
+encouragement noun 鼓勵 中級
+end noun/verb 結束、末端；結束 初級
+endanger verb 危害、危及 中級
+ending noun 結局 中級
+endurance noun 耐久力 中級
+endure verb 忍耐、持久 中級
+enemy noun 敵人 初級
+energetic adj. 有活力的 中級 L5
+energy noun 活力、精力；能源 初級 L5
+enforce verb 實施、執行、強迫 中級 L5
+engage verb 吸引(注意力)、從事、忙於；訂婚 中級
+engine noun 引擎 初級
+engineer noun 工程師 初級
+engineering noun 工程學 中級
+England noun 英格蘭 初級
+English adj./noun 英語的、英格蘭的；英語 初級
+enhance verb 提高、增進 中級 L6
+enjoy verb 享受 初級
+enjoyable adj. 令人愉快的 中級
+enjoyment noun 愉快、享受 中級
+enlarge verb 擴展、放大 中級
+enlargement noun 擴展、放大 中級
+enormous adj. 龐大的 中級 L10
+enough adv./adj./pron. 足夠的 初級
+enroll verb 註冊、登記 = enrol (British English) 中級
+ensure verb 保證、確保 中級 L3
+enter verb 進入 初級
+enterprise noun 企業、事業 中級
+entertain verb 娛樂、款待 中級
+entertainer noun 藝人、表演者 中級
+entertainment noun 娛樂(活動) 中級
+enthusiasm noun 熱忱 中級
+enthusiastic adj. 有熱忱的 中級
+entire adj. 全部的 初級
+entitle verb 使有資格、權利；命名 中級
+entrance noun 入口 初級
+entry noun 進入、入口；條目 中級
+envelope noun 信封 初級
+envious adj. 羨慕的、嫉妒的 中級
+environment noun 環境 初級 L1
+environmental adj. 環境的 中級 L1
+envy noun/verb 羨慕、妒忌 初級
+equal adj./verb/noun 相等的；相等；相等的人事物 初級
+equality noun 平等 中級
+equip verb 裝備、配備；使有能力 中級 L7
+equipment noun 設備、器材 中級 L7
+equivalent adj./noun 相等的；相等物 中級 L5
+era noun 年代 中級
+erase verb 消除、擦掉 中級
+eraser noun 橡皮擦 初級
+erect verb 建造、豎立 中級
+errand noun 差事、跑腿 中級
+error noun 錯誤 初級 L4
+escalator noun 電扶梯 中級
+escape verb/noun 逃脫、退出 中級
+especially adv. 尤其 初級
+essay noun 論說文、文章 中級
+essential adj. 不可或缺的、本質的 中級
+essentially adv. 本質上、基本上 中級
+establish verb 建立 中級 L1
+estate noun 地產、資產、莊園 中級 L6
+estimate verb/noun 估計、估算 中級 L1
+etc. adv. 等等 = et cetera 中級
+Europe noun 歐洲 初級
+European adj./noun 歐洲(人)的；歐洲人 初級
+evaluate verb 評估、評價 中級 L2
+eve noun 前夕 初級
+even adj. 平坦的、均等的 中級
+even adv. 甚至、更加 初級
+evening noun 傍晚、晚上 初級
+event noun 事件、活動 初級
+eventual adj. 最終的 中級 L8
+ever adv. 從來、在任何時候 初級
+every adj. 每個 初級
+everybody pron. 每個人 初級
+everyday adj. 每天的、日常的 中級
+20
+字彙 詞類 中文 註解 級數 學術字彙
+everyone pron. 每人 = everybody 初級
+everything pron. 每件事 初級
+everywhere adv. 到處 初級
+evidence noun/verb 證據；作為證據、證明 中級 L1
+evident adj. 顯而易見的 中級 L1
+evil noun/adj. 邪惡；邪惡的 初級
+evolution noun 演化、演變 中級 L5
+evolve verb 演化、演變 中級 L5
+exact adj. 確切的 初級
+exactly adv. 準確地、完全、確實如此 中級
+exaggerate verb 誇張、誇大 中級
+exam noun 考試 初級
+examination noun 考試；檢查、審查、調查 中級
+examine verb 檢查 初級
+examiner noun 考官 中級
+example noun 例子 初級
+excellence noun 卓越 中級
+excellent adj. 傑出的 初級
+except conj./prep. 除…之外 初級
+exception noun 例外 中級
+exceptional adj. 卓越的、非比尋常的 中級
+exchange noun/verb 交換、兌換 中級
+excite verb 使興奮 初級
+excitement noun 興奮 中級
+exclaim verb 驚呼、大聲叫嚷 中級
+excursion noun 遠足、短途旅行 中級
+excuse noun 藉口 初級
+excuse verb 原諒 初級
+executive noun 高層主管、執行委員會 中級
+executive adj. 執行的、行政的 中級
+exercise noun/verb 運動、練習；運動 初級
+exhaust verb 使精疲力盡、用光 中級
+exhaust noun 廢氣 中級
+exhibit verb 展覽；表現出 中級 L8
+exhibit noun 展覽(品) 中級 L8
+exhibition noun 展覽；表現 中級
+exist verb 存在 初級
+existence noun 存在 中級
+exit noun/verb 出口；離開 初級
+expand verb 擴展、擴大 中級 L5
+expansion noun 擴展、擴大 中級
+expect verb 預料、期待 初級
+expectation noun 期望 中級
+expense noun 費用、開銷 中級
+expensive adj. 昂貴的 初級
+experience noun/verb 經驗；體驗 初級
+experiment noun/verb 實驗、試驗 中級
+experimental adj. 實驗性的 中級
+expert noun 專家 初級 L6
+explain verb 解釋 初級
+explanation noun 解釋 中級
+explode verb 爆炸 中級
+exploit verb 剝削、利用、開採 中級 L8
+explore verb 探索 中級
+explorer noun 探險者 中級
+explosion noun 爆炸 中級
+explosive adj./noun 易爆的、爆炸性的；爆炸物 中級
+export noun/verb 出口、輸出 初級 L1
+expose verb 暴露、揭露 中級 L5
+exposure noun 暴露、揭露；曝光、宣傳 中級
+express verb 表達 初級
+express noun 快車、快遞 初級
+express adj. 快的 初級
+expression noun 表達；表情；措詞 中級
+extend verb 擴大、延長 中級
+extension noun 延長、擴大、延伸；電話分機 中級
+extensive adj. 廣闊的、廣泛的 中級
+extent noun 程度、範圍 中級
+extinct adj. 絕種的 中級
+extra adj. 額外的 初級
+extraordinary adj. 非凡的、異常的 中級
+extreme adj./noun 極度的、極端的；極端 中級
+eye noun 眼睛 初級
+eyebrow noun 眉毛 中級
+eyesight noun 視力 中級
+fable noun 寓言 中級
+face noun/verb 臉；面對 初級
+facial adj. 臉部的 中級
+facility noun 設施、設備 中級
+fact noun 事實 初級
+factor noun 因素 中級 L1
+21
+字彙 詞類 中文 註解 級數 學術字彙
+factory noun 工廠 初級
+fade verb 變淡、逐漸消失 中級
+fail verb 失敗、不及格 初級
+failure noun 失敗、故障 初級
+faint adj. 微弱的；昏眩的 中級
+faint verb/noun 昏倒 中級
+fair adj. 公平的 初級
+fair noun 市集、商品展覽會、園遊會 初級
+fairly adv. 相當地、公正地 中級
+fairy noun 仙子、小精靈 中級
+faith noun 信心、信仰 中級
+faithful adj. 忠誠的、如實的 中級
+fake adj./noun/verb 假的、偽造的；假貨；偽造、佯裝 中級
+fall noun 秋天 = autumn 初級
+fall verb 跌倒、掉落、下降 初級
+false adj. 錯誤的、假的 初級
+fame noun 名氣 中級
+familiar adj. 熟悉的 中級
+family noun 家人、家庭 初級
+famous adj. 著名的 初級
+fan noun 迷、狂熱愛好者；扇 初級
+fancy adj. 花俏的、昂貴的、豪華的 初級
+fantastic adj. 極好的 初級
+fantasy noun 幻想、想像、奇幻文學 中級
+far adv./adj. 遠、非常；遠的 初級
+fare noun (交通工具)費 中級
+farewell noun/adj. 告別；告別的 中級
+farm noun 農場 初級
+farmer noun 農夫 初級
+farming noun 農業、畜牧業、養殖業 中級
+fascinate verb 迷住 中級
+fashion noun 流行時尚 初級
+fashion verb 塑造成、製作 初級
+fashionable adj. 時髦的 初級
+fast adj./adv. 快的；快速地 初級
+fasten verb 扣緊、使牢固 中級
+fat adj./noun 肥胖的；脂肪 初級
+fatal adj. 致命的、災難性的 中級
+fate noun 命運 中級
+father noun 父親 初級
+faucet noun 水龍頭 初級
+fault noun 過錯、缺點 初級
+faulty adj. 有缺陷的 中級
+favor verb/noun 支持、偏袒；幫助、恩惠 = favour (British English) 初級
+favorable adj. 贊同的、有利的 中級
+favorite adj./noun 最喜愛的；最喜愛的人/物 = favourite (British English) 初級
+fax noun/verb 傳真(機) 中級
+fear noun/verb 恐懼、害怕 初級
+feast noun/verb 盛宴 中級
+feather noun 羽毛 中級
+feature noun/verb 特色；以…為特色 中級 L2
+February noun 二月 = Feb. 初級
+federal adj. 聯邦政府的 中級 L6
+fee noun 費用 初級 L6
+feed verb 餵 初級
+feedback noun 回饋 中級
+feel verb 感覺 初級
+feeling noun 感覺、感情 初級
+fellow noun/adj. 夥伴；同類的、同伴的 初級
+female adj./noun 女性的；女性 初級
+fence noun 籬笆 初級
+ferry noun/verb 渡輪；運送 中級
+fertile adj. 肥沃的、豐富的；可生育的 中級
+fertilizer noun 肥料 中級
+festival noun 節慶 初級
+fetch verb 拿來、取物、接 中級
+fetch noun (跟狗玩的)丟接遊戲 中級
+fever noun 發燒 初級
+few pron./adj. 少數的 初級
+fiction noun 小說、虛構的事 中級
+field noun 田地；運動場；領域 初級
+fierce adj. 激烈的、兇猛的 中級
+fifteen number/pron./noun/adj. 十五 初級
+fifty number/pron./noun/adj. 五十 初級
+fight verb/noun 打架、爭吵、抗爭 初級
+fighter noun 戰士、打者；戰鬥機 中級
+figure noun 數字、圖表 初級
+figure verb 認為、計算 初級
+file noun 檔案 中級 L7
+file verb 把(文件)歸檔；提出(訴訟、申請等) 中級 L7
+fill verb 裝滿 初級
+22
+字彙 詞類 中文 註解 級數 學術字彙
+film noun 電影 初級
+final adj. 最後的 初級 L2
+final noun 期末考 初級 L2
+finance noun/verb 金融、財政；(提供)資金 中級 L1
+financial adj. 財務的、金融的 中級
+find verb 找到；感到 初級
+fine adj. 很好的 初級
+fine verb/noun 處以罰金；罰金 初級
+finger noun 手指 初級
+finish verb/noun 結束 初級
+fire noun 火 初級
+fire verb 開火、發射；開除 初級
+fireplace noun 壁爐 中級
+firework noun 煙火 中級
+firm noun 公司 初級
+firm adj. 堅固的 初級
+first adj./adv./pron. 首先 初級
+fish noun/verb 魚；釣魚 初級
+fisherman noun 漁民 初級
+fist noun/verb 拳頭;握拳、拳打 中級
+fit noun 一陣；(病)發作 中級
+fit verb 合適 初級
+fit adj 健壯的、健康的 初級
+five number/pron./noun/adj. 五 初級
+fix verb 修理 初級
+flag noun 旗 初級
+flame noun/verb 火焰；燃燒 中級
+flash noun/verb 閃光、(想法)掠過 中級
+flashlight noun 手電筒 初級
+flat noun 公寓 = apartment 初級
+flat adj. 平坦的 初級
+flat tire noun 沒氣的輪胎 初級
+flatter verb 奉承 中級
+flavor noun/verb 味道；調味 = flavour (British English) 中級
+flea noun 跳蚤 中級
+flee verb 逃離 中級
+flesh noun 肉 中級
+flexible adj. 有彈性的 中級 L6
+flight noun 航程、班機 初級
+float verb/noun 漂浮、飄動；浮板 中級
+flock noun/verb (羊或鳥)群、人群；聚集 中級
+flood noun/verb 水災；淹水、氾濫 中級
+flooding noun 水災 中級
+floor noun 地板、樓層 初級
+flour noun 麵粉 初級
+flow noun/verb 流動 初級
+flower noun 花 初級
+flu noun 流行性感冒 初級
+fluent adj. 流利的 中級
+flush verb/noun 臉紅；沖馬桶 中級
+flute noun 長笛 初級
+fly verb 飛 初級
+fly noun 蒼蠅 初級
+foam noun/verb 泡沫；起泡沫 中級
+focus noun/verb 焦點；聚焦 初級 L2
+fog noun 霧 初級
+foggy adj. 多霧的 中級
+fold verb/noun 摺疊；褶(痕) 中級
+folk noun/adj. 人們；民俗的、民間的 中級
+follow verb 跟隨、接著、遵循 初級
+follower noun 追隨者 中級
+following adj./prep./pron./noun 接著的、下列的；在…之後；下列事物；追隨者 初級
+fond adj. 喜歡的 中級
+food noun 食物 初級
+fool noun/adj. 傻瓜；愚蠢的 初級
+fool verb 愚弄、欺騙 初級
+foolish adj. 愚蠢的 初級
+foot noun 腳 初級
+football noun 足球 初級
+for prep. 為了、給、(時間、距離)達 初級
+for conj. 因為 初級
+forbid verb 禁止、阻止 中級
+force noun 力量 初級
+force verb 強迫 初級
+forecast noun/verb 預報；預測 中級
+forehead noun 額頭 = brow (British English) 中級
+foreign adj. 外國的 初級
+foreigner noun 外國人 初級
+foresee verb 預見 中級
+forest noun 森林 初級
+forever adv. 永遠 中級
+23
+字彙 詞類 中文 註解 級數 學術字彙
+forget verb 忘記 初級
+forgetful adj. 健忘的 中級
+forgive verb 原諒 初級
+fork noun 叉子 初級
+form noun 表格、形狀 初級
+form verb 組成 初級
+formal adj. 正式的 初級
+formation noun 組成 中級
+former pron./adj. 前者；從前的 初級
+formula noun 公式、方程式 中級 L1
+fort noun 要塞、堡壘 中級
+forth adv. 向前 中級
+fortunate adj. 幸運的 中級
+fortune noun 運氣、命運；財富 中級
+forty number/pron./noun/adj. 四十 初級
+forward adv./adj. 向前；前面的 adv.= forwards（British English） 初級
+found verb 創辦、建立 中級 L9
+foundation noun 創辦；基礎；基金會 中級 L7
+founder noun 創辦者、建立者 中級
+fountain noun 噴泉、噴水池 中級
+four number/pron./noun/adj. 四 初級
+fourteen number/pron./noun/adj. 十四 初級
+fox noun 狐狸 初級
+fragrance noun 香味、香水 中級
+frame verb/noun 裝框、構想；架構、框架 中級
+France noun 法國 初級
+frank adj. 坦白的 初級
+free adj. 空閒、免費、自由的 初級
+free verb 使自由 初級
+freedom noun 自由 初級
+freeway noun 高速公路 = motorway (British English) 中級
+freeze verb 結冰、冷凍；呆住、不動 中級
+freezer noun 冰箱 初級
+freezing adj. 極冷的、冰凍的 中級
+French fries noun 炸薯條 初級
+frequency noun 頻繁、頻率 中級
+frequent adj./verb 頻繁的；常去(某處) 中級
+fresh adj. 新鮮的 初級
+freshman noun (高中或大學)一年級新生 中級
+Friday noun 星期五 = Fri. 初級
+fridge noun 冰箱 = refrigerator 中級
+friend noun 朋友 初級
+friendly adj. 友善的 初級
+friendship noun 友誼 初級
+fright noun 驚嚇、恐怖 中級
+frighten verb 使驚恐 初級
+frisbee noun 飛盤 初級
+frog noun 青蛙 初級
+from prep. 從 初級
+front noun/adj. 前面；前面的 初級
+frost noun/verb 霜、嚴寒；結霜 中級
+frosty adj. 結霜的、嚴寒的 中級
+frown verb/noun 皺眉、表示不滿；皺眉、不悅之色 中級
+frozen adj. 冷凍的 中級
+fruit noun 水果 初級
+frustrate verb 挫敗、使灰心 中級
+fry verb/noun 炒、炸；油炸物 初級
+fuel noun/verb 燃料、提供燃料；刺激因素、刺激 中級
+fulfill verb 實現、履行 = fulfil (British English) 中級
+full adj. 滿的、充滿的 初級
+full-time adj./adv. 全職的(地)、全日的(地) 中級
+fully adv. 完全地、充分地 中級
+fun noun/adj. 樂趣；有趣的 初級
+function noun/verb 功用；發揮功用 初級 L1
+functional adj. 實用的、功能的 中級 L1
+fund noun/verb 資金、基金；資助 中級 L3
+fundamental adj. 根本的、基礎的 中級 L5
+funeral noun 葬禮 中級
+funny adj. 有趣的、好笑的 初級
+fur noun 毛(皮) 中級
+furious adj. 盛怒的 中級
+furnish verb 配備傢俱 中級
+furniture noun 傢俱 初級
+further adv./adj. 進一步地；進一步的 初級
+furthermore adv. 而且、此外 中級 L6
+future noun/adj. 未來；未來的 初級
+gain verb/noun 獲得、增加；利潤 初級
+gallery noun 畫廊、展覽館 中級
+gallon noun 加侖 中級
+gamble verb/noun 賭博、打賭 中級
+gambler noun 賭徒 中級
+24
+字彙 詞類 中文 註解 級數 學術字彙
+game noun 比賽 初級
+gang noun/verb 幫派、一夥(朋友)；結夥 中級
+gangster noun 歹徒、流氓 中級
+gap noun 缺口、縫隙、差距 中級
+garage noun 車庫 初級
+garbage noun 垃圾 初級
+garden noun 花園 初級
+gardener noun 園丁 中級
+garlic noun 大蒜 中級
+gas noun 瓦斯、氣體 初級
+gasoline noun 石油 = gas= petrol 初級
+gate noun 大門、柵門 初級
+gather verb 聚集 初級
+gay adj. 同性戀的、愉快的 中級
+gaze verb/noun 凝視、注視 中級
+gear noun (汽車)排檔、齒輪；裝備、用具 中級
+gear verb 使適合 中級
+gene noun 基因 中級
+general adj. 一般的、普遍的 初級
+general noun 將軍 初級
+generation noun 世代 初級 L5
+generosity noun 慷慨、大方 中級
+generous adj. 慷慨的、大方的 初級
+genius noun 天才 初級
+gentle adj. 溫和的 初級
+gentleman noun 紳士、先生 初級
+genuine adj. 真的、真誠的 中級
+geography noun 地理學 初級
+germ noun 微生物、細菌 中級
+Germany noun 德國 初級
+gesture noun/verb 手勢；做手勢 初級
+get verb 使…成為、獲得、到達 初級
+ghost noun 鬼 初級
+giant adj./noun 巨大的；巨人 初級
+gift noun 禮物 初級
+gifted adj. 有天賦的 中級
+gigantic adj. 巨大的 中級
+giggle verb/noun 咯咯笑 中級
+ginger noun 薑 中級
+giraffe noun 長頸鹿 中級
+girl noun 女孩 初級
+girlfriend noun 女朋友 中級
+give verb 給 初級
+glad adj. 高興的 初級
+glance verb/noun 瞥一眼、瀏覽 中級
+glass noun 玻璃、一杯 初級
+glasses noun 眼鏡 初級
+glide verb/noun 滑行、滑動 中級
+glimpse noun/verb 一瞥；瞥見 中級
+global adj. 全球的 中級 L7
+globe noun 地球、世界、地球儀 中級 L7
+glorious adj. 榮耀的、壯麗的 中級
+glory noun 光榮、壯麗 中級
+glove noun 手套 初級
+glow verb/noun 發光、容光煥發 中級
+glue noun/verb 膠水；黏 初級
+go verb/noun 去；進行 初級
+goal noun 目標 初級 L4
+goat noun 山羊 初級
+God noun 神、上帝 初級
+goddess noun 女神 中級
+gold noun 金、金子、金色 初級
+golden adj. 金色的 初級
+golf noun 高爾夫球 初級
+good adj./noun 好的；好處 初級
+goodbye noun 再見 = bye 初級
+good-looking adj. 好看的 初級
+goodness noun 善良、美德 中級
+goods noun 商品 中級
+goose noun 鵝 初級
+gossip noun/verb 流言蜚語；說閒話 中級
+govern verb 統治、控制 中級
+government noun 政府 初級
+governor noun 州長、總督 中級
+gown noun 禮服、長袍 中級
+grab verb/noun 抓住、攫取 中級
+grace noun/verb 優雅、(神)恩典；增光 中級
+graceful adj. 優雅的 中級
+gracious adj. 親切的、慈祥的 中級
+grade verb 評分、分等級 中級 L7
+grade noun 成績 初級 L7
+25
+字彙 詞類 中文 註解 級數 學術字彙
+gradual adj. 逐漸的 中級
+graduate noun/verb 畢業生；畢業 中級
+graduation noun 畢業 中級
+grain noun 穀物 中級
+gram noun 公克 = gramme (British English) = g = gm 初級
+grammar noun 文法 中級
+grand adj. 重大的 初級
+grandchild noun 孫子、孫女 中級
+granddaughter noun 孫女 初級
+grandfather noun 祖父 = grandpa 初級
+grandmother noun 祖母 = grandma 初級
+grandparent noun 祖父母 中級
+grandson noun 孫子 初級
+grant verb 准予、同意 中級 L4
+grant noun 補助金 中級 L4
+grape noun 葡萄 初級
+grapefruit noun 葡萄柚 中級
+grasp verb/noun 緊握；理解 中級
+grass noun 草 初級
+grateful adj. 感激的 中級
+gratitude noun 感謝 中級
+grave noun 墳墓 中級
+grave adj. 嚴肅的、嚴重的 中級
+gravity noun 重力、地心引力 中級
+gray adj./noun 灰色的；灰色 = grey 初級
+greasy adj. 油膩的 中級
+great adj. 極好的 初級
+greatly adv. 非常、大大地 中級
+greedy adj. 貪心的 初級
+green adj./noun 綠色的；綠色 初級
+greenhouse noun 溫室 中級
+greet verb 招呼 初級
+greeting noun 問候、招呼 中級
+grief noun 悲痛 中級
+grieve verb 使悲傷、哀悼 中級
+grin verb/noun 露齒笑 中級
+grind verb 磨(碎)、碾(碎) 中級
+grind noun 令人厭倦的苦事 中級
+grocery noun 食品雜貨(店) 中級
+ground noun 地面 初級
+group noun 團體 初級
+grow verb 生長 初級
+grown-up noun 成人 中級
+growth noun 成長 初級
+guarantee verb/noun 保證、擔保 中級 L7
+guard noun/verb 守衛，衛兵；守衛 初級
+guardian noun 保護者、監護人 中級
+guava noun 番石榴 初級
+guess verb/noun 猜測、推測 初級
+guest noun 客人 初級
+guidance noun 指導 中級
+guide noun/verb 嚮導；引導 初級
+guilt noun 罪行、內疚 中級
+guilty adj. 犯罪的、感到內咎的 中級
+guitar noun 吉他 初級
+gulf noun 海灣、隔閡 中級
+gum noun 樹脂、口香糖、牙齦 中級
+gun noun 槍 初級
+guy noun 傢伙 初級
+gym noun 體育館 初級
+habit noun 習慣 初級
+habitual adj. 慣常的 中級
+hair noun 頭髮 初級
+haircut noun 理髮、 髮型 初級
+hairdresser noun 美髮師 中級
+half pron./noun 一半(之人、物)；一半、半個 初級
+half adj. 一半的、不完全的、部分的 初級
+half adv. 一半地、部分地 初級
+halfway adv. 在中途、中途的 中級
+hall noun 禮堂、(大)廳 初級
+Halloween noun 萬聖節 初級
+hallway noun 走廊 中級
+halt verb/noun 暫停；停止 中級
+ham noun 火腿 初級
+hamburger noun 漢堡 = burger 初級
+hammer noun 鐵鎚 初級
+hand noun 手 初級
+hand verb 傳遞 初級
+handbag noun 手提包 中級
+handful noun 一把(的量) 中級
+handicap noun 殘疾、阻礙 中級
+26
+字彙 詞類 中文 註解 級數 學術字彙
+handicap verb 阻礙 中級
+handkerchief noun 手帕 初級
+handle verb 處理 初級
+handle noun 把手 初級
+handsome adj. 英俊的 初級
+handwriting noun 手寫、筆跡 中級
+handy adj. 方便的、便於使用的、靈巧的 中級
+hang verb 懸掛 初級
+hanger noun 掛鉤、衣架 初級
+happen verb 發生 初級
+happy adj. 快樂的 初級
+harbor noun 港口 中級
+harbor verb 心懷、藏有 中級
+hard adj. 難的、硬的 初級
+hard adv. 努力地、猛烈地 初級
+harden verb 變硬、變堅固 中級
+hardly adv. 幾乎不 初級
+hardship noun 困苦 中級
+hardware noun 硬體 中級
+hardworking adj. 努力工作的 中級
+harm noun/verb 傷害 中級
+harmful adj. 有害的 中級
+harmony noun 和諧、一致 中級
+harsh adj. 殘酷的、嚴厲的、惡劣的 中級
+harvest noun/verb 收穫 中級
+hassle noun/verb 麻煩；(不斷)煩擾 中級
+hasty adj. 匆忙的、草率的 中級
+hat noun 帽子 初級
+hatch verb 孵化、謀劃 中級
+hatch noun （牆、地板等上的）開口、活板門 中級
+hate verb/noun 厭惡 初級
+hatred noun 憎恨 中級
+have verb 有、吃、喝 初級
+have aux. （與動詞的過去分詞連用，構成現在完成式和過去完成式） 初級
+hawk noun 隼、鷹 中級
+hay noun 乾草 中級
+he pron. 他 初級
+head noun 頭 初級
+head verb 前往 初級
+headache noun 頭痛 初級
+headline noun (報紙)頭條 中級
+headline verb 加標題 中級
+headmaster noun (尤指私校)校長 中級
+headphones noun 耳機 中級
+headquarters noun 總部 中級
+headsets noun 耳機 中級
+heal verb 癒合、治療 中級
+health noun 健康 初級
+healthy adj. 健康的 初級
+heap noun 一堆、大量 中級
+heap verb 堆積、裝滿 中級
+hear verb 聽見 初級
+heart noun 心臟 初級
+heartbreak noun 心碎 中級
+heat noun/verb 熱度；加熱 初級
+heater noun 暖氣機 初級
+heaven noun 天堂 中級
+heavenly adj 天的、天堂般的 中級
+heavy adj. 重的 初級
+heel noun 腳後跟、鞋後跟 中級
+height noun 高度 初級
+helicopter noun 直昇機 初級
+hell noun 地獄 中級
+hello noun/interj. 哈囉(問候語) 初級
+helmet noun 頭盔、安全帽 中級
+help verb/noun 幫助 初級
+helpful adj. 有幫助的 初級
+hen noun 母雞 初級
+hence adv. 因此 中級 L4
+her determiner 她、她的 初級
+herd noun/verb 牧群；放牧 中級
+here adv. 這裡 初級
+hero noun 英雄 初級
+heroine noun 女英雄、女主角 初級
+hers pron. 她的 初級
+herself pron. 她自己 初級
+hesitate verb 猶豫 中級
+hesitation noun 猶豫 中級
+hey interj. 喂 初級
+hi interj. 嗨(問候語) 初級
+hidden adj. 隱藏的 中級
+27
+字彙 詞類 中文 註解 級數 學術字彙
+hide verb 躲藏 初級
+high adj./adv. 高(級)的；高地 初級
+highly adv. 非常、高 中級
+high-rise adj./noun （建築）高層的；高樓建築 中級
+highway noun 公路 初級
+hijack verb 劫持、劫機 中級
+hijacker noun 劫機者 中級
+hike noun/verb 健行;（尤指鄉間的）遠足，長途健行 初級
+hiker noun 遠足者、健行者 中級
+hill noun 丘陵 初級
+him pron. 他 初級
+himself pron. 他自己 初級
+hint noun/verb 提示、暗示、建議 中級
+hip noun 臀部 初級
+hippopotamus noun 河馬 = hippo 初級
+hire verb/noun 僱用；新僱員 初級
+his determiner 他的 初級
+historian noun 歷史學家 中級
+historic adj. 歷史性的 中級
+historical adj. 歷史的 中級
+history noun 歷史 初級
+hit verb/noun 打擊、碰撞 初級
+hive noun 蜂巢 中級
+hobby noun 啫好 初級
+hold verb 舉辦 初級
+hold noun 握、拿、抓 初級
+hole noun 洞 初級
+holiday noun 假日 初級
+hollow adj./noun 空(心)的、空洞的；洞、坑 中級
+holy adj. 神聖的 中級
+home noun/adv./adj. 家；到家、在家；家(的) 初級
+homeland noun 祖國 中級
+homesick adj. 想家的 初級
+hometown noun 家鄉 初級
+homework noun 家庭作業 初級
+honest adj. 誠實的 初級
+honestly adv. 誠實地、確實 中級
+honesty noun 誠實 初級
+honey noun 蜂蜜、親愛的 初級
+honeymoon noun/verb 蜜月；度蜜月 中級
+Hong Kong noun 香港 初級
+honor noun/verb 榮譽、敬意；尊敬、表揚 = honour (British English) 中級
+honorable adj. 值得尊敬的 中級
+hook noun/verb (掛)鉤；鉤住 中級
+hop verb/noun 單足跳；單足短距離跳躍 初級
+hope verb/noun 希望 初級
+hopeful adj. 充滿希望的 中級
+hopefully adv. 抱希望地、但願 中級
+horizon noun 地平線、視野 中級
+horn noun 動物(角)、號角 中級
+horrible adj. 可怕的 初級
+horrify verb 驚嚇 中級
+horror noun 恐懼、驚恐 中級
+horse noun 馬 初級
+hose noun/verb 軟管、水管；用軟管噴水 中級
+hospital noun 醫院 初級
+host noun/verb 主人、主辦；作東 初級
+hostage noun 人質 中級
+hostel noun (青年)旅社 中級
+hostess noun 女主人 初級
+hot adj. 熱的 初級
+hot dog noun 熱狗 初級
+hotel noun 旅館 初級
+hour noun 小時 初級
+hourly adj./adv. 每小時的；每小時地 中級
+house noun/verb 房子；給…房子住(用) 初級
+household noun/adj. 家庭；家庭的 中級
+housekeeper noun 管家 中級
+housewife noun 家庭主婦 中級
+housework noun 家事 中級
+housing noun 住宅 中級
+how adv. 如何、怎麼樣 初級
+however adv./conj. 然而、但是；不管怎樣、無論如何 初級
+Hualian noun 花蓮 初級
+hug verb/noun 擁抱 中級
+huge adj. 巨大的 初級
+hum verb/noun 哼(曲)；嗡嗡聲 中級
+human adj./noun 人類的；人類 初級
+humanity noun 人類、人性 中級
+humble adj. 謙虛的 初級
+humid adj. 潮濕的 初級
+28
+字彙 詞類 中文 註解 級數 學術字彙
+humidity noun 溼度、潮濕 中級
+humor noun 幽默 = humour (British English) 初級
+humorous adj. 幽默的 初級
+hundred number/pron./noun/adj. 一百 初級
+hunger noun 飢餓 初級
+hungry adj. 飢餓的 初級
+hunt verb/noun 打獵、尋找；打獵、尋找 初級
+hunter noun 獵人 初級
+hurricane noun 颶風 中級
+hurry verb/noun 使加快、催促；匆忙、倉促 初級
+hurt verb （使）感到疼痛、弄傷；傷害 初級
+husband noun 丈夫 初級
+hush verb/noun 使安靜；沉默 中級
+hut noun (簡陋)小屋 中級
+hydrogen noun 氫 中級
+I pron. 我 初級
+ice noun 冰 初級
+ice cream noun 冰淇淋 初級
+iceberg noun 冰山 中級
+icy adj. 結冰的、冰冷的 中級
+idea noun 主意 初級
+ideal adj./noun 理想的；理想 中級
+identical adj. 完全相同的 中級 L7
+identification noun 身分證明、辨認 中級
+identify verb 確認、認出 中級 L1
+identity noun 身分 中級
+idiom noun 成語、慣用語 中級
+idle adj./verb 閒置的、無所事事的；閒晃、虛度（光陰） 中級
+idol noun 偶像 中級
+if conj. 如果 初級
+ignorance noun 無知、愚昧 中級 L6
+ignorant adj. 不知道的、無知的 中級 L6
+ignore verb 忽視 初級
+ill adj. 生病的 初級
+illness noun 疾病 中級
+illustrate verb 說明、加插圖 中級 L3
+illustration noun 插圖、圖示 中級
+image noun 形象 初級 L5
+imaginable adj. 可想像的 中級
+imaginary adj. 想像中的 中級
+imagination noun 想像(力) 中級
+imaginative adj. 有想像力的 中級
+imagine verb 想像 初級
+imitate verb 模仿 中級
+imitation noun 模仿 中級
+immediate adj. 立即的、當前的 中級
+immediately adv. 立即、直接地 中級
+immigrant noun 移民 中級 L3
+immigration noun 移居(入境) 中級
+impact noun/verb 衝擊；對…產生影響 中級 L2
+imperial adj. 帝國的 中級
+impersonal adj. 無人情味的、客觀的 中級
+implement verb 實施 中級 L4
+implication noun 暗指、可能的影響 中級
+imply verb 暗指、說明 中級 L3
+import noun/verb 進口商品；進口、引進 初級
+importance noun 重要(性) 初級
+important adj. 重要的 初級
+impose verb 強加、徵(稅) 中級 L4
+impress verb 留下深刻印象 中級
+impression noun 印象 中級
+impressive adj. 令人印象深刻的 中級
+improve verb 改進 初級
+improvement noun 改善 中級
+in prep./adv./adj. 在…裡；在家、在某地；時髦的 初級
+inch noun 英吋 初級
+incident noun (尤指不好的)事件 中級 L6
+include verb 包含 初級
+including prep. 包含 初級
+income noun 收入 初級 L1
+increase verb/noun 增大、增加、增強；（數量或尺寸）增加、增長 初級
+increasingly adv. 漸增地 中級
+incredible adj. 難以置信的、極好的 中級
+indeed adv. 的確 中級
+independence noun 獨立 中級
+independent adj. 獨立的 初級
+India noun 印度 中級
+indicate verb 指示 初級 L1
+indication noun 指示、跡象 中級
+individual adj./noun 個人的；個體 初級 L1
+indoor adj. 室內的 中級
+29
+字彙 詞類 中文 註解 級數 學術字彙
+indoors adv. 在室內 中級
+industrial adj. 工業的 中級
+industrialize verb 工業化 中級
+industry noun 產業 初級
+inevitable adj. 不可避免的 中級 L8
+infant noun 嬰兒 中級
+infect verb 感染 中級
+infection noun 感染 中級
+infer verb 推論 中級 L7
+inference noun 推論 中級 L7
+inferior adj./noun 較差的、下級的；屬下 中級
+inflation noun 通貨膨脹 中級
+influence noun/verb 影響；影響、作用、有影響力的人或物 初級
+influential adj. 有影響力的 中級
+inform verb 通知、了解 中級
+informal adj. 非正式的、不拘禮節的 中級
+information noun 資訊 初級
+informative adj. 給予知識的 中級
+informed adj. 消息靈通的、有見識的 中級
+ingredient noun (烹飪)材料、成分 中級
+inhabitant noun 居民 中級
+inherit verb 繼承、遺傳 中級
+initial adj. 起初的 中級 L3
+initial noun/verb 首字母；簽署姓名首字母 中級 L3
+inject verb 注射 中級
+injection noun 注射 中級
+injure verb 受傷、傷害 中級 L2
+injury noun 傷害 初級
+ink noun 墨水 初級
+inn noun 小旅館、客棧 中級
+inner adj. 裡面的、內心的 中級
+innocence noun 清白、天真無邪 中級
+innocent adj. 無辜的、清白的、天真的 中級
+input noun/verb 輸入、投入；（將資訊）輸入、錄入（電腦或其他電子設備） 中級 L6
+inquire verb 詢問、調查 = enquire 中級
+inquiry noun 詢問、調查 = enquiry 中級
+insect noun 昆蟲 初級
+insert verb 插入 中級 L7
+inside prep./adv./noun 在…裡；裡面的；內部 初級
+insist verb 堅持 初級
+inspect verb 檢查、審視 中級 L8
+inspector noun 檢查員 中級
+inspiration noun 靈感 中級
+inspire verb 給…靈感 初級
+install verb 安裝 中級
+instance noun 例子 初級 L3
+instant adj./noun 立即的；剎那 初級
+instead adv. 代替、反而 中級
+instinct noun 本能、直覺 中級
+institute noun 學院、協會 中級 L2
+institution noun 機構、制度 中級
+instruct verb 教授、指示、命令 中級 L6
+instruction noun 指示、命令 中級
+instructor noun 教練、講師 中級
+instrument noun 樂器 初級
+insult noun/verb 侮辱、辱駡 中級
+insurance noun 保險(業) 中級
+intellectual adj./noun 智力的、聰明的；知識份子 中級
+intelligence noun 智慧 中級 L6
+intelligent adj. 有才智的 初級 L6
+intend verb 打算、意指 中級
+intense adj. 劇烈的、熱切的 中級 L8
+intensify verb 變激烈、增強 中級
+intensive adj. 密集的、加強的 中級
+intention noun 意圖 中級
+interact verb 互動 中級 L3
+interest noun/verb 興趣；使感興趣 初級
+interfere verb 干涉、妨礙 中級
+interference noun 干涉、妨礙 中級
+intermediate adj. 中級的、中間的 中級 L9
+internal adj. 內部的、國內的 中級 L4
+international adj. 國際性的 初級
+Internet noun 網際網路 初級
+interpret verb 詮釋、理解為 中級 L1
+interpretation noun 詮釋、理解 中級 L1
+interpreter noun 口譯員 中級
+interrupt verb 打斷(說話) 初級
+interval noun (時間)間隔 中級 L6
+interview noun/verb 面談 初級
+intimate adj./noun 親密的、諳熟的、隱私的；知己 中級
+into prep. 進入到 初級
+30
+字彙 詞類 中文 註解 級數 學術字彙
+introduce verb 介紹、引進 初級
+introduction noun 介紹 中級
+intrude verb 打擾、侵入 中級
+intruder noun 侵入者 中級
+invade verb/noun 侵略 中級
+invent verb 發明 初級
+invention noun 發明(物) 中級
+inventor noun 發明者 中級
+invest verb 投資、投入時間 中級 L2
+investigate verb 調查 初級 L4
+investment noun 投資、投入 中級
+investor noun 投資者 中級
+invisible adj. 隱形的 中級
+invitation noun 邀請 初級
+invite verb 邀請 初級
+involve verb 牽涉、包含、參加 中級 L1
+iron noun 鐵 初級
+iron verb 熨 初級
+is verb (Be動詞)是 初級
+island noun 島嶼 初級
+isolate verb 孤立、隔離 中級 L7
+isolation noun 孤立、隔離 中級
+issue noun 議題、問題 中級 L1
+issue verb 發行 中級 L1
+it pron. 它 初級
+itch verb/noun 發癢；癢 中級
+item noun 項目 初級 L2
+its determiner 它的 初級
+itself pron. 它自己 初級
+ivory noun 象牙、象牙製品 中級
+ivory adj. 象牙白色的 中級
+jacket noun 夾克 初級
+jail noun/verb 監獄；監禁 中級
+jam verb 塞進、擠滿 中級
+jam noun 堵塞、果醬 初級
+January noun 一月 = Jan. 初級
+Japan noun 日本 初級
+Japanese adj./noun 日本的；日本人、日語 初級
+jar noun (玻璃)罐子、一罐 中級
+jaw noun 下巴 中級
+jazz noun 爵士樂 初級
+jealous adj. 妒忌的 初級
+jealousy noun 妒忌 中級
+jeans noun 牛仔褲 初級
+jeep noun 吉普車 初級
+jelly noun 膠狀物、果凍 中級
+jet noun/verb 噴射機；乘噴射機 中級
+jewel noun 寶石、首飾 中級
+jewellery noun 珠寶 中級
+job noun 工作 初級 L4
+jog verb 慢跑 初級
+join verb 參加 初級
+joint adj. 共同的 初級
+joint noun 接點 初級
+joke noun/verb 玩笑；開玩笑 初級
+journal noun 報刊雜誌、日記 中級 L2
+journalist noun 新聞記者 初級
+journey noun/verb 旅行 中級
+joy noun 歡樂 初級
+joyful adj. 令人愉快的 中級
+judge noun 法官 初級
+judge verb 判斷 初級
+judgment noun 判斷、審判 = judgement 中級
+juice noun 果汁 初級
+juicy adj. 多汁的 中級
+July noun 七月 = Jul. 初級
+jump verb/noun 跳 初級
+June noun 六月 = Jun. 初級
+jungle noun 叢林 中級
+junior adj./noun 較年輕的、資淺的、（四年制中學或大學）三年級的；後輩、資淺者、
+（四年制中學或大學的）三年級學生 中級
+junior high school noun 國中、國民中學 初級
+junk noun 廢舊物、垃圾 中級
+jury noun 陪審團 中級
+just adv. 只是、正好、剛才 初級
+justice noun 正義、司法 中級
+kangaroo noun 袋鼠 初級
+Kaohsiung noun 高雄 初級
+keen adj. 熱切的、熱心的 中級
+keep verb 使…保持在某狀態、繼續、飼養 初級
+keeper noun 飼養者、看守人 中級
+ketchup noun 番茄醬 = catsup 初級
+31
+字彙 詞類 中文 註解 級數 學術字彙
+kettle noun 水壺 中級
+key noun 鑰匙、關鍵 初級
+key adj. 重要的 初級
+keyboard noun 鍵盤 中級
+kick verb/noun 踢 初級
+kid noun 小孩 初級
+kidnap verb 綁架 中級
+kidney noun 腎 中級
+kill verb 殺、使痛苦 初級
+kilogram noun 公斤 = kg 初級
+kilometer noun 公里 = kilometre (British English)=km 初級
+kind adj. 仁慈、親切的 初級
+kind noun 種類 初級
+kindergarten noun 幼稚園 初級
+kindly adj./adv 親切的；親切地 中級
+kindness noun 親切、和藹 中級
+king noun 國王 初級
+kingdom noun 王國 初級
+kiss verb/noun 親吻 初級
+kit noun 成套工具 中級
+kitchen noun 廚房 初級
+kite noun 風箏 初級
+kitten noun 小貓 = kitty 初級
+knee noun 膝蓋 初級
+kneel verb 跪下 中級
+knife noun 刀 初級
+knight noun 騎士 中級
+knit verb/noun 縫紉；針織衫 中級
+knob noun 球形把手、旋鈕 中級
+knock verb 敲 初級
+knot noun/verb 繩結；打結 中級
+know verb 知道 初級
+knowledge noun 知識 初級
+knowledgeable adj. 博學的、有見識的 中級
+koala noun 無尾熊 初級
+Korea noun 韓國 初級
+Korean adj./noun 韓國的；韓國人 初級
+KTV noun 卡拉OK店 初級
+label noun/verb 標籤；貼標籤於、歸為 中級 L4
+labor noun/verb 勞動、勞工；努力做 = labour (British English) 中級 L1
+laboratory noun 實驗室 = lab 中級
+lace noun/verb 蕾絲；用帶繫 中級
+lack noun/verb 欠缺 初級
+ladder noun 梯子、階梯 中級
+lady noun 女士 初級
+ladybug noun 瓢蟲 = ladybird (British English) 中級
+lag verb/noun 掉隊、滯後、緩慢移動；（兩件事之間的）間隔，延遲 中級
+lake noun 湖 初級
+lamb noun 小羊 初級
+lamp noun 燈 初級
+land noun 土地 初級
+land verb 登陸 初級
+landlady noun 女房東、女地主 中級
+landlord noun 房東、地主 中級
+landmark noun 地標 中級
+landscape noun/verb 風景；美化(環境) 中級
+landslide noun 土石流 中級
+lane noun 小路、巷弄 中級
+language noun 語言 初級
+lantern noun 燈籠 初級
+Lantern Festival noun 元宵節 初級
+lap noun 大腿、一圈(跑道) 中級
+large adj. 大的 初級
+largely adv. 大部分、主要地 中級
+laser noun 雷射 中級
+last verb 持續 中級
+last adj./pron./noun 最後的、剛過的 初級
+late adj./adv. 遲的 初級
+lately adv. 最近 中級
+later adv. 更晚的；較晚地、以後 初級
+latest adj. 最新的 初級
+latitude noun 緯度 中級
+latter adj. 後面的、後者的 中級
+laugh verb/noun 笑 初級
+laughter noun 笑、笑聲 中級
+launch verb/noun 發動、發行、發射、下水 中級
+laundry noun 洗衣店、洗好或待洗的衣物 中級
+lavatory noun 盥洗室、廁所 = toilet 中級
+law noun 法律 初級
+lawful adj. 合法的、法定的 中級
+lawn noun 草坪 中級
+32
+字彙 詞類 中文 註解 級數 學術字彙
+lawyer noun 律師 初級
+lay verb 放置 初級
+layer noun 層 中級 L3
+lazy adj. 懶惰的 初級
+lead noun 鉛 中級
+lead verb/noun 領導；領先 初級
+leader noun 領導者 初級
+leadership noun 領導(能力) 初級
+leading adj. 最重要的、領先的 中級
+leaf noun 葉子 初級
+leaflet noun 傳單 中級
+league noun 聯盟、社團 中級
+leak verb/noun 滲漏、走漏；漏洞 中級
+lean verb 傾斜、倚靠 中級
+lean adj. 瘦(肉)的 中級
+leap verb/noun 跳躍、巨變、激增 中級
+learn verb 學習 初級
+learned adj. 有學問的 中級
+learner noun 學習者 中級
+learning noun 學識、學習 中級
+least adv./adj./pron./noun 最少、最小 初級
+leather noun 皮革 中級
+leave verb/noun 離開；假期 初級
+lecture noun/verb 講課；演講 中級 L6
+lecturer noun 演講者、講師 中級
+left noun/adv. 左邊、左側；向左 初級
+left adj. 左邊的、左側的、剩下的 初級
+left-hand adj. 左手的、左邊的 初級
+leg noun 腿 初級
+legal adj. 合法的 初級 L1
+legend noun 傳奇、傳奇人物 中級
+legendary adj. 傳奇的 中級
+leisure noun 閒暇、休閒 中級
+leisurely adj./adv. 悠閒從容的/地 中級
+lemon noun 檸檬 初級
+lemonade noun 檸檬水 中級
+lend verb 把…借給 初級
+length noun 長度 初級
+lengthen verb 加長 中級
+lens noun 鏡片 中級
+leopard noun 豹 中級
+less adv./pron. 較少(地) 初級
+lesson noun 課程 初級
+let verb 讓 初級
+letter noun 信 初級
+lettuce noun 萵苣 初級
+level noun 水準 初級
+level adj. 水平的 初級
+liar noun 撒謊者 中級
+liberal adj./noun 開明的、自由的；自由主義者 中級 L5
+liberate verb 解放 中級
+liberty noun 自由 中級
+librarian noun 圖書館員 中級
+library noun 圖書館 初級
+license verb/noun 發許可證；執照 = licence (British English) 中級
+lick verb/noun 舔 初級
+lid noun 蓋子；眼瞼 初級
+lie verb 躺下、橫臥、擺放 初級
+lie noun/verb 謊言；說謊 初級
+life noun 生命、生活 初級
+lifestyle noun 生活方式 中級
+lifetime noun 一生 中級
+lift verb 舉起 初級
+lift noun 舉、順道搭載 初級
+light noun/verb/adj. 光、燈；點燃、照亮；明亮的 初級
+light adj./adv. 輕(便)、明亮、(顏色)淺、少量 初級
+lighten verb 變亮、照亮；減輕 中級
+lighthouse noun 燈塔 中級
+lightning noun 閃電 初級
+like prep. 像、如 初級
+like verb 喜歡、想要 初級
+likely adj./adv. 很可能 初級
+lily noun 百合花 中級
+limb noun 肢、臂、大樹枝 中級
+limit verb/noun 限制 初級
+limitation noun 限制 中級
+line noun/verb 行列；排隊 初級
+linen noun 亞麻布 中級
+link noun/verb 連結 初級 L3
+lion noun 獅子 初級
+lip noun 唇 初級
+33
+字彙 詞類 中文 註解 級數 學術字彙
+lipstick noun 口紅 中級
+liquid noun/adj. 液體；液態的、流動的 初級
+liquor noun 酒精飲料、烈酒 = spirits (British English) 中級
+list noun/verb 名單；列入名單 初級
+listen verb 聽 初級
+listener noun 聽者 中級
+liter noun 公升 = litre (British English) 初級
+literary adj. 文學的 中級
+literature noun 文學 中級
+litter noun/verb 垃圾；亂扔、使凌亂 中級
+little adj./pron./adv. 小的；少 初級
+live adj. 實況的、現場演出的、活的 中級
+live verb 活 初級
+lively adj. 精力充沛的 中級
+liver noun 肝臟 中級
+living room noun 客廳 初級
+load noun/verb 負載（量）；裝載 中級
+loaf noun 一條（塊）包 初級
+loan noun/verb 貸款、借款；借出、貸與 中級
+lobby noun 大廳 中級
+lobster noun 龍蝦 中級
+local adj./noun 當地的；本地人 初級
+locate verb 位於、確定位置 中級 L3
+location noun 地點、位置 中級
+lock verb/noun 鎖上；鎖 初級
+locker noun 寄物櫃 中級
+log noun/verb 原木；伐木 中級
+logic noun 邏輯 中級 L5
+logical adj. 按照邏輯的、合乎情理的 中級
+loneliness noun 寂寞 中級
+lonely adj. 寂寞的 初級
+long verb 渴望、期盼 中級
+long adj./adv. 長的、久的；長久地 初級
+long-standing adj. 存在已久的、悠久的 中級
+long-term adj. 長期的 中級
+look verb/noun 看 初級
+loop noun/verb 環、圈、環狀物；繞圈 中級
+loose adj. 鬆的、鬆動的 中級
+loosen verb 鬆開、變鬆 中級
+lord noun 君主、領主 中級
+lorry noun 卡車 = truck (American English) 中級
+lose verb 失去、輸 初級
+loser noun 失敗者 初級
+loss noun 損失 初級
+lot noun 多量、一批、一塊地 初級
+lotion noun 護膚乳液 中級
+loud adj./adv. 大聲的；大聲地 初級
+loudspeaker noun 擴音器、喇叭 中級
+lousy adj. 極糟的、討厭的 中級
+love verb/noun 愛 初級
+lovely adj. 美好的 初級
+lover noun 愛好者 初級
+low adj. 低的 初級
+lower verb 減少、縮小、放低 中級
+loyal adj. 忠誠的 中級
+loyalty noun 忠誠 中級
+luck noun 運氣 初級
+lucky adj. 幸運的 初級
+luggage noun 行李 中級
+lullaby noun 搖籃曲 中級
+lunar adj. 陰曆的、月亮的 中級
+lunch noun 午餐 初級
+lung noun 肺 中級
+luxurious adj. 豪華的、奢侈的 中級
+luxury noun 奢侈(品) 中級
+lychee noun 荔枝 = litchi 荔枝 中級
+ma'am noun 夫人 初級
+machine noun 機器 初級
+machinery noun 機器、機制 中級
+mad adj. 瘋狂的、生氣的 初級
+madam noun 夫人、女士 中級
+magazine noun 雜誌 初級
+magic adj./noun. 有魔力的；魔術 初級
+magical adj. 魔術的、奇妙的 中級
+magician noun 魔術師 初級
+magnet noun 磁鐵 中級
+magnetic adj. 有磁性的、磁鐵的 中級
+magnificent adj. 壯麗的 中級
+maid noun 女僕、少女 中級
+mail noun/verb 郵件；郵寄 初級
+mail carrier noun 郵差 =mailman = postman (British English) 初級
+34
+字彙 詞類 中文 註解 級數 學術字彙
+main adj. 主要的 初級
+mainland noun 大陸、本土 中級
+maintain verb 維持 初級 L2
+major adj. 主要的 初級 L1
+major noun/verb 主修科目、主修生；主修 初級 L1
+majority noun 大多數 中級
+make verb 做 初級
+maker noun 製作者 中級
+makeup noun 化妝品、構成 中級
+male adj./noun 男性(的) 初級
+mall noun 購物中心 初級
+man noun 男人 初級
+manage verb 設法解決、管理 中級
+manageable adj. 可處理的 中級
+management noun 管理、經營 中級
+manager noun 負責人、經理 初級
+Mandarin noun 中文(國語) 初級
+mango noun 芒果 初級
+mankind noun 人類 中級
+man-made adj. 人造的 中級
+manner noun 禮貌（多使用複數形態）、方式、態度 初級
+mansion noun 大廈、宅第 中級
+manual noun/adj. 手冊、導覽；用手的、手工的 中級 L9
+manufacture verb/noun 大量製造；生產 中級
+manufacturer noun 生產者、製造商 中級
+many adj./pron. 許多（的） 初級
+map noun 地圖 初級
+marathon noun 馬拉松 中級
+marble noun 大理石 中級
+march verb/noun 行進、行軍；示威遊行、持續的發展 中級
+March noun 三月 = Mar. 初級
+margin noun 邊緣、差距 中級 L5
+mark verb 標記 初級
+mark noun 分數 初級
+marker noun 標誌；麥克筆、彩色筆 初級
+market noun/verb 市場；行銷、銷售 初級
+marriage noun 婚姻 初級
+marry verb 結婚 初級
+marvelous adj. 非凡的、很棒的 = marvellous (British English) 初級
+mask noun 面具、口罩 初級
+mass noun/adj. 大量（的） 初級
+master verb 征服、控制；精通 中級
+master noun 主人、大師 初級
+masterpiece noun 傑作 中級
+mat noun 蓆子、墊子 初級
+match noun 比賽 初級
+match verb 相配 初級
+mate noun/verb 夥伴、伴侶；交配 中級
+material noun 物質、材料 初級
+math noun 數學、算術 = mathematics 初級
+mathematical adj. 數學的 中級
+matter noun 問題；物質 初級
+matter verb 有關係 初級
+mature adj. 成熟的 中級 L9
+maturity noun 成熟、完善 中級
+maximum adj./noun/adv. 最大值（的/地） 初級
+may aux. 可能 初級
+May noun 五月 初級
+maybe adv. 或許 初級
+mayor noun 市長 中級
+me pron. 我 初級
+meadow noun （牧）草地 中級
+meal noun 一餐、餐點 初級
+mean adj. 吝嗇的、卑鄙的 中級
+mean verb 意思是、意指、意圖 初級
+meaning noun 意義 初級
+meaningful adj. 有意義的 中級
+means noun 手段 初級
+meantime noun 同時 中級
+meanwhile adv. 同時 中級
+measurable adj. 可測量的、顯著的 中級
+measure noun 措施 初級
+measure verb 測量 初級
+meat noun 肉 初級
+mechanic noun 機械工、修理工 初級
+mechanical adj. 機械的 中級
+medal noun 獎章 中級
+media noun 新聞媒體 中級 L7
+medical adj. 醫學的 中級 L5
+medicine noun 藥 初級
+medium adj. 中間的、中等的 初級 L9
+35
+字彙 詞類 中文 註解 級數 學術字彙
+medium noun 媒介、方法、媒體 初級 L9
+meet verb 遇見 初級
+meeting noun 會議 初級
+melody noun 旋律、樂曲 中級
+melon noun 瓜 初級
+melt verb 融化 中級
+member noun 成員 初級
+membership noun 會員（資格） 中級
+memorable adj. 難忘的 中級
+memorandum noun 備忘錄 中級
+memorial noun/adj. 紀念碑；紀念的 中級
+memorize verb 記住、背熟 中級
+memory noun 記憶、回憶 初級
+mend verb 修補 中級
+men's room noun 男洗手間、男廁所 初級
+mental adj. 精神的、心理的 中級 L5
+mention verb/noun 提及、寫到；簡短的陳述 中級
+menu noun 菜單 初級
+merchant noun 商人 中級
+mercy noun 慈悲、憐憫 中級
+mere adj. 僅僅的 中級
+merit noun 優點、長處 中級
+merry adj. 愉快的 中級
+mess noun/verb 骯髒雜亂、麻煩；弄髒、弄亂 中級
+message noun 訊息 初級
+messenger noun 送信人、信差 中級
+messy adj. 凌亂的 中級
+metal noun 金屬 初級
+meter verb 用儀表測量 中級
+meter noun 公尺 = metre (British English)= m 初級
+method noun 方法 初級 L1
+metro noun 地鐵 = Metro 中級
+microphone noun 麥克風 = mike 中級
+microscope noun 顯微鏡 中級
+microwave noun/verb 微波(爐) 初級
+midday noun 正午 中級
+middle adj./noun 中間(的) 初級
+middle-aged adj. 中年的、煩人的、過時的 中級
+midnight noun/adj. 午夜 初級
+might noun 力量 中級
+might aux. 可能、或許 初級
+mighty adj. 強而有力的 中級
+mild adj. 溫和的、溫暖的 中級
+mile noun 英里、哩 初級
+military noun/adj. 軍事(的) 初級 L9
+milk noun 牛奶 初級
+milkshake noun 奶昔 中級
+mill noun/verb 磨坊；磨成粉 中級
+million number/pron./noun/adj. 百萬 初級
+mind noun 心思、主意、想法、智力 初級
+mind verb 注意、介意 初級
+mine noun 採礦、礦（坑） 中級
+miner noun 採礦者 中級
+mineral noun/adj. 礦物質；礦物質的 中級
+minimum adj./noun 最小的；最小值 = min. 中級 L6
+minister noun 部長 中級
+ministry noun (政府的)部 中級 L6
+minor adj. 較小、少的；次要的 初級 L3
+minor noun 副修、未成年 初級 L3
+minor verb 副修 初級 L3
+minority noun 少數 中級
+minus pron./conj./adj./noun 減；減號；負的 初級
+minute adj. 極小的、仔細的 中級
+minute noun 分鐘 = min. 初級
+miracle noun 奇蹟 中級
+mirror noun 鏡子 初級
+mischief noun 惡作劇、淘氣 中級
+miserable adj. 悲慘的、難受的 中級
+misery noun 痛苦、不幸 中級
+misfortune noun 不幸、惡運 中級
+mislead verb 誤導、引入歧途 中級
+miss verb 錯過；想念 初級
+Miss noun 小姐 初級
+missile noun 飛彈 中級
+missing adj. 缺的、走失的 初級
+mission noun 任務、使命、使團 中級
+mist noun/verb 薄霧；結霧 中級
+mistake noun/verb 錯誤；出差錯 初級
+mister noun 先生 中級
+mistress noun 女主人 中級
+misunderstand verb 誤解 中級
+36
+字彙 詞類 中文 註解 級數 學術字彙
+mix verb/noun 混合 初級
+mixture noun 混合(物) 中級
+mob noun/verb 暴民；(圍攻)襲擊 中級
+mobile adj. 活動的、可移動的 中級
+model noun/verb 模特兒、模型；塑造、模仿 初級
+moderate adj. 適度的、中等的 中級
+modern adj. 現代的 初級
+modest adj. 謙虛的、不太大的 中級
+modesty noun 謙遜 中級
+moist adj. (微)濕潤的 中級
+moisture noun 濕氣、水分 中級
+moment noun 瞬間、片刻 初級
+Monday noun 星期一 = Mon. 初級
+money noun 金錢 初級
+monitor verb/noun 監視、檢查；顯示器、監視器 中級 L5
+monk noun 僧侶 中級
+monkey noun 猴子 初級
+monster noun 妖怪 初級
+month noun 月 初級
+monthly adj./adv. 每月的(地) 初級
+monthly noun 月刊 初級
+monument noun 紀念碑 中級
+mood noun 心情 中級
+moon noun 月亮 初級
+moonlight noun 月光 中級
+mop noun/verb 拖把；拖地 初級
+moral adj./noun (有)道德的；道德、寓意 中級
+more adv./pron./adj. 更；更多(的) 初級
+moreover adv. 而且 中級
+morning noun 早晨 初級
+mortgage noun/verb 貸款；抵押 中級
+mosquito noun 蚊子 初級
+most adv./pron./adj. 最 初級
+motel noun 汽車旅館 中級
+moth noun 蛾 中級
+mother noun 母親 = mommy= mom= momma= mamma 初級
+mother verb 養育 初級
+Mother's Day noun 母親節 初級
+motion noun 行動、動作 初級
+motion verb 打手勢 初級
+motivate verb 激發、給…動機 中級 L6
+motivation noun 動機 中級
+motor noun 馬達 中級
+motorcycle noun 摩托車 = motorbike (British English) 初級
+mountain noun 山 初級
+mountainous adj. (多)山的 中級
+mouse noun 老鼠 初級
+moustache noun 上唇的鬍子、八字鬍 = mustache 中級
+mouth noun 嘴 初級
+movable adj. 可動的 中級
+move verb/noun 搬家、移動 初級
+movement noun 動作；活動 初級
+movie noun 電影 = film= cinema= picture 初級
+mow verb 割、修剪 中級
+Mr. noun 先生 = Mr 初級
+Mrs. noun 太太 = Mrs 初級
+MRT noun 捷運 = mass rapid transit= subway= underground= metro 初級
+Ms. noun 女士 =Ms 初級
+much pron./adv./adj. 很多 初級
+mud noun 泥巴 初級
+muddy adj. 泥濘的 中級
+mug noun 馬克杯 中級
+mug verb （在公共場合）攔路搶劫 中級
+multiple adj. 多樣的 中級
+multiply verb 乘以、成倍增加 中級
+murder noun/verb 謀殺、兇殺 中級
+murderer noun 兇手 中級
+murmur verb/noun 喃喃低語(聲) 中級
+muscle noun 肌肉 中級
+museum noun 博物館 初級
+mushroom noun 蘑菇 中級
+mushroom verb 迅速增長 中級
+music noun 音樂 初級
+musical adj./noun 音樂的；音樂劇 中級
+musician noun 音樂家 初級
+must aux. 必須、一定是 初級
+mutual adj. 互相的、共同的 中級 L9
+my determiner 我的 初級
+myself pron. 我自己 初級
+mysterious adj. 神秘的、奇怪的 中級
+mystery noun 神秘的事物、謎 中級
+37
+字彙 詞類 中文 註解 級數 學術字彙
+nail noun/verb 釘子；釘 初級
+naked adj. 裸體的、裸露的 中級
+name noun/verb 名字；命名 初級
+namely adv. 也就是 中級
+nap noun/verb 打盹；小睡 中級
+napkin noun 餐巾 初級
+narrow adj./verb 窄的；變窄 初級
+nasty adj. 令人不快的、惡意的 中級
+nation noun 國家 初級
+national adj. 全國的、民族的 初級
+nationality noun 國籍 中級
+native adj./noun 當地的、出生地的；本地人 中級
+natural adj. 自然的 初級
+naturalist noun 博物學家、 自然主義者 中級
+nature noun 自然 初級
+naughty adj. 淘氣的 初級
+naval adj. 海軍的 中級
+navy noun 海軍 中級
+near prep./adj./adv./verb 接近；近的；在附近 初級
+nearby adj./adv. 附近的；在附近 中級
+nearly adv. 幾乎 初級
+neat adj. 整潔的 中級
+necessarily adv. 必然地、必要地 中級
+necessary adj. 必要的 初級
+necessity noun 必要性、必需品 中級
+neck noun 脖子 初級
+necklace noun 項鏈 初級
+need verb/noun/aux. 需要 初級
+needle noun/verb 針；用針穿刺、用針縫 初級
+needy adj. 貧困的 中級
+negative adj./noun 負面（的）、否定（的） 初級
+neglect verb 忽視 中級
+negotiate verb 協商、談判 中級
+negotiation noun 協商、談判 中級
+neighbor noun/verb 鄰居；與…為鄰 = neighbour (British English) 初級
+neighborhood noun 街區、鄰近地區 中級
+neither adv./pron./adj./conj. 兩者皆不 初級
+nephew noun 姪子、外甥 初級
+nerve noun/verb 神經、緊張、勇氣、厚顏無恥；鼓足勇氣 中級
+nervous adj. 緊張的 初級
+nest noun/verb 巢；築巢 初級
+net adj. 淨值的 中級
+net noun/verb 網(狀物)；用網捕 中級
+network noun/verb 網路；連接成網路 中級 L5
+never adv. 從未 初級
+nevertheless adv. 儘管如此、然而 中級 L6
+new adj. 新的 初級
+New Year's Day noun 新年 初級
+New Year's Eve noun 跨年夜 初級
+newcomer noun 新來者 中級
+news noun 消息、新聞 初級
+newscaster noun 新聞播報員 中級
+newspaper noun 報紙 初級
+next adj./adv. 隔壁的、緊接著的；接下去、然後 初級
+nice adj. 美好的、宜人的 初級
+nice-looking adj. 好看的 初級
+nickname noun/verb 綽號；起綽號 中級
+niece noun 姪女、甥女 初級
+night noun 晚上 初級
+nightmare noun 惡夢、夢魘 中級
+nine number/pron./noun/adj. 九 初級
+nineteen number/pron./noun/adj. 十九 初級
+ninety number/pron./noun/adj. 九十 初級
+no adv./adj./noun 沒有 = nope 初級
+noble adj./noun 高尚的、貴族的；貴族 中級
+nobody pron./noun 沒有人 初級
+nod verb/noun 點頭 初級
+noise noun 噪音 初級
+noisy adj. 吵鬧的 初級
+none pron./adv. 沒有一個(人或物)；絕不 初級
+nonetheless adv. 儘管如此 中級 L10
+nonsense noun 胡扯 中級
+nonstop adj./adv. 直達的、不停的；不休息地 中級
+noodle noun 麵條 初級
+noon noun 正午 初級
+nor conj. 也不是 初級
+normal adj. 正常的、標準的 中級 L2
+north noun/adj./adv. 北方(的)；向北 初級
+northeast noun/adv./adj. 東北方 中級
+northern adj. 北邊的 初級
+northwest noun/adv./adj. 西北方 中級
+38
+字彙 詞類 中文 註解 級數 學術字彙
+nose noun 鼻子 初級
+not adv. 不是 初級
+note noun/verb 筆記；記錄、注意 初級
+notebook noun 筆記本 初級
+nothing pron./noun 沒什麼 初級
+notice noun/verb 注意(到)；公告 初級
+noun noun 名詞 中級
+nourish verb 滋養 中級
+novel noun 小說 初級
+novel adj. 新穎的 初級
+novelist noun 小說家 中級
+November noun 十一月 = Nov. 初級
+now adv./noun/pron. 現在 初級
+nowadays adv. 現今 中級
+nowhere adv. 無處 中級
+nuclear adj. 核能的 中級 L8
+number noun/verb 號碼；編號碼 初級
+numerous adj. 許多的 中級
+nun noun 修女、尼姑 中級
+nurse noun/verb 護理師；照護 初級
+nursery noun 托兒所 中級
+nursing noun/adj. 護理、看護；護理的、哺乳的 中級
+nut noun 堅果 中級
+nutrient noun 營養物、養分 中級
+nutrition noun 營養 中級
+nylon noun 尼龍 中級
+oak noun 橡樹 中級
+obedient adj. 順從的 中級
+obey verb 服從 初級
+object noun 物體、對象、目標 初級
+object verb 反對、抗議 初級
+objection noun 反對 中級
+objective noun/adj. 目的；客觀的 中級 L5
+observation noun 觀察、評論 中級
+observe verb 注意到、觀察 中級
+obstacle noun 阻礙、絆腳石 中級
+obtain verb 獲得 中級 L2
+obvious adj. 明顯的 中級 L4
+occasion noun 場合、盛典 中級
+occasional adj. 偶爾的 中級
+occupation noun 職業、佔領 中級
+occupy verb 佔用、忙於、佔領 中級 L4
+occur verb 發生 初級 L1
+ocean noun 海洋 初級
+o'clock adv. …點鐘 初級
+October noun 十月 = Oct. 初級
+odd adj. 奇怪的 中級 L10
+of prep. ...的、屬於、關於 初級
+off adv./prep./adj. (離)開 初級
+offend verb 冒犯、犯法 中級
+offense noun 犯法、進攻 = offence (British English) 中級
+offensive adj./noun 冒犯的；進攻 中級
+offer verb/noun 提供、提議、出價 初級
+office noun 辦公室 初級
+officer noun 官員 初級
+official noun/adj. 官員；官方的 初級
+often adv. 時常 初級
+oh interj. 哦、哎喲 中級
+oil noun/verb 油；塗油 初級
+OK adj./adv./noun/verb 好、同意 = O.K.= ok= o.k. 初級
+old adj. 老的 初級
+Olympic adj. 奧林匹克的 中級
+omit verb 省去 初級
+on prep./adv. 在…上 初級
+once adv./conj./pron. 一次、曾經；一旦…就… 初級
+one number/pron./noun/adj. 一(個) 初級
+oneself pron. 自己 中級
+one-sided adj. 片面的、一面倒的 中級
+onion noun 洋蔥 初級
+online adj./adv. 線上的；在線上 初級
+only adv./adj./conj. 僅、只；唯一的 初級
+onto prep. 到…之上 中級
+open verb/adj. 打開；開著的 初級
+opener noun 開罐器；開場白 中級
+opening noun 缺口、開幕 中級
+opening adj. 開始的 中級
+opera noun 歌劇 中級
+operate verb 操作 初級
+operation noun 運作 初級
+operator noun 操作人員、技工 中級
+opinion noun 觀點 初級
+39
+字彙 詞類 中文 註解 級數 學術字彙
+opponent noun 對手、反對者 中級
+opportunity noun 機會 初級
+oppose verb 反對 中級
+opposite adj./adv. 在對面(的)；在…對面 中級
+opposite noun 反面 中級
+opposition noun 反對、對抗 中級
+optimistic adj. 樂觀的 中級
+option noun 選擇 中級 L4
+or conj. 或、否則 初級
+oral adj./noun 口頭的；口試 中級
+orange noun/adj. 柳橙；橙色(的) 初級
+orbit noun/verb (天體)運行軌道；沿軌道運行 中級
+orchestra noun 管絃樂隊 中級
+order noun 訂單、順序、命令 初級
+order verb 點菜、訂購、命令 初級
+orderly adj. 有條理的、整齊的 中級
+orderly noun (醫院)護理員、(軍)勤務兵 中級
+ordinary adj. 普通的 初級
+organ noun 器官 中級
+organic adj. 有機的、器官的 中級
+organization noun 組織 = organisation (British English) 初級
+organize verb 安排、籌劃 = organise (British English) 初級
+origin noun 起源、出身 中級
+original adj./noun 起初的、獨創的；原型 中級
+orphan noun 孤兒 中級
+orphanage noun 孤兒院 中級
+other adj./pron. 其他(的) 初級
+otherwise adv. 否則、除此之外 中級
+ought aux. 應當 中級
+ounce noun 盎司 = oz. 中級
+our determiner 我們的 初級
+ours pron. 我們的 初級
+ourselves pron. 我們自己 初級
+out adv./adj./prep. 在外；之外；缺 初級
+outcome noun 結果 中級 L3
+outdoor adj. 戶外的 中級
+outdoors adv. 在戶外 中級
+outer adj. 在外面的 中級
+outline verb/noun 概述、(勾勒)輪廓 中級
+output noun 產量、輸出 中級 L4
+outside prep./adv./adj./noun 在外地；外面(的) 初級
+outstanding adj. 優秀的 中級
+outward adj./adv. 外面的；外面地 中級
+oval adj./noun 橢圓形(的)、卵形(的) 中級
+oven noun 烤箱 初級
+over prep./adv./adj. 在…上面；越過；過去的 初級
+overall adj./adv. 全面的；全部、大致上 中級 L4
+overall noun 工作褲/服 中級 L4
+overcoat noun 長大衣 中級
+overcome verb 克服 中級
+overflow verb/noun 溢出、充滿；容納不下的人(或物)、溢出 中級
+overhead adj./adv. 在頭頂上(的)； 在空中(的) 中級
+overlook verb 忽略、眺望 中級
+overnight adv./adj. 在夜間、突然；夜間的 中級
+overpass noun 天橋 初級
+overseas adj./adv. 在國外 初級 L6
+overtake verb 趕上、超過 中級
+overthrow verb/noun 推翻 中級
+overweight adj. 過重的 中級
+owe verb 欠債、欠(人情) 中級
+owl noun 貓頭鷹 中級
+own pron./adj. 自己的 初級
+own verb 擁有 初級
+owner noun 所有者 初級
+ownership noun 所有權 中級
+ox noun 公牛、牛 初級
+oxygen noun 氧氣 中級
+P.M. adv. 下午 = p.m.= PM 初級
+pace noun/verb 速度、步調；來回踱步、調整節奏 中級
+Pacific noun/adj. 太平洋(的) 中級
+pack verb/noun 打包；包裝 初級
+package noun 包裹 初級
+packet noun 小包(裹)、小袋 中級
+pad noun/verb 襯墊、護具；填塞、加墊子 中級
+page noun 頁 = p. 初級
+pain noun 痛苦 初級
+painful adj. 痛苦的 初級
+paint verb/noun 油漆 初級
+painter noun 畫家 初級
+painting noun 畫作 初級
+pair noun 對 初級
+40
+字彙 詞類 中文 註解 級數 學術字彙
+pajamas noun 睡衣 = pyjamas (British English) 初級
+pal noun 夥伴、好友 中級
+palace noun 宮殿 中級
+pale adj. 蒼白的 初級
+palm noun/verb 手掌；藏在手中 中級
+pan noun 平底鍋 初級
+pancake noun 鬆餅 中級
+panda noun 熊貓 初級
+panel noun 鑲板、專門小組 中級 L10
+panic noun/verb 驚慌 中級
+pants noun 褲子 = trousers (British English) 初級
+papaya noun 木瓜 初級
+paper noun 紙 初級
+parachute noun/verb 降落傘；跳傘 中級
+parade noun/verb 遊行 中級
+paradise noun 天堂、樂園 中級
+paragraph noun 段落 中級 L8
+parallel adj./noun/verb 平行的、同時發生的；相似之處；與…同時發生、與…相似 中級
+parcel noun/verb 包裹；打包 中級
+pardon noun/verb 原諒 初級
+parent noun 父母親 初級
+park noun 公園 初級
+park verb 停(車) 初級
+parking lot noun 停車場 初級
+parliament noun 議會 中級
+parrot noun 鸚鵡 初級
+part verb 離開、分別 中級
+part noun 部分 初級
+partial adj. 部分的、偏袒的 中級
+participant noun 參與者、參加者 中級 L2
+participate verb 參與、參加 中級 L2
+participle noun 分詞 中級
+particular adj. 特殊的、特別的 初級
+particularly adv. 特別、尤其 中級
+partner noun 夥伴 初級 L3
+partnership noun 合夥關係 中級
+part-time adj./adv. 部分時間的、兼職的、兼職 中級
+party noun 宴會 初級
+pass verb/noun 經過；通行證 初級
+passage noun 通道、段落 中級
+passenger noun 乘客 初級
+passion noun 熱情 中級
+passive adj. 被動的、消極的 中級 L9
+passport noun 護照 中級
+past noun/adj./prep./adv. 過去、經過、（時間）晚於、結束 初級
+pasta noun 義大利麵食 中級
+paste noun/verb 漿糊；黏貼 初級
+pat verb/noun 輕拍 中級
+path noun 小徑 初級
+patience noun 耐心 中級
+patient adj. 有耐心的 初級
+patient noun 病人 初級
+patriotic adj. 愛國的 中級
+pattern noun 樣式 初級
+pause verb/noun 暫停 初級
+pave verb 舖(路)、舖設 中級
+paw noun/verb (動物的)爪；用腳爪抓 中級
+pay verb/noun 支付；薪水 初級
+payment noun 付款、款項 中級
+PE noun 體育 = physical education 初級
+pea noun 豌豆 中級
+peace noun 和平 初級
+peaceful adj. 和平的、平靜的 初級
+peach noun 桃子、桃紅色 初級
+peak noun/adj./verb 山峰；最高的；達到高峰 中級
+peanut noun 花生 中級
+pear noun 梨 初級
+pearl noun 珍珠 中級
+peasant noun 農夫、佃農 中級
+pebble noun 鵝卵石 中級
+peculiar adj. 怪異的、特殊的 中級
+pedal noun/verb 踏板；踩踏板 中級
+peel noun/verb 外皮；剝(皮)、剝掉 中級
+peep verb/noun 偷瞥 中級
+peer verb/noun 同儕；凝視 中級
+pen noun 筆 初級
+penalty noun 處罰、刑罰 中級
+pencil noun 鉛筆 初級
+penguin noun 企鵝 中級
+penny noun 便士(貨幣單位) 中級
+people noun 人、人們、民族 初級
+41
+字彙 詞類 中文 註解 級數 學術字彙
+pepper noun 胡椒 初級
+per prep. 每(一) 中級
+percent noun 百分比、百分之一 = per cent 中級 L1
+percentage noun 百分率 中級 L1
+perfect adj. 完美的 初級
+perfection noun 完美 中級
+perform verb 表演、表現 中級
+performance noun 表演、表現 中級
+performer noun 表演者 中級
+perfume noun/verb 香水；(使充滿)香氣 中級
+perhaps adv. 或許 初級
+period noun 期間、時期 初級 L1
+permanent adj./noun 永久的；燙髮 中級
+permission noun 准許、許可 中級
+permit verb/noun 允許、准許；許可證 中級
+persist verb 堅持 中級 L10
+person noun 人 初級
+personal adj. 個人的 初級
+personality noun 個性 中級
+persuade verb 說服、使相信 中級
+persuasion noun 說服、勸說 中級
+persuasive adj. 有說服力的 中級
+pessimistic adj. 悲觀的 中級
+pest noun 害蟲 中級
+pet noun 寵物 初級
+petal noun 花瓣 中級
+petrol noun 汽油 = gas, gasoline (American English) 中級
+phenomenon noun 現象 中級 L7
+Philippines noun 菲律賓 初級
+philosopher noun 哲學家 中級 L3
+philosophical adj. 哲學的 中級
+philosophy noun 哲學 中級 L3
+phone noun/verb 電話；打電話 = telephone 初級
+photo noun 相片 = photograph 初級
+photograph noun 相片 = photo 初級
+photographer noun 攝影師 初級
+photographic adj. 攝影的、逼真的 中級
+photography noun 攝影 中級
+phrase noun/verb 片語；用言語表達 中級
+physical adj./noun 身體的、物質的；體檢 中級 L3
+physician noun 醫師、內科醫師 中級
+physicist noun 物理學家 中級
+physics noun 物理、物理學 初級
+pianist noun 鋼琴家 中級
+piano noun 鋼琴 初級
+pick verb 採、摘；挑選；剔除 初級
+picnic noun/verb 野餐；去野餐 初級
+picture noun/verb 圖片、照片；拍攝、描繪 初級
+pie noun 派、餡餅 初級
+piece noun 塊、片、（某類事物中的）一件 初級
+pig noun 豬 初級
+pigeon noun 鴿子 初級
+pile verb/noun 堆；(一)堆 初級
+pilgrim noun 朝聖者 中級
+pill noun 藥丸、藥片 中級
+pillow noun 枕頭 初級
+pilot noun/verb 飛行員、領航員；駕駛(飛機或船) 中級
+pin noun/verb 別針；(用別針等)別住、釘住 初級
+pine noun 松樹、松木 中級
+pine verb 渴望；憔悴 中級
+pineapple noun 鳳梨 初級
+pink adj./noun 粉紅色的；粉紅色 初級
+pint noun 品脫 中級
+pioneer noun/verb 先鋒、先驅；倡導、作先鋒 中級
+pipe noun 管子、煙斗 初級
+pirate noun/verb 海盜、侵犯版權者；盜版 中級
+pit noun/verb 坑、洞；使有凹洞 中級
+pitch noun/verb 投球、音高；投擲 中級
+pity noun/verb 同情、憐憫 中級
+pizza noun 披薩 初級
+place noun 廣場、地方、位置 初級
+place verb 放置 初級
+plain noun 平原 初級
+plain adj./adv. 樸素的、簡單的；完全地、簡直 初級
+plan noun/verb 計畫、方案、平面圖；計劃、打算 初級
+plane noun 飛機 初級
+planet noun 行星 初級
+plant verb 種植 初級
+plant noun 植物 初級
+plastic noun/adj. 塑膠；塑膠(製)的 中級
+plate noun 盤子 初級
+42
+字彙 詞類 中文 註解 級數 學術字彙
+platform noun 月台 初級
+play verb 玩、打(球)、演奏 初級
+play noun 比賽、遊戲、戲劇 初級
+player noun 運動員、演奏者、玩遊戲的人、播放器 初級
+playground noun 操場、遊樂場 初級
+pleasant adj. 宜人的 初級
+please verb 使高興、取悅 初級
+please adv. 請 初級
+pleased adj. 喜歡的、滿意的 初級
+pleasure noun 樂趣 初級
+plentiful adj. 充足的、大量的 中級
+plenty pron./adv. 大量、很多 中級
+plot noun/verb 情節、陰謀；密謀 中級
+plug noun/verb 塞子、插頭；塞住 中級
+plum noun/adj. 李子、梅子；稱心的 中級
+plumber noun 水管工 中級
+plural adj./noun 複數的；複數形式 中級
+plus prep./conj./adj./noun 加、加上；正數、加號 初級 L8
+pocket noun/adj./verb 口袋；袖珍的、零星花用的；裝入袋內 初級
+poem noun 詩 初級
+poet noun 詩人 中級
+poetry noun 詩作、詩集 中級
+point verb 指向、瞄準 初級
+point noun 點、觀點、要點、(特定)時刻 初級
+poison noun/verb 毒、毒藥；使中毒、使(水、空氣等)受污染 初級
+poisonous adj. 有毒的 中級
+pole noun 杆子、地極 中級
+police noun 警方 初級
+policeman noun 警察 = cop 初級
+policewoman noun 女警察 初級
+policy noun 政策 初級 L1
+polish noun/verb 拋光、亮光劑；擦亮、潤飾 中級
+polite adj. 有禮貌的 初級
+political adj. 政治的 中級
+politician noun 政治人物 中級
+politics noun 政治 中級
+poll noun/verb (做)民意調查、(獲得)投票 中級
+pollute verb 污染 初級
+pollution noun 汙染 初級
+pond noun 池塘 初級
+pony noun 小型馬 中級
+pool noun 水池 初級
+poor adj. 貧窮的、粗劣的、可憐的 初級
+pop verb/noun 突然出現、發出砰聲；砰的一聲 中級
+pop music noun 流行音樂 = pop 初級
+popcorn noun 爆米花 初級
+popular adj. 受歡迎的 初級
+population noun 人口 初級
+pork noun 豬肉 初級
+port noun 港口 中級
+portable adj./noun 可攜式的；手提式機器 中級
+porter noun 行李員、門房 中級
+portion noun 份、部分 中級 L9
+portrait noun 肖像 中級
+portray verb 描繪、描述 中級
+pose verb/noun 姿勢；擺好姿勢(拍照)、引起(尤指問題或困難) 中級 L10
+position noun/verb 位置；定位 初級
+positive adj. 正面的、明確肯定的 初級 L2
+possess verb 擁有 中級
+possession noun 擁有、所有物、財產 中級
+possibility noun 可能性 中級
+possible adj. 可能的 初級
+post noun 職位、郵件；杆/柱 中級
+post noun/verb 郵件、貼文；郵寄、發佈 = mail (American English) 郵件,包裹,郵寄 初級
+post office noun 郵局 初級
+postage noun 郵資 中級
+postal adj. 郵政的 中級
+postcard noun 明信片 初級
+poster noun 海報 中級
+postpone verb 延遲、暫緩 中級
+pot noun 鍋、壺 初級
+potato noun 馬鈴薯 初級
+potential adj./noun 潛在的、可能的；潛力、可能性 中級 L2
+pottery noun 陶器 中級
+poultry noun 家禽 中級
+pound verb 猛擊、(心)怦怦跳、猛烈敲擊 中級
+pound noun 磅、英鎊 初級
+pour verb 倒(出)、湧現 中級
+poverty noun 貧窮 中級
+powder noun/verb 粉末；灑粉末 初級
+power noun 力量、權力 初級
+43
+字彙 詞類 中文 註解 級數 學術字彙
+powerful adj. 強有力的 初級
+powerless adj. 無力量的、無權力的 中級
+practical adj./noun 實際的、實用的；實驗課 中級
+practice noun/verb 練習、慣例；練習、訓練 = practise(verb, British English) 初級
+praise verb/noun 稱讚 初級
+pray verb 祈禱 初級
+prayer noun 禱告、祈禱文 中級
+precious adj. 珍貴的 初級
+precise adj. 精確的 中級 L5
+predict verb 預言、預測 中級 L4
+prediction noun 預言、預測 中級
+prefer verb 較喜歡、偏好 初級
+preferable adj. 更好的 中級
+pregnancy noun 懷孕 中級
+pregnant adj. 懷孕的 中級
+preparation noun 準備 中級
+prepare verb 準備 初級
+presence noun 出席、出現 中級
+present adj. 出席的、現在的 初級
+present noun 禮物；現在 初級
+presentation noun 授予、報告、演講 中級
+presently adv. 此刻、現在 中級
+preserve verb/noun 保存、維護；保護區、蜜餞 中級
+president noun 總統 初級
+presidential adj. 總統(制)的 中級
+press noun 新聞界、印刷出版業 初級
+press verb 按、壓、催迫 初級
+pressure noun/verb 壓力；對…施壓 中級
+pretend verb 假裝、扮作 中級
+pretty adj. 漂亮的 初級
+pretty adv. 相當、頗 初級
+prevent verb 阻礙、防止 中級
+prevention noun 預防、阻止 中級
+preview noun/verb （電影或節目等的）預告；預習 中級
+previous adj. 先前的 中級 L2
+price noun/verb 價格；訂價 初級
+pride noun/verb 自豪、驕傲；以…而自豪 中級
+priest noun 教士、牧師 初級
+primary adj. 初級的、初等的 初級 L2
+primary noun (美國推舉黨內候選人的)初選 中級 L2
+primary adj. 首要的、主要的、基本的 中級
+prime adj. 原始的、首位的 中級 L5
+prime noun 全盛時期 中級 L5
+prime verb 使準備好 中級 L5
+primitive adj. 原始的 中級
+prince noun 王子 初級
+princess noun 公主 初級
+principal adj. 最重要的、主要的 中級 L4
+principal noun 校長、首長 初級
+principle noun 原則 初級 L1
+print verb/noun 印刷、用印刷體寫；印刷字體、印刷品 初級
+printer noun 印表機 初級
+prison noun 監獄 初級
+prisoner noun 囚犯 初級
+privacy noun 隱私 中級
+private adj. 私人的 初級
+privilege noun/verb 特權、特殊待遇；優待 中級
+prize noun 獎 初級
+probable adj. 可能的 中級
+probably adv. 大概、有可能 初級
+problem noun 問題 初級
+procedure noun 程序、步驟 中級
+proceed verb 繼續進行、前進 中級 L1
+process noun/verb 過程；處理、加工 中級 L1
+produce verb 製造、生產 初級
+producer noun 生產者、製造商 中級
+product noun 產品 初級
+production noun 生產 初級
+productive adj. 生產的、多產的、有效益的 中級
+profession noun 職業 中級
+professional adj./noun 職業的、專業的；專家 中級 L4
+professor noun 教授 初級
+profit noun/verb 利潤、好處；獲益 中級
+profitable adj. 獲利的、有益的 中級
+program noun/verb 節目；計畫 = programme (British English) 初級
+progress noun/verb 進步 初級
+progressive adj./noun 進步的、逐漸的；改革派 中級
+prohibit verb (以法令)禁止 中級 L7
+project noun 方案、計畫、(學生)研究 初級
+prominent adj. 重要的、著名的 中級
+promise verb/noun 承諾、答應 初級
+44
+字彙 詞類 中文 註解 級數 學術字彙
+promising adj. 有希望的、有前途的 中級
+promote verb 促進、推動 中級 L4
+promotion noun 提升、晉升、促銷活動 中級
+prompt verb 促使 中級
+prompt adj. 迅速的 中級
+prompt noun 提示 中級
+pronounce verb 宣告、發音 初級
+pronunciation noun 發音 中級
+proof noun 證據、證實 中級
+proof adj. 防…的 中級
+proper adj. 正確的、恰當的 中級
+property noun 財產、房地產 中級
+proportion noun 部分、比例 中級 L3
+proposal noun 提案、求婚 中級
+propose verb 提出建議、求婚 初級
+prospect noun 可能性、前景 中級
+prosper verb 繁榮 中級
+prosperity noun 繁榮 中級
+prosperous adj. 繁榮的 中級
+protect verb 保護 初級
+protection noun 保護 初級
+protective adj. 保護的、防護的 中級
+protein noun 蛋白質 中級
+protest noun/verb 抗議、反對 中級
+proud adj. (感到)驕傲的 初級
+prove verb 證明 初級
+proverb noun 諺語 中級
+provide verb 提供 初級
+province noun 省份 中級
+psychological adj. 心理的 中級 L5
+psychologist noun 心理學家 中級
+psychology noun 心理、心理學 中級 L5
+pub noun 酒吧 中級
+public adj./noun 公眾(的) 初級
+publication noun 出版、出版物 中級 L7
+publicity noun 宣傳、關注 中級
+publish verb 出版、刊載 中級 L3
+publisher noun 出版商 中級
+pudding noun 布丁 中級
+pull verb/noun 拉 初級
+pump noun/verb (用)幫浦 初級
+pumpkin noun 南瓜 初級
+punch noun/verb 拳打；用拳猛擊 中級
+punctual adj. 準時的 中級
+punish verb 處罰 初級
+punishment noun 處罰 中級
+pupil noun (小學)學生；瞳孔 中級
+puppet noun 木偶 中級
+puppy noun 小狗 初級
+purchase noun/verb 購買 初級 L2
+pure adj. 純的、純粹的 中級
+purple adj./noun 紫色(的) 初級
+purpose noun 目的 初級
+purse noun 錢包 初級
+pursue verb 追趕、追求 中級 L5
+pursuit noun 追趕、追求 中級
+push verb/noun 推、逼迫；推動 初級
+put verb 放 初級
+puzzle noun 拼圖 初級
+puzzle noun/verb 難題；使...感到為難、困惑 初級
+qualification noun 資格 中級
+qualified adj. 合格的、勝任的 中級
+qualify verb 使具有資格 中級
+quality noun 品質 初級
+quantity noun 數量 中級
+quarrel noun/verb 爭吵 中級
+quarter noun 四分之一 初級
+queen noun 皇后 初級
+question noun/verb (問)問題；懷疑 初級
+queue noun/verb 隊伍；排隊 中級
+quick adj. 快速的 初級
+quiet adj. 安靜的 初級
+quilt noun 被子 中級
+quit verb 離開 初級
+quite adv. 相當 初級
+quiz noun 小考 初級
+quote verb/noun 引用、引述；引語 中級 L7
+rabbit noun 兔子 初級
+race verb/noun 賽跑、參加比賽；競爭 初級
+race noun 種族 初級
+racial adj. 種族的 中級
+45
+字彙 詞類 中文 註解 級數 學術字彙
+radar noun 雷達 中級
+radiation noun 輻射 中級
+radical adj./noun 徹底的、激進的；激進份子 中級 L8
+radio noun 收音機、廣播節目 初級
+rage noun/verb 盛怒、狂暴；肆虐 中級
+railroad noun 鐵路 = railway (British English) 初級
+rain noun/verb (下)雨 初級
+rainbow noun 彩虹 初級
+raincoat noun 雨衣 中級
+rainfall noun 降雨(量) 中級
+rainy adj. 下雨的 初級
+raise verb/noun 舉高、提升、養育；提高 初級
+raise noun 加薪、加薪額 初級
+raisin noun 葡萄乾 中級
+range noun 排、行、範圍；山脈 初級 L2
+range verb 範圍、排列 初級 L2
+rank noun/verb 分等級、排行；地位、級別 中級
+rapid adj. 快速的 初級
+rare adj. 半熟的、罕見 初級
+rarely adv. 很少、不常 中級
+rat noun 老鼠 初級
+rate noun/verb 速度、(比)率；評估、評價 中級
+rather adv. 相當、頗 初級
+raw adj. 生的、原始的 中級
+ray noun 光線、射線 中級
+razor noun 刮鬍刀 中級
+reach verb 伸出(手)、抵達、 取得聯繫 初級
+reach noun （手、能力、影響等）可及範圍 初級
+react verb 反應 中級 L3
+reaction noun 反應 中級
+read verb 讀、朗讀 初級
+reader noun 讀者、簡易讀本 中級
+readily adv. 樂意地、迅速地 中級
+reading noun 閱讀、讀物 中級
+ready adj. 準備好的 初級
+real adj. 真實的 初級
+realistic adj. 現實的、實際的 中級
+reality noun 現實、事實 中級
+realize verb 瞭解、實現 = realise (British English) 初級
+really adv. 真的、非常、實際上 初級
+rear adj./noun 後面的；後部 中級
+rear verb 撫養、飼養 中級
+reason noun 原因、理由、理性 初級
+reasonable adj. 合理的、(價錢)公道的 中級
+rebel noun/verb 叛亂者；反叛 中級
+rebuild verb 重組、重建 中級
+recall verb/noun 回憶起；記性 中級
+receipt noun 收據 中級
+receive verb 收到、歡迎 初級
+receiver noun 聽筒、接收者 中級
+recent adj. 最近的 初級
+reception noun 接待處、招待會、接受 中級
+recession noun (經濟)衰退 中級
+recipe noun 食譜 中級
+recite verb 朗誦 中級
+recognition noun 認出、認可 中級
+recognize verb 認出、認可 中級
+recommend verb 推薦 中級
+record noun/verb 紀錄、唱片；記錄、錄音 初級
+recorder noun 錄音(像)機 中級
+recover verb 恢復 初級 L6
+recovery noun 復得、恢復 中級
+recreation noun 消遣、娛樂 中級
+rectangle noun 矩形 初級
+recycle verb 回收 初級
+red adj./noun 紅色(的) 初級
+reduce verb 減少、縮小 中級
+reduction noun 減少、折扣 中級
+refer verb 提及、參考 中級
+reference noun 提到、參考、出處 中級
+reflect verb 反映、反射 中級
+reflection noun 反映、反射、倒影 中級
+reform noun/verb 改革、改良 中級
+refresh verb 使清涼、提醒 中級
+refrigerator noun 電冰箱 = fridge= icebox 初級
+refugee noun 難民、流亡者 中級
+refusal noun 拒絕 中級
+refuse noun 垃圾、廢棄物 中級
+refuse verb 拒絕 初級
+regard verb/noun 認為；尊敬、關心 初級
+regarding prep. 關於 中級
+46
+字彙 詞類 中文 註解 級數 學術字彙
+regardless adv. 儘管 中級
+region noun 地區 初級 L2
+regional adj. 地方的、區域的 中級 L2
+register verb/noun 註冊；登記(簿) 中級 L3
+registration noun 註冊、登記 中級
+regret verb/noun 遺憾、後悔 初級
+regular adj. 規律的、經常的 初級
+regulate verb 規範、調節 中級 L2
+regulation noun 規則 中級
+rehearsal noun 排演、彩排 中級
+rehearse verb 排演 中級
+reject verb 拒絕、拒收 初級 L5
+relate verb 使有聯繫、敘述 中級
+related adj. 相關的、有親戚關係的 中級
+relation noun 關係、往來 中級
+relationship noun 關係 中級
+relative adj. 相關的 初級
+relative noun 親戚 初級
+relatively adv. 相對地、相當 中級
+relax verb 放鬆、放心 中級 L9
+relaxation noun 放鬆、消遣 中級 L9
+release verb/noun 釋放、宣泄；獲釋、發行 中級 L7
+reliable adj. 可信賴的、可靠的 中級
+relief noun 解脫、減輕 中級
+relieve verb 減輕、緩和 中級
+religion noun 宗教 中級
+religious adj. 宗教的、虔誠的 中級
+reluctant adj. 不情願的 中級 L10
+rely verb 仰賴、信賴 中級 L3
+remain verb 仍然是、繼續 中級
+remark noun/verb 言論、評論；談論、說起 中級
+remarkable adj. 非凡的、顯著的 中級
+remedy noun/verb 療法、解決方法；治療、補救 中級
+remember verb 記住 初級
+remind verb 提醒 初級
+reminder noun 提醒 中級
+remote adj. 偏遠的、遙控的 中級
+remove verb 去除、脫去 中級 L3
+renew verb 延長期限、重新開始 中級
+rent noun/verb 租金；租 初級
+repair noun/verb 修理 初級
+repeat verb 重複 初級
+repeatedly adv. 一再地、重複地 中級
+repetition noun 重複、反覆 中級
+replace verb 取代、代替 中級
+reply verb/noun 回答、回覆 初級
+report noun/verb 報告、報導 初級
+reporter noun 記者 初級
+represent verb 代表 中級
+representation noun 代表、表現 中級
+representative noun/adj. 代表；典型的、代表的 中級
+republic noun 共和國 中級
+Republic of China noun 中華民國 = ROC 初級
+republican noun/adj. 共和主義者；共和主義者的 中級
+reputation noun 名譽、名聲 中級
+request noun/verb 要求、請求 中級
+require verb 要求 初級 L1
+requirement noun 需要、要求 中級
+rescue noun/verb 援救、營救 中級
+research noun/verb 研究、調查 中級 L1
+researcher noun 研究人員 中級
+resemble verb 看起來像 中級
+reservation noun 預訂、訂位 中級
+reserve noun 儲備（物） 中級
+reserve verb 預訂、訂位 中級
+residence noun 居住、住處 中級
+resident noun/adj. 居民、住戶；定居的、常駐的 中級
+resign verb 辭職 中級
+resignation noun 辭職、辭呈 中級
+resist verb 抵抗、反抗 中級
+resistance noun 抵抗、反抗 中級
+resistant adj. 抵抗的、抗…的 中級
+resolution noun 決心、決議、解決 中級 L4
+resolve verb 解決、決心 中級 L4
+resource noun 資源 中級 L2
+respect noun/verb 尊重 初級
+respond verb 回應、回答 中級 L1
+response noun 回應、答覆 中級
+responsibility noun 責任 中級
+responsible adj. 負責的、掌管… 初級
+rest verb/noun 剩下；剩餘部分、其餘 初級
+47
+字彙 詞類 中文 註解 級數 學術字彙
+rest noun 休息 初級
+restaurant noun 餐館 初級
+restless adj. 煩躁的 中級
+restore verb 恢復、復原 中級 L8
+restrict verb 限制、束縛 中級 L2
+restriction noun 限制 中級
+restroom noun 洗手間 = rest room 初級
+result noun/verb 結果 初級
+retain verb 保留、留住 中級 L4
+retire verb 退休、退回 中級
+retreat noun/verb 僻靜處；撤退、躲避 中級
+return verb/noun 返回 初級
+reunite verb 重逢、再結合 中級
+reveal verb 顯示、透漏 中級 L6
+revenge noun/verb 復仇(行動)；替...報仇、報復 中級
+review noun/verb 複習 初級
+revise verb 修訂 初級 L8
+revision noun 修訂、修正 中級
+revolution noun 革命 中級 L9
+revolutionary adj. 革命(性)的 中級
+reward noun/verb 報答；酬賞 中級
+rewrite verb/noun 重寫、改寫；修改 中級
+rhyme verb/noun 押韻；押韻詞 中級
+rhythm noun 節奏、律動 中級
+ribbon noun 緞帶、絲帶 中級
+rice noun 米飯 初級
+rich adj./noun 富有的；富人 初級
+riches noun 財富 中級
+rid verb/adj. 使...免除；擺脫 中級
+riddle noun/verb 謎語；使佈滿 中級
+ride verb/noun 騎乘、搭乘；搭車 初級
+rider noun 騎士 中級
+ridiculous adj. 荒謬的、可笑的 中級
+rifle noun/verb 來福槍；匆忙翻找 中級
+right adj./adv. 右邊的、正確的；向右、正確地、立刻 初級
+right noun 右方；權利 初級
+right-hand adj. 右手的、右側的、供右手用的 初級
+ring verb 打電話、按門鈴、(鈴聲)響起 初級
+ring noun 戒指、環；鈴聲 初級
+ripe adj. 成熟的 中級
+rise verb/noun 上升 初級
+risk noun/verb 風險、危險；冒…風險 中級
+rival noun/adj./verb 競爭者；競爭的；與...競爭 中級
+river noun 河 初級
+road noun 道路 初級
+roar verb/noun 吼叫、呼嘯 中級
+roast verb/adj./noun 烤；烘烤過的；烤肉 中級
+rob verb 搶劫 初級
+robber noun 搶劫犯 中級
+robbery noun 搶劫 中級
+robe noun 睡袍、禮袍 中級
+robot noun 機器人 初級
+rock noun 石頭、岩石、搖滾樂 初級
+rock verb 搖晃、震動、跳舞(搖滾樂) 初級
+rocket noun/verb 火箭；快速增長 中級
+rod noun 竿、棒 中級
+role noun 角色 初級 L1
+roll verb/noun 捲；(一)捲 初級
+roller blade noun 直排輪鞋 動詞：roller-blade= rollerblade 初級
+roller skate noun 輪式溜冰鞋 動詞：roller-skate 初級
+romance noun/verb 浪漫史；虛構(故事) 中級
+romantic adj./noun 浪漫的、愛情的；浪漫的人 中級
+roof noun 屋頂 初級
+room noun 房間 初級
+rooster noun 公雞 = cock (British English) 中級
+root noun/verb 根、根源；生根、紥根 初級
+rope noun 繩子 初級
+rose noun 玫瑰 初級
+rot verb/noun 腐爛；腐朽 中級
+rotten adj. 腐爛的 中級
+rough adj./adv./verb 粗糙的、粗略的、粗暴的、艱難的；粗野地、大略地；艱難度日 中級
+roughly adv. 大約、大致、粗暴地 中級
+round adv./prep. 環繞地、周而復始地；圍繞、環繞 初級
+round noun 一輪、一回合 初級
+round adj. 圓形的 初級
+route noun/verb 路線；按路線發送 中級 L9
+routine noun/adj. 常規；例行公事的 中級
+row noun 排、行、列 初級
+row verb 划(船) 初級
+royal adj. 皇家的 初級
+rub verb 摩擦、揉 初級
+48
+字彙 詞類 中文 註解 級數 學術字彙
+rubber adj./noun 橡膠的；橡膠 初級
+rubbish noun/adj. 垃圾；糟透的 (used mainly in British English) 中級
+rude adj. 無禮的 初級
+rug noun 小地毯 中級
+ruin noun/verb 廢墟；毀壞 初級
+rule noun/verb 規則；統治 初級
+ruler noun 尺、統治者 初級
+rumor noun 謠言 = rumour (British English) 中級
+run verb/noun 跑、行駛、運轉 初級
+runner noun 跑者 中級
+running adj. 連續的 中級
+rural adj. 農村的 中級
+rush verb/noun 趕緊；匆忙 初級
+Russia noun 俄國 初級
+rust noun/verb (鐵)銹；生鏽 中級
+rusty adj. 生鏽的 中級
+sack noun/verb 麻布袋、一袋；解雇 中級
+sacrifice verb/noun 犧牲、奉獻；獻祭品 中級
+sad adj. 悲傷的 初級
+sadden verb 使難過 中級
+safe adj. 安全的 初級
+safe noun 保險箱、保險櫃 初級
+safety noun 安全 初級
+sail verb/noun 航行 初級
+sailor noun 船員、水手 初級
+sake noun 緣故、目的 中級
+salad noun 沙拉 初級
+salary noun 薪水 中級
+sale noun 賣、出售、銷售 初級
+salesperson noun 銷售員 = salesman, saleswoman 初級
+salt noun 鹽 初級
+salty adj. 含鹽的、鹹的 中級
+same pron./adj. 同樣的人/事物；同樣的 初級
+sample noun/verb 樣本；試用、試吃 初級
+sanction noun/verb 批准、制裁、強硬措施；批准、贊成 中級
+sand noun 沙子 初級
+sandwich noun 三明治 初級
+satellite noun 衛星、人造衛星 中級
+satisfaction noun 滿意 中級
+satisfactory adj. 令人滿意的 中級
+satisfy verb 使滿意 初級
+Saturday noun 星期六 = Sat. 初級
+sauce noun 醬汁 中級
+saucer noun 茶碟 初級
+sausage noun 香腸、臘腸 中級
+save verb 節省 初級
+saving noun 節省、存款 中級
+saw noun/verb 鋸子；鋸 中級
+say verb 說 初級
+saying noun 諺語、格言 中級
+scale noun 規模、刻度、等級 初級
+scan verb/noun 掃描；審視 中級
+scarce adj. 稀少的、缺乏的 中級
+scarcely adv. 幾乎不 中級
+scare verb/noun 驚嚇、嚇跑；驚慌、擔憂 中級
+scarf noun 圍巾 初級
+scary adj. 嚇人的 中級
+scatter verb/noun 使分散、消散；散播、少量 中級
+scene noun 現場、景色 初級
+scenery noun 風景 中級
+schedule noun/verb 工作行程、時刻表；安排時間、預定 中級 L8
+scheme noun/verb 體制、陰謀；密謀 中級 L3
+scholar noun 學者 中級
+scholarship noun 獎學金 中級
+school noun 學校 初級
+schoolmate noun 學校同學 中級
+science noun 科學 初級
+scientific adj. 科學(上)的 中級
+scientist noun 科學家 初級
+scissors noun 剪刀 中級
+scold verb 訓斥、責罵 中級
+scoop verb/noun 用勺舀、用鏟子鏟；杓子、一勺 中級
+scooter noun 機車、滑板車 初級
+score verb/noun 得分；(比賽中的)得分、成績 初級
+scout noun 童子軍 中級
+scratch verb/noun 搔、抓傷；抓痕、劃傷 中級
+scream verb/noun 尖叫；尖叫聲 中級
+screen noun 螢幕 初級
+screen verb 遮擋、檢查、放映 初級
+screw verb/noun 用螺絲固定、旋；螺絲 中級
+scrub verb/noun 刷洗 中級
+49
+字彙 詞類 中文 註解 級數 學術字彙
+sculpture noun 雕刻品、雕刻術 中級
+sea noun 海洋 初級
+seafood noun 海鮮 中級
+seagull noun 海鷗 = gull 中級
+seal verb/noun 蓋章、密封；印章、封條 中級
+search noun/verb 搜尋 初級
+seaside noun 海邊 中級
+season verb 調味 中級
+season noun 季節 初級
+seat noun/verb 座位；使就座 初級
+second noun 第二位；秒 初級
+second adj./adv. 第二的；居第二位 初級
+secondary adj. 次要的 中級
+second-hand adj./adv. 舊的、二手的；二手地、間接地 中級
+secret adj./noun 秘密的；秘密 初級
+secretary noun 秘書 初級
+section noun 區、段 初級 L1
+sector noun 部門、分區 中級 L1
+secure verb/adj. 保護、使安全；安心的、安全的 中級 L2
+security noun 安全(工作) 中級
+see verb 看、拜訪、明白 初級
+seed noun 種子 初級
+seek verb 尋找 初級 L2
+seem verb 看起來、似乎 初級
+seesaw noun 蹺蹺板 初級
+seize verb 抓住、奪取 中級
+seldom adv. 不常、很少 初級
+select verb 挑選 初級 L2
+selection noun 挑選 中級
+self noun 自我 中級
+selfish adj. 自私的 初級
+sell verb 售出 初級
+semester noun 學期 初級
+send verb 寄 初級
+senior adj./noun 年長的、資深的；較年長者、前輩 中級
+senior high school noun 高中、高級中學 初級
+sense noun/verb 感官、觀念、意義；意識到、感覺到 初級
+sensible adj. 明理的、理智的 中級
+sensitive adj. 敏感的、靈敏的 中級
+sentence noun/verb 句子、判決；宣判 中級
+separate adj./verb 分開的；分開 初級
+separation noun 分離、分隔 中級
+September noun 九月 = Sept. 初級
+series noun 系列、連續 中級 L4
+serious adj. 嚴重的 初級
+servant noun 僕人 初級
+serve verb 服務 初級
+service noun 服務 初級
+session noun 一節(課程)、會議、開庭 中級
+set verb 放、裝設 初級
+set adj. 準備好的 初級
+set noun 一套(組、副) 初級
+settle verb 解決、決定、安頓 中級
+settlement noun 協議、解決 中級
+settler noun 移民 中級
+setup noun 組織、結構 中級
+seven number/pron./noun/adj. 七 初級
+seventeen number/pron./noun/adj. 十七 初級
+seventy number/pron./noun/adj. 七十 初級
+several adj./pron. 一些的；幾個 初級
+severe adj. 嚴重的、嚴厲的 中級
+sew verb 縫、縫補 中級
+sex noun 性別、性 中級 L3
+sexual adj. 性的、性別的 中級
+sexy adj. 性感迷人的 中級
+shade noun/verb 蔭、陰影；遮擋(光線)、畫陰影 中級
+shadow noun/verb 影子；遮蔽、跟蹤 中級
+shady adj. 多蔭的、陰暗的 中級
+shake verb/noun 搖動、握手；搖動 初級
+shall aux. 將 初級
+shallow adj. 淺的、膚淺的 中級
+shame noun/verb 羞愧、遺憾；使感到羞恥 中級
+shameful adj. 可恥的、丟臉的 中級
+shampoo noun/verb 洗髮精；用洗髮精洗(頭髮) 中級
+shape noun 形狀 初級
+share noun 股票、部分 初級
+share verb 分享、分擔 初級
+shark noun 鯊魚 初級
+sharp adj. 銳利的 初級
+sharpen verb 使鋒利、加劇、提高 中級
+shave verb 剃、刮毛髮 中級
+50
+字彙 詞類 中文 註解 級數 學術字彙
+shaver noun 刮鬍刀 中級
+she pron. 她 初級
+sheep noun 綿羊 初級
+sheet noun 床單、一張 初級
+shelf noun 架子 初級
+shell noun 殼、殼狀物 中級
+shelter noun/verb 避難所、遮蔽處；躲避、保護、遮蔽 中級
+shepherd noun/verb 牧羊人；牧羊、帶領 中級
+shift verb/noun 變換、輪班；轉移、變換 中級 L3
+shine verb 照亮 初級
+shining adj. 發光的；明亮而快樂的；出色的 中級
+shiny adj. 光亮的 中級
+ship noun (航海的)大船、艦 初級
+ship verb 用船運、運送 初級
+shirt noun 襯衫 初級
+shock noun/verb 震驚；使驚訝 初級
+shoe noun 鞋 初級
+shoot verb/noun 發射、投籃；發射、射擊 初級
+shop noun 店舖 = store 商店 初級
+shop verb 買、購物 初級
+shopkeeper noun 商店老闆 中級
+shore noun 岸 初級
+short adj. 矮的、短的、缺乏的 初級
+shortage noun 缺少、不足 中級
+shortcoming noun 缺點 中級
+shortcut noun 捷徑 中級
+shorten verb 縮短 中級
+shortly adv. 不久、立刻 中級
+shorts noun 短褲 中級
+short-sighted adj. 近視的、目光短淺的 中級
+short-term adj. 短期的、近期的 中級
+shot noun 射擊、(藥品)一次注射量 初級
+should aux. 應該 初級
+shoulder noun 肩膀 初級
+shout verb/noun 大聲說、吼叫；喊叫聲 初級
+shovel noun/verb 鏟子；鏟 中級
+show verb/noun 給…看；展覽 初級
+shower noun/verb 淋浴；(下)陣雨 初級
+shrimp noun 蝦子 初級
+shrink verb/noun 縮小、減少；畏縮 中級
+shrug verb/noun 聳肩 中級
+shut verb 關上、打烊 初級
+shuttle noun/verb 航班、班車、梭；(頻繁)往返 中級
+shy adj. 害羞的 初級
+sick adj. 生病的、噁心的 初級
+sickness noun 疾病 中級
+side noun 邊、側 初級
+sidewalk noun 人行道 = pavement (British English) 初級
+sigh verb/noun 嘆息 中級
+sight noun 視力、視線 初級
+sightseeing noun 觀光、遊覽 中級
+sign verb 簽名、簽約 初級
+sign noun 徵兆、標示 初級
+signal noun/verb 信號；發信號 中級
+signal adj 顯著的、非凡的 中級
+signature noun 簽名 中級
+significance noun 重要性、意義 中級
+significant adj. 顯著的、有重大意義的 中級 L1
+silence noun 沉默、安靜 初級
+silent adj. 安靜的 初級
+silk noun 絲(稠)、絲織品 中級
+silly adj. 愚蠢的 初級
+silver noun/adj. 銀；銀質的、銀色的 初級
+similar adj. 類似的 初級 L1
+similarity noun 相似(處) 中級
+simple adj. 簡單的 初級
+simplify verb 簡化 中級
+simply adv. 只是、簡單地 初級
+sin noun/verb 罪(惡)、過失；犯過失 中級
+since conj./prep./adv. 從...以來；自從；從此、此後 初級
+sincere adj. 真誠的 初級
+sing verb 唱(歌) 初級
+Singapore noun 新加坡 初級
+singer noun 歌手 初級
+single adj./noun 單一的、單身的；未婚者、單曲(唱片) 初級
+singular adj. 單數的 中級
+sink noun 水槽 初級
+sink verb 下沉 初級
+sip verb/noun 啜飲；一小口 中級
+sir noun 先生 初級
+sister noun 姐妹 初級
+51
+字彙 詞類 中文 註解 級數 學術字彙
+sit verb 坐 初級
+site noun 位址、網站 中級 L2
+situation noun 情況、形勢 中級
+six number/pron./noun/adj. 六 初級
+sixteen number/pron./noun/adj. 十六 初級
+sixty number/pron./noun/adj. 六十 初級
+size noun 尺寸 初級
+skate noun/verb 冰鞋；溜冰 初級
+sketch noun/verb 素描、概述 中級
+ski noun/verb 滑雪板；滑雪 初級
+skill noun 技術 初級
+skillful adj. 有技術的 = skilful (British English) 初級
+skim verb/noun 撇去、掠過、瀏覽 中級
+skin noun 皮膚 初級
+skinny adj. 很瘦的 初級
+skip verb 蹦蹦跳跳；略過 中級
+skip noun 跳、蹦；省略 中級
+skirt noun 裙子 初級
+sky noun 天空 初級
+skyscraper noun 摩天大樓 中級
+slang noun 俚語 中級
+slave noun/verb 奴隸；拼命工作 中級
+slavery noun 奴隸制 中級
+sleep verb/noun 睡覺；睡覺、睡眠 初級
+sleepy adj. 想睡的 初級
+sleeve noun 袖子 中級
+slender adj. 苗條的 初級
+slice noun/verb (薄)片；切、切成薄片 中級
+slide verb/noun 滑動；滑梯 初級
+slight adj./verb/noun 輕微的；輕視、冷落 中級
+slim adj. 苗條的 初級
+slip verb/noun 滑動、滑跤 初級
+slipper noun 拖鞋 初級
+slippery adj. 滑的 中級
+slogan noun 標語 中級
+slope noun/verb 斜坡；傾斜 中級
+slow adj./verb/adv. 慢的；減慢；緩慢地 初級
+small adj. 小的 初級
+smart adj. 聰明的 初級
+smell noun/verb 氣味；聞 初級
+smile verb/noun 微笑；笑容 初級
+smog noun 煙霧(污染物) 中級
+smoke noun/verb 煙；抽菸、冒煙 初級
+smoky adj. 冒煙的、煙霧瀰漫的 中級
+smooth adj./verb 平整的、平滑的；使平整、使平滑 中級
+snack noun/verb 點心；吃點心 初級
+snail noun 蝸牛 初級
+snake noun 蛇 初級
+snap verb 突然折斷；(門等)突然關上；拍快照；突然發作(尤指動怒) 中級
+snap noun 突然折斷(或闔上)的聲音、喀嚓聲 中級
+snap adj 匆忙的、不加思索的 中級
+sneak verb 偷溜、偷偷地做 中級
+sneaker noun 球鞋 初級
+sneaky adj. 偷偷摸摸的 初級
+sneeze verb/noun 打噴嚏；打噴嚏聲 中級
+snow noun/verb 雪；下雪 初級
+snowman noun 雪人 中級
+snowy adj. 多雪的 初級
+so adv. 如此 初級
+so conj. 所以 初級
+soap noun/verb 肥皂；抹肥皂 初級
+sob verb/noun 嗚咽、啜泣；啜泣(聲) 中級
+soccer noun 足球 初級
+sociable adj. 好交際的、友善的 中級
+social adj. 社會的 初級
+society noun 社會 初級
+socket noun 插座 中級
+sock noun 襪子 初級
+soda noun 蘇打、汽水 初級
+sofa noun 沙發 初級
+soft adj. 軟的 初級
+soft drink noun (不含酒精的)軟性飲料 初級
+softball noun 壘球 中級
+software noun 軟體 中級
+soil noun 土壤 中級
+soil verb 弄髒 中級
+solar adj. 太陽(能)的 中級
+soldier noun 軍人 初級
+solid adj./noun 固體的、實心的、堅固的；固體 中級
+solution noun 解答 初級
+solve verb 解決 初級
+52
+字彙 詞類 中文 註解 級數 學術字彙
+some pron./determiner 有些；一些 初級
+somebody pron. 某人 = someone 初級
+somehow adv. 不知怎麼的、以某種方式 中級
+someone pron. 某人 = somebody 初級
+something pron. 某個東西 初級
+sometime adv./adj. 在某時；從前的、一度的 中級
+sometimes adv. 有時候 初級
+somewhat adv. 有點、稍微 中級 L7
+somewhere adv. 在某處 初級
+son noun 兒子 初級
+song noun 歌曲 初級
+soon adv. 不久、很快地、快、早 初級
+sore adj./noun 痛的；痛處、瘡 初級
+sorrow noun 悲傷 中級
+sorry adj 對不起 初級
+sort noun 種類 初級
+sort verb 分類 初級
+soul noun 靈魂 初級
+sound adj. 健康的、狀況良好的 中級
+sound noun/verb 聲音；聽起來 初級
+soup noun 湯 初級
+sour adj. 酸的 初級
+source noun 來源 初級 L1
+south noun/adv./adj. 南方；在南方；南方的 初級
+south-east noun/adv./adj. 東南方；在東南方；東南方的 中級
+southern adj. 南方(人)的 初級
+south-west noun/adv./adj. 西南方；在西南方；西南方的 中級
+souvenir noun 紀念品 中級
+sow verb 播種、散佈 中級
+soy sauce noun 醬油 初級
+soybean noun 黃豆 = soya bean= soy 中級
+space noun 空間 初級
+spacecraft noun 太空船 = spaceship 中級
+spade noun 鏟子 中級
+spaghetti noun 義大利麵 初級
+spare adj./noun 備用的；備用品 中級
+spare verb 剩下、(尤指在自己困難的情況下)抽出 中級
+spark noun/verb 火花；觸發 中級
+sparkle verb/noun 閃耀、閃爍；閃耀、閃爍、火花 中級
+sparrow noun 麻雀 中級
+speak verb 講 初級
+speaker noun 發言人 初級
+spear noun/verb 矛；用尖物刺穿 中級
+special adj./noun 特別的；特製菜餚、特別節目 初級
+specialized adj. 專用的、專門的、專業的 中級
+species noun 物種 中級
+specific adj. 特定的、明確的 中級 L1
+spectator noun 觀眾 中級
+speech noun 演說 初級
+speed noun/verb 速度；加速 初級
+spell noun 咒語 中級
+spell verb 拼字 初級
+spelling noun 拼寫 初級
+spend verb 度過 初級
+spice noun/verb 香料、趣味；加香料、增添趣味 中級
+spicy adj. 辛辣的、加有香料的 中級
+spider noun 蜘蛛 初級
+spill verb/noun 灑出、溢出；泄漏(量) 中級
+spin verb 旋轉；紡紗；(蠶、蜘蛛等)吐(絲)、結(網) 中級
+spin noun 旋轉 中級
+spinach noun 菠菜 中級
+spirit noun 精神 初級
+spiritual adj. 心靈的、精神的 中級
+spit verb/noun 吐(口水等)；唾液 中級
+spite noun 惡意、怨恨 中級
+splash verb/noun 潑濺；潑濺聲 中級
+splendid adj. 燦爛的、極佳的 中級
+split verb/noun/adj. 分攤、分裂；分裂；分裂的 中級
+spoil verb/noun 破壞、寵壞；戰利品 中級
+sponsor verb/noun 贊助；贊助者 中級
+spoon noun 湯匙 初級
+sport noun 運動 初級
+sportsmanship noun 運動精神 中級
+sportsperson noun 運動員 = sportsman, sportswoman 中級
+spot noun 斑點、地點 中級
+spot verb 看出、注意到 中級
+spray noun/verb 水花、噴霧；噴灑 中級
+spread verb/noun 延伸；散布 初級
+spring noun 春天、泉水 初級
+sprinkle verb/noun 撒上 中級
+spy noun/verb 間諜；當間諜、暗中監視 中級
+53
+字彙 詞類 中文 註解 級數 學術字彙
+square noun/adj. 正方形、廣場；正方形的 初級
+squeeze verb/noun 榨、擠 中級
+squirrel noun 松鼠 中級
+stab verb/noun (用刀)捅、刺 中級
+stable adj. 穩定的、牢固的 中級 L5
+stable noun 馬廄 中級 L5
+stadium noun 體育場 中級
+staff noun/verb 全體員工；成為員工、(為機構)提供人員 中級
+stage noun 舞台 初級
+staircase noun 樓梯 中級
+stair noun 樓梯 初級
+stake noun/verb 樁、股份、風險；打賭 中級
+stamp noun/verb 郵票、戳章；貼郵票、踩 初級
+stand verb/noun 站立、忍受；站立 初級
+standard noun/adj. 標準；標準的 初級
+star noun/verb 星星、明星；主演、擔任主角 初級
+stare verb/noun 盯著看；凝視 中級
+start verb/noun 開始；開始、開端 初級
+starvation noun 飢餓、餓死 中級
+starve verb 捱餓、餓死 中級
+state noun 州、國家；狀態 中級
+state adj. 國家的、州的 中級
+state verb 陳述、說明、宣布 中級
+statement noun 說法、聲明 中級
+station noun 車站、(提供服務或進行某工作的)站、電視台 初級
+stationery noun 文具 初級
+statue noun 雕像 中級
+status noun 地位、狀況 中級 L4
+stay verb/noun 停留；停留時間 初級
+steady adj./verb 穩固的、不變的；使穩固、穩定 中級
+steak noun 牛排 初級
+steal verb 偷 初級
+steam noun/verb 蒸汽；蒸(食物) 初級
+steel noun/adj. 鋼、鋼鐵業；鋼的、鋼鐵業的 中級
+steel verb 鋼化、給...包上鋼；使堅強、下決心應付 中級
+steep adj. 陡峭的 中級
+steer verb/noun 駕駛、引導 中級
+stem verb 起源於 中級
+stem noun 莖、梗、樹幹、(工具的)柄 中級
+step noun/verb 步伐；踏 初級
+stepfather noun 繼父 中級
+stepmother noun 繼母 中級
+stereo adj./noun 立體聲的、立體音響的；立體聲、立體音響 中級
+stick verb 插入、黏貼 初級
+stick noun 枝條、木棍、拐杖 初級
+sticky adj. 黏的 中級
+stiff adj./adv. 硬的、僵硬的；硬地、僵硬地 中級
+still adj. 靜止的、不動的 中級
+still adv. 仍然、更加 初級
+stimulate verb 刺激、激發 中級
+sting verb/noun 螫、刺；刺傷 中級
+stingy adj. 吝嗇的 初級
+stir verb/noun 攪動、攪拌、激起、喚醒 中級
+stitch noun/verb 縫、縫線；縫補 中級
+stock verb 貯存、庫存 中級
+stock noun 貯存、存貨；股票 中級
+stock adj. 庫存的、現有的；陳腐的、平凡的 中級
+stocking noun 長襪 中級
+stomach noun 胃 = tummy 初級
+stomachache noun 腹痛 初級
+stone noun 石頭 初級
+stool noun 凳子 中級
+stop verb/noun 停止、阻止；短暫停留、(尤指公車)站 初級
+store noun 商店 初級
+store verb 貯藏 初級
+storey noun 樓層 = story (American English) 中級
+storm noun 暴風雨 初級
+stormy adj. 暴風雨的 初級
+story noun 故事；樓層 樓層= floor 初級
+storyteller noun 說故事者 中級
+stove noun 爐子 初級
+straight adv./adj. 直地、筆直地；直的、筆直的 初級
+strange adj. 奇妙的、陌生的 初級
+stranger noun 陌生人 初級
+strategy noun 策略、戰略 中級 L2
+straw noun 稻草；吸管 初級
+strawberry noun 草莓 初級
+stream noun 溪 初級
+street noun 街 初級
+strength noun 體力、力氣 中級
+strengthen verb 增強、鞏固 中級
+54
+字彙 詞類 中文 註解 級數 學術字彙
+stress verb 強調、著重 初級 L4
+stress noun 壓力 初級 L4
+stretch verb/noun 拉長、伸展；一段 中級
+strict adj. 嚴格的 中級
+strike verb/noun 打、擊、罷工；打擊、罷工 初級
+string noun/verb 細繩、線；懸掛、串在一起 中級
+strip noun 條、帶 中級
+strip verb 剝去、脫光衣服 中級
+strive verb 努力、奮鬥 中級
+stroke noun/verb 中風、游泳姿勢；輕撫 中級
+strong adj. 強勁的 初級
+structure noun/verb 結構、建築物；構成、組織 中級 L1
+struggle noun/verb 努力；努力、掙扎 初級
+stubborn adj. 固執的 中級
+student noun 學生 初級
+studio noun 錄音室、電影公司、工作室 中級
+study noun/verb 研究、調查；學習、研讀 初級
+stuff noun 物品、東西、材料 中級
+stuff verb 裝、填、塞、把...裝滿、塞進 中級
+stupid adj. 愚笨的 初級
+style noun 風格 初級 L5
+subject adj./verb 易受...的、隸屬的、取決於；使順從、使遭受 中級
+subject noun 主題、科目、主詞 初級
+submarine noun/adj. 潛水艇；海底的 中級
+substance noun 物質、本質 中級
+substitute noun/verb 代替的人(物)；代替 中級 L5
+subtract verb 減去 中級
+suburb noun 郊區 中級
+subway noun 地下鐵 = underground, tube (British English), MRT, metro 初級
+succeed verb 成功 初級
+success noun 成功 初級
+successful adj. 成功的 初級
+such adj./pron. 如此的；這樣的人(或事物) 初級
+suck verb 吸吮 中級
+sudden adj./noun 突然的；突然發生的事 初級
+suffer verb 遭受、受苦 中級
+suffering noun 痛苦、磨難 中級
+sufficient adj. 充足的、足夠的 中級 L3
+sugar noun 糖 初級
+suggest verb 建議 初級
+suggestion noun 建議 中級
+suicide noun 自殺 中級
+suit noun 西裝 初級
+suit verb 適合、相配 初級
+suitable adj. 適宜的 中級
+suitcase noun 手提箱 中級
+sum noun/verb 總和；共計、總結 中級 L4
+summarize verb 摘要 中級
+summary noun 概要、總結 中級 L4
+summer noun 夏天 初級
+summit noun 山峰、頂峰 中級
+sun noun 太陽 初級
+sunbathe verb 日光浴 中級
+Sunday noun 星期天 = Sun. 初級
+sunlight noun 日光 中級
+sunny adj. 陽光普照的 初級
+sunrise noun 日出 中級
+sunset noun 日落 中級
+super adj./adv. 極好的；非常地、尤其地 初級
+superb adj. 極佳的 中級
+superior adj./noun 較高的、較優秀的；上級 中級
+supermarket noun 超級市場 初級
+supervisor noun 主管人、指導者 中級
+supper noun 晚餐 = dinner 初級
+supply noun/verb 供應品；供應、供給 初級
+support noun/verb 支持；支持、支援 初級
+supporter noun 支持者 中級
+suppose verb 認為、應當 中級
+supreme adj. 最高的、最大的 中級
+sure adj. 確定的 初級
+sure adv. 當然 初級
+surely adv. 一定、想必 中級
+surf noun/verb 浪花；衝浪 初級
+surface noun 表面 初級
+surgeon noun 外科醫生 中級
+surgery noun 外科手術 中級
+surprise noun/verb 驚喜；使驚訝 初級
+surrender verb/noun 投降、放棄 中級
+surround verb/noun 圍繞、圍住 中級
+surroundings noun 周圍事物、環境 中級
+survey noun/verb (民意)調查；查看、審視 中級 L2
+55
+字彙 詞類 中文 註解 級數 學術字彙
+survival noun 生存、存活 中級 L7
+survive verb 存活 初級 L7
+survivor noun 倖存者、生還者 中級
+suspect verb/noun/adj. 懷疑；嫌疑犯；可疑的 中級
+suspend verb 懸掛、中止、暫時取消 中級 L9
+suspension noun 暫停、停學(職) 中級
+suspicion noun 懷疑 中級
+suspicious adj. (令人)懷疑的 中級
+swallow verb/noun 吞嚥、吞沒；一口的量 中級
+swallow noun 燕子 初級
+swan noun 天鵝 初級
+swear verb 發誓、罵髒話 中級
+sweat noun/verb 汗；流汗 中級
+sweater noun 毛衣 初級
+sweep verb 掃 初級
+sweet adj./noun 甜(蜜)的；甜食 noun = candy 初級
+swell verb/noun 腫脹、增大、隆起；腫脹、增大、隆起處 中級
+swift adj. 迅速的、敏捷的 中級
+swim verb 游泳 初級
+swimsuit noun 泳衣 初級
+swing verb/noun 擺動、搖晃；鞦韆 初級
+switch verb/noun 改變、交換；開關、改變 中級
+sword noun 劍 中級
+syllable noun 音節 中級
+symbol noun 標誌、符號 初級 L5
+symbolize verb 象徵、代表 中級
+sympathetic adj. 有同情心的、支持的 中級
+sympathize verb 同情、支持 中級
+sympathy noun 同情心、支持 中級
+symphony noun 交響樂 中級
+symptom noun 症狀 中級
+syrup noun 糖漿 中級
+system noun 系統 初級
+systematic adj. 有系統的 中級
+table noun 桌子 初級
+table tennis noun 乒乓球運動 = ping-pong 初級
+tablecloth noun 桌巾 中級
+tablet noun 藥片、平板電腦 中級
+tack noun/verb 圖釘；(用釘)釘住 中級
+tag noun/verb 標籤；加標籤、附加 中級
+Taichung noun 台中 初級
+tail noun 尾巴 初級
+tailor noun/verb 裁縫師；專門訂做 中級
+Tainan noun 台南 初級
+Taiwan noun 臺灣 初級
+Taiwanese adj./noun 臺灣(人)的；臺灣人 初級
+take verb 搭、帶、做 初級
+tale noun 故事 中級
+talent noun 才能、天份 初級
+talk verb/noun 談話；交談 初級
+talkative adj. 健談的 初級
+tall adj. 高的 初級
+tame adj./verb 馴服的；馴服 中級
+tangerine noun 橘子 初級
+tank noun 箱、槽、櫃、(盛放液體或氣體的)容器 初級
+tap verb 輕拍、輕敲 中級
+tap noun 輕叩；(水)龍頭 中級
+tape noun/verb 膠帶、磁帶、錄音帶；用膠帶固定、錄音 初級 L6
+target noun/verb 目標；當作目標 初級 L5
+task noun 任務 初級 L3
+taste noun/verb 味道、品味；嚐 初級
+tasty adj. 可口的 中級
+tax noun/verb 稅；課稅 中級
+taxi noun 計程車 = taxicab, cab 初級
+tea noun 茶 初級
+teach verb 教導 初級
+teacher noun 老師 初級
+Teacher's Day noun 教師節 初級
+team noun 小組 初級 L9
+teapot noun 茶壺 初級
+tear noun 眼淚 初級
+tear verb 撕破 初級
+tease verb/noun 取笑、逗弄 中級
+technical adj. 技術的、專門的 中級 L3
+technician noun 技術人員 中級
+technique noun 技巧、工藝 中級 L3
+technological adj. 科技的 中級 L3
+technology noun 科技 中級 L3
+teen noun/adj. 青少年；十幾歲的 中級
+teenage adj. 十幾歲的 中級
+teenager noun 青少年 初級
+56
+字彙 詞類 中文 註解 級數 學術字彙
+telephone noun/verb 電話；打電話 = phone 初級
+telescope noun 望遠鏡 中級
+televise verb 電視播送 中級
+television noun 電視 = TV 初級
+tell verb 告訴 初級
+temper noun 脾氣、怒氣 中級
+temper verb 使緩和 中級
+temperature noun 氣溫 初級
+temple noun 廟 初級
+temporary adj. 暫時的 中級 L9
+ten number/pron./noun/adj. 十 初級
+tenant noun 房客、租戶 中級
+tend verb 傾向、往往會 中級
+tendency noun 傾向、趨勢 中級
+tender adj. 嫩的、溫柔的 中級
+tennis noun 網球 初級
+tense adj./verb 繃緊的、緊張的；繃緊 中級 L8
+tension noun 繃緊、緊張 中級
+tent noun 帳篷 初級
+term noun 詞語、期間 初級
+term verb 稱為 初級
+terminal noun/adj. 終點、(航空或交通運輸的)終站；終點的、末期的 中級 L8
+terrible adj. 糟糕的 初級
+terrific adj. 非常好的、可怕的 初級
+terrify verb 使恐懼 中級
+territory noun 領土 中級
+terror noun 恐懼、恐怖 中級
+test noun/verb 測驗；測試 初級
+text noun 正文、文本 中級 L2
+textbook noun 教科書 初級
+than conj./prep. 比 初級
+thank verb/noun 感謝；謝謝 初級
+thankful adj. 感謝的 中級
+Thanksgiving noun 感恩節 = Thanksgiving Day 初級
+that conj. 引導子句 初級
+that pron./adj. 那個；那 初級
+that adv. 那麼、那樣 初級
+the art. 這、那 初級
+theater noun 電影院 = theatre (British English) 初級
+theft noun 偷竊 中級
+their determiner 他們的 初級
+theirs pron. 他們的 中級
+them pron. 他們 初級
+theme noun 主題 中級 L8
+themselves pron. 他們自己 初級
+then adv./adj. 然後、那時候；在那時的 初級
+theory noun 學說、理論、看法 中級 L1
+therapy noun 療法 中級
+there adv./noun 在那裡；那裡 初級
+therefore adv. 因此 初級
+these pron./adj. 這些；這些的 初級
+they pron. 他們 初級
+thick adj. 厚的 初級
+thief noun 竊賊 初級
+thin adj. 瘦的 初級
+thing noun 東西、物品 初級
+think verb 想 初級
+thinking noun/adj. 思想、思考；有思考力的 中級
+third adj./adv./noun 第三的；居第三位；第三位 初級
+thirst noun/verb 口渴、渴望 中級
+thirsty adj. 口渴的 初級
+thirteen number/pron./noun/adj. 十三 初級
+thirty number/pron./noun/adj. 三十 初級
+this pron./adj. 這個；這 初級
+this adv. 這麼、這樣 初級
+thorough adj. 徹底的 中級
+those pron./adj. 那些；那些的 初級
+though conj./adv. 雖然；還是 初級
+thought noun 想法 初級
+thoughtful adj. 體貼的、深思熟慮的 中級
+thousand number/pron./noun/adj. 千 初級
+thread noun/verb 線、一絲；穿針線 中級
+threat noun 威脅 中級
+threaten verb 揚言要、威脅 中級
+three number/pron./noun/adj. 三 初級
+throat noun 咽喉 初級
+through prep./adv. 通過、穿越 初級
+throughout prep. 到處 初級
+throw verb 丟 初級
+thumb noun 拇指 初級
+thunder noun/verb 雷(聲)；打雷 初級
+57
+字彙 詞類 中文 註解 級數 學術字彙
+thunderstorm noun 雷雨 中級
+Thursday noun 星期四 = Thurs./Thur. 初級
+thus adv. 因此 初級
+ticket noun 票、罰單 初級
+tickle verb 搔癢、發癢 中級
+tide noun 潮汐、趨勢 中級
+tidy adj./verb 整齊的；整理 初級
+tie noun 領帶、平手 初級
+tie verb 捆、繫 初級
+tiger noun 老虎 初級
+tight adj./adv. 緊的；緊地 中級
+tighten verb 使變緊、加強 中級
+till prep./conj. 直到 = until 初級
+timber noun 樹木、木材 中級
+time noun/verb 時間；計時 初級
+timetable noun/verb 時間表；為…安排時間 中級
+timid adj. 膽怯的 中級
+tin noun 錫、罐 中級
+tiny adj. 極小的、微小的 初級
+tip noun 小費；提示；頂端 初級
+tip verb 給小費 初級
+tiptoe verb/noun 踮腳、躡手躡腳 中級
+tire noun 輪胎 = tyre (British English) 中級
+tire verb 使疲勞 中級
+tiresome adj. 令人厭煩的 中級
+tissue noun 面紙、(動植物)組織 中級
+title noun 標題 初級
+to prep./inf. 到 初級
+toast noun 吐司；敬酒 初級
+toast verb 烤吐司、烤；乾杯 初級
+tobacco noun 煙草 中級
+today adv./noun 今天 初級
+toe noun 腳趾 初級
+tofu noun 豆腐 = bean curd 初級
+together adv. 一起 初級
+toilet noun 馬桶、衛生間 初級
+tolerable adj. 可容忍的、還可以的 中級
+tolerance noun 寬容、忍耐 中級
+tolerant adj. 寬容的、忍耐的 中級
+tolerate verb 寬容、忍耐 中級
+tomato noun 番茄 初級
+tomb noun 墳墓 中級
+tomorrow adv./noun 明天 初級
+ton noun 噸、大量 中級
+tone noun/verb 腔調、語氣；調和 中級
+tongue noun 舌頭 初級
+tonight adv./noun 今晚 初級
+too adv. 也 初級
+tool noun 工具 初級
+tooth noun 牙齒 初級
+toothache noun 牙痛 初級
+toothbrush noun 牙刷 初級
+toothpaste noun 牙膏 中級
+top noun/adj./verb 頂部；頂部的；到頂部 初級
+topic noun 主題 初級 L7
+torch noun/verb 火把；放火燒 中級
+tornado noun 龍捲風 中級
+tortoise noun 陸龜 中級
+toss verb/noun 拋、投、擲 中級
+total adj./noun/verb 總數的；總數；合計 初級
+touch verb/noun 接觸、觸摸；觸覺、觸摸 初級
+tough adj. 堅強的、困難的、強硬的 中級
+tour noun/verb 旅遊、遊覽 初級
+tourism noun 觀光(業) 中級
+tourist noun 遊客、觀光客 中級
+tow verb/noun 拖、拉、牽引 中級
+toward prep. 朝著 = towards 初級
+towel noun 毛巾、紙巾 初級
+tower noun 塔 初級
+town noun 城鎮 初級
+toy noun 玩具 初級
+trace verb/noun 追蹤；痕跡 初級 L6
+track noun/verb 軌道、足跡；跟蹤、追蹤 初級
+trade noun/verb 貿易；交易 初級
+trademark noun 商標、特徵 中級
+trader noun 商人、證券交易人 中級
+tradition noun 傳統 初級 L2
+traditional adj. 傳統的 初級
+traffic noun 交通 初級
+tragedy noun 悲劇 中級
+tragic adj. 悲劇的、悲慘的 中級
+58
+字彙 詞類 中文 註解 級數 學術字彙
+trail noun/verb 蹤跡、小道；拖曳 中級
+train noun 火車 初級
+train verb 訓練 初級
+training noun 訓練 中級
+transfer noun/verb 調動、搬遷 中級 L2
+transform verb 改變、改造 中級 L6
+translate verb 翻譯 中級
+translation noun 翻譯 中級
+translator noun 翻譯、譯者 中級
+transplant noun/verb 移植(器官等) 中級
+transport noun/verb 運輸、交通工具；運送 中級 L6
+transportation noun 運輸 中級 L6
+trap verb/noun 設陷阱；陷阱 初級
+trash noun/verb 垃圾；丟棄、損壞 初級
+travel verb/noun 旅行 初級
+traveler noun 旅行者 = traveller (British English) 中級
+traveling adj. 旅行的、巡迴的 = travelling (British English) 中級
+tray noun 托盤 中級
+treasure noun/verb 寶藏；珍惜 初級
+treat verb/noun 治療、請客 初級
+treatment noun 治療 初級
+treaty noun 條約 中級
+tree noun 樹 初級
+tremble verb/noun 發抖、震顫 中級
+tremendous adj. 巨大的、極大的 中級
+trend noun 趨勢 中級 L5
+trial noun 嘗試 初級
+triangle noun 三角形 初級
+tribe noun 部落 中級
+trick noun/verb 把戲；騙 初級
+tricky adj. 狡猾的、難對付的 中級
+trip noun 旅行 初級
+triumph noun/verb (大)勝利、成功 中級
+troop noun/verb 軍隊、一群；成群結隊而行 中級
+tropical adj. 熱帶的 中級
+trouble noun/verb 麻煩；使煩惱 初級
+troublesome adj. 令人煩惱的 中級
+trousers noun 褲子 = pants (American English) 初級
+truck noun 卡車 初級
+true adj. 真實的 初級
+trumpet noun 小號 初級
+trunk noun 樹幹 中級
+trust noun/verb 相信、信任 初級
+truth noun 真理、真相 初級
+truthful adj. 誠實的、真實的 中級
+try verb/noun 嘗試 初級
+T-shirt noun 圓領汗衫 = tee-shirt 初級
+tub noun 盆、桶、浴缸 初級
+tube noun 管子、地鐵 地鐵 = underground, railway 中級
+Tuesday noun 星期二 = Tues./Tue. 初級
+tug verb/noun 拉、拖 中級
+tulip noun 鬱金香 中級
+tumble verb/noun 跌倒、倒塌 中級
+tune noun/verb 曲調；調音 中級
+tunnel noun 隧道 初級
+turkey noun 火雞 初級
+turn verb 轉(彎) 初級
+turn noun 一次機會 初級
+turtle noun 龜 初級
+tutor noun/verb 家庭教師；指導、當家教 中級
+TV noun 電視 = television 初級
+twelve number/pron./noun/adj. 十二 初級
+twenty number/pron./noun/adj. 二十 初級
+twice adv. 兩次 初級
+twig noun 細枝 中級
+twin noun/adj./verb 雙胞胎；雙胞胎的；使相連 中級
+twinkle verb/noun 閃爍；閃亮 中級
+twist verb/noun 彎曲、扭轉、轉彎 中級
+two number/pron./noun/adj. 二 初級
+type verb 打字 初級
+type noun 類型 初級
+typewriter noun 打字機 中級
+typhoon noun 颱風 初級
+typical adj. 典型的 中級
+typist noun 打字員 中級
+ugly adj. 醜陋的 初級
+umbrella noun 雨傘 初級
+uncle noun 叔叔 初級
+under prep./adv. 在…下、低於；在下面 初級
+underground adj./adv./noun 地下的、暗中的；在地下；地鐵 中級
+underline verb 在…下面畫線、強調 初級
+59
+字彙 詞類 中文 註解 級數 學術字彙
+underpass noun 地下道 初級
+understand verb 懂、 了解 初級
+understanding noun/adj. 理解；體諒的 中級
+undertake verb 承擔、從事 中級 L4
+underwater adv./adj. 在水下；水下的 中級
+underwear noun 內衣 初級
+underweight adj. 體重不足的 中級
+unexpected adj. 出乎意料的 中級
+uniform noun/adj. 制服；一致的 初級 L8
+union noun 合併、和諧、工會 中級
+unique adj. 獨特的 初級 L7
+unit noun 單位 初級
+unite verb 聯合、團結、統一 中級
+unity noun 團結一致、聯合 中級
+universal adj./noun 普遍的、全體的；普通性、普遍現象 中級
+universe noun 宇宙 初級
+university noun 大學 初級
+unknown adj. 未知的、無名的 中級
+unless conj. 除非 中級
+unlike prep. 不像 中級
+until conj./prep. 直到 = till 初級
+untouched adj. 未動過的、未受影響的 中級
+unusual adj. 不尋常的、特別的 中級
+up adv./prep./adj. 向上；在…上面；向上的 初級
+upload verb 上傳、上載 初級
+upon prep. 在…之上、在…後立即 初級
+upper adj. 上面的、上部的 初級
+upset adj./noun/verb 苦惱的；混亂；擾亂、惹惱 中級
+upstairs adv./adj./noun 在樓上；樓上的；樓上 初級
+upward adj. 向上的 中級
+urban adj. 都市的、城鎮的 中級
+urge verb/noun 敦促、強烈主張；衝動 中級
+urgent adj. 緊急的 中級
+us pron. 我們 初級
+USA noun 美國 = United States (of America) 初級
+usage noun 使用、用法 中級
+use verb/noun 使用 初級
+used adj. 二手的、習慣的 初級
+used verb 過去慣常 初級
+useful adj. 有用的 初級
+useless adj. 無用的 中級
+user noun 使用者 初級
+usual adj. 通常的 初級
+usually adv. 通常 初級
+vacant adj. 空的、未被佔用的 中級
+vacation noun/verb 假期；度假 初級
+vague adj. 模糊的、粗略的 中級
+vain adj. 徒勞的、虛榮的 中級
+Valentine's Day noun 情人節 初級
+valley noun 峽谷 初級
+valuable adj. 寶貴的、貴重的 中級
+value noun/verb 價值；重視 初級
+van noun 廂型車、小貨車 中級
+vanish verb 突然消失 中級
+vapor noun 水汽、蒸汽 = vapour (British English) 中級
+variety noun 各種樣式、變化 中級
+various adj. 各式各樣的 中級
+vary verb 不同、相異 中級 L1
+vase noun 花瓶 中級
+vast adj. 廣闊的、大量的 中級
+vegetable noun/adj. 蔬菜；蔬菜的 初級
+vegetarian adj./noun 素食主義的；素食主義者 中級
+vehicle noun 交通工具 中級 L8
+vendor noun 小販 初級
+venture noun/verb 冒險 中級
+verb noun 動詞 中級
+verse noun 韻文、詩節 中級
+version noun 版本、說法 中級 L5
+very adv. 非常、很 初級
+very adj. (加強語氣)正是、完全的 初級
+vessel noun 船艦 中級
+vest noun 背心 初級
+victim noun 罹難者、受害者 中級
+victory noun 勝利 初級
+video noun/verb 錄影帶、錄影；錄影 初級
+view noun/verb 視野；觀看 初級
+vigor noun 精力、活力 = vigour (British English) 中級
+vigorous adj. 精力充沛的、強健的 中級
+village noun 村莊 初級
+vinegar noun 醋 初級
+violate verb 違反、侵犯 中級 L9
+60
+字彙 詞類 中文 註解 級數 學術字彙
+violation noun 違反、侵犯 中級
+violence noun 暴力、猛烈 中級
+violent adj. 暴力的、猛烈的 中級
+violet noun/adj. 紫羅蘭；紫羅蘭色的 中級
+violin noun 小提琴 初級
+violinist noun 小提琴手 中級
+virgin noun/adj. 處女；處女的、未開發的 中級
+virtue noun 美德、長處 中級
+virus noun 病毒 中級
+visible adj. 可見的 中級 L7
+vision noun 視力、眼光、憧憬 中級 L9
+visit verb/noun 拜訪 初級
+visitor noun 參觀者、 遊客 初級
+visual adj. 視覺的 中級 L8
+vital adj. 必不可少的、生氣勃勃的 中級
+vitamin noun 維他命 中級
+vivid adj. 鮮明的、有生氣的 中級
+vocabulary noun 詞彙 初級
+voice noun 聲音 初級
+volcano noun 火山 中級
+volleyball noun 排球 初級
+volume noun 音量；冊 = vol. 初級 L3
+voluntary adj. 志願的、自願的 中級 L7
+volunteer noun/verb 義工；自願 中級
+vote noun/verb (選)票；投票、選舉 初級
+voter noun 選民 初級
+vowel noun 母音 中級
+voyage noun/verb 航行 中級
+wage noun 工資 中級
+wage verb 發動、進行 中級
+wagon noun (運貨)馬車 中級
+waist noun 腰 初級
+wait verb 等待 初級
+waiter noun 服務生 初級
+waitress noun 女服務生 初級
+wake verb 醒 初級
+waken verb 醒來、喚醒 中級
+walk verb/noun 步行 初級
+wall noun 牆 初級
+wallet noun 錢包 初級
+waltz noun/verb 華爾茲舞；跳華爾茲舞 中級
+wander verb/noun 遊蕩、閒逛 中級
+want verb 想要 初級
+war noun 戰爭 初級
+ward noun/verb 病房；避免 中級
+warfare noun 戰爭 中級
+warm adj./verb 溫暖的；加熱 初級
+warmth noun 溫暖、熱情 中級
+warn verb 警告、提醒注意 中級
+warning adj. 警告的、警戒的 中級
+warship noun 軍艦 中級
+wash verb 洗 初級
+washing noun 洗(或待洗)的衣物 中級
+waste noun/verb 浪費 初級
+watch noun 錶 初級
+watch verb 看、注意 初級
+watchman noun 巡夜者、夜間警衛 中級
+water noun/verb 水；澆水 初級
+waterfall noun 瀑布 初級
+watermelon noun 西瓜 初級
+waterproof adj./noun/verb 防水的；防水材料；使防水 中級
+wave noun (海)浪 初級
+wave verb 揮、招(手) 初級
+wax noun/verb 蠟；上蠟 中級
+way adv. (加強語氣)太 中級
+way noun 道路、路程；方法 初級
+we pron. 我們 初級
+weak adj. 虛弱的 初級
+weaken verb (使)虛弱、削弱 中級
+wealth noun 財富、富有、大量 中級
+wealthy adj. 富有的 中級
+weapon noun 武器 初級
+wear verb 穿戴 初級
+weather noun 天氣 初級
+weave verb/noun 編織、交織；編法、織法 中級
+web noun 網、蜘蛛網、網路 中級
+website noun 網站 中級
+wedding noun 婚禮 初級
+Wednesday noun 星期三 = Wed./Weds. 初級
+weed noun/verb 雜草；除草 中級
+week noun 星期 初級
+61
+字彙 詞類 中文 註解 級數 學術字彙
+weekday noun 平日 初級
+weekend noun 週末 初級
+weekly adj./adv./noun 每週的；每週地；週刊 初級
+weep verb/noun 哭泣、流淚 中級
+weigh verb 重、秤重、權衡 中級
+weight noun 體重 初級
+welcome verb/noun 歡迎、迎接、接待 初級
+welcome adj. 受歡迎的 初級
+welfare noun/adj. 幸福、福利；福利的 中級 L5
+well noun 井 中級
+well adv./adj. 很好地；健康的 初級
+well-known adj. 有名的 中級
+west noun/adv./adj. 西方；向西方；西方的、向西方的 初級
+western adj./noun 西方的；西方人、西部片 初級
+westerner noun 西方人、西部人 中級
+wet adj./verb 濕的；弄濕 初級
+whale noun 鯨魚 初級
+what pron./adj. 什麼 初級
+whatever pron./adj. 無論如何 初級
+wheat noun 小麥 中級
+wheel noun 輪子 初級
+when conj./adv./pron. 當；何時；當時 初級
+whenever adv./conj. 任何時候、每次；究竟什麼時候 中級
+where adv./conj. 在哪裡；在…的地方 初級
+wherever adv./conj. 任何地方、各處；究竟在哪裡 中級
+whether conj. 是否 初級
+which pron./conj./adj. 哪一個 初級
+whichever determiner/pron. 無論哪個、任何一個 中級
+while conj. 當...時候、然而 初級
+while noun 一會兒、一段時間 初級
+whip noun/verb 鞭子；鞭打、攪打(蛋、奶油) 中級
+whisper verb/noun 低語、竊竊私語 中級
+whistle verb/noun 吹哨子；哨子、哨聲 中級
+white adj./noun 白色的；白色 初級
+who pron./conj. 誰、什麼人 初級
+whoever pron./conj. 誰、任何人 = whomever 中級
+whole adj./noun 整體的；整體 初級
+whom pron./conj. 誰、什麼人 初級
+whose determiner/conj. 誰的 初級
+why adv./conj. 為什麼 初級
+wicked adj. 邪惡的、淘氣的 中級
+wide adj. 寬的 初級
+widen verb 加寬、擴大 初級
+widespread adj. 普遍的、廣泛的 中級 L8
+width noun 寬度 初級
+wife noun 妻子 初級
+wild adj./noun 野生的、荒野的；野外 初級
+wilderness noun 荒野 中級
+wildlife noun 野生動物 中級
+wildly adv. 瘋狂地、失控地 中級
+will noun 意志、心願、遺囑 中級
+will aux. 將(要)、能、願意 初級
+willing adj. 願意的 初級
+willow noun 柳(樹) 中級
+win verb/noun 贏；勝利 初級
+wind noun 風 初級
+window noun 窗戶 初級
+windy adj. 多風的 初級
+wine noun 酒 初級
+wing noun 翅膀 初級
+wink verb/noun 眨眼(示意)、閃爍 中級
+winner noun 獲勝的人 初級
+winter noun 冬天 初級
+wipe verb/noun 擦拭、抹掉；(濕)抹布、(濕)紙巾 中級
+wire noun/verb 金屬絲、電線；用金屬絲綑紮 中級
+wisdom noun 智慧、明智 中級
+wise adj. 有智慧的 初級
+wish verb/noun 希望；希望、願望 初級
+wit noun 機智風趣(的人) 中級
+witch noun 女巫 中級
+with prep. 跟…一起、用、有 初級
+withdraw verb 提領(錢)、撤回 中級
+within prep./adv. 以內；在裡面 初級
+without prep. 沒有 初級
+witness noun/verb 目擊者、證人；目擊、見證 中級
+wizard noun 男巫 中級
+wok noun 鍋 初級
+wolf noun 狼 初級
+woman noun 女人 初級
+women's room noun 女洗手間、女廁 = ladies' room 初級
+wonder verb/noun 想知道、感到驚訝(奇)；驚奇、奇景 初級
+62
+字彙 詞類 中文 註解 級數 學術字彙
+wonderful adj. 精采的、極好的 初級
+wood noun 木頭 初級
+wooden adj. 木製的 初級
+wool noun 毛(絨) 中級
+word noun 字彙 初級
+work noun/verb 工作 初級
+workbook noun 練習簿、作業本 初級
+worker noun 工人 初級
+working adj./noun 工作的、暫定的；運作 中級
+workout noun (身體)鍛鍊、訓練 中級
+workshop noun 專題討論會、工作坊 中級
+world noun 世界 初級
+worldwide adv./adj. 在世界各地；世界各地的 中級
+worm noun/verb 蠕蟲、寄生蟲；擠過、鑽過 中級
+worn adj. 用舊的、磨壞的、精疲力盡的 中級
+worry verb/noun 擔心、煩惱 初級
+worse adj./adv. 更差的；更差地 初級
+worst adj./adv. 最差的；最差地 初級
+worth adj./noun 值…；價值 初級
+worthless adj. 無用的、無價值的 中級
+worthwhile adj. 值得(花費時間或金錢)的 中級
+worthy adj./noun 有價值的、值得的 中級
+would aux. (表示婉轉的請求)請、將會、就會 初級
+wound noun/verb 傷口；受傷 初級
+wow interj./verb 哇；使驚嘆 中級
+wrap verb/noun 包、裹；披肩、包裝材料 中級
+wrapping noun 包裝材料 中級
+wreck verb/noun 使(船)失事、毀壞；船難、殘骸 中級
+wrinkle noun/verb 皺紋、皺褶；皺起、起皺褶 中級
+wrist noun 手腕 初級
+write verb 寫 初級
+writer noun 作家 初級
+writing noun 寫、寫作、筆跡、作品 中級
+written adj. 書面的 中級
+wrong adj./adv./noun 錯誤的；錯誤地；錯誤 初級
+X-ray noun/verb X光(片)；照X光 中級
+yam noun 番薯、山藥 = sweet potato (American English) 中級
+yard noun 院子 初級
+yawn verb/noun 打哈欠；哈欠 中級
+yeah interj./adv. 是啊 = yes 初級
+year noun 年 初級
+yearly adj./adv. 每年的；每年 初級
+yell verb/noun 喊叫 中級
+yellow adj./noun 黃色的；黃色 初級
+yes interj./adv. 是的 = yeah 初級
+yesterday adv./noun 昨天 初級
+yet adv./conj. 還；然而 初級
+yogurt noun 優格 = yoghurt 中級
+yolk noun 蛋黃 中級
+you pron. 你 初級
+young adj./noun 年輕的；年輕人 初級
+youngster noun 年輕人、小孩 中級
+your determiner 你的 初級
+yours pron. 你的 初級
+yourself pron. 你自己 初級
+youth noun 青年 初級
+youthful adj. 青年的、年輕的 中級
+yummy adj. 美味的 初級
+zebra noun 斑馬 初級
+zero number/pron./noun/adj. 零 初級
+zipper noun 拉鍊 中級
+zone noun/verb 地區、區域；分區 中級
+zoo noun 動物園 初級
+2025/08/06修訂
+63
