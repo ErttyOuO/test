@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保險員對話系統</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --panel-bg: #ffffff;
+            --text-dark: #121212;
+            --text-light: #333333;
+
+            --blue-bg: #bae6fd;
+            --blue-primary: #7dd3fc;
+            --blue-light: #f0f9ff;
+            --blue-hover: #38bdf8;
+            --blue-text: #0284c7;
+            --btn-text: #082f49;
+
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 聊天區域 - 全寬置中 */
+        .chat-panel {
+            flex: 1;
+            background-color: var(--panel-bg);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .chat-header {
+            background-color: var(--blue-bg);
+            color: var(--btn-text);
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-links a {
+            color: var(--btn-text);
+            text-decoration: none;
+            font-size: 14px;
+            margin-right: 15px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .connection-status {
+            font-size: 12px;
+            background: rgba(8, 47, 73, 0.1);
+            color: var(--btn-text);
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        .chat-layout {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+            background-color: #f8fafc;
+        }
+
+        /* 用戶列表 */
+        .user-list {
+            width: 300px;
+            border-right: 1px solid var(--border-color);
+            background: #ffffff;
+            overflow-y: auto;
+        }
+
+        .user-item {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: background 0.2s;
+            color: #121212;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .user-item:hover,
+        .user-item.active {
+            background-color: var(--blue-bg);
+            color: var(--btn-text);
+        }
+
+        .user-item .user-id {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .user-item .last-msg {
+            font-size: 13px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            opacity: 0.8;
+        }
+
+        /* 聊天內容區 */
+        .chat-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .messages-container {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .message {
+            max-width: 70%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        .msg-user {
+            align-self: flex-start;
+            background-color: #e2e8f0;
+            color: #1e293b;
+            border-bottom-left-radius: 2px;
+        }
+
+        .msg-agent {
+            align-self: flex-end;
+            background-color: var(--blue-bg);
+            color: var(--btn-text);
+            border-bottom-right-radius: 2px;
+        }
+
+        .msg-time {
+            font-size: 11px;
+            opacity: 0.7;
+            margin-top: 5px;
+            text-align: right;
+        }
+
+        .chat-input-area {
+            padding: 20px;
+            background: #ffffff;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 14px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 30px;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--blue-text);
+        }
+
+        button {
+            background-color: var(--blue-bg);
+            color: var(--btn-text);
+            border: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        button:hover:not(:disabled) {
+            background-color: var(--blue-hover);
+            transform: scale(1.02);
+        }
+
+        button:disabled {
+            background-color: #cbd5e1;
+            color: #64748b;
+            cursor: not-allowed;
+        }
+
+        /* 檔案附加按鈕 */
+        .attach-btn {
+            background: none;
+            border: none;
+            color: #94a3b8;
+            cursor: pointer;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.2s;
+        }
+
+        .attach-btn:hover:not(:disabled) {
+            color: var(--blue-primary);
+        }
+
+        .attach-btn:disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .attach-btn svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .msg-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .msg-file {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            color: inherit;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .msg-user .msg-file {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        .empty-state {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            font-size: 16px;
+            flex-direction: column;
+        }
+
+        /* 頂部導覽列 Navbar */
+        .global-nav {
+            background-color: #1c1c1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-links-global {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-item {
+            color: #a1a1aa;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 18px 0;
+            position: relative;
+            transition: color 0.2s;
+        }
+
+        .nav-item:hover {
+            color: white;
+        }
+
+        .nav-item.active {
+            color: white;
+        }
+
+        .nav-item.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+        }
+
+        .verified-badge {
+            color: transparent;
+            background-image: linear-gradient(45deg, #f00, #ff8000, #ff0, #00C800, #00f, #4b0082, #ee82ee);
+            -webkit-background-clip: text;
+            background-clip: text;
+            font-size: 16px;
+            display: inline-block;
+            margin-left: 4px;
+        }
+
+        .verified-badge-hidden {
+            display: none !important;
+        }
+
+        .agent-header-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-avatar {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            color: var(--blue-text);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Group Creation Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .create-group-modal {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            width: 400px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .create-group-modal h3 {
+            margin-top: 0;
+            color: var(--blue-text);
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .modal-form-group {
+            margin-bottom: 20px;
+        }
+
+        .modal-form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+
+        .modal-form-group input[type="text"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .avatar-preview-box {
+            width: 80px;
+            height: 80px;
+            border: 2px dashed var(--border-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 24px;
+            cursor: pointer;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            margin-top: 10px;
+        }
+
+        .modal-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .modal-btn-cancel {
+            background: #e2e8f0;
+            color: #475569;
+            padding: 10px 20px;
+        }
+
+        .modal-btn-create {
+            background: var(--blue-text);
+            color: white;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body style="padding-top: 60px;">
+
+    <!-- 主站 Header -->
+    <header>
+        <a href="index.html" class="logo-section">
+            <img src="logo.png" alt="InsureTech Logo">
+            <span>譯保通</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="consulting.html">保險諮詢</a></li>
+                <li><a href="dm.html">保單目錄</a></li>
+                <li><a href="budget.html">費用預算</a></li>
+                <li><a href="policy.html">智慧保單</a></li>
+                <li><a href="community.html">匿名社群</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-toggle">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- 全局導覽列 -->
+    <nav class="global-nav">
+        <div class="nav-links-global">
+            <a href="insurance_register.html" class="nav-item">保險員入口</a>
+            <a href="agent_profile.html" class="nav-item">個人主頁</a>
+            <a href="agent_chat_dashboard.html" class="nav-item active">諮詢中心</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="chat-panel">
+            <div class="chat-header">
+                <div style="display:flex; align-items:center;">
+                    <div class="nav-links">
+                        <a href="agent_profile.html">‹ 返回個人主頁</a>
+                    </div>
+                    <div class="agent-header-info">
+                        <div class="header-avatar" id="header-avatar-txt">代</div>
+                        <div>
+                            <span id="header-agent-name">專員</span>
+                            <span class="verified-badge verified-badge-hidden" id="header-verified-badge">✔</span>
+                            <div style="font-size: 12px; font-weight: normal; opacity: 0.9;">客戶諮詢中心</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="connection-status" id="conn-status">連線中...</div>
+            </div>
+
+            <div class="chat-layout">
+                <div class="user-list" id="user-list">
+                    <div
+                        style="padding: 15px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; background: #f8fafc;">
+                        <span style="font-weight:bold; color: var(--blue-text); font-size: 14px;">對話列表</span>
+                        <button onclick="createGroup()"
+                            style="background: none; color: var(--blue-text); padding: 5px 10px; font-size: 12px; border: 1px solid var(--blue-text); border-radius: 4px;">+
+                            新建群聊</button>
+                    </div>
+                    <div id="user-list-content">
+                        <div style="padding: 20px; color: #64748b; font-size: 14px; text-align: center;">暫無訊息</div>
+                    </div>
+                </div>
+
+                <!-- 聊天內容 -->
+                <div class="chat-content">
+                    <div class="messages-container" id="messages-container">
+                        <div class="empty-state">
+                            <svg style="width: 48px; height: 48px; margin-bottom: 20px; color: #cbd5e1;" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                </path>
+                            </svg>
+                            請由左側選擇客戶對話
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <input type="file" id="fileInput" hidden>
+                        <button class="attach-btn" id="attach-btn"
+                            onclick="document.getElementById('fileInput').click()" title="附加檔案或圖片" disabled>
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13">
+                                </path>
+                            </svg>
+                        </button>
+                        <input type="text" id="msg-input" placeholder="輸入回覆訊息..." disabled
+                            onkeypress="handleKeyPress(event)">
+                        <button id="send-btn" onclick="sendMessage()" disabled>發送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Group Creation Modal -->
+    <div class="modal-overlay" id="groupCreationModal">
+        <div class="create-group-modal">
+            <h3>建立新群聊</h3>
+
+            <div class="modal-form-group">
+                <label>群組名稱</label>
+                <input type="text" id="new-group-name" placeholder="例如：VIP 尊榮服務群">
+            </div>
+
+            <div class="modal-form-group">
+                <label>群組頭像 (可選)</label>
+                <div class="avatar-preview-box" id="new-group-avatar-preview"
+                    onclick="document.getElementById('new-group-avatar-file').click()">
+                    <span>+</span>
+                </div>
+                <input type="file" id="new-group-avatar-file" accept="image/*" style="display: none;"
+                    onchange="previewGroupAvatar(this)">
+            </div>
+
+            <div class="modal-actions">
+                <button class="modal-btn-cancel" onclick="closeGroupModal()">取消</button>
+                <button class="modal-btn-create" onclick="submitGroupCreation()">建立</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        let currentActiveUserId = null;
+        const userConversations = {};
+
+        // Fetch agent profile to show in header
+        fetch('/api/profile')
+            .then(res => res.json())
+            .then(data => {
+                const name = data.personal.name || "專員";
+                document.getElementById('header-agent-name').innerText = name;
+
+                if (data.personal.avatar) {
+                    document.getElementById('header-avatar-txt').innerText = '';
+                    document.getElementById('header-avatar-txt').style.backgroundImage = `url(${data.personal.avatar})`;
+                } else {
+                    document.getElementById('header-avatar-txt').innerText = name.charAt(0);
+                    document.getElementById('header-avatar-txt').style.backgroundImage = 'none';
+                }
+
+                if (data.personal.isVerified) {
+                    document.getElementById('header-verified-badge').classList.remove('verified-badge-hidden');
+                }
+            });
+
+        socket.on('connect', () => {
+            const connMsg = document.getElementById('conn-status');
+            connMsg.innerText = '🟢 已連線';
+            connMsg.style.background = 'rgba(74, 222, 128, 0.2)';
+            connMsg.style.color = '#4ade80';
+            socket.emit('register', 'agent');
+        });
+
+        socket.on('sync_history', (historyData) => {
+            console.log('Received history:', historyData);
+            // Replace local userConversations with server history
+            Object.assign(userConversations, historyData);
+            updateUserList();
+
+            // If there's an active user, re-render their messages
+            if (currentActiveUserId) {
+                renderMessages(currentActiveUserId);
+            }
+        });
+
+        socket.on('disconnect', () => {
+            const connMsg = document.getElementById('conn-status');
+            connMsg.innerText = '🔴 斷線';
+            connMsg.style.background = 'rgba(248, 113, 113, 0.2)';
+            connMsg.style.color = '#f87171';
+        });
+
+        socket.on('new_message_from_user', (data) => {
+            const { userId, text, timestamp, file } = data;
+
+            if (!userConversations[userId]) {
+                userConversations[userId] = [];
+            }
+
+            userConversations[userId].push({ role: 'user', text, timestamp, file });
+
+            // If a different user sends a message while we are chatting with someone else, ONLY update list, do not switch active user.
+            // This prevents the "Wrong Sender Bug" where messages interleave or focus steals.
+            updateUserList();
+
+            if (currentActiveUserId === userId) {
+                renderMessages(userId);
+            }
+
+            if (!currentActiveUserId) {
+                switchUser(userId);
+            }
+        });
+
+        let groups = {}; // Store group messages { "group_123": [{ ... }] }
+
+        socket.on('group_created', (data) => {
+            const { groupId, groupName, groupAvatar } = data;
+            groups[groupId] = { name: groupName, avatar: groupAvatar, messages: [] };
+            updateUserList();
+            switchUser(groupId, true);
+        });
+
+        socket.on('new_group_message', (data) => {
+            handleGroupMessageContent(data);
+        });
+
+        socket.on('agent_new_group_message', (data) => {
+            handleGroupMessageContent(data);
+        });
+
+        function handleGroupMessageContent(data) {
+            const { groupId, message } = data;
+
+            // Prevent duplicate message processing if we are both in the room and getting the global broadcast
+            if (!groups[groupId]) {
+                groups[groupId] = { name: "群聊", messages: [] };
+            }
+
+            // Check if message is already in the array (simple dedup by timestamp and text)
+            const exists = groups[groupId].messages.find(m => m.timestamp === message.timestamp && m.text === message.text && m.senderName === message.senderName);
+            if (exists) return;
+
+            groups[groupId].messages.push(message);
+            updateUserList();
+
+            if (currentActiveUserId === groupId) {
+                renderGroupMessages(groupId);
+            }
+        }
+
+        let tempGroupAvatarBase64 = null;
+
+        function createGroup() {
+            document.getElementById('new-group-name').value = '';
+            document.getElementById('new-group-avatar-preview').style.backgroundImage = 'none';
+            document.getElementById('new-group-avatar-preview').innerHTML = '<span>+</span>';
+            tempGroupAvatarBase64 = null;
+            document.getElementById('groupCreationModal').classList.add('active');
+        }
+
+        function closeGroupModal() {
+            document.getElementById('groupCreationModal').classList.remove('active');
+        }
+
+        function previewGroupAvatar(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    tempGroupAvatarBase64 = e.target.result;
+                    const previewBox = document.getElementById('new-group-avatar-preview');
+                    previewBox.style.backgroundImage = `url(${e.target.result})`;
+                    previewBox.innerHTML = '';
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function submitGroupCreation() {
+            const groupName = document.getElementById('new-group-name').value.trim();
+            if (!groupName) {
+                alert("請輸入群組名稱");
+                return;
+            }
+
+            socket.emit('create_group', {
+                groupName: groupName,
+                groupAvatar: tempGroupAvatarBase64
+            });
+
+            closeGroupModal();
+        }
+
+        function updateUserList() {
+            const listEl = document.getElementById('user-list-content');
+            listEl.innerHTML = '';
+
+            const userIds = Object.keys(userConversations);
+            const groupIds = Object.keys(groups);
+
+            if (userIds.length === 0 && groupIds.length === 0) {
+                listEl.innerHTML = '<div style="padding: 20px; color: #64748b; font-size: 14px; text-align: center;">暫無訊息</div>';
+                return;
+            }
+
+            // Render Groups
+            groupIds.forEach(gid => {
+                const groupObj = groups[gid];
+                const lastMsg = groupObj.messages.length > 0 ? groupObj.messages[groupObj.messages.length - 1] : { text: '尚未有訊息', role: 'system' };
+
+                const item = document.createElement('div');
+                item.className = `user-item ${gid === currentActiveUserId ? 'active' : ''}`;
+                item.onclick = () => switchUser(gid, true);
+
+                let avatarHtml = '👥';
+                if (groupObj.avatar) {
+                    avatarHtml = `<div style="width: 24px; height: 24px; border-radius: 50%; background-image: url('${groupObj.avatar}'); background-size: cover; display: inline-block; vertical-align: middle;"></div>`;
+                }
+
+                item.innerHTML = `
+                <div class="user-id" style="display: flex; align-items: center; gap: 8px;">${avatarHtml} <span>${groupObj.name}</span></div>
+                <div class="last-msg">${lastMsg.senderName ? lastMsg.senderName + ': ' : ''}${lastMsg.text || '檔案'}</div>
+            `;
+                listEl.appendChild(item);
+            });
+
+            // Render Users
+            userIds.forEach(uid => {
+                const msgs = userConversations[uid];
+                const lastMsg = msgs[msgs.length - 1];
+
+                const item = document.createElement('div');
+                item.className = `user-item ${uid === currentActiveUserId ? 'active' : ''}`;
+                item.onclick = () => switchUser(uid);
+
+                const shortId = "客戶 " + uid.substring(0, 4).toUpperCase();
+
+                item.innerHTML = `
+                <div class="user-id">${shortId}</div>
+                <div class="last-msg">${lastMsg.role === 'agent' ? '我: ' : ''}${lastMsg.text}</div>
+            `;
+                listEl.appendChild(item);
+            });
+        }
+
+        let isCurrentGroup = false;
+
+        function switchUser(id, isGroup = false) {
+            currentActiveUserId = id;
+            isCurrentGroup = isGroup;
+            updateUserList();
+
+            if (isGroup) {
+                renderGroupMessages(id);
+            } else {
+                renderMessages(id);
+            }
+
+            document.getElementById('msg-input').disabled = false;
+            document.getElementById('send-btn').disabled = false;
+            document.getElementById('attach-btn').disabled = false;
+            document.getElementById('msg-input').focus();
+        }
+
+        const fileInput = document.getElementById('fileInput');
+        fileInput.addEventListener('change', function () {
+            if (this.files && this.files[0]) {
+                const fileName = this.files[0].name;
+                document.getElementById('msg-input').placeholder = `已選擇檔案: ${fileName}`;
+            }
+        });
+
+        function formatTime(isoString) {
+            if (!isoString) return '';
+            const d = new Date(isoString);
+            return `${d.getHours().toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')}`;
+        }
+
+        function renderMessages(userId) {
+            const container = document.getElementById('messages-container');
+            container.innerHTML = '';
+
+            const msgs = userConversations[userId] || [];
+
+            msgs.forEach(msg => {
+                const msgEl = document.createElement('div');
+                msgEl.className = `message ${msg.role === 'user' ? 'msg-user' : 'msg-agent'}`;
+
+                let contentHtml = msg.text ? `<div>${msg.text}</div>` : '';
+
+                if (msg.file) {
+                    if (msg.file.type.startsWith('image/')) {
+                        contentHtml += `<img src="${msg.file.data}" class="msg-image" alt="attached image">`;
+                    } else {
+                        contentHtml += `<a href="${msg.file.data}" download="${msg.file.name}" class="msg-file">📥 下載: ${msg.file.name}</a>`;
+                    }
+                }
+
+                msgEl.innerHTML = `
+                ${contentHtml}
+                <div class="msg-time">${formatTime(msg.timestamp)}</div>
+            `;
+                container.appendChild(msgEl);
+            });
+
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function renderGroupMessages(groupId) {
+            const container = document.getElementById('messages-container');
+            container.innerHTML = `<div style="text-align:center; padding: 10px; background:#e0f2fe; color:#0284c7; font-size: 12px; border-radius: 8px; margin-bottom: 20px;">群聊 ID: ${groupId} (邀請客戶加入此群此功能尚未開發，僅示範 UI)</div>`;
+
+            const msgs = groups[groupId].messages || [];
+
+            msgs.forEach(msg => {
+                const msgEl = document.createElement('div');
+                msgEl.className = `message ${msg.role === 'agent' ? 'msg-agent' : 'msg-user'}`;
+
+                let avatarAndName = '';
+                if (msg.role !== 'agent') {
+                    avatarAndName = `<div style="font-size: 11px; font-weight: bold; margin-bottom: 4px; color: var(--blue-text);">${msg.senderName}</div>`;
+                }
+
+                let contentHtml = msg.text ? `<div>${msg.text}</div>` : '';
+
+                if (msg.file) {
+                    if (msg.file.type.startsWith('image/')) {
+                        contentHtml += `<img src="${msg.file.data}" class="msg-image" alt="attached image">`;
+                    } else {
+                        contentHtml += `<a href="${msg.file.data}" download="${msg.file.name}" class="msg-file">📥 下載: ${msg.file.name}</a>`;
+                    }
+                }
+
+                msgEl.innerHTML = `
+                ${avatarAndName}
+                ${contentHtml}
+                <div class="msg-time">${formatTime(msg.timestamp)}</div>
+            `;
+                container.appendChild(msgEl);
+            });
+
+            container.scrollTop = container.scrollHeight;
+        }
+
+        // Global agent properties to send with group chat
+        let currentAgentNameForGroup = '專員';
+        let currentAgentAvatarForGroup = '';
+        let currentAgentVerifiedForGroup = false;
+
+        // Hook into the profile fetch to set these
+        setTimeout(() => {
+            fetch('/api/profile').then(r => r.json()).then(d => {
+                currentAgentNameForGroup = d.personal.name || '專員';
+                currentAgentAvatarForGroup = d.personal.avatar || '';
+                currentAgentVerifiedForGroup = !!d.personal.isVerified;
+            });
+        }, 1000);
+
+        function sendMessage() {
+            const inputEl = document.getElementById('msg-input');
+            const text = inputEl.value.trim();
+            const file = fileInput.files[0];
+
+            if (!currentActiveUserId || (!text && !file)) return;
+
+            const timestamp = new Date().toISOString();
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const fileObj = {
+                        name: file.name,
+                        type: file.type,
+                        data: e.target.result // base64 string
+                    };
+
+                    if (isCurrentGroup) {
+                        socket.emit('group_message', {
+                            groupId: currentActiveUserId,
+                            text: text,
+                            file: fileObj,
+                            senderName: currentAgentNameForGroup,
+                            senderAvatar: currentAgentAvatarForGroup,
+                            isVerified: currentAgentVerifiedForGroup
+                        });
+                    } else {
+                        socket.emit('agent_reply', {
+                            userId: currentActiveUserId,
+                            text: text,
+                            file: fileObj
+                        });
+
+                        userConversations[currentActiveUserId].push({
+                            role: 'agent',
+                            text: text,
+                            file: fileObj,
+                            timestamp: timestamp
+                        });
+                    }
+
+                    resetInput();
+                };
+                reader.readAsDataURL(file);
+            } else {
+                if (isCurrentGroup) {
+                    socket.emit('group_message', {
+                        groupId: currentActiveUserId,
+                        text: text,
+                        senderName: currentAgentNameForGroup,
+                        senderAvatar: currentAgentAvatarForGroup,
+                        isVerified: currentAgentVerifiedForGroup
+                    });
+                } else {
+                    socket.emit('agent_reply', {
+                        userId: currentActiveUserId,
+                        text: text
+                    });
+
+                    userConversations[currentActiveUserId].push({
+                        role: 'agent',
+                        text: text,
+                        timestamp: timestamp
+                    });
+                }
+
+                resetInput();
+            }
+        }
+
+        function resetInput() {
+            const inputEl = document.getElementById('msg-input');
+            inputEl.value = '';
+            fileInput.value = '';
+            inputEl.placeholder = "輸入回覆訊息...";
+            updateUserList();
+
+            if (isCurrentGroup) {
+                renderGroupMessages(currentActiveUserId);
+            } else {
+                renderMessages(currentActiveUserId);
+            }
+        }
+
+        function handleKeyPress(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        }
+    </script>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

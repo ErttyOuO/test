@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧保單 - InsureTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Function/pyramid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo-section">
+            <img src="logo.png" alt="InsureTech Logo">
+            <span>譯保通</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="consulting.html">保險諮詢</a></li>
+                <li><a href="dm.html">保單目錄</a></li>
+                <li><a href="budget.html">費用預算</a></li>
+                <li><a href="policy.html">智慧保單</a></li>
+                <li><a href="community.html">匿名社群</a></li>
+                <li><a href="保單搜尋/policy_tab.html">保單搜尋</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-logo">
+                <img src="logo.png" alt="InsureTech Logo">
+                <span>譯保通</span>
+            </a>
+            <div class="mobile-nav-links">
+                <a href="consulting.html">保險諮詢</a>
+                <a href="dm.html">保單目錄</a>
+                <a href="budget.html">費用預算</a>
+                <a href="policy.html">智慧保單</a>
+                <a href="community.html">匿名社群</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="policy-main-container">
+            <div class="policy-grid-layout">
+                <!-- Sidebar: Upload & List -->
+                <div class="policy-sidebar">
+                    <!-- Upload Section -->
+                    <div class="policy-card" style="padding: 16px;">
+                        <h3 class="section-title">保單上傳與文字辨識</h3>
+                        <div class="upload-card-content">
+                            <div class="upload-icon-wrapper">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="17 8 12 3 7 8"></polyline>
+                                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                                </svg>
+                            </div>
+                            <div class="upload-text">點擊或拖曳檔案上傳</div>
+                            <div class="upload-sub">支援 PDF, JPG (自動 OCR 辨識)</div>
+                        </div>
+                    </div>
+
+                    <!-- Policy List Section -->
+                    <div class="policy-card" style="flex: 1; min-height: 0;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                            <h3 class="section-title" style="margin-bottom: 0;">目前已有保單</h3>
+                            <div id="pyramid-btn-container"></div>
+                        </div>
+                        <div class="policy-list-container">
+                            <!-- Items will be injected by script.js -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Detail View -->
+                <div class="policy-card detail-view-card">
+                    <div class="detail-header">
+                        <div class="detail-title">
+                            <div style="font-size: 0.9rem; color: #888; margin-bottom: 4px;">結構化保單資料</div>
+                            <h2>超級醫療險計畫</h2>
+                            <div class="detail-meta">
+                                <span>承保: 富邦人壽</span>
+                                <span>|</span>
+                                <span>保單號: 1234567890</span>
+                                <span>|</span>
+                                <span>生效日: 2024/01/20</span>
+                            </div>
+                        </div>
+                        <div class="status-badge">
+                            保障有效
+                        </div>
+                    </div>
+
+                    <div class="detail-content">
+                        <div class="detail-content">
+                            <!-- Term Explanation Block (Moved to Top) -->
+                            <div class="term-explanation" style="margin-bottom: 24px;">
+                                <div class="term-title">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                    </svg>
+                                    條款白話文重點：關於「實支實付」
+                                </div>
+                                <div class="term-body">
+                                    針對健保不給付的自費項目（如自費藥物、特殊耗材、升等病房等），在上述設定的「限額」範圍內，您花多少錢，保險公司就理賠多少。不包含非醫療必要的開支（如看護墊、伙食費）。
+                                </div>
+                            </div>
+
+
+
+                            <!-- Group 1 -->
+                            <!-- Group 1 -->
+                            <div class="data-group">
+                                <div class="group-header">住院醫療給付</div>
+                                <div class="info-row">
+                                    <span class="info-label">每日病房費用 (限額)</span>
+                                    <span class="info-value text-accent">$ 3,000 / 日</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">加護病房費用 (限額)</span>
+                                    <span class="info-value">$ 6,000 / 日</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">住院醫療雜費 (限額)</span>
+                                    <span class="info-value">$ 150,000 / 次</span>
+                                </div>
+                            </div>
+
+                            <!-- Group 2 -->
+                            <div class="data-group">
+                                <div class="group-header">手術給付</div>
+                                <div class="info-row">
+                                    <span class="info-label">住院手術費用 (限額)</span>
+                                    <span class="info-value">$ 150,000 / 次</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">門診手術費用 (限額)</span>
+                                    <span class="info-value">$ 50,000 / 次</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">特定處置費用</span>
+                                    <span class="info-value">依條款比例計算</span>
+                                </div>
+                            </div>
+
+                            <!-- Term Explanation Block -->
+
+                            <div style="height: 20px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <script src="Function/pyramid_analysis.js"></script>
+    <!-- Floating Action Widgets -->
+    <div class="floating-widget">
+        <div class="float-btn emergency" onclick="openClaimsModal()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 6V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2" />
+                <rect width="20" height="14" x="2" y="6" rx="2" />
+                <path d="M12 10v6" />
+                <path d="M9 13h6" />
+            </svg>
+            <span class="float-tooltip">理賠急救支援</span>
+        </div>
+    </div>
+
+    <!-- Claims Emergency Modal -->
+    <div class="modal-overlay" id="claims-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeClaimsModal()">×</button>
+            <div class="modal-title">理賠急救支援</div>
+            <p class="modal-desc">別擔心，請簡單描述您目前遇到的狀況，我們將協助您釐清後續步驟。</p>
+
+            <div class="modal-form">
+                <textarea placeholder="例如：剛發生車禍，有人受傷，警察還沒到，請問我現在該做什麼？"></textarea>
+                <button class="modal-submit-btn" onclick="alert('我們已收到您的求救訊號，將立即分析並提供建議！')">請求支援</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

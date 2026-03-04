@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言貼圖示範 - 譯保通 InsureTech</title>
+    <meta name="description" content="模擬論壇留言區 + 貼圖功能示範">
+    <style>
+        /* ====================================================================
+           【設計系統】深色主題 CSS 變數
+           ==================================================================== */
+        :root {
+            --bg: #0d1117;
+            --bg-card: #161b22;
+            --bg-card-hover: #1c2333;
+            --bg-input: #0d1117;
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #e6edf3;
+            --text-dim: #8b949e;
+            --accent: #9CC98D;
+            --accent-dark: #7BB369;
+            --accent-dim: rgba(156, 201, 141, 0.12);
+            --blue: #58a6ff;
+            --blue-dim: rgba(88, 166, 255, 0.12);
+            --red: #f85149;
+            --gold: #FFD700;
+            --radius: 16px;
+            --font: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background: rgba(13, 17, 23, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.7rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .logo-icon {
+            width: 28px;
+            height: 28px;
+            background: var(--accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: #000;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .nav-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.8rem;
+            padding: 0.35rem 0.6rem;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--accent);
+            background: var(--accent-dim);
+        }
+
+        /* ===== 頁面主體 ===== */
+        .page-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem 3rem;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-title h1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .page-title p {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            margin-top: 0.3rem;
+        }
+
+        /* ===== 留言輸入區 ===== */
+        .comment-composer {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .composer-header {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .composer-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .composer-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .composer-body {
+            position: relative;
+        }
+
+        /* 可編輯留言區域（支援 inline 貼圖顯示） */
+        .comment-editor {
+            width: 100%;
+            min-height: 80px;
+            padding: 0.8rem;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: var(--bg-input);
+            color: var(--text);
+            font-size: 0.88rem;
+            font-family: inherit;
+            resize: vertical;
+            outline: none;
+            transition: border-color 0.2s;
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .comment-editor:focus {
+            border-color: var(--accent);
+        }
+
+        /* 編輯器內的貼圖 */
+        .comment-editor .comment-sticker {
+            width: 60px;
+            height: 60px;
+            vertical-align: middle;
+            margin: 2px;
+        }
+
+        .composer-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.6rem;
+        }
+
+        .composer-tools {
+            display: flex;
+            gap: 0.4rem;
+        }
+
+        .tool-btn {
+            padding: 0.4rem 0.7rem;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: transparent;
+            color: var(--text-dim);
+            font-size: 0.82rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .tool-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-dim);
+        }
+
+        .btn-submit {
+            padding: 0.5rem 1.2rem;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: #000;
+            font-size: 0.85rem;
+            font-weight: 700;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-submit:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+        }
+
+        .btn-submit:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* ===== 留言列表 ===== */
+        .comment-list-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.8rem;
+        }
+
+        .comment-list-header h2 {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .comment-count {
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            background: rgba(255, 255, 255, 0.06);
+            padding: 0.2rem 0.6rem;
+            border-radius: 10px;
+        }
+
+        .btn-clear {
+            padding: 0.3rem 0.6rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: transparent;
+            color: var(--text-dim);
+            font-size: 0.72rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-clear:hover {
+            border-color: var(--red);
+            color: var(--red);
+        }
+
+        .comment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        /* 單則留言卡片 */
+        .comment-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1rem;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .comment-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .comment-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #58a6ff, #388bfd);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .comment-meta {
+            flex: 1;
+        }
+
+        .comment-author {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .comment-time {
+            font-size: 0.68rem;
+            color: var(--text-dim);
+        }
+
+        .comment-delete {
+            padding: 0.2rem 0.4rem;
+            border: none;
+            border-radius: 6px;
+            background: transparent;
+            color: var(--text-dim);
+            font-size: 0.72rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .comment-delete:hover {
+            color: var(--red);
+            background: rgba(248, 81, 73, 0.1);
+        }
+
+        /* 留言內容（支援 inline 貼圖渲染） */
+        .comment-body {
+            font-size: 0.88rem;
+            line-height: 1.7;
+            word-break: break-word;
+        }
+
+        /* 留言中的貼圖顯示 */
+        .comment-body .comment-sticker {
+            width: 80px;
+            height: 80px;
+            vertical-align: middle;
+            margin: 4px 2px;
+            border-radius: 8px;
+        }
+
+        .comment-empty {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-dim);
+            font-size: 0.85rem;
+        }
+
+        .comment-empty .icon {
+            font-size: 2rem;
+            margin-bottom: 0.4rem;
+        }
+
+        /* ===== 貼圖選擇 Modal ===== */
+        .sticker-modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(6px);
+            z-index: 5000;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .sticker-modal-overlay.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .sticker-modal {
+            background: #1c2333;
+            border-radius: 20px 20px 0 0;
+            width: min(600px, 100%);
+            max-height: 55vh;
+            display: flex;
+            flex-direction: column;
+            transform: translateY(100%);
+            transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .sticker-modal-overlay.show .sticker-modal {
+            transform: translateY(0);
+        }
+
+        .modal-handle-bar {
+            text-align: center;
+            padding: 0.6rem;
+            cursor: grab;
+        }
+
+        .modal-handle-bar::before {
+            content: '';
+            display: inline-block;
+            width: 40px;
+            height: 4px;
+            border-radius: 2px;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .modal-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1.2rem 0.6rem;
+        }
+
+        .modal-top h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+
+        .modal-close {
+            width: 28px;
+            height: 28px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-dim);
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: var(--text);
+        }
+
+        /* 分類篩選 tabs */
+        .modal-tabs {
+            display: flex;
+            gap: 0.4rem;
+            padding: 0 1.2rem 0.6rem;
+            overflow-x: auto;
+        }
+
+        .modal-tab {
+            padding: 0.3rem 0.7rem;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            background: transparent;
+            color: var(--text-dim);
+            font-size: 0.72rem;
+            font-family: inherit;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+
+        .modal-tab.active {
+            background: var(--accent);
+            color: #000;
+            border-color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* 貼圖網格 */
+        .sticker-grid-modal {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 0.6rem;
+            padding: 0.5rem 1.2rem 1.5rem;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .sticker-pick {
+            aspect-ratio: 1;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.03);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.2rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sticker-pick:hover {
+            border-color: var(--accent);
+            background: var(--accent-dim);
+            transform: scale(1.05);
+        }
+
+        .sticker-pick .pick-emoji {
+            font-size: 1.8rem;
+        }
+
+        .sticker-pick img {
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .sticker-pick .pick-name {
+            font-size: 0.6rem;
+            color: var(--text-dim);
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 90%;
+        }
+
+        .sticker-pick.locked-pick {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .sticker-pick.locked-pick::after {
+            content: '🔒';
+            position: absolute;
+            font-size: 0.8rem;
+        }
+
+        .sticker-modal-empty {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-dim);
+            font-size: 0.82rem;
+        }
+
+        /* ===== Toast ===== */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(120%);
+            background: #1c2333;
+            color: var(--text);
+            padding: 0.8rem 1.5rem;
+            border-radius: 14px;
+            font-size: 0.88rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 9999;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* ===== 動畫 ===== */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-dim);
+            font-size: 0.72rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 600px) {
+            .page-container {
+                padding: 1rem 0.8rem 2rem;
+            }
+
+            .page-title h1 {
+                font-size: 1.2rem;
+            }
+
+            .comment-editor {
+                min-height: 60px;
+                font-size: 0.82rem;
+            }
+
+            .sticker-grid-modal {
+                grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+            }
+
+            .comment-body .comment-sticker {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        ::selection {
+            background: var(--accent);
+            color: #000;
+        }
+    
+        /* ===== RWD & Hamburger Menu ===== */
+        .hamburger-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+            /* Positioning for absolute cases */
+            position: relative;
+        }
+
+        .hamburger-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #FFFFFF !important;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        /* Hamburger open state */
+        .hamburger-btn.open span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+        .hamburger-btn.open span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-btn.open span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+            /* Header Specific */
+            header {
+                padding: 0.8rem 5% !important;
+            }
+        
+            .hamburger-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 260px;
+                height: 100vh;
+                background-color: rgba(15, 15, 15, 0.95);
+                backdrop-filter: blur(15px);
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                justify-content: flex-start !important;
+                padding: 5rem 2rem 2rem;
+                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+                z-index: 999;
+                /* Reset existing gap to ensure clean layout */
+                gap: 1.5rem !important; 
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links a {
+                font-size: 1.15rem !important;
+                width: 100%;
+                padding-bottom: 0.8rem;
+                display: block;
+            }
+
+            /* Generic Resizing Fixes for Cards and Grids */
+            .stats-row {
+                flex-direction: column;
+                gap: 1.2rem !important;
+            }
+            
+            .card-grid, .shop-grid, .stamp-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            /* Fixes explicitly for admin dashboard columns */
+            .sidebar {
+                width: 100% !important;
+                position: static !important;
+                height: auto !important;
+                border-right: none !important;
+                border-bottom: 1px solid var(--border);
+            }
+            .main-content {
+                padding: 1.5rem !important;
+            }
+
+            /* Modal widths */
+            .modal-content, .task-modal-content, .shop-modal-content {
+                width: 90% !important;
+                margin: 10vh auto !important;
+                padding: 1.5rem !important;
+            }
+            
+            /* Pricing Tiers / Subscription Page */
+            .pricing-tier {
+                flex: none !important;
+                width: 100%;
+            }
+            .pricing-tiers {
+                flex-direction: column !important;
+                gap: 1.5rem !important;
+            }
+            .compare-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            /* Sponsor Dashboard Layout */
+            .dashboard-layout {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+            /* Force auth tools to hide when space is too tight or neatly align */
+            .header-right { margin-left: auto; gap: 0.5rem; }
+            .auth-info-bar, .user-auth { display: none !important; } /* Simplify header on mobile */
+            
+            /* Give hamburger priority */
+            .hamburger-btn { margin-left: 10px; }
+            
+            /* Logo resizing */
+            .logo-section span { font-size: 1rem; }
+        }
+
+        /* ===== Global Vertical Space Reduction (Mobile) ===== */
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+            /* Reduce padding on hero sections to save space */
+            .hero-section, .sub-hero, .wallet-hero, .profile-hero {
+                padding: 1.5rem 1rem 2.8rem !important;
+            }
+            
+            .hero-section h1, .sub-hero h1, .wallet-hero h1 {
+                font-size: 1.5rem !important;
+                margin-bottom: 0.3rem !important;
+            }
+            .hero-section p, .sub-hero p {
+                font-size: 0.9rem !important;
+            }
+
+            /* Main containers constraints */
+            .main-content, .dashboard-layout {
+                padding: 1rem !important;
+                
+            }
+
+            /* Status bars or quick stats */
+            .status-bar, .stats-row {
+                padding: 0.8rem 1rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            /* Info cards and section cards */
+            .info-card, .section-card, .shop-item, .task-card {
+                padding: 1rem !important;
+                margin-bottom: 0.8rem !important;
+            }
+            
+            .section-title {
+                margin: 1.5rem 0 1rem !important;
+            }
+            .section-title h2 {
+                font-size: 1.3rem !important;
+            }
+
+            /* Lists and rows inside cards */
+            ul.plan-features li, .reward-row, .task-row, .history-item {
+                padding: 0.4rem 0 !important;
+            }
+        }
+
+    
+        /* ===== Override: Use main-page mobile nav ===== */
+        .hamburger-btn#hamburger-toggle {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .hamburger-btn#hamburger-toggle {
+                display: block !important;
+            }
+            nav { display: none !important; }
+        }
+    
+        /* ===== Unified Nav+Hamburger Override ===== */
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.6rem;
+        }
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent;
+        }
+        nav a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+        #hamburger-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+        #hamburger-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+        .mobile-nav-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.95);
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        .mobile-nav-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .mobile-nav-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        .mobile-nav-content {
+            text-align: center;
+        }
+        .mobile-nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+        .mobile-nav-logo img {
+            height: 36px;
+        }
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .mobile-nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.2s;
+        }
+        .mobile-nav-links a:hover {
+            color: #9CC98D;
+        }
+        @media (max-width: 768px) {
+            nav { display: none !important; }
+            #hamburger-toggle { display: block !important; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+      【頁面功能說明 — community-sticker-demo.html】
+      留言區貼圖功能展示 (Community Demo) 頁面。模擬一般的社群討論區，讓使用者可以在留言時呼叫貼圖鍵盤，送出自己擁有的貼圖。
+    -->
+    <!-- ===== Header ===== -->
+    <header>
+        <a href="index.html" class="logo-section" style="text-decoration:none;">
+            <img src="logo.png" alt="InsureTech Logo">
+            <span>譯保通</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="consulting.html">保險諮詢</a></li>
+                <li><a href="dm.html">保單目錄</a></li>
+                <li><a href="budget.html">費用預算</a></li>
+                <li><a href="policy.html">智慧保單</a></li>
+                <li><a href="community.html">匿名社群</a></li>
+                <li><a href="保單搜尋/policy_tab.html">保單搜尋</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-logo">
+                <img src="logo.png" alt="InsureTech Logo">
+                <span>譯保通</span>
+            </a>
+            <div class="mobile-nav-links">
+                <a href="consulting.html">保險諮詢</a>
+                <a href="dm.html">保單目錄</a>
+                <a href="budget.html">費用預算</a>
+                <a href="policy.html">智慧保單</a>
+                <a href="community.html">匿名社群</a>
+                <a href="保單搜尋/policy_tab.html">保單搜尋</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== 主體 ===== -->
+    <div class="page-container">
+        <div class="page-title">
+            <h1>💬 留言 + 貼圖示範</h1>
+            <p>模擬論壇留言區，包含貼圖插入、顯示、localStorage 持久化</p>
+        </div>
+
+        <!-- 留言輸入區 -->
+        <div class="comment-composer">
+            <div class="composer-header">
+                <div class="composer-avatar">匿</div>
+                <div class="composer-name">匿名使用者</div>
+            </div>
+            <div class="composer-body">
+                <!--
+                    使用 contenteditable div 而非 textarea
+                    原因：textarea 無法渲染 inline <img>，contenteditable 可以
+                -->
+                <div class="comment-editor" id="comment-editor" contenteditable="true"
+                    data-placeholder="寫下你的留言...（可以插入貼圖！）"></div>
+            </div>
+            <div class="composer-actions">
+                <div class="composer-tools">
+                    <button class="tool-btn" id="btn-sticker" onclick="openStickerModal()">
+                        😀 貼圖
+                    </button>
+                </div>
+                <button class="btn-submit" id="btn-submit" onclick="submitComment()">
+                    送出留言
+                </button>
+            </div>
+        </div>
+
+        <!-- 留言列表 -->
+        <div class="comment-list-header">
+            <div style="display:flex;align-items:center;gap:0.5rem;">
+                <h2>留言列表</h2>
+                <span class="comment-count" id="comment-count">0 則</span>
+            </div>
+            <button class="btn-clear" onclick="clearAllComments()">🗑️ 清空</button>
+        </div>
+        <div class="comment-list" id="comment-list">
+            <div class="comment-empty" id="comment-empty">
+                <div class="icon">💬</div>
+                <div>還沒有留言，來說點什麼吧！</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== 貼圖選擇 Modal ===== -->
+    <div class="sticker-modal-overlay" id="sticker-modal" onclick="closeStickerModalIfOutside(event)">
+        <div class="sticker-modal">
+            <div class="modal-handle-bar"></div>
+            <div class="modal-top">
+                <h3>😀 選擇貼圖</h3>
+                <button class="modal-close" onclick="closeStickerModal()">✕</button>
+            </div>
+            <div class="modal-tabs" id="modal-tabs">
+                <!-- JS 動態填入分類 tab -->
+            </div>
+            <div class="sticker-grid-modal" id="sticker-grid-modal">
+                <!-- JS 動態渲染貼圖 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Toast ===== -->
+    <div class="toast" id="toast">
+        <span id="toast-icon"></span>
+        <span id="toast-msg"></span>
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>© 2026 譯保通 InsureTech ｜ 留言貼圖示範（community-sticker-demo）</p>
+    </footer>
+
+    <!-- ===== JavaScript ===== -->
+    <script>
+        // ====================================================================
+        // 【新手導讀 — community-sticker-demo.html 的 JavaScript】
+        // ====================================================================
+        //
+        // 模擬論壇留言區 + 貼圖功能示範
+        //
+        // 主要功能：
+        //   1. loadStickers()        — 載入可用貼圖
+        //   2. renderStickerModal()   — 渲染貼圖選擇 Modal
+        //   3. insertSticker()       — 將貼圖插入留言編輯器
+        //   4. submitComment()       — 送出留言
+        //
+        // 安全措施：
+        //   - XSS 防護：只允許 .comment-sticker 的 <img> 標籤
+        //   - sanitizeHTML() 過濾所有危險標籤（<script> 等）
+        //
+        // localStorage keys：
+        //   - 'admin_sticker_data'   — 貼圖資料（與 admin、shop 共用）
+        //   - 'unlocked_stickers'    — 已解鎖貼圖 ID（與 shop 共用）
+        //   - 'community_comments'   — 留言資料
+        //
+        // 【遷移須知】
+        //   - loadStickers()   → GET  /api/stickers
+        //   - submitComment()  → POST /api/comments { content }
+        //   - loadComments()   → GET  /api/comments
+        //   - deleteComment()  → DELETE /api/comments/:id
+        // ====================================================================
+
+
+        // ===== 核心狀態 =====
+        let allStickers = [];              // 所有貼圖
+        let comments = [];                 // 所有留言
+        let modalFilter = 'all';           // Modal 分類篩選
+
+        // localStorage keys
+        const STICKER_DATA_KEY = 'admin_sticker_data';
+        const COMMENT_KEY = 'community_comments';
+
+        // ===== User-keyed Unlock Storage =====
+        // 每位使用者的解鎖資料存在不同 key，避免多帳號互相覆蓋
+        // （與 stickers.html、checkin.html、sticker-shop.html 一致）
+        function _unlockKey() {
+            // community-sticker-demo 沒有引入 auth.js，需判斷函式是否存在
+            if (typeof getAuthenticatedUser === 'function') {
+                const u = getAuthenticatedUser();
+                return u ? 'sticker_unlocks_' + u.id : 'sticker_unlocks_guest';
+            }
+            return 'sticker_unlocks_guest';
+        }
+
+        // Migration: 把舊的 global key 合併到 per-user key 後刪除
+        function migrateOldUnlocks() {
+            const oldKey = 'unlocked_stickers';
+            const old = localStorage.getItem(oldKey);
+            if (!old) return;
+            try {
+                const oldArr = JSON.parse(old);
+                if (Array.isArray(oldArr) && oldArr.length > 0) {
+                    const current = getUnlocked();
+                    const merged = [...new Set([...current, ...oldArr])];
+                    localStorage.setItem(_unlockKey(), JSON.stringify(merged));
+                    console.log('[Community] 已遷移舊解鎖資料，共', oldArr.length, '筆 → per-user key');
+                }
+            } catch (e) {
+                console.warn('[Community] 遷移舊解鎖資料失敗:', e);
+            }
+            localStorage.removeItem(oldKey);
+        }
+
+
+        // ================================================================
+        // 1. loadStickers() — 載入貼圖
+        // ================================================================
+        // 【遷移須知】改為 GET /api/stickers
+        async function loadStickers() {
+            try {
+                const res = await fetch('stickers/stickers.json');
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                allStickers = await res.json();
+                console.log('[Community] 從 stickers.json 載入，共', allStickers.length, '筆');
+            } catch (err) {
+                console.warn('[Community] 無法載入 stickers.json:', err.message);
+                const cached = localStorage.getItem(STICKER_DATA_KEY);
+                if (cached) {
+                    try {
+                        allStickers = JSON.parse(cached);
+                        console.log('[Community] 從 localStorage 載入，共', allStickers.length, '筆');
+                    } catch {
+                        allStickers = [];
+                    }
+                }
+            }
+        }
+
+
+        // ===== 解鎖狀態（per-user key） =====
+        function getUnlocked() {
+            try { return JSON.parse(localStorage.getItem(_unlockKey()) || '[]'); } catch { return []; }
+        }
+
+        function isUnlocked(id) {
+            return getUnlocked().includes(id);
+        }
+
+
+        // ================================================================
+        // 2. renderStickerModal() — 渲染貼圖選擇 Modal
+        // ================================================================
+        function renderStickerModal() {
+            const grid = document.getElementById('sticker-grid-modal');
+            const unlocked = getUnlocked();
+
+            // 根據篩選條件過濾
+            let list = allStickers;
+            if (modalFilter === 'unlocked') {
+                list = list.filter(s => unlocked.includes(s.id));
+            } else if (modalFilter !== 'all') {
+                list = list.filter(s => s.category === modalFilter);
+            }
+
+            // 空狀態
+            if (list.length === 0) {
+                grid.innerHTML = `
+                    <div class="sticker-modal-empty">
+                        <div>📭 此分類沒有可用的貼圖</div>
+                        <div style="margin-top:0.3rem;font-size:0.75rem;">
+                            前往 <a href="sticker-shop.html" style="color:var(--accent);">貼圖商城</a> 解鎖更多！
+                        </div>
+                    </div>`;
+                return;
+            }
+
+            grid.innerHTML = list.map(s => {
+                const owned = unlocked.includes(s.id);
+                const lockClass = owned ? '' : 'locked-pick';
+
+                // 使用已上傳圖片或 emoji
+                const visual = s._preview
+                    ? `<img src="${s._preview}" alt="${s.name}">`
+                    : `<span class="pick-emoji">${s.emoji || '🎨'}</span>`;
+
+                return `
+                    <div class="sticker-pick ${lockClass}" 
+                         title="${s.name}${owned ? '' : '（未解鎖）'}"
+                         onclick="${owned ? `insertSticker('${s.id}')` : `showToast('🔒', '請先到貼圖商城解鎖')`}">
+                        ${visual}
+                        <span class="pick-name">${s.name}</span>
+                    </div>`;
+            }).join('');
+        }
+
+        // 建立 Modal 分類 tabs
+        function buildModalTabs() {
+            const tabs = document.getElementById('modal-tabs');
+            const cats = [...new Set(allStickers.map(s => s.category).filter(Boolean))];
+
+            let html = `
+                <button class="modal-tab active" data-cat="all" onclick="setModalFilter('all')">全部</button>
+                <button class="modal-tab" data-cat="unlocked" onclick="setModalFilter('unlocked')">已解鎖</button>`;
+            cats.forEach(cat => {
+                html += `<button class="modal-tab" data-cat="${cat}" onclick="setModalFilter('${cat}')">${cat}</button>`;
+            });
+            tabs.innerHTML = html;
+        }
+
+        function setModalFilter(cat) {
+            modalFilter = cat;
+            document.querySelectorAll('.modal-tab').forEach(t => {
+                t.classList.toggle('active', t.dataset.cat === cat);
+            });
+            renderStickerModal();
+        }
+
+        // 開啟 / 關閉 Modal
+        function openStickerModal() {
+            modalFilter = 'all';
+            buildModalTabs();
+            renderStickerModal();
+            document.getElementById('sticker-modal').classList.add('show');
+        }
+
+        function closeStickerModal() {
+            document.getElementById('sticker-modal').classList.remove('show');
+        }
+
+        function closeStickerModalIfOutside(e) {
+            if (e.target === document.getElementById('sticker-modal')) {
+                closeStickerModal();
+            }
+        }
+
+
+        // ================================================================
+        // 3. insertSticker() — 將貼圖插入留言框
+        // ================================================================
+        function insertSticker(id) {
+            const s = allStickers.find(x => x.id === id);
+            if (!s) return;
+
+            // 建立貼圖 <img> — 使用 emoji 文字渲染為圖片
+            // 如果有 _preview（上傳的圖），用 _preview；否則用 emoji span
+            const editor = document.getElementById('comment-editor');
+
+            if (s._preview) {
+                // 有上傳圖片 → 插入 <img>
+                const img = document.createElement('img');
+                img.className = 'comment-sticker';
+                img.src = s._preview;
+                img.alt = s.name;
+                img.dataset.stickerId = s.id;
+                editor.appendChild(img);
+            } else {
+                // 沒有圖片 → 用 emoji 佔位（以 span 包裹，留言渲染時會處理）
+                const span = document.createElement('span');
+                span.className = 'comment-sticker-emoji';
+                span.style.cssText = 'font-size:2.5rem;vertical-align:middle;margin:0 2px;';
+                span.textContent = s.emoji || '🎨';
+                span.dataset.stickerId = s.id;
+                span.dataset.stickerName = s.name;
+                editor.appendChild(span);
+            }
+
+            // 在貼圖後加一個空格方便繼續打字
+            editor.appendChild(document.createTextNode(' '));
+
+            closeStickerModal();
+            editor.focus();
+            showToast('😀', `已插入「${s.name}」`);
+        }
+
+
+        // ================================================================
+        // 4. submitComment() — 送出留言
+        // ================================================================
+        function submitComment() {
+            const editor = document.getElementById('comment-editor');
+            const rawHTML = editor.innerHTML.trim();
+
+            // 檢查是否有實質內容
+            const textContent = editor.textContent.trim();
+            const hasSticker = rawHTML.includes('comment-sticker');
+            if (!textContent && !hasSticker) {
+                showToast('⚠️', '請輸入留言內容');
+                editor.focus();
+                return;
+            }
+
+            // ===== XSS 防護 =====
+            // 使用 sanitizeHTML 過濾危險標籤，只保留安全的 img 和 span
+            const safeHTML = sanitizeHTML(rawHTML);
+
+            // 建立留言物件
+            const comment = {
+                id: 'c' + Date.now(),
+                html: safeHTML,
+                author: '匿名使用者',
+                avatar: '匿',
+                time: new Date().toLocaleString('zh-TW'),
+                timestamp: Date.now(),
+            };
+
+            // 加入陣列（最新的在最前面）
+            comments.unshift(comment);
+            saveComments();
+
+            // 清空編輯器
+            editor.innerHTML = '';
+
+            // 重新渲染
+            renderComments();
+            showToast('✅', '留言已送出！');
+        }
+
+
+        // ===== XSS 防護 — sanitizeHTML =====
+        // 只允許以下安全元素：
+        //   - <img class="comment-sticker"> （貼圖）
+        //   - <span class="comment-sticker-emoji"> （emoji 貼圖）
+        //   - <br> （換行）
+        //   - 純文字
+        // 所有 <script>, <iframe>, onerror, onclick 等都會被移除
+        function sanitizeHTML(html) {
+            // 建立一個臨時 DOM 來解析 HTML
+            const temp = document.createElement('div');
+            temp.innerHTML = html;
+
+            // 遞迴清理每個節點
+            function cleanNode(node) {
+                const result = [];
+
+                node.childNodes.forEach(child => {
+                    if (child.nodeType === Node.TEXT_NODE) {
+                        // 文字節點：直接保留（但 escape HTML entities）
+                        result.push(escapeText(child.textContent));
+                    } else if (child.nodeType === Node.ELEMENT_NODE) {
+                        const tag = child.tagName.toLowerCase();
+
+                        if (tag === 'img' && child.classList.contains('comment-sticker')) {
+                            // 安全的貼圖 img — 只保留 src, alt, class, data-sticker-id
+                            const src = child.getAttribute('src') || '';
+                            const alt = escapeAttr(child.getAttribute('alt') || '');
+                            const sid = escapeAttr(child.dataset.stickerId || '');
+                            // 只允許 data: 或相對路徑的 src（防止 javascript: 等）
+                            if (src.startsWith('data:image/') || src.startsWith('images/') || src.startsWith('stickers/')) {
+                                result.push(`<img class="comment-sticker" src="${src}" alt="${alt}" data-sticker-id="${sid}">`);
+                            }
+                        } else if (tag === 'span' && child.classList.contains('comment-sticker-emoji')) {
+                            // 安全的 emoji 貼圖 span
+                            const emoji = escapeText(child.textContent);
+                            const sid = escapeAttr(child.dataset.stickerId || '');
+                            const sname = escapeAttr(child.dataset.stickerName || '');
+                            result.push(`<span class="comment-sticker-emoji" style="font-size:2.5rem;vertical-align:middle;margin:0 2px;" data-sticker-id="${sid}" data-sticker-name="${sname}">${emoji}</span>`);
+                        } else if (tag === 'br') {
+                            result.push('<br>');
+                        } else if (tag === 'div') {
+                            // contenteditable 會自動把換行包在 <div> 裡
+                            const inner = cleanNode(child).join('');
+                            if (inner) result.push('<br>' + inner);
+                        } else {
+                            // 其他標籤 → 只保留文字內容（strip tag）
+                            const inner = cleanNode(child).join('');
+                            if (inner) result.push(inner);
+                        }
+                    }
+                });
+
+                return result;
+            }
+
+            return cleanNode(temp).join('');
+        }
+
+        // Escape 文字中的 HTML 特殊字元
+        function escapeText(str) {
+            return str
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+        }
+
+        // Escape 屬性值
+        function escapeAttr(str) {
+            return str
+                .replace(/&/g, '&amp;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+        }
+
+
+        // ===== 留言渲染 =====
+        function renderComments() {
+            const list = document.getElementById('comment-list');
+            const count = document.getElementById('comment-count');
+            count.textContent = comments.length + ' 則';
+
+            if (comments.length === 0) {
+                list.innerHTML = `
+                    <div class="comment-empty" id="comment-empty">
+                        <div class="icon">💬</div>
+                        <div>還沒有留言，來說點什麼吧！</div>
+                    </div>`;
+                return;
+            }
+
+            list.innerHTML = comments.map(c => `
+                <div class="comment-card" data-id="${c.id}">
+                    <div class="comment-header">
+                        <div class="comment-avatar">${escapeText(c.avatar || '匿')}</div>
+                        <div class="comment-meta">
+                            <div class="comment-author">${escapeText(c.author || '匿名')}</div>
+                            <div class="comment-time">${escapeText(c.time || '')}</div>
+                        </div>
+                        <button class="comment-delete" onclick="deleteComment('${c.id}')" title="刪除">🗑️</button>
+                    </div>
+                    <div class="comment-body">${sanitizeHTML(c.html)}</div>
+                </div>
+            `).join('');
+        }
+
+
+        // ===== 留言 CRUD =====
+        function saveComments() {
+            localStorage.setItem(COMMENT_KEY, JSON.stringify(comments));
+        }
+
+        function loadComments() {
+            try {
+                comments = JSON.parse(localStorage.getItem(COMMENT_KEY) || '[]');
+            } catch {
+                comments = [];
+            }
+        }
+
+        function deleteComment(id) {
+            comments = comments.filter(c => c.id !== id);
+            saveComments();
+            renderComments();
+            showToast('🗑️', '留言已刪除');
+        }
+
+        function clearAllComments() {
+            if (comments.length === 0) {
+                showToast('📭', '目前沒有留言');
+                return;
+            }
+            if (!confirm('確定要清空所有留言嗎？')) return;
+            comments = [];
+            saveComments();
+            renderComments();
+            showToast('🗑️', '已清空所有留言');
+        }
+
+
+        // ===== Toast =====
+        function showToast(icon, msg) {
+            const t = document.getElementById('toast');
+            document.getElementById('toast-icon').textContent = icon;
+            document.getElementById('toast-msg').textContent = msg;
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 3000);
+        }
+
+
+        // ===== Placeholder 效果（contenteditable 不支援 placeholder） =====
+        const editor = document.getElementById('comment-editor');
+        editor.addEventListener('focus', () => {
+            if (!editor.textContent.trim() && !editor.querySelector('.comment-sticker')) {
+                editor.innerHTML = '';
+            }
+        });
+        editor.addEventListener('blur', () => {
+            if (!editor.textContent.trim() && !editor.querySelector('.comment-sticker')) {
+                editor.innerHTML = '';
+            }
+        });
+
+        // CSS placeholder
+        const placeholderStyle = document.createElement('style');
+        placeholderStyle.textContent = `
+            .comment-editor:empty::before {
+                content: attr(data-placeholder);
+                color: var(--text-dim);
+                pointer-events: none;
+            }
+        `;
+        document.head.appendChild(placeholderStyle);
+
+
+        // ===== Ctrl+Enter 快速送出 =====
+        editor.addEventListener('keydown', e => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                submitComment();
+            }
+        });
+
+
+        // ===== 初始化 =====
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadStickers();
+            migrateOldUnlocks();  // 遷移舊 global key → per-user key
+            loadComments();
+            renderComments();
+            console.log('[Community] 初始化完成，貼圖:', allStickers.length, '筆，留言:', comments.length, '筆');
+        });
+    </script>
+
+    <!-- ===== Hamburger Menu Logic ===== -->
+    
+    <script>
+    // Unified hamburger menu (injected by header standardization)
+    document.addEventListener('DOMContentLoaded', function() {
+        var btn = document.getElementById('hamburger-toggle');
+        var nav = document.getElementById('mobile-nav');
+        var close = document.getElementById('mobile-nav-close');
+        if (btn && nav) {
+            btn.onclick = function() { nav.classList.toggle('active'); };
+        }
+        if (close && nav) {
+            close.onclick = function() { nav.classList.remove('active'); };
+        }
+    });
+    </script>
+</body>
+</html>

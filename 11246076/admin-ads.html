@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>廣告管理後台 - 譯保通 Ad Manager</title>
+    <meta name="description" content="管理員廣告審核、檢舉處理、Fallback 素材管理">
+    <style>
+        :root {
+            --bg: #0d1117;
+            --bg-card: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-dim: #848d97;
+            --accent: #9CC98D;
+            --accent-dark: #7BB369;
+            --accent-dim: rgba(156, 201, 141, 0.12);
+            --gold: #f0c040;
+            --gold-dim: rgba(240, 192, 64, 0.12);
+            --red: #f85149;
+            --red-dim: rgba(248, 81, 73, 0.12);
+            --blue: #58a6ff;
+            --radius: 14px;
+            --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(13, 17, 23, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.7rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: bold;
+        }
+
+        .logo-section .logo-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.8rem;
+            padding: 0.35rem 0.6rem;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--accent);
+            background: var(--accent-dim);
+        }
+
+        .dashboard {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1.5rem 1.5rem 3rem;
+        }
+
+        .page-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 0.3rem;
+        }
+
+        .page-sub {
+            color: var(--text-dim);
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Tabs */
+        .tab-bar {
+            display: flex;
+            gap: 0.4rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: none;
+            color: var(--text-dim);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 8px 8px 0 0;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .tab-btn.active {
+            color: var(--accent);
+            background: var(--accent-dim);
+        }
+
+        .tab-btn .badge {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            background: var(--red);
+            color: #fff;
+            font-size: 0.55rem;
+            min-width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Section Card */
+        .section-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.3rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .section-card h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Review Item */
+        .review-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .review-thumb {
+            width: 120px;
+            height: 80px;
+            border-radius: 10px;
+            background: #1a1f2e;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 2rem;
+        }
+
+        .review-thumb img,
+        .review-thumb video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .review-info {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .review-info .name {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .review-info .meta {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            line-height: 1.5;
+        }
+
+        .review-actions {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .btn {
+            padding: 0.5rem 1.2rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn.approve {
+            background: var(--accent-dim);
+            color: var(--accent);
+        }
+
+        .btn.approve:hover {
+            background: rgba(156, 201, 141, 0.25);
+        }
+
+        .btn.reject {
+            background: var(--red-dim);
+            color: var(--red);
+        }
+
+        .btn.reject:hover {
+            background: rgba(248, 81, 73, 0.25);
+        }
+
+        .btn.primary {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: #000;
+        }
+
+        .btn.secondary {
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-dim);
+        }
+
+        .btn.warning {
+            background: var(--red-dim);
+            color: var(--red);
+        }
+
+        /* Report Item */
+        .report-item {
+            display: flex;
+            gap: 1rem;
+            padding: 0.8rem 1rem;
+            background: rgba(248, 81, 73, 0.04);
+            border: 1px solid rgba(248, 81, 73, 0.15);
+            border-radius: 12px;
+            margin-bottom: 0.6rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .report-item .reason {
+            flex: 1;
+            font-size: 0.82rem;
+        }
+
+        .report-item .reason .label {
+            color: var(--red);
+            font-weight: 600;
+        }
+
+        .report-item .time {
+            font-size: 0.65rem;
+            color: var(--text-dim);
+        }
+
+        /* Sponsor Item */
+        .sponsor-item {
+            display: flex;
+            gap: 1rem;
+            padding: 0.8rem 1rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 0.6rem;
+            align-items: center;
+        }
+
+        .sponsor-item .sponsor-name {
+            flex: 1;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .sponsor-item .frozen-badge {
+            padding: 0.15rem 0.6rem;
+            border-radius: 8px;
+            font-size: 0.65rem;
+            font-weight: 700;
+        }
+
+        .sponsor-item .frozen-badge.frozen {
+            background: var(--red-dim);
+            color: var(--red);
+        }
+
+        .sponsor-item .frozen-badge.active {
+            background: var(--accent-dim);
+            color: var(--accent);
+        }
+
+        /* Fallback */
+        .fallback-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.8rem;
+        }
+
+        .fallback-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 0.8rem;
+            text-align: center;
+        }
+
+        .fallback-card img,
+        .fallback-card video {
+            max-width: 100%;
+            max-height: 120px;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        .fallback-card .name {
+            font-size: 0.78rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        .file-upload-area {
+            border: 2px dashed var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+            margin-top: 0.8rem;
+        }
+
+        .file-upload-area:hover {
+            border-color: var(--accent);
+            background: rgba(156, 201, 141, 0.04);
+        }
+
+        .file-upload-area input[type="file"] {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .status-badge {
+            padding: 0.15rem 0.6rem;
+            border-radius: 8px;
+            font-size: 0.65rem;
+            font-weight: 600;
+        }
+
+        .status-badge.pending {
+            background: var(--gold-dim);
+            color: var(--gold);
+        }
+
+        .status-badge.active {
+            background: var(--accent-dim);
+            color: var(--accent);
+        }
+
+        .status-badge.paused {
+            background: var(--red-dim);
+            color: var(--red);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-dim);
+            font-size: 0.85rem;
+        }
+
+        .empty-state .icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Overview Stats */
+        .stats-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-box {
+            flex: 1;
+            min-width: 120px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 0.8rem 1rem;
+            text-align: center;
+        }
+
+        .stat-box .num {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+
+        .stat-box .num.red {
+            color: var(--red);
+        }
+
+        .stat-box .num.gold {
+            color: var(--gold);
+        }
+
+        .stat-box .lbl {
+            font-size: 0.68rem;
+            color: var(--text-dim);
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(120%);
+            background: #1c2333;
+            color: var(--text);
+            padding: 0.8rem 1.5rem;
+            border-radius: 12px;
+            z-index: 9999;
+            font-size: 0.85rem;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        @media (max-width: 600px) {
+            .review-item {
+                flex-direction: column;
+            }
+
+            .review-thumb {
+                width: 100%;
+                height: 120px;
+            }
+        }
+    
+        /* ===== RWD & Hamburger Menu ===== */
+        .hamburger-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+            /* Positioning for absolute cases */
+            position: relative;
+        }
+
+        .hamburger-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #FFFFFF !important;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        /* Hamburger open state */
+        .hamburger-btn.open span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+        .hamburger-btn.open span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-btn.open span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+            /* Header Specific */
+            header {
+                padding: 0.8rem 5% !important;
+            }
+        
+            .hamburger-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 260px;
+                height: 100vh;
+                background-color: rgba(15, 15, 15, 0.95);
+                backdrop-filter: blur(15px);
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                justify-content: flex-start !important;
+                padding: 5rem 2rem 2rem;
+                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+                z-index: 999;
+                /* Reset existing gap to ensure clean layout */
+                gap: 1.5rem !important; 
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links a {
+                font-size: 1.15rem !important;
+                width: 100%;
+                padding-bottom: 0.8rem;
+                display: block;
+            }
+
+            /* Generic Resizing Fixes for Cards and Grids */
+            .stats-row {
+                flex-direction: column;
+                gap: 1.2rem !important;
+            }
+            
+            .card-grid, .shop-grid, .stamp-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            /* Fixes explicitly for admin dashboard columns */
+            .sidebar {
+                width: 100% !important;
+                position: static !important;
+                height: auto !important;
+                border-right: none !important;
+                border-bottom: 1px solid var(--border);
+            }
+            .main-content {
+                padding: 1.5rem !important;
+            }
+
+            /* Modal widths */
+            .modal-content, .task-modal-content, .shop-modal-content {
+                width: 90% !important;
+                margin: 10vh auto !important;
+                padding: 1.5rem !important;
+            }
+            
+            /* Pricing Tiers / Subscription Page */
+            .pricing-tier {
+                flex: none !important;
+                width: 100%;
+            }
+            .pricing-tiers {
+                flex-direction: column !important;
+                gap: 1.5rem !important;
+            }
+            .compare-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            /* Sponsor Dashboard Layout */
+            .dashboard-layout {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+            /* Force auth tools to hide when space is too tight or neatly align */
+            .header-right { margin-left: auto; gap: 0.5rem; }
+            .auth-info-bar, .user-auth { display: none !important; } /* Simplify header on mobile */
+            
+            /* Give hamburger priority */
+            .hamburger-btn { margin-left: 10px; }
+            
+            /* Logo resizing */
+            .logo-section span { font-size: 1rem; }
+        }
+
+        /* ===== Global Vertical Space Reduction (Mobile) ===== */
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+            /* Reduce padding on hero sections to save space */
+            .hero-section, .sub-hero, .wallet-hero, .profile-hero {
+                padding: 1.5rem 1rem 2.8rem !important;
+            }
+            
+            .hero-section h1, .sub-hero h1, .wallet-hero h1 {
+                font-size: 1.5rem !important;
+                margin-bottom: 0.3rem !important;
+            }
+            .hero-section p, .sub-hero p {
+                font-size: 0.9rem !important;
+            }
+
+            /* Main containers constraints */
+            .main-content, .dashboard-layout {
+                padding: 1rem !important;
+                
+            }
+
+            /* Status bars or quick stats */
+            .status-bar, .stats-row {
+                padding: 0.8rem 1rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            /* Info cards and section cards */
+            .info-card, .section-card, .shop-item, .task-card {
+                padding: 1rem !important;
+                margin-bottom: 0.8rem !important;
+            }
+            
+            .section-title {
+                margin: 1.5rem 0 1rem !important;
+            }
+            .section-title h2 {
+                font-size: 1.3rem !important;
+            }
+
+            /* Lists and rows inside cards */
+            ul.plan-features li, .reward-row, .task-row, .history-item {
+                padding: 0.4rem 0 !important;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 
+      【頁面功能說明 — admin-ads.html】
+      管理員廣告版位控制台 (Ads Setup Dashboard)。用於管理站內廣告商與版位設定，包含觀看次數上限、獎勵設定與 Fallback 備用素材。
+    -->
+    <header>
+        <a href="admin-dashboard.html" class="logo-section">
+            <div class="logo-icon">⚙</div>
+            <span>管理後台</span>
+        </a>
+                    <button class="hamburger-btn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links">
+            <a href="admin-dashboard.html">管理總台</a>
+            <a href="admin-ads.html" class="active">廣告管理</a>
+            <a href="sponsor-dashboard.html">贊助商</a>
+            <a href="#" onclick="logoutUser(); return false;">🚪 登出</a>
+        </div>
+    </header>
+
+    <div class="dashboard">
+        <h1 class="page-title">⚙️ 廣告管理後台</h1>
+        <p class="page-sub">審核廣告、處理檢舉、管理 Fallback 素材</p>
+
+        <!-- Stats -->
+        <div class="stats-strip" id="stats-strip"></div>
+
+        <!-- Tabs -->
+        <div class="tab-bar">
+            <button class="tab-btn active" onclick="switchTab(this, 'review')">
+                📋 待審核
+                <span class="badge" id="badge-review" style="display:none;">0</span>
+            </button>
+            <button class="tab-btn" onclick="switchTab(this, 'all')">📊 全部活動</button>
+            <button class="tab-btn" onclick="switchTab(this, 'reports')">
+                🚩 檢舉
+                <span class="badge" id="badge-reports" style="display:none;">0</span>
+            </button>
+            <button class="tab-btn" onclick="switchTab(this, 'sponsors')">👤 贊助商</button>
+            <button class="tab-btn" onclick="switchTab(this, 'fallback')">🏠 Fallback 素材</button>
+        </div>
+
+        <!-- Tab: Review -->
+        <div class="tab-content active" id="tab-review">
+            <div id="review-list">
+                <div class="empty-state">
+                    <div class="icon">✅</div>
+                    <div>沒有待審核的廣告</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: All Campaigns -->
+        <div class="tab-content" id="tab-all">
+            <div id="all-campaigns-list">
+                <div class="empty-state">
+                    <div class="icon">📭</div>
+                    <div>尚無廣告活動</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Reports -->
+        <div class="tab-content" id="tab-reports">
+            <div id="reports-list">
+                <div class="empty-state">
+                    <div class="icon">✅</div>
+                    <div>目前沒有檢舉記錄</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Sponsors -->
+        <div class="tab-content" id="tab-sponsors">
+            <div id="sponsors-list">
+                <div class="empty-state">
+                    <div class="icon">👤</div>
+                    <div>尚無贊助商</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Fallback -->
+        <div class="tab-content" id="tab-fallback">
+            <div class="section-card">
+                <h3>📤 上傳 Fallback 素材</h3>
+                <div style="display:flex;gap:0.8rem;margin-bottom:0.8rem;flex-wrap:wrap;">
+                    <input type="text" id="fb-name" placeholder="素材名稱" style="
+                        flex:1;min-width:150px;padding:0.5rem 0.8rem;
+                        background:rgba(255,255,255,0.04);border:1px solid var(--border);
+                        border-radius:10px;color:var(--text);font-size:0.82rem;outline:none;">
+                    <select id="fb-type" style="
+                        padding:0.5rem 0.8rem;background:rgba(255,255,255,0.04);
+                        border:1px solid var(--border);border-radius:10px;
+                        color:var(--text);font-size:0.82rem;outline:none;">
+                        <option value="rewarded">Rewarded</option>
+                        <option value="banner">Banner</option>
+                    </select>
+                </div>
+                <div class="file-upload-area" id="fb-upload-area">
+                    <div style="font-size:1.5rem;">📁</div>
+                    <div style="font-size:0.78rem;color:var(--text-dim);" id="fb-upload-text">點擊上傳影片或圖片</div>
+                    <div style="font-size:0.68rem;color:var(--red);margin-top:0.3rem;">⚠️ 單檔上限 200MB</div>
+                    <input type="file" accept="video/*,image/*" onchange="handleFbFileUpload(this)">
+                </div>
+                <div style="margin-top:0.8rem;">
+                    <button class="btn primary" onclick="saveFallback()">💾 儲存 Fallback</button>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h3>📦 現有 Fallback 素材</h3>
+                <div class="fallback-grid" id="fallback-grid">
+                    <div class="empty-state">
+                        <div class="icon">📭</div>
+                        <div>尚無 Fallback 素材</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span id="toast-icon"></span>
+        <span id="toast-msg"></span>
+    </div>
+
+    <script src="auth.js">
+        // 【新手導讀 — admin-ads.html 的 JavaScript】
+        // 此區塊讀取與儲存廣告系統全域設定 (AD_SETTINGS)；處理備用廣告素材的 IndexedDB 檔案上傳/刪除；調整各版位觸發頻率的邏輯。
+</script>
+    <script src="idb-files.js"></script>
+    <script src="ad-sdk.js"></script>
+    <script>
+        // ===== Tab =====
+        function switchTab(btn, tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('tab-' + tabId).classList.add('active');
+            btn.classList.add('active');
+        }
+
+        // ===== 審核 =====
+        function approveCampaign(id) {
+            const camps = AD_SDK.getCampaigns();
+            const c = camps.find(x => x.id === id);
+            if (c) { c.status = 'active'; c.updated_at = new Date().toISOString(); }
+            AD_SDK.saveCampaigns(camps);
+            renderAll();
+            showToast('✅', '廣告已通過審核並上線');
+        }
+
+        function rejectCampaign(id) {
+            const camps = AD_SDK.getCampaigns();
+            const c = camps.find(x => x.id === id);
+            if (c) { c.status = 'draft'; c.updated_at = new Date().toISOString(); }
+            AD_SDK.saveCampaigns(camps);
+            renderAll();
+            showToast('❌', '廣告已退回，贊助商可修改後重新送審');
+        }
+
+        function forceStopCampaign(id) {
+            const camps = AD_SDK.getCampaigns();
+            const c = camps.find(x => x.id === id);
+            if (c) { c.status = 'paused'; c.updated_at = new Date().toISOString(); }
+            AD_SDK.saveCampaigns(camps);
+            renderAll();
+            showToast('⏸️', '廣告已強制停止');
+        }
+
+        // ===== Sponsor 凍結 =====
+        function freezeSponsor(sponsorId) {
+            if (!confirm('確定凍結此贊助商？其所有投放中廣告將自動停止。')) return;
+            const profiles = AD_SDK.getSponsorProfiles();
+            if (profiles[sponsorId]) {
+                profiles[sponsorId].frozen = true;
+                AD_SDK.saveSponsorProfiles(profiles);
+            }
+            // 同時暫停所有活動
+            const camps = AD_SDK.getCampaigns();
+            camps.forEach(c => {
+                if (c.sponsor_id === sponsorId && c.status === 'active') {
+                    c.status = 'paused';
+                }
+            });
+            AD_SDK.saveCampaigns(camps);
+            renderAll();
+            showToast('🔒', '贊助商已凍結');
+        }
+
+        function unfreezeSponsor(sponsorId) {
+            const profiles = AD_SDK.getSponsorProfiles();
+            if (profiles[sponsorId]) {
+                profiles[sponsorId].frozen = false;
+                AD_SDK.saveSponsorProfiles(profiles);
+            }
+            renderAll();
+            showToast('🔓', '贊助商已解凍');
+        }
+
+        // ===== Fallback =====
+        let fbUploadedFileId = '';
+        let fbUploadedMediaType = '';
+        let fbUploadedFileName = '';
+
+        function handleFbFileUpload(input) {
+            const file = input.files[0];
+            if (!file) return;
+            if (file.size > 200 * 1024 * 1024) {
+                showToast('❌', '檔案超過 200MB 上限！');
+                input.value = '';
+                return;
+            }
+            fbUploadedMediaType = file.type.startsWith('video') ? 'video' : 'image';
+            fbUploadedFileName = file.name;
+            IDB_FILES.save({
+                blob: file,
+                type: file.type,
+                name: file.name,
+                sizeBytes: file.size
+            }).then(fileId => {
+                fbUploadedFileId = fileId;
+                document.getElementById('fb-upload-text').textContent =
+                    `✅ ${file.name} (${(file.size / 1024 / 1024).toFixed(2)}MB)`;
+            }).catch(() => showToast('❌', '儲存失敗'));
+        }
+
+        function saveFallback() {
+            const name = document.getElementById('fb-name').value.trim();
+            if (!name) { showToast('⚠️', '請輸入素材名稱'); return; }
+            if (!fbUploadedFileId) { showToast('⚠️', '請上傳素材'); return; }
+
+            const fbs = AD_SDK.getFallbacks();
+            fbs.push({
+                id: 'fb_' + AD_SDK.uid(),
+                name: name,
+                type: document.getElementById('fb-type').value,
+                media_type: fbUploadedMediaType,
+                fileId: fbUploadedFileId,
+                fileName: fbUploadedFileName,
+                click_url: '',
+                created_at: AD_SDK.todayStr()
+            });
+            AD_SDK.saveFallbacks(fbs);
+
+            // Reset
+            document.getElementById('fb-name').value = '';
+            fbUploadedFileId = '';
+            fbUploadedMediaType = '';
+            fbUploadedFileName = '';
+            document.getElementById('fb-upload-text').textContent = '點擊上傳影片或圖片';
+
+            renderAll();
+            showToast('✅', 'Fallback 素材已儲存');
+        }
+
+        function deleteFallback(id) {
+            if (!confirm('確定刪除此 Fallback 素材？')) return;
+            let fbs = AD_SDK.getFallbacks();
+            fbs = fbs.filter(f => f.id !== id);
+            AD_SDK.saveFallbacks(fbs);
+            renderAll();
+            showToast('🗑️', '已刪除');
+        }
+
+        // ===== 渲染 =====
+        function renderAll() {
+            const camps = AD_SDK.getCampaigns();
+            const events = AD_SDK.getEvents();
+            const profiles = AD_SDK.getSponsorProfiles();
+
+            // Stats
+            const pending = camps.filter(c => c.status === 'pending');
+            const active = camps.filter(c => c.status === 'active');
+            const reports = events.filter(e => e.event_type === 'report');
+            const totalImpressions = events.filter(e => e.event_type === 'impression').length;
+            const totalClicks = events.filter(e => e.event_type === 'click').length;
+
+            document.getElementById('stats-strip').innerHTML = `
+                <div class="stat-box">
+                    <div class="num gold">${pending.length}</div>
+                    <div class="lbl">待審核</div>
+                </div>
+                <div class="stat-box">
+                    <div class="num">${active.length}</div>
+                    <div class="lbl">進行中</div>
+                </div>
+                <div class="stat-box">
+                    <div class="num">${camps.length}</div>
+                    <div class="lbl">總活動</div>
+                </div>
+                <div class="stat-box">
+                    <div class="num red">${reports.length}</div>
+                    <div class="lbl">檢舉</div>
+                </div>
+                <div class="stat-box">
+                    <div class="num">${totalImpressions}</div>
+                    <div class="lbl">總曝光</div>
+                </div>
+                <div class="stat-box">
+                    <div class="num">${totalClicks}</div>
+                    <div class="lbl">總點擊</div>
+                </div>
+            `;
+
+            // Badges
+            const badgeReview = document.getElementById('badge-review');
+            if (pending.length > 0) {
+                badgeReview.textContent = pending.length;
+                badgeReview.style.display = 'flex';
+            } else {
+                badgeReview.style.display = 'none';
+            }
+
+            const badgeReports = document.getElementById('badge-reports');
+            if (reports.length > 0) {
+                badgeReports.textContent = reports.length;
+                badgeReports.style.display = 'flex';
+            } else {
+                badgeReports.style.display = 'none';
+            }
+
+            // Review list
+            renderReviewList(pending);
+            renderAllCampaigns(camps);
+            renderReports(reports, camps);
+            renderSponsors(profiles);
+            renderFallbacks();
+        }
+
+        function renderReviewList(pending) {
+            const el = document.getElementById('review-list');
+            if (pending.length === 0) {
+                el.innerHTML = '<div class="empty-state"><div class="icon">✅</div><div>沒有待審核的廣告</div></div>';
+                return;
+            }
+            el.innerHTML = pending.map(c => {
+                const profiles = AD_SDK.getSponsorProfiles();
+                const sp = profiles[c.sponsor_id];
+                const sponsorName = sp ? sp.company_name : c.sponsor_id;
+                const thumb = c.creative?.data_base64;
+                let thumbHTML = '';
+                if (thumb) {
+                    if (c.creative.media_type === 'video') {
+                        thumbHTML = `<video src="${thumb}" muted></video>`;
+                    } else {
+                        thumbHTML = `<img src="${thumb}" alt="">`;
+                    }
+                } else {
+                    thumbHTML = c.type === 'rewarded' ? '🎬' : '🖼️';
+                }
+
+                return `
+                <div class="review-item">
+                    <div class="review-thumb">${thumbHTML}</div>
+                    <div class="review-info">
+                        <div class="name">${c.name}</div>
+                        <div class="meta">
+                            贊助商：${sponsorName}<br>
+                            類型：${c.type === 'rewarded' ? '獎勵影片' : '橫幅圖'} ·
+                            ${c.type === 'rewarded' ? `曝光: ${c.budget?.rates?.impression||0} | 觀看: ${c.budget?.rates?.complete||0} | 點擊: ${c.budget?.rates?.click||0}` : `曝光: ${c.budget?.rates?.impression||0} | 點擊: ${c.budget?.rates?.click||0}`} ·
+                            受眾: ${c.targeting === 'all' ? '全體' : c.targeting === 'vip' ? 'VIP' : '新用戶'}<br>
+                            排程：${c.schedule?.start_date || '—'} ~ ${c.schedule?.end_date || '—'} ·
+                            預算：日 ${c.budget?.daily_limit || 0} / 總 ${c.budget?.total_limit || 0}
+                        </div>
+                    </div>
+                    <div class="review-actions">
+                        <button class="btn approve" onclick="approveCampaign('${c.id}')">✅ 通過</button>
+                        <button class="btn reject" onclick="rejectCampaign('${c.id}')">❌ 退回</button>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        function renderAllCampaigns(camps) {
+            const el = document.getElementById('all-campaigns-list');
+            if (camps.length === 0) {
+                el.innerHTML = '<div class="empty-state"><div class="icon">📭</div><div>尚無廣告活動</div></div>';
+                return;
+            }
+
+            const statusLabels = {
+                draft: '草稿', pending: '待審核', active: '已上線',
+                paused: '已暫停', expired: '已過期'
+            };
+            const profiles = AD_SDK.getSponsorProfiles();
+
+            el.innerHTML = camps.map(c => {
+                const sp = profiles[c.sponsor_id];
+                const sponsorName = sp ? sp.company_name : c.sponsor_id;
+                const evts = AD_SDK.getEvents().filter(e => e.campaign_id === c.id);
+                const impressions = evts.filter(e => e.event_type === 'impression').length;
+                const clicks = evts.filter(e => e.event_type === 'click').length;
+
+                let actionBtn = '';
+                if (c.status === 'active') {
+                    actionBtn = `<button class="btn warning" onclick="forceStopCampaign('${c.id}')" style="font-size:0.7rem;padding:0.3rem 0.7rem;">⏸ 停止</button>`;
+                }
+
+                return `
+                <div class="review-item" style="border-color:rgba(255,255,255,0.06);">
+                    <div class="review-info">
+                        <div class="name">${c.name}</div>
+                        <div class="meta">
+                            ${sponsorName} · ${c.type} ·
+                            費率: ${c.type === 'rewarded' ? `CPM `+ (c.budget?.rates?.impression||0) +` | CPV `+ (c.budget?.rates?.complete||0) +` | CPC `+ (c.budget?.rates?.click||0) : `CPM `+ (c.budget?.rates?.impression||0) +` | CPC `+ (c.budget?.rates?.click||0)} ·
+                            曝光 ${impressions} · 點擊 ${clicks} ·
+                            花費 ${c.budget?.spent_total || 0}
+                        </div>
+                    </div>
+                    <span class="status-badge ${c.status}">${statusLabels[c.status] || c.status}</span>
+                    ${actionBtn}
+                </div>`;
+            }).join('');
+        }
+
+        function renderReports(reports, camps) {
+            const el = document.getElementById('reports-list');
+            if (reports.length === 0) {
+                el.innerHTML = '<div class="empty-state"><div class="icon">✅</div><div>目前沒有檢舉記錄</div></div>';
+                return;
+            }
+
+            el.innerHTML = reports.slice().reverse().slice(0, 30).map(r => {
+                const camp = camps.find(c => c.id === r.campaign_id);
+                const campName = camp ? camp.name : r.campaign_id;
+                const time = r.timestamp ? new Date(r.timestamp).toLocaleString('zh-TW') : '';
+                const reason = r.metadata?.reason || '未知';
+
+                let actions = '';
+                if (camp && camp.status === 'active') {
+                    actions = `<button class="btn reject" onclick="forceStopCampaign('${camp.id}')" style="font-size:0.7rem;padding:0.3rem 0.7rem;">⏸ 停止投放</button>`;
+                    if (camp.sponsor_id) {
+                        const profiles = AD_SDK.getSponsorProfiles();
+                        const sp = profiles[camp.sponsor_id];
+                        if (sp && !sp.frozen) {
+                            actions += ` <button class="btn warning" onclick="freezeSponsor('${camp.sponsor_id}')" style="font-size:0.7rem;padding:0.3rem 0.7rem;">🔒 凍結贊助商</button>`;
+                        }
+                    }
+                }
+
+                return `
+                <div class="report-item">
+                    <div class="reason">
+                        <div class="label">🚩 ${reason}</div>
+                        <div>廣告：${campName} · 檢舉者：${r.user_id}</div>
+                        <div class="time">${time}</div>
+                    </div>
+                    ${actions}
+                </div>`;
+            }).join('');
+        }
+
+        function renderSponsors(profiles) {
+            const el = document.getElementById('sponsors-list');
+            const ids = Object.keys(profiles);
+            if (ids.length === 0) {
+                el.innerHTML = '<div class="empty-state"><div class="icon">👤</div><div>尚無贊助商</div></div>';
+                return;
+            }
+
+            const wallets = AD_SDK.getSponsorWallets();
+            el.innerHTML = ids.map(id => {
+                const sp = profiles[id];
+                const w = wallets[id] || { balance: 0 };
+                const isFrozen = sp.frozen;
+                const camps = AD_SDK.getCampaigns().filter(c => c.sponsor_id === id);
+                const activeCount = camps.filter(c => c.status === 'active').length;
+
+                return `
+                <div class="sponsor-item">
+                    <div class="sponsor-name">
+                        ${sp.company_name || id}
+                        <span class="frozen-badge ${isFrozen ? 'frozen' : 'active'}">
+                            ${isFrozen ? '🔒 已凍結' : '✅ 正常'}
+                        </span>
+                    </div>
+                    <div style="font-size:0.72rem;color:var(--text-dim);">
+                        餘額: ${w.balance} · 活動: ${camps.length} (${activeCount} 進行中)
+                    </div>
+                    <div>
+                        ${isFrozen
+                        ? `<button class="btn approve" onclick="unfreezeSponsor('${id}')" style="font-size:0.7rem;padding:0.3rem 0.7rem;">🔓 解凍</button>`
+                        : `<button class="btn reject" onclick="freezeSponsor('${id}')" style="font-size:0.7rem;padding:0.3rem 0.7rem;">🔒 凍結</button>`
+                    }
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        function renderFallbacks() {
+            const fbs = AD_SDK.getFallbacks();
+            const grid = document.getElementById('fallback-grid');
+            if (fbs.length === 0) {
+                grid.innerHTML = '<div class="empty-state"><div class="icon">📭</div><div>尚無 Fallback 素材</div></div>';
+                return;
+            }
+
+            grid.innerHTML = fbs.map(f => {
+                const fid = f.fileId || f.file_id;
+                let mediaHTML;
+                if (f.data_base64) {
+                    // 舊版 base64
+                    if (f.media_type === 'video') {
+                        mediaHTML = `<video src="${f.data_base64}" controls muted style="max-width:100%;max-height:120px;border-radius:8px;"></video>`;
+                    } else {
+                        mediaHTML = `<img src="${f.data_base64}" style="max-width:100%;max-height:120px;border-radius:8px;">`;
+                    }
+                } else if (fid) {
+                    mediaHTML = `<div class="fb-media-placeholder" data-fid="${fid}" style="height:80px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#555;">⏳</div>`;
+                } else {
+                    mediaHTML = '<div style="font-size:2rem;">📺</div>';
+                }
+                return `
+                <div class="fallback-card">
+                    ${mediaHTML}
+                    <div class="name">${f.name}</div>
+                    <div style="font-size:0.65rem;color:var(--text-dim);">
+                        ${f.type === 'rewarded' ? '🎬 Rewarded' : '🖼️ Banner'}
+                    </div>
+                    <button class="btn reject" onclick="deleteFallback('${f.id}')"
+                        style="font-size:0.65rem;padding:0.2rem 0.5rem;margin-top:0.4rem;">
+                        🗑️ 刪除
+                    </button>
+                </div>`;
+            }).join('');
+
+            // 非同步載入 IndexedDB 素材預覽
+            document.querySelectorAll('.fb-media-placeholder[data-fid]').forEach(el => {
+                const fid = el.dataset.fid;
+                IDB_FILES.get(fid).then(rec => {
+                    if (!rec || !rec.url) return;
+                    if ((rec.type || '').startsWith('video')) {
+                        el.innerHTML = `<video src="${rec.url}" controls muted style="max-width:100%;max-height:120px;border-radius:8px;"></video>`;
+                    } else {
+                        el.innerHTML = `<img src="${rec.url}" style="max-width:100%;max-height:120px;border-radius:8px;">`;
+                    }
+                }).catch(() => { el.textContent = '❌'; });
+            });
+        }
+
+        // ===== Toast =====
+        function showToast(icon, msg) {
+            const t = document.getElementById('toast');
+            document.getElementById('toast-icon').textContent = icon;
+            document.getElementById('toast-msg').textContent = msg;
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 3500);
+        }
+
+        // ===== Init =====
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!requireRole('admin')) return;
+            renderAll();
+        });
+    </script>
+
+    <!-- ===== Hamburger Menu Logic ===== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.querySelector('.hamburger-btn');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (hamburgerBtn && navLinks) {
+                hamburgerBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    hamburgerBtn.classList.toggle('open');
+                    navLinks.classList.toggle('active');
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+                        hamburgerBtn.classList.remove('open');
+                        navLinks.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

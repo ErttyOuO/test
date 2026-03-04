@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>費用預算 - InsureTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo-section">
+            <img src="logo.png" alt="InsureTech Logo">
+            <span>譯保通</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="consulting.html">保險諮詢</a></li>
+                <li><a href="dm.html">保單目錄</a></li>
+                <li><a href="budget.html">費用預算</a></li>
+                <li><a href="policy.html">智慧保單</a></li>
+                <li><a href="community.html">匿名社群</a></li>
+                <li><a href="保單搜尋/policy_tab.html">保單搜尋</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-logo">
+                <img src="logo.png" alt="InsureTech Logo">
+                <span>譯保通</span>
+            </a>
+            <div class="mobile-nav-links">
+                <a href="consulting.html">保險諮詢</a>
+                <a href="dm.html">保單目錄</a>
+                <a href="budget.html">費用預算</a>
+                <a href="policy.html">智慧保單</a>
+                <a href="community.html">匿名社群</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="budget-container">
+            <!-- Green Ribbon/Label -->
+            <div class="budget-label">費用預算師</div>
+
+            <!-- Search Area -->
+            <div class="budget-search-container">
+                <div class="budget-search-box">
+                    <input type="text" class="budget-search-input" placeholder="請告訴我，您要試算的費用">
+                    <button class="budget-search-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="budget-grid">
+                <!-- Card 1: Surgery Cost -->
+                <div class="budget-dash-card">
+                    <div class="budget-card-title" style="color: #666; margin-bottom: 1rem;">手術金額</div>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #333; margin-bottom: 1.5rem;">
+                        $ 125,000
+                    </div>
+                    <div style="color: #888; font-size: 0.9rem; line-height: 1.6;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>微創手術費</span>
+                            <span>$ 80,000</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>特殊耗材</span>
+                            <span>$ 35,000</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>麻醉費</span>
+                            <span>$ 10,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Claimable Amount -->
+                <div class="budget-dash-card">
+                    <div class="budget-card-title" style="color: #666; margin-bottom: 1rem;">可理賠金額</div>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #A3C98E; margin-bottom: 1.5rem;">
+                        $ 125,000
+                    </div>
+                    <div style="color: #888; font-size: 0.9rem; line-height: 1.6;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>實支實付 (富邦)</span>
+                            <span>100%</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>限額餘額</span>
+                            <span>充足</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; color: #A3C98E; font-weight: 500;">
+                            <span>完全覆蓋</span>
+                            <span>✔</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Auto Reconciliation -->
+                <div class="budget-dash-card" style="background: #F9FCF9; border-style: solid;">
+                    <div class="budget-card-title" style="color: #666; margin-bottom: 1rem;">自動對帳</div>
+
+                    <div
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%;">
+                        <div style="font-size: 1rem; color: #666; margin-bottom: 0.5rem;">自付額</div>
+                        <div style="font-size: 3.5rem; font-weight: 700; color: #A3C98E;">$ 0</div>
+                        <div style="font-size: 0.9rem; color: #888; margin-top: 0.5rem;">恭喜！您的保障足夠支付此次費用</div>
+                    </div>
+
+                    <div style="position: absolute; bottom: 1.5rem; right: 1.5rem; text-align: right; width: 100%;">
+                        <div
+                            style="border-top: 2px solid #A3C98E; display: inline-block; padding-top: 0.5rem; width: 85%; color: #A3C98E; font-weight: 600;">
+                            理賠試算完成
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Floating Action Widgets -->
+    <div class="floating-widget">
+        <div class="float-btn emergency" onclick="openClaimsModal()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 6V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2" />
+                <rect width="20" height="14" x="2" y="6" rx="2" />
+                <path d="M12 10v6" />
+                <path d="M9 13h6" />
+            </svg>
+            <span class="float-tooltip">理賠急救支援</span>
+        </div>
+    </div>
+
+    <!-- Claims Emergency Modal -->
+    <div class="modal-overlay" id="claims-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeClaimsModal()">×</button>
+            <div class="modal-title">理賠急救支援</div>
+            <p class="modal-desc">別擔心，請簡單描述您目前遇到的狀況，我們將協助您釐清後續步驟。</p>
+
+            <div class="modal-form">
+                <textarea placeholder="例如：剛發生車禍，有人受傷，警察還沒到，請問我現在該做什麼？"></textarea>
+                <button class="modal-submit-btn" onclick="alert('我們已收到您的求救訊號，將立即分析並提供建議！')">請求支援</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

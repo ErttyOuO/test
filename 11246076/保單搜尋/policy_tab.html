@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精選保單評價專區 - 譯保通</title>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="stylesheet" href="policy_tab.css">
+    <style>
+        /* 頂部返回首頁工具列 */
+        #back-home-bar {
+            background: #1a2a3a;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        #back-home-bar a.back-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            opacity: 0.95;
+        }
+
+        #back-home-bar a.back-logo img {
+            height: 28px;
+            width: auto;
+        }
+
+        #back-home-bar .nav-links {
+            display: flex;
+            gap: 4px;
+            margin-left: auto;
+        }
+
+        #back-home-bar .nav-links a {
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding: 5px 12px;
+            border-radius: 6px;
+            transition: background 0.15s;
+        }
+
+        #back-home-bar .nav-links a:hover,
+        #back-home-bar .nav-links a.active {
+            background: rgba(255, 255, 255, 0.12);
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 輕量頂部導覽列（不引入 style.css，避免 CSS 衝突） -->
+    <div id="back-home-bar">
+        <a href="../index.html" class="back-logo">
+            <img src="../logo.png" alt="譯保通 Logo">
+            <span>譯保通</span>
+        </a>
+        <nav class="nav-links">
+            <a href="../consulting.html">保險諮詢</a>
+            <a href="../dm.html">保單目錄</a>
+            <a href="../budget.html">費用預算</a>
+            <a href="../policy.html">智慧保單</a>
+            <a href="../community.html">匿名社群</a>
+            <a href="policy_tab.html" class="active">保單搜尋</a>
+        </nav>
+    </div>
+
+    <div id="policy-module">
+        <header class="policy-header">
+            <div class="header-content">
+                <h1 class="header-title">精選保單評價專區</h1>
+                <p class="header-subtitle">探索數據，分享您最真實的使用心得</p>
+                <div class="search-section">
+                    <div class="search-wrapper">
+                        <i class="fi fi-rr-search"></i>
+                        <input type="text" id="policySearchInput" placeholder="搜尋保險公司、險種或關鍵字...">
+                        <button id="searchBtn">搜尋</button>
+                    </div>
+                </div>
+            </div>
+            <nav class="filter-controls-bar">
+                <div class="center-controls">
+                    <select id="sortSelect" aria-label="排序方式">
+                        <option value="default">預設排序</option>
+                        <option value="likes">最多人點讚</option>
+                        <option value="comments">最高討論度</option>
+                    </select>
+                    <button id="filterFollowBtn" class="btn-toggle"><i class="fi fi-rr-star"></i> 僅顯示已關注</button>
+                    <button id="filterToggleBtn" class="btn-toggle">進階篩選</button>
+                </div>
+                <div id="resultCount" class="result-count">共 0 筆結果</div>
+            </nav>
+        </header>
+
+        <main class="policy-body">
+            <section class="filter-section hidden" id="filterSection">
+                <div class="filter-group-container">
+                    <div class="filter-group" id="companyFilters">
+                        <span class="filter-label">保險公司</span>
+                        <div class="checkbox-list"></div>
+                    </div>
+                    <div class="filter-group" id="categoryFilters">
+                        <span class="filter-label">保險類別</span>
+                        <div class="checkbox-list"></div>
+                    </div>
+                </div>
+                <div class="filter-footer"><button class="btn-clear" id="clearFiltersBtn">清除所有篩選條件</button></div>
+            </section>
+            <section id="policyContainer" class="policy-card-grid"></section>
+        </main>
+
+        <aside id="detailModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="window.closeDetailModal()">&times;</button>
+                <div id="modalBody"></div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="policy_tab.js"></script>
+</body>
+
+</html>

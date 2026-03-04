@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員訂閱方案 - 譯保通 InsureTech</title>
+    <meta name="description" content="譯保通 InsureTech 會員訂閱方案，解鎖更多 AI 保險諮詢功能">
+    <style>
+        /* ===== Design Tokens (from 0210_75_new) ===== */
+        :root {
+            --primary-black: #000000;
+            --accent-green: #9CC98D;
+            --accent-green-dark: #7BB369;
+            --accent-green-light: #c8e6be;
+            --bg-color: #F5F7F5;
+            --white: #FFFFFF;
+            --text-color: #333333;
+            --text-muted: #888888;
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+            --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+            --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.08);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 30px;
+            --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background-color: rgba(0, 0, 0, 0.92);
+            color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: bold;
+            font-size: 1.15rem;
+            color: var(--white);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .logo-section .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--accent-green);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary-black);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--white);
+            border-bottom-color: var(--white);
+        }
+
+        .member-badge {
+            background: rgba(156, 201, 141, 0.15);
+            border: 1px solid rgba(156, 201, 141, 0.3);
+            color: var(--accent-green);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .member-badge.vip {
+            background: rgba(255, 215, 0, 0.15);
+            border-color: rgba(255, 215, 0, 0.3);
+            color: #FFD700;
+        }
+
+        .coin-display {
+            color: #ccc;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .coin-icon {
+            color: #FFD700;
+        }
+
+        /* ===== Hero Section ===== */
+        .sub-hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 2rem 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sub-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 50%, rgba(156, 201, 141, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(156, 201, 141, 0.05) 0%, transparent 40%);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            33% {
+                transform: translate(2%, -1%) rotate(1deg);
+            }
+
+            66% {
+                transform: translate(-1%, 1%) rotate(-0.5deg);
+            }
+        }
+
+        .sub-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .sub-hero h1 span {
+            color: var(--accent-green);
+        }
+
+        .sub-hero p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== Current Status Bar ===== */
+        .status-bar {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            padding: 1.2rem 2rem;
+            margin: -1.5rem 5% 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 10;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .status-label {
+            color: var(--text-muted);
+        }
+
+        .status-value {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .status-value.vip-active {
+            color: #FFD700;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #ccc;
+        }
+
+        .status-dot.active {
+            background: var(--accent-green);
+            box-shadow: 0 0 6px rgba(156, 201, 141, 0.5);
+        }
+
+        /* ===== Section Title ===== */
+        .section-title {
+            text-align: center;
+            margin: 2.5rem 0 2rem;
+            padding: 0 2%;
+        }
+
+        .comparison-section .section-title {
+            padding: 0;
+        }
+
+        .section-title h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--primary-black);
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        /* ===== Pricing Cards ===== */
+        .pricing-container {
+            margin: 0 auto;
+            padding: 0 2% 3rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            align-items: stretch;
+        }
+
+        .pricing-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            padding: 2.5rem 2.2rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid transparent;
+            overflow: hidden;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .pricing-card.recommended {
+            border-color: var(--accent-green);
+            transform: scale(1.03);
+        }
+
+        .pricing-card.recommended:hover {
+            transform: scale(1.03) translateY(-8px);
+            box-shadow: 0 12px 40px rgba(156, 201, 141, 0.25);
+        }
+
+        .recommended-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-green-dark));
+            color: var(--white);
+            padding: 0.35rem 1.5rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            border-radius: 0 var(--radius-lg) 0 var(--radius-md);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .plan-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .plan-icon.free {
+            background: #f0f0f0;
+        }
+
+        .plan-icon.basic {
+            background: rgba(156, 201, 141, 0.15);
+        }
+
+        .plan-icon.pro {
+            background: rgba(255, 215, 0, 0.12);
+        }
+
+        .plan-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .plan-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1.2rem;
+        }
+
+        .plan-price {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: var(--primary-black);
+            margin-bottom: 0.3rem;
+        }
+
+        .plan-price .currency {
+            font-size: 1.1rem;
+            font-weight: 500;
+            vertical-align: top;
+            margin-right: 2px;
+        }
+
+        .plan-price .period {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+
+        .plan-features {
+            list-style: none;
+            margin: 1.2rem 0;
+            flex: 1;
+        }
+
+        .plan-features li {
+            padding: 0.45rem 0;
+            font-size: 0.88rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: #555;
+        }
+
+        .plan-features li .check {
+            color: var(--accent-green);
+            font-weight: 700;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .plan-features li .cross {
+            color: #ccc;
+            font-weight: 700;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .plan-features li.disabled {
+            color: #bbb;
+            text-decoration: line-through;
+        }
+
+        .plan-btn {
+            display: block;
+            width: 100%;
+            padding: 0.85rem;
+            border-radius: 12px;
+            border: 2px solid var(--accent-green);
+            background: transparent;
+            color: var(--accent-green-dark);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .plan-btn:hover {
+            background: var(--accent-green);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(156, 201, 141, 0.4);
+        }
+
+        .plan-btn.primary {
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-green-dark));
+            color: var(--white);
+            border-color: transparent;
+        }
+
+        .plan-btn.primary:hover {
+            box-shadow: 0 6px 20px rgba(156, 201, 141, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .plan-btn.current {
+            background: #f5f5f5;
+            color: #999;
+            border-color: #eee;
+            cursor: default;
+        }
+
+        .plan-btn.current:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .trial-btn {
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            border: none;
+            background: transparent;
+            color: var(--accent-green-dark);
+            font-size: 0.8rem;
+            cursor: pointer;
+            margin-top: 0.6rem;
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+
+        .trial-btn:hover {
+            color: var(--accent-green);
+        }
+
+        /* ===== Feature Comparison Table ===== */
+        .comparison-section {
+            margin: 0 auto 3rem;
+            padding: 0 2%;
+        }
+
+        .comparison-table-wrapper {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            overflow: hidden;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .comparison-table thead th {
+            background: var(--primary-black);
+            color: var(--white);
+            padding: 1.2rem 1.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .comparison-table thead th:first-child {
+            text-align: left;
+            padding-left: 2rem;
+        }
+
+        .comparison-table tbody td {
+            padding: 1.1rem 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table tbody td:first-child {
+            text-align: left;
+            padding-left: 2rem;
+            font-weight: 500;
+            color: #444;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tbody tr:hover {
+            background: rgba(156, 201, 141, 0.04);
+        }
+
+        .table-check {
+            color: var(--accent-green);
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .table-cross {
+            color: #ddd;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .table-value {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .highlight-col {
+            background: rgba(156, 201, 141, 0.06);
+        }
+
+        /* ===== Toast Notification ===== */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(120px);
+            background: var(--primary-black);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+            z-index: 9999;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        .toast .toast-icon {
+            font-size: 1.2rem;
+        }
+
+        /* ===== Trial Modal ===== */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 5000;
+            backdrop-filter: blur(4px);
+        }
+
+        .modal-overlay.show {
+            display: flex;
+        }
+
+        .modal-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem 2rem;
+            width: min(400px, 90vw);
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            animation: modalIn 0.3s ease-out;
+        }
+
+        @keyframes modalIn {
+            from {
+                transform: scale(0.9) translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .modal-card .modal-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 0.8rem;
+            justify-content: center;
+        }
+
+        .modal-btn {
+            padding: 0.7rem 1.8rem;
+            border-radius: 10px;
+            border: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .modal-btn.confirm {
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-green-dark));
+            color: var(--white);
+        }
+
+        .modal-btn.confirm:hover {
+            box-shadow: 0 4px 15px rgba(156, 201, 141, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .modal-btn.cancel {
+            background: #f0f0f0;
+            color: #666;
+        }
+
+        .modal-btn.cancel:hover {
+            background: #e5e5e5;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: var(--primary-black);
+            color: #999;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.8rem;
+            margin-top: auto;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 900px) {
+            .pricing-container {
+                grid-template-columns: 1fr;
+                max-width: 420px;
+            }
+
+            .pricing-card.recommended {
+                transform: none;
+                order: -1;
+            }
+
+            .pricing-card.recommended:hover {
+                transform: translateY(-8px);
+            }
+
+            .sub-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .sub-hero p {
+                font-size: 0.95rem;
+            }
+
+            .status-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+
+            .comparison-table thead th,
+            .comparison-table tbody td {
+                padding: 0.7rem 0.5rem;
+                font-size: 0.78rem;
+            }
+
+            .comparison-table tbody td:first-child {
+                padding-left: 0.8rem;
+            }
+
+            .comparison-table thead th:first-child {
+                padding-left: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 0.8rem 4%;
+            }
+
+            .sub-hero {
+                padding: 3rem 1.2rem 2.5rem;
+            }
+
+            .sub-hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .pricing-container {
+                padding: 0 1rem 2rem;
+            }
+
+            .pricing-card {
+                padding: 1.5rem 1.3rem;
+            }
+
+            .plan-price {
+                font-size: 2.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* ===== Smooth Scroll ===== */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ===== Selection ===== */
+        ::selection {
+            background: var(--accent-green-light);
+            color: var(--primary-black);
+        }
+
+        /* ===== RWD & Hamburger Menu ===== */
+        .hamburger-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+            /* Positioning for absolute cases */
+            position: relative;
+        }
+
+        .hamburger-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #FFFFFF !important;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        /* Hamburger open state */
+        .hamburger-btn.open span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .hamburger-btn.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-btn.open span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        @media (max-width: 768px) {
+
+            html,
+            body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+
+            /* Header Specific */
+            header {
+                padding: 0.8rem 5% !important;
+            }
+
+            .hamburger-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 260px;
+                height: 100vh;
+                background-color: rgba(15, 15, 15, 0.95);
+                backdrop-filter: blur(15px);
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                justify-content: flex-start !important;
+                padding: 5rem 2rem 2rem;
+                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+                z-index: 999;
+                /* Reset existing gap to ensure clean layout */
+                gap: 1.5rem !important;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links a {
+                font-size: 1.15rem !important;
+                width: 100%;
+                padding-bottom: 0.8rem;
+                display: block;
+            }
+
+            /* Generic Resizing Fixes for Cards and Grids */
+            .stats-row {
+                flex-direction: column;
+                gap: 1.2rem !important;
+            }
+
+            .card-grid,
+            .shop-grid,
+            .stamp-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            /* Fixes explicitly for admin dashboard columns */
+            .sidebar {
+                width: 100% !important;
+                position: static !important;
+                height: auto !important;
+                border-right: none !important;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .main-content {
+                padding: 1.5rem !important;
+            }
+
+            /* Modal widths */
+            .modal-content,
+            .task-modal-content,
+            .shop-modal-content {
+                width: 90% !important;
+                margin: 10vh auto !important;
+                padding: 1.5rem !important;
+            }
+
+            /* Pricing Tiers / Subscription Page Vertical Stack */
+            .pricing-container {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 1.5rem !important;
+            }
+
+            .pricing-card {
+                flex: none !important;
+                width: 100%;
+                padding: 1.5rem 1.2rem !important;
+                margin-bottom: 0 !important;
+            }
+
+            .pricing-card h2 {
+                font-size: 1.2rem;
+                margin-bottom: 0.3rem;
+                /* Tighter heading */
+            }
+
+            .pricing-card .price {
+                font-size: 2rem;
+                margin: 0.5rem 0 1rem;
+                /* Tighter price space */
+            }
+
+            .tier-features li {
+                margin-bottom: 0.5rem;
+                /* Tighter feature list */
+                font-size: 0.85rem;
+            }
+
+            .compare-table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            /* Sponsor Dashboard Layout */
+            .dashboard-layout {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            html,
+            body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+
+            /* Force auth tools to hide when space is too tight or neatly align */
+            .header-right {
+                margin-left: auto;
+                gap: 0.5rem;
+            }
+
+            .auth-info-bar,
+            .user-auth {
+                display: none !important;
+            }
+
+            /* Simplify header on mobile */
+
+            /* Give hamburger priority */
+            .hamburger-btn {
+                margin-left: 10px;
+            }
+
+            /* Logo resizing */
+            .logo-section span {
+                font-size: 1rem;
+            }
+        }
+
+        /* ===== Global Vertical Space Reduction (Mobile) ===== */
+        @media (max-width: 768px) {
+
+            html,
+            body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+
+            body {
+                overflow-x: hidden;
+            }
+
+            /* Reduce padding on hero sections to save space */
+            .hero-section,
+            .sub-hero,
+            .wallet-hero,
+            .profile-hero {
+                padding: 1.5rem 1rem 2.8rem !important;
+            }
+
+            .sub-hero h1 {
+                font-size: 1.5rem !important;
+                margin-bottom: 0.3rem !important;
+            }
+
+            .hero-section p,
+            .sub-hero p {
+                font-size: 0.9rem !important;
+            }
+
+            /* Main containers constraints */
+            .main-content,
+            .dashboard-layout {
+                padding: 1rem !important;
+
+            }
+
+            /* Status bars or quick stats */
+            .stats-row {
+                padding: 0.8rem 1rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            .status-bar {
+                padding: 0.5rem 0.5rem !important;
+                margin-bottom: 1rem !important;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                flex-wrap: nowrap !important;
+                overflow-x: auto !important;
+                gap: 0.8rem !important;
+                justify-content: flex-start !important;
+                -ms-overflow-style: none;
+                /* IE and Edge */
+                scrollbar-width: none;
+                /* Firefox */
+            }
+
+            .status-bar::-webkit-scrollbar {
+                display: none;
+                /* Chrome, Safari and Opera */
+            }
+
+            .status-item {
+                flex-shrink: 0;
+                font-size: 0.75rem !important;
+            }
+
+            /* Info cards and section cards */
+            .info-card,
+            .section-card,
+            .shop-item,
+            .task-card {
+                padding: 1rem !important;
+                margin-bottom: 0.8rem !important;
+            }
+
+            .section-title {
+                margin: 1.5rem 0 1rem !important;
+            }
+
+            .section-title h2 {
+                font-size: 1.3rem !important;
+            }
+
+            /* Lists and rows inside cards */
+            ul.plan-features li,
+            .reward-row,
+            .task-row,
+            .history-item {
+                padding: 0.4rem 0 !important;
+            }
+        }
+
+        /* ===== Override: Use main-page mobile nav ===== */
+        .hamburger-btn#hamburger-toggle {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger-btn#hamburger-toggle {
+                display: block !important;
+            }
+
+            nav {
+                display: none !important;
+            }
+        }
+
+        /* ===== Unified Nav+Hamburger Override ===== */
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.6rem;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+
+        #hamburger-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        #hamburger-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .mobile-nav-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .mobile-nav-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .mobile-nav-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .mobile-nav-content {
+            text-align: center;
+        }
+
+        .mobile-nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+        .mobile-nav-logo img {
+            height: 36px;
+        }
+
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .mobile-nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.2s;
+        }
+
+        .mobile-nav-links a:hover {
+            color: #9CC98D;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none !important;
+            }
+
+            #hamburger-toggle {
+                display: block !important;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo-section" style="text-decoration:none;">
+            <img src="logo.png" alt="InsureTech Logo">
+            <span>譯保通</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="consulting.html">保險諮詢</a></li>
+                <li><a href="dm.html">保單目錄</a></li>
+                <li><a href="budget.html">費用預算</a></li>
+                <li><a href="policy.html">智慧保單</a></li>
+                <li><a href="community.html">匿名社群</a></li>
+                <li><a href="保單搜尋/policy_tab.html">保單搜尋</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-logo">
+                <img src="logo.png" alt="InsureTech Logo">
+                <span>譯保通</span>
+            </a>
+            <div class="mobile-nav-links">
+                <a href="consulting.html">保險諮詢</a>
+                <a href="dm.html">保單目錄</a>
+                <a href="budget.html">費用預算</a>
+                <a href="policy.html">智慧保單</a>
+                <a href="community.html">匿名社群</a>
+                <a href="保單搜尋/policy_tab.html">保單搜尋</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="sub-hero">
+        <h1>選擇適合你的<span>會員方案</span></h1>
+        <p>解鎖更多 AI 保險智能功能，讓保障規劃更輕鬆</p>
+    </section>
+
+    <!-- Current Status Bar -->
+    <div class="status-bar" id="status-bar">
+        <div class="status-item">
+            <div class="status-dot" id="status-dot"></div>
+            <span class="status-label">目前方案：</span>
+            <span class="status-value" id="status-plan">Free</span>
+        </div>
+        <div class="status-item">
+            <span class="status-label">連續簽到：</span>
+            <span class="status-value" id="status-streak">0 天</span>
+        </div>
+        <div class="status-item">
+            <span class="status-label">AI 用量：</span>
+            <span class="status-value" id="status-ai-used">0 次</span>
+        </div>
+        <div class="status-item">
+            <span class="status-label">平台幣：</span>
+            <span class="status-value" id="status-coins">0</span>
+        </div>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="section-title">
+        <h2>方案比較</h2>
+        <p>所有方案皆可隨時取消，無綁約壓力</p>
+    </div>
+
+    <div class="pricing-container">
+        <!-- Free Plan -->
+        <div class="pricing-card" id="card-free">
+            <div class="plan-icon free">🆓</div>
+            <div class="plan-name">Free</div>
+            <div class="plan-desc">基本體驗，輕鬆入門</div>
+            <div class="plan-price">
+                <span class="currency">NT$</span>0
+                <span class="period">/ 月</span>
+            </div>
+            <ul class="plan-features">
+                <li><span class="check">✓</span>每日 AI 諮詢 15 次</li>
+                <li><span class="check">✓</span>每日觀看 3 次獎勵廣告</li>
+                <li><span class="check">✓</span>每月贈送 10 平台幣</li>
+                <li><span class="check">✓</span>簽到與推薦獎勵</li>
+                <li><span class="cross">✗</span><span class="disabled">VIP 貼圖自動解鎖</span></li>
+                <li><span class="cross">✗</span><span class="disabled">廣告尊爵略過</span></li>
+                <li><span class="cross">✗</span><span class="disabled">VIP 頭像框 & 徽章</span></li>
+            </ul>
+            <button class="plan-btn current" id="btn-free" disabled>目前方案</button>
+        </div>
+
+        <!-- VIP Basic -->
+        <div class="pricing-card recommended" id="card-basic">
+            <div class="recommended-badge">推薦方案</div>
+            <div class="plan-icon basic">⭐</div>
+            <div class="plan-name">VIP Basic</div>
+            <div class="plan-desc">進階功能，物超所值</div>
+            <div class="plan-price">
+                <span class="currency">NT$</span>99
+                <span class="period">/ 月</span>
+            </div>
+            <ul class="plan-features">
+                <li><span class="check">✓</span>每日 AI 諮詢 150 次</li>
+                <li><span class="check">✓</span>廣告時長縮短至 5 秒</li>
+                <li><span class="check">✓</span>👑 尊爵略過廣告按鈕</li>
+                <li><span class="check">✓</span>每月贈送 50 平台幣</li>
+                <li><span class="check">✓</span>VIP 貼圖自動解鎖</li>
+                <li><span class="check">✓</span>金色頭像框 & VIP 徽章</li>
+                <li><span class="cross">✗</span><span class="disabled">尊榮 Pro 專屬徽章</span></li>
+            </ul>
+            <button class="plan-btn primary" id="btn-basic" onclick="upgradePlan('basic')">立即升級</button>
+            <button class="trial-btn" onclick="showTrialModal('basic')">🎁 7 天免費試用</button>
+        </div>
+
+        <!-- VIP Pro -->
+        <div class="pricing-card" id="card-pro">
+            <div class="plan-icon pro">👑</div>
+            <div class="plan-name">VIP Pro</div>
+            <div class="plan-desc">全面解鎖，極致體驗</div>
+            <div class="plan-price">
+                <span class="currency">NT$</span>199
+                <span class="period">/ 月</span>
+            </div>
+            <ul class="plan-features">
+                <li><span class="check">✓</span>每日 AI 諮詢 1500 次</li>
+                <li><span class="check">✓</span>廣告時長縮短至 5 秒</li>
+                <li><span class="check">✓</span>👑 尊爵略過廣告按鈕</li>
+                <li><span class="check">✓</span>每月贈送 150 平台幣</li>
+                <li><span class="check">✓</span>VIP 貼圖自動解鎖</li>
+                <li><span class="check">✓</span>紫色漸層頭像框 & 光暈</li>
+                <li><span class="check">✓</span>💎 尊榮 Pro 專屬徽章</li>
+            </ul>
+            <button class="plan-btn" id="btn-pro" onclick="upgradePlan('pro')">立即升級</button>
+            <button class="trial-btn" onclick="showTrialModal('pro')">🎁 7 天免費試用</button>
+        </div>
+    </div>
+
+    <!-- Feature Comparison Table -->
+    <div class="comparison-section">
+        <div class="section-title">
+            <h2>功能差異一覽</h2>
+        </div>
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>功能</th>
+                        <th>Free</th>
+                        <th class="highlight-col">VIP Basic</th>
+                        <th>VIP Pro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>每日 AI 諮詢次數</td>
+                        <td><span class="table-value">15 次</span></td>
+                        <td class="highlight-col"><span class="table-value">150 次</span></td>
+                        <td><span class="table-value">1500 次</span></td>
+                    </tr>
+                    <tr>
+                        <td>每月贈送平台幣</td>
+                        <td><span class="table-value">10</span></td>
+                        <td class="highlight-col"><span class="table-value">50</span></td>
+                        <td><span class="table-value">150</span></td>
+                    </tr>
+                    <tr>
+                        <td>獎勵廣告時長</td>
+                        <td><span class="table-value">15 秒</span></td>
+                        <td class="highlight-col"><span class="table-value">5 秒</span></td>
+                        <td><span class="table-value">5 秒</span></td>
+                    </tr>
+                    <tr>
+                        <td>👑 尊爵略過廣告</td>
+                        <td><span class="table-cross">✗</span></td>
+                        <td class="highlight-col"><span class="table-check">✓</span></td>
+                        <td><span class="table-check">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>VIP 貼圖自動解鎖</td>
+                        <td><span class="table-cross">✗</span></td>
+                        <td class="highlight-col"><span class="table-check">✓</span></td>
+                        <td><span class="table-check">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>專屬頭像框</td>
+                        <td><span class="table-value">灰色</span></td>
+                        <td class="highlight-col"><span class="table-value" style="color:#FFD700;">⭐ 金色</span></td>
+                        <td><span class="table-value" style="color:#c77dff;">👑 紫色漸層</span></td>
+                    </tr>
+                    <tr>
+                        <td>個人成就徽章</td>
+                        <td><span class="table-cross">✗</span></td>
+                        <td class="highlight-col"><span class="table-value">⭐ VIP 會員</span></td>
+                        <td><span class="table-value">💎 尊榮 Pro</span></td>
+                    </tr>
+                    <tr>
+                        <td>簽到 & 推薦獎勵</td>
+                        <td><span class="table-check">✓</span></td>
+                        <td class="highlight-col"><span class="table-check">✓</span></td>
+                        <td><span class="table-check">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Coins 購買 AI 額度</td>
+                        <td><span class="table-check">✓</span></td>
+                        <td class="highlight-col"><span class="table-check">✓</span></td>
+                        <td><span class="table-check">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>7 天免費試用</td>
+                        <td><span class="table-cross">—</span></td>
+                        <td class="highlight-col"><span class="table-check">✓</span></td>
+                        <td><span class="table-check">✓</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span class="toast-icon"></span>
+        <span id="toast-msg"></span>
+    </div>
+
+    <!-- Trial Modal -->
+    <div class="modal-overlay" id="trial-modal">
+        <div class="modal-card">
+            <div class="modal-icon">🎉</div>
+            <h3 id="trial-title">開始 7 天免費試用</h3>
+            <p id="trial-desc">免費體驗所有 VIP 功能，試用期結束後將自動恢復為 Free 方案，不會收取任何費用。</p>
+            <div class="modal-actions">
+                <button class="modal-btn cancel" onclick="closeTrialModal()">取消</button>
+                <button class="modal-btn confirm" id="trial-confirm-btn">開始試用</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 譯保通 InsureTech ｜ 此為 Demo 頁面，未串接實際金流</p>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script>
+        // 【新手導讀 — subscription.html 的 JavaScript】
+        // 這個頁面負責「會員訂閱方案」的顯示與切換
+        // 主要功能：顯示目前方案（Free/Basic/Pro）、升級/降級、7天免費試用
+        // 所有資料操作（getUserData, saveUserData, addHistory 等）來自 auth.js
+
+        // ===== UI Render =====
+        // 渲染整個頁面的核心函式
+        // 【何時呼叫？】頁面載入（DOMContentLoaded）+ 跨分頁同步（userDataSync）
+        function renderPage() {
+            const data = getUserData();              // 從 auth.js 取得使用者資料
+            const isVip = data.is_vip;               // 是否為付費會員
+            const level = data.vip_level || 'free';  // 方案等級（預設 free）
+
+            // 先更新統一 header（coins、plan badge 等）
+            updateHeaderInfo();
+
+            // === 狀態列：顯示目前方案和使用量 ===
+            const dot = document.getElementById('status-dot');       // 狀態指示燈
+            const planText = document.getElementById('status-plan'); // 方案文字
+            // 根據不同等級，設定不同的文字和 CSS class
+            if (level === 'pro') {
+                planText.textContent = 'VIP Pro';
+                planText.className = 'status-value vip-active'; // 上色的 CSS class
+                dot.className = 'status-dot active';             // 亮燈
+            } else if (level === 'basic') {
+                planText.textContent = 'VIP Basic';
+                planText.className = 'status-value vip-active';
+                dot.className = 'status-dot active';
+            } else {
+                planText.textContent = 'Free';
+                planText.className = 'status-value';    // 預設樣式
+                dot.className = 'status-dot';           // 暗燈
+            }
+
+            // 顯示各項使用統計
+            document.getElementById('status-streak').textContent = data.streak + ' 天';
+            const aiLimit = getAiDailyLimit(data);  // 從 auth.js 取得 AI 每日上限
+            document.getElementById('status-ai-used').textContent = data.daily_ai_used + ' / ' + aiLimit + ' 次';
+            document.getElementById('status-coins').textContent = data.coins;
+
+            // Buttons
+            const btnFree = document.getElementById('btn-free');
+            const btnBasic = document.getElementById('btn-basic');
+            const btnPro = document.getElementById('btn-pro');
+
+            // 先重置所有按鈕為預設狀態（避免殘留上次的狀態）
+            [btnFree, btnBasic, btnPro].forEach(btn => {
+                btn.disabled = false;       // 可點擊
+                btn.className = 'plan-btn'; // 預設樣式
+                btn.onclick = null;          // 清除事件
+            });
+
+            // 根據目前等級，設定每張卡的按鈕文字和行為
+            // 【邏輯】目前方案 → 「目前方案」不可點 / 可升級 → 「立即升級」 / 可降級 → 「降級」
+            if (level === 'free') {
+                btnFree.textContent = '目前方案';
+                btnFree.className = 'plan-btn current'; // 目前方案的特殊樣式
+                btnFree.disabled = true;                  // 不可點擊
+
+                btnBasic.textContent = '立即升級';
+                btnBasic.className = 'plan-btn primary';
+                btnBasic.onclick = () => upgradePlan('basic');
+
+                btnPro.textContent = '立即升級';
+                btnPro.className = 'plan-btn';
+                btnPro.onclick = () => upgradePlan('pro');
+            } else if (level === 'basic') {
+                btnFree.textContent = '降級為 Free';
+                btnFree.className = 'plan-btn';
+                btnFree.onclick = () => downgradePlan();
+
+                btnBasic.textContent = '目前方案';
+                btnBasic.className = 'plan-btn current';
+                btnBasic.disabled = true;
+
+                btnPro.textContent = '升級為 Pro';
+                btnPro.className = 'plan-btn primary';
+                btnPro.onclick = () => upgradePlan('pro');
+            } else if (level === 'pro') {
+                btnFree.textContent = '降級為 Free';
+                btnFree.className = 'plan-btn';
+                btnFree.onclick = () => downgradePlan();
+
+                btnBasic.textContent = '降級為 Basic';
+                btnBasic.className = 'plan-btn';
+                btnBasic.onclick = () => upgradePlan('basic');
+
+                btnPro.textContent = '目前方案';
+                btnPro.className = 'plan-btn current';
+                btnPro.disabled = true;
+            }
+        }
+
+        // ===== Upgrade / Downgrade =====
+        // 升級方案（模擬版 — 實際上線需串接金流 API）
+        // 【遷移須知】此函式需改為 POST /api/subscription/upgrade
+        function upgradePlan(level) {
+            const data = getUserData();
+            const oldLevel = data.vip_level || 'free';
+            data.is_vip = level !== 'free';  // 不是 free 就是付費會員
+            data.vip_level = level;
+            saveUserData(data);
+
+            const names = { basic: 'VIP Basic', pro: 'VIP Pro', free: 'Free' };
+            addHistory('spend', `升級方案：${names[oldLevel]} → ${names[level]}`, 0); // 記錄交易紀錄
+            renderPage();  // 重新渲染以反映變更
+            showToast('✅', `恭喜！已成功升級為 ${names[level]} 會員`);
+        }
+
+        // 降級為免費方案
+        function downgradePlan() {
+            const data = getUserData();
+            const oldLevel = data.vip_level || 'free';
+            data.is_vip = false;
+            data.vip_level = 'free';
+            saveUserData(data);
+
+            const names = { basic: 'VIP Basic', pro: 'VIP Pro', free: 'Free' };
+            addHistory('spend', `降級方案：${names[oldLevel]} → Free`, 0);
+            renderPage();
+            showToast('ℹ️', '已恢復為 Free 方案');
+        }
+
+        // ===== Toast =====
+        // Toast = 短暫的通知訊息（像 Android 的 Toast），顯示 3 秒後自動消失
+        function showToast(icon, message) {
+            const toast = document.getElementById('toast');
+            document.querySelector('.toast-icon').textContent = icon;
+            document.getElementById('toast-msg').textContent = message;
+            toast.classList.add('show');    // 加上 'show' class → CSS 動畫讓它滑入
+            setTimeout(() => toast.classList.remove('show'), 3000); // 3 秒後移除 → 滑出
+        }
+
+        // ===== Trial Modal =====
+        // 7 天免費試用的彈窗（modal）
+        // pendingTrialLevel 暫存使用者選擇的試用等級，確認後才套用
+        let pendingTrialLevel = null;
+
+        // 打開試用彈窗
+        function showTrialModal(level) {
+            pendingTrialLevel = level;   // 暫存選擇
+            const names = { basic: 'VIP Basic', pro: 'VIP Pro' };
+            // 動態更新彈窗標題和說明文字
+            document.getElementById('trial-title').textContent = `開始 7 天「${names[level]}」免費試用`;
+            document.getElementById('trial-desc').textContent =
+                `免費體驗 ${names[level]} 的所有功能，試用期結束後將自動恢復為 Free 方案，不會收取任何費用。`;
+            document.getElementById('trial-modal').classList.add('show');
+        }
+
+        // 關閉彈窗並清除暫存
+        function closeTrialModal() {
+            document.getElementById('trial-modal').classList.remove('show');
+            pendingTrialLevel = null;
+        }
+
+        // 「確認開始試用」按鈕事件
+        // 【遷移須知】需改為 POST /api/subscription/trial，由後端設定試用期限
+        document.getElementById('trial-confirm-btn').addEventListener('click', () => {
+            if (pendingTrialLevel) {
+                const data = getUserData();
+                data.is_vip = true;
+                data.vip_level = pendingTrialLevel;
+                data.trial_active = true;                                    // 標記為試用中
+                data.trial_start = new Date().toISOString().slice(0, 10);   // 記錄試用開始日期
+                saveUserData(data);
+                renderPage();
+                closeTrialModal();
+
+                const names = { basic: 'VIP Basic', pro: 'VIP Pro' };
+                addHistory('earn', `開始 ${names[pendingTrialLevel]} 7 天免費試用`, 0);
+                showToast('🎉', `已開始 ${names[pendingTrialLevel]} 7 天免費試用！`);
+            }
+        });
+
+        // 點擊彈窗外的灰色背景可以關閉（e.target === e.currentTarget 表示點到背景而非內容）
+        document.getElementById('trial-modal').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) closeTrialModal();
+        });
+
+        // ===== Init =====
+        // 頁面載入完成時渲染
+        document.addEventListener('DOMContentLoaded', renderPage);
+        // 監聽跨分頁同步事件（使用者在其他分頁做了操作，這裡也要更新）
+        window.addEventListener('userDataSync', renderPage);
+    </script>
+
+    <!-- ===== Hamburger Menu Logic ===== -->
+
+    <script>
+        // Unified hamburger menu (injected by header standardization)
+        document.addEventListener('DOMContentLoaded', function () {
+            var btn = document.getElementById('hamburger-toggle');
+            var nav = document.getElementById('mobile-nav');
+            var close = document.getElementById('mobile-nav-close');
+            if (btn && nav) {
+                btn.onclick = function () { nav.classList.toggle('active'); };
+            }
+            if (close && nav) {
+                close.onclick = function () { nav.classList.remove('active'); };
+            }
+        });
+    </script>
+</body>
+
+</html>

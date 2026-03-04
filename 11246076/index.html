@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsureTech - 譯保通</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo-section">
+            <img src="logo.png" alt="InsureTech Logo">
+            <span>譯保通</span>
+        </a>
+        <nav>
+            <ul>
+                <!-- Special ID for script to hook into -->
+                <li><a href="consulting.html">保險諮詢</a></li>
+                <li><a href="dm.html">保單目錄</a></li>
+                <li><a href="budget.html">費用預算</a></li>
+                <li><a href="policy.html">智慧保單</a></li>
+                <li><a href="community.html">匿名社群</a></li>
+                <li><a href="保單搜尋/policy_tab.html">保單搜尋</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-logo">
+                <img src="logo.png" alt="InsureTech Logo">
+                <span>譯保通</span>
+            </a>
+            <div class="mobile-nav-links">
+                <a href="consulting.html">保險諮詢</a>
+                <a href="dm.html">保單目錄</a>
+                <a href="budget.html">費用預算</a>
+                <a href="policy.html">智慧保單</a>
+                <a href="community.html">匿名社群</a>
+            </div>
+        </div>
+    </div>
+
+    <main style="padding: 0; max-width: 100%;">
+        <!-- Hero Banner: Funnel Search -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>把保單變白話，讓理賠更透明</h1>
+
+
+                <div class="hero-btns">
+                    <div class="autocomplete-wrapper" id="company-search-wrapper">
+                        <input type="text" class="search-select" id="company-input" placeholder="你想選擇的公司？"
+                            autocomplete="off">
+                        <div class="search-results" id="company-results"></div>
+                    </div>
+                    <select class="search-select" id="category-select">
+                        <option value="" disabled selected>你想參考的保險類別？</option>
+                        <option value="life">人壽保險</option>
+                        <option value="health">健康保險</option>
+                        <option value="accident">傷害保險</option>
+                        <option value="travel">旅平險</option>
+                        <option value="investment">投資險</option>
+                        <option value="group">團體險</option>
+                        <option value="annuity">還本/年金險</option>
+                        <option value="other">其他</option>
+                    </select>
+                    <button class="btn btn-primary search-btn" id="hero-search-btn">搜尋</button>
+                    <a href="#" class="btn btn-outline" id="guest-mode-btn">💼 保險業務</a>
+                    <a href="#" class="btn btn-outline" id="auth-entry-btn">🧑‍🧑‍🧒‍🧒 一般用戶</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Results Section (Initially Hidden) -->
+        <section id="search-results-section" class="search-results-display" style="display: none;">
+            <div class="search-results-container">
+                <h2 class="search-results-title">為您搜尋到的推薦保單</h2>
+                <div id="search-results-grid" class="dm-grid">
+                    <!-- Results will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Wrapper for page content -->
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+
+
+            <!-- Redesigned Feature Grid -->
+            <section class="feature-grid">
+                <a href="consulting.html" class="feature-card">
+                    <div class="feature-card-img">
+                        <img src="理賠焦慮.png" alt="解決理賠焦慮">
+                    </div>
+                    <div class="feature-card-content">
+                        <h3>解決「理賠焦慮」</h3>
+                        <p>提供AI與真人保險員諮詢，依您的需求或潛在風險，給予適合且推薦的保單以供參考。</p>
+                    </div>
+                </a>
+
+                <a href="policy.html" class="feature-card">
+                    <div class="feature-card-img">
+                        <img src="條款白話文.png" alt="艱澀條款白話文">
+                    </div>
+                    <div class="feature-card-content">
+                        <h3>艱澀條款「白話文」</h3>
+                        <p>將複雜的保單轉換為易懂的內容，讓「條款」從此為您能真正理解並運用的保障權益。</p>
+                    </div>
+                </a>
+
+                <a href="community.html" class="feature-card">
+                    <div class="feature-card-img">
+                        <img src="社群.png" alt="結合社群與雙軌服務">
+                    </div>
+                    <div class="feature-card-content">
+                        <h3>結合「社群」與雙軌服務</h3>
+                        <p>結合匿名社群分享與評分機制，讓理賠經驗透明化，避免保險公司與消費者之間的黑箱。</p>
+                    </div>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Claims Emergency Modal -->
+    <div class="modal-overlay" id="claims-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeClaimsModal()">×</button>
+            <div class="modal-title">理賠急救支援</div>
+            <p class="modal-desc">別擔心，請簡單描述您目前遇到的狀況，我們將協助您釐清後續步驟。</p>
+
+            <div class="modal-form">
+                <textarea placeholder="例如：剛發生車禍，有人受傷，警察還沒到，請問我現在該做什麼？"></textarea>
+                <button class="modal-submit-btn" onclick="alert('我們已收到您的求救訊號，將立即分析並提供建議！')">請求支援</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Widgets -->
+    <div class="floating-widget">
+        <div class="float-btn emergency" onclick="openClaimsModal()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 6V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2" />
+                <rect width="20" height="14" x="2" y="6" rx="2" />
+                <path d="M12 10v6" />
+                <path d="M9 13h6" />
+            </svg>
+            <span class="float-tooltip">理賠急救支援</span>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>

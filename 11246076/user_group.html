@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配對專區 - 多人聊天</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --sidebar-width: 300px;
+            --text-dark: #333333;
+            --blue-primary: #7dd3fc;
+            --blue-text: #082f49;
+            --green-like: #22c55e;
+            --red-pass: #ef4444;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* ----- 左側 Sidebar ----- */
+        .sidebar {
+            width: var(--sidebar-width);
+            background-color: white;
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.02);
+            z-index: 100;
+        }
+
+        .sidebar-header {
+            padding: 24px 20px;
+            background: linear-gradient(135deg, #bae6fd, var(--blue-primary));
+            color: var(--blue-text);
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-buttons {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-btn {
+            width: 100%;
+            background-color: #f1f5f9;
+            color: var(--blue-text);
+            border: none;
+            padding: 14px 20px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s;
+            margin-bottom: 10px;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--blue-primary);
+            color: white;
+        }
+
+        .nav-btn.active {
+            background-color: var(--blue-text);
+            color: white;
+        }
+
+        /* 收藏清單項目 */
+        .favorites-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .favorites-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #475569;
+        }
+
+        .liked-list {
+            flex: 1;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .liked-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .liked-avatar {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, #bae6fd, var(--blue-primary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--blue-text);
+            flex-shrink: 0;
+        }
+
+        .liked-info {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .liked-name {
+            font-weight: bold;
+            font-size: 15px;
+            color: var(--text-dark);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .liked-company {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .connect-btn {
+            background-color: var(--blue-primary);
+            color: var(--blue-text);
+            border: none;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        .connect-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .empty-favorites {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 13px;
+            margin-top: 30px;
+            line-height: 1.6;
+        }
+
+        /* ----- 右側 Main Content ----- */
+        .main-content {
+            flex: 1;
+            position: relative;
+            background-color: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .view-section {
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .view-section.active {
+            display: flex;
+        }
+
+        /* === Chat View === */
+        #view-chat {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+            background-color: white;
+            height: 100vh;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, var(--blue-primary), #38bdf8);
+            color: var(--blue-text);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .chat-header-title {
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .chat-history {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background-color: var(--bg-color);
+        }
+
+        .message {
+            max-width: 60%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 15px;
+            line-height: 1.5;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+            word-wrap: break-word;
+        }
+
+        .message.agent {
+            background-color: white;
+            color: var(--blue-text);
+            align-self: flex-start;
+            border: 1px solid var(--border-color);
+            border-bottom-left-radius: 4px;
+        }
+
+        .message.user {
+            background-color: #bae6fd;
+            color: var(--blue-text);
+            align-self: flex-end;
+            border-bottom-right-radius: 4px;
+        }
+
+        .message-time {
+            font-size: 11px;
+            color: #94a3b8;
+            margin-top: 5px;
+            text-align: right;
+        }
+
+        .chat-input-area {
+            padding: 20px 30px;
+            background-color: white;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: 15px;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 14px 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 30px;
+            outline: none;
+            font-size: 15px;
+            transition: border-color 0.2s;
+            background: #f8fafc;
+        }
+
+        .chat-input:focus {
+            border-color: #38bdf8;
+            background: white;
+        }
+
+        .send-btn {
+            background-color: #38bdf8;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .send-btn:hover {
+            background-color: #0284c7;
+            transform: scale(1.05);
+        }
+
+        .send-btn svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+            transform: translateX(2px);
+        }
+
+        .attach-btn {
+            background: none;
+            border: none;
+            color: #94a3b8;
+            cursor: pointer;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.2s;
+        }
+
+        .attach-btn:hover {
+            color: var(--blue-primary);
+        }
+
+        .attach-btn svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .msg-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .msg-file {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 8px 12px;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 6px;
+            color: inherit;
+            text-decoration: none;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 主站 Header -->
+    <header>
+        <a href="index.html" class="logo-section">
+            <img src="logo.png" alt="InsureTech Logo">
+            <span>譯保通</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="consulting.html">保險諮詢</a></li>
+                <li><a href="dm.html">保單目錄</a></li>
+                <li><a href="budget.html">費用預算</a></li>
+                <li><a href="policy.html">智慧保單</a></li>
+                <li><a href="community.html">匿名社群</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-toggle">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- 左側邊欄 -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <span>🛡️</span> 保險配對平台
+        </div>
+
+        <div class="nav-buttons">
+            <button class="nav-btn" onclick="window.location.href='user_match.html'">
+                <span>🏠</span> 配對主頁
+            </button>
+            <button class="nav-btn active" id="btn-nav-groups" onclick="switchView('groups')">
+                <span>👥</span> 多人聊天
+            </button>
+        </div>
+
+        <div class="favorites-section">
+            <div class="favorites-title">❤️ 我的收藏 (<span id="likedCount">0</span>)</div>
+            <div id="liked-list" class="liked-list">
+                <div class="empty-favorites">
+                    尚未收藏任何群組。<br>在聊天大廳加入群組<br>即可自動加入您的收藏！
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右側主內容區 -->
+    <div class="main-content">
+
+        <!-- View: Groups List -->
+        <div id="view-groups" class="view-section active">
+            <div style="width: 100%; height: 100%; padding: 40px; overflow-y: auto; background-color: var(--bg-color);">
+                <h2
+                    style="margin-top: 0; color: var(--blue-text); border-bottom: 2px solid var(--blue-primary); padding-bottom: 10px; margin-bottom: 20px;">
+                    多人聊天大廳
+                </h2>
+                <div id="groups-list-container"
+                    style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
+                    <div style="color: #64748b; font-size: 14px;">載入群組中...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View: Chat Interface -->
+        <div id="view-chat" class="view-section">
+            <div class="chat-header" style="justify-content: space-between;">
+                <div class="chat-header-title" style="display: flex; align-items: center; gap: 10px;">
+                    <div id="chat-header-avatar"
+                        style="width: 32px; height: 32px; background-color: var(--bg-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; background-size: cover; background-position: center; color: var(--blue-text);">
+                        👥
+                    </div>
+                    <div style="font-size: 18px; font-weight: bold;">
+                        <span id="chat-agent-name">群聊</span>
+                    </div>
+                </div>
+                <button id="chat-favorite-btn"
+                    style="background: none; border: none; font-size: 24px; cursor: pointer; color: #cbd5e1; transition: color 0.2s;"
+                    title="加入收藏">
+                    🤍
+                </button>
+            </div>
+
+            <div class="chat-history" id="chatHistory">
+                <!-- Messages will appear here -->
+            </div>
+
+            <div class="chat-input-area">
+                <input type="file" id="fileInput" hidden>
+                <button class="attach-btn" onclick="document.getElementById('fileInput').click()" title="附加檔案或圖片">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13">
+                        </path>
+                    </svg>
+                </button>
+                <input type="text" id="messageInput" class="chat-input" placeholder="在群組中發送訊息..."
+                    onkeypress="handleKeyPress(event)">
+                <button class="send-btn" onclick="sendMessage()">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script>
+        // ==========================================
+        // Variables & Init
+        // ==========================================
+        let socket;
+        let likedAgents = JSON.parse(localStorage.getItem('likedAgents')) || [];
+        let availableGroups = [];
+        let currentActiveGroupInfo = null;
+
+        const historyContainer = document.getElementById('chatHistory');
+        const messageInput = document.getElementById('messageInput');
+
+        // ==========================================
+        // 1. View Navigation
+        // ==========================================
+        function switchView(viewName, groupInfo = null) {
+            document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+
+            if (viewName === 'groups') {
+                document.getElementById('view-groups').classList.add('active');
+                currentActiveGroupInfo = null;
+            } else if (viewName === 'chat' && groupInfo) {
+                document.getElementById('view-chat').classList.add('active');
+                currentActiveGroupInfo = groupInfo;
+
+                document.getElementById('chat-agent-name').innerText = groupInfo.name;
+                const headerAvatar = document.getElementById('chat-header-avatar');
+
+                if (groupInfo.groupAvatar) {
+                    headerAvatar.innerText = '';
+                    headerAvatar.style.backgroundImage = `url(${groupInfo.groupAvatar})`;
+                } else {
+                    headerAvatar.innerText = '👥';
+                    headerAvatar.style.backgroundImage = 'none';
+                }
+
+                const favBtn = document.getElementById('chat-favorite-btn');
+                const favObj = {
+                    id: groupInfo.id,
+                    name: groupInfo.name,
+                    company: `${groupInfo.agentName || '保險員'} (創立)`,
+                    avatar: '👥',
+                    avatarUrl: groupInfo.groupAvatar || '',
+                    isGroup: true
+                };
+
+                const isLiked = likedAgents.find(a => a.id === groupInfo.id);
+                if (isLiked) {
+                    favBtn.innerText = '❤️';
+                    favBtn.style.color = 'var(--blue-primary)';
+                    favBtn.title = "取消收藏";
+                    favBtn.onclick = () => {
+                        removeFromFavorites(groupInfo.id);
+                        switchView('chat', groupInfo);
+                    };
+                } else {
+                    favBtn.innerText = '🤍';
+                    favBtn.style.color = '#cbd5e1';
+                    favBtn.title = "加入收藏";
+                    favBtn.onclick = () => {
+                        addToFavorites(favObj);
+                        switchView('chat', groupInfo);
+                    };
+                }
+            }
+        }
+
+        // ==========================================
+        // Favorites Sidebar Logic
+        // ==========================================
+        function addToFavorites(agent) {
+            if (!likedAgents.find(a => a.id === agent.id)) {
+                likedAgents.push(agent);
+                localStorage.setItem('likedAgents', JSON.stringify(likedAgents));
+                updateFavoritesUI();
+            }
+        }
+
+        function removeFromFavorites(id) {
+            likedAgents = likedAgents.filter(a => a.id !== id);
+            localStorage.setItem('likedAgents', JSON.stringify(likedAgents));
+            updateFavoritesUI();
+        }
+
+        function updateFavoritesUI() {
+            // Only display groups in user_group.html's favorites to keep it clean, 
+            // but we'll load everything from likedAgents so data isn't lost.
+            const groupLikes = likedAgents.filter(a => a.isGroup);
+            document.getElementById('likedCount').innerText = groupLikes.length;
+            const listContainer = document.getElementById('liked-list');
+
+            if (groupLikes.length === 0) {
+                listContainer.innerHTML = `
+                    <div class="empty-favorites">
+                        尚未收藏任何群組。<br>在右側配對區加入群組<br>即可自動加入您的收藏！
+                    </div>`;
+                return;
+            }
+
+            listContainer.innerHTML = '';
+
+            groupLikes.forEach(agent => {
+                const div = document.createElement('div');
+                div.className = 'liked-item';
+
+                let connectBtnHtml = `<button class="connect-btn" onclick="joinGroup('${agent.id}', '${agent.name}')">進入</button>`;
+
+                let avatarHtml = `<div class="liked-avatar">${agent.avatar}</div>`;
+                if (agent.avatarUrl) {
+                    avatarHtml = `<div class="liked-avatar" style="background-image: url('${agent.avatarUrl}'); background-size: cover; background-position: center; color: transparent;"></div>`;
+                }
+
+                div.innerHTML = `
+                    ${avatarHtml}
+                    <div class="liked-info" style="flex: 1; display: flex; flex-direction: column;">
+                        <div class="liked-name">${agent.name}</div>
+                        <div class="liked-company">${agent.company}</div>
+                    </div>
+                    ${connectBtnHtml}
+                `;
+                listContainer.appendChild(div);
+            });
+        }
+
+        // ==========================================
+        // Socket.io & Chat Handling
+        // ==========================================
+        try {
+            socket = io('http://localhost:3001');
+            socket.emit('register', { role: 'user', userId: 'superuser_group' });
+
+            socket.on('available_groups', (groups) => {
+                availableGroups = groups;
+                renderGroupsList();
+            });
+
+            socket.on('new_group_available', (group) => {
+                const exists = availableGroups.find(g => g.id === group.id);
+                if (!exists) {
+                    availableGroups.push(group);
+                    renderGroupsList();
+                }
+            });
+
+            socket.on('new_group_message', (data) => {
+                const { groupId, message } = data;
+                if (currentActiveGroupInfo && currentActiveGroupInfo.id === groupId) {
+                    if (message.clientId === socket.id) return; // Prevent duplicate
+
+                    let role = 'agent';
+                    let displayName = message.senderName;
+                    if (message.role === 'user') {
+                        displayName = message.senderName === '本人' ? '其他客戶' : message.senderName;
+                    }
+                    const dateObj = new Date(message.timestamp);
+                    appendMessage(role, message.text, dateObj, message.file, displayName);
+                }
+            });
+        } catch (e) {
+            console.warn("Socket.io not found. Please start the node server.", e);
+        }
+
+        function renderGroupsList() {
+            const container = document.getElementById('groups-list-container');
+            if (availableGroups.length === 0) {
+                container.innerHTML = '<div style="color: #64748b; font-size: 14px;">目前沒有任何公開的群組聊天室。</div>';
+                return;
+            }
+
+            container.innerHTML = '';
+            availableGroups.forEach(group => {
+                const card = document.createElement('div');
+                card.style.cssText = 'background: white; border-radius: 12px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 10px;';
+
+                const displayAvatar = group.groupAvatar
+                    ? `<div style="width: 28px; height: 28px; border-radius: 50%; background-image: url('${group.groupAvatar}'); background-size: cover; display: flex; align-items: center; justify-content: center;"></div>`
+                    : '👥';
+
+                card.innerHTML = `
+                    <div style="font-size: 18px; font-weight: bold; color: var(--blue-text); display: flex; align-items: center; gap: 10px;">
+                        ${displayAvatar} <span>${group.name}</span>
+                    </div>
+                    <div style="font-size: 14px; color: #64748b; display: flex; align-items: center; gap: 8px;">
+                        創立者: 
+                        <div style="width: 24px; height: 24px; border-radius: 50%; background-color: var(--blue-primary); display: flex; align-items: center; justify-content: center; color: white; font-size: 10px; background-size: cover; ${group.agentAvatar ? `background-image: url('${group.agentAvatar}'); color: transparent;` : ''}">
+                            ${group.agentAvatar ? '' : group.agentName.charAt(0)}
+                        </div>
+                        ${group.agentName}
+                    </div>
+                    <div style="margin-top: auto; display: flex; gap: 10px; padding-top: 10px;">
+                        <button onclick="joinGroup('${group.id}', '${group.name}')" style="flex:1; padding: 8px; border-radius: 8px; border: none; background: var(--blue-primary); color: var(--blue-text); font-weight: bold; cursor: pointer; transition: 0.2s;">進入群聊</button>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function joinGroup(groupId, groupName) {
+            socket.emit('join_group', { groupId });
+            historyContainer.innerHTML = `<div style="text-align:center; padding: 10px; background:#e0f2fe; color:#0284c7; font-size: 12px; border-radius: 8px; margin-bottom: 20px;">已加入 ${groupName}，開始聊天吧！</div>`;
+            const groupFullInfo = availableGroups.find(g => g.id === groupId) || { id: groupId, name: groupName };
+            switchView('chat', groupFullInfo);
+        }
+
+        // File Selection Logic
+        const fileInput = document.getElementById('fileInput');
+        fileInput.addEventListener('change', function () {
+            if (this.files && this.files[0]) {
+                document.getElementById('messageInput').placeholder = `已選擇檔案: ${this.files[0].name}`;
+            }
+        });
+
+        function handleKeyPress(e) {
+            if (e.key === 'Enter') sendMessage();
+        }
+
+        function sendMessage() {
+            const text = messageInput.value.trim();
+            const file = fileInput.files[0];
+
+            if ((!text && !file) || !currentActiveGroupInfo) return;
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const fileObj = { name: file.name, type: file.type, data: e.target.result };
+                    socket.emit('group_message', {
+                        groupId: currentActiveGroupInfo.id,
+                        text: text,
+                        file: fileObj,
+                        senderName: '本人'
+                    });
+                    appendMessage('user', text, new Date(), fileObj, '本人');
+                    resetInput();
+                };
+                reader.readAsDataURL(file);
+            } else {
+                socket.emit('group_message', {
+                    groupId: currentActiveGroupInfo.id,
+                    text: text,
+                    senderName: '本人'
+                });
+                appendMessage('user', text, new Date(), null, '本人');
+                resetInput();
+            }
+        }
+
+        function resetInput() {
+            messageInput.value = '';
+            fileInput.value = '';
+            messageInput.placeholder = "在群組中發送訊息...";
+        }
+
+        function appendMessage(senderType, text, dateObj, fileObj = null, senderName = null) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `message ${senderType}`;
+            const timeString = dateObj.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+            let nameHtml = '';
+            if (senderName && senderType !== 'user') {
+                nameHtml = `<div style="font-size: 11px; font-weight: bold; margin-bottom: 4px; color: var(--blue-text); opacity: 0.8;">${senderName}</div>`;
+            }
+
+            let contentHtml = text ? `<div>${text}</div>` : '';
+            if (fileObj) {
+                if (fileObj.type.startsWith('image/')) {
+                    contentHtml += `<img src="${fileObj.data}" class="msg-image" alt="attached image">`;
+                } else {
+                    contentHtml += `<a href="${fileObj.data}" download="${fileObj.name}" class="msg-file">📥 下載: ${fileObj.name}</a>`;
+                }
+            }
+
+            msgDiv.innerHTML = `${nameHtml}${contentHtml}<div class="message-time">${timeString}</div>`;
+            historyContainer.appendChild(msgDiv);
+            historyContainer.scrollTop = historyContainer.scrollHeight;
+        }
+
+        // Initialize 
+        updateFavoritesUI();
+    </script>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
