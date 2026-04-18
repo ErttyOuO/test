@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推薦好友 - 百保袋 InsureTech</title>
+    <meta name="description" content="推薦好友加入百保袋，雙方都能獲得獎勵">
+    <style>
+        :root {
+            --primary-black: #000000;
+            --accent-green: #9CC98D;
+            --accent-green-dark: #7BB369;
+            --accent-green-light: #c8e6be;
+            --bg-color: #F5F7F5;
+            --white: #FFFFFF;
+            --text-color: #333333;
+            --text-muted: #888888;
+            --gold: #FFD700;
+            --gold-dark: #b8860b;
+            --purple: #9b59b6;
+            --purple-dark: #8e44ad;
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+            --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+            --radius-lg: 20px;
+            --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background-color: rgba(0, 0, 0, 0.92);
+            color: var(--white);
+            padding: 0.8rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--accent-green);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--primary-black);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--white);
+            border-bottom-color: var(--white);
+        }
+
+        .member-badge {
+            background: rgba(156, 201, 141, 0.15);
+            border: 1px solid rgba(156, 201, 141, 0.3);
+            color: var(--accent-green);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .member-badge.vip {
+            background: rgba(255, 215, 0, 0.15);
+            border-color: rgba(255, 215, 0, 0.3);
+            color: var(--gold);
+        }
+
+        /* ===== Hero ===== */
+        .ref-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 3rem 2rem 2.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ref-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
+        }
+
+        .ref-hero h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 0.4rem;
+        }
+
+        .ref-hero p {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-count {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.6rem 1.5rem;
+            border-radius: 30px;
+            margin-top: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-count .count-num {
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+
+        /* ===== Main Content ===== */
+        .main-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.2rem 3rem;
+        }
+
+        /* ===== Referral Code Card ===== */
+        .code-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            padding: 1.5rem;
+            margin-top: -1.5rem;
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .code-card h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 0.8rem;
+        }
+
+        .code-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .code-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            color: var(--purple-dark);
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #f3e7ff, #e8d5f5);
+            padding: 0.6rem 1.5rem;
+            border-radius: 12px;
+            border: 2px dashed rgba(155, 89, 182, 0.3);
+            user-select: all;
+        }
+
+        .copy-btn {
+            padding: 0.6rem 1rem;
+            border-radius: 10px;
+            border: 2px solid var(--purple);
+            background: transparent;
+            color: var(--purple);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .copy-btn:hover {
+            background: var(--purple);
+            color: var(--white);
+        }
+
+        .copy-btn.copied {
+            background: var(--accent-green);
+            border-color: var(--accent-green);
+            color: var(--white);
+        }
+
+        .code-hint {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        /* ===== Simulate Button ===== */
+        .sim-section {
+            margin-top: 1.5rem;
+        }
+
+        .sim-btn {
+            width: 100%;
+            padding: 0.9rem;
+            border-radius: 14px;
+            border: none;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+            color: var(--white);
+            box-shadow: 0 4px 20px rgba(155, 89, 182, 0.3);
+        }
+
+        .sim-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(155, 89, 182, 0.4);
+        }
+
+        .sim-btn:active {
+            transform: translateY(0);
+        }
+
+        /* ===== Progress Card ===== */
+        .progress-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .progress-card h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .progress-bar-wrap {
+            background: #f0f0f0;
+            border-radius: 10px;
+            height: 14px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0.6rem;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--purple), #f093fb);
+            border-radius: 10px;
+            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .progress-bar-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg,
+                    transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .progress-label .current {
+            color: var(--purple);
+            font-weight: 600;
+        }
+
+        /* ===== Milestone Tiers ===== */
+        .tiers {
+            margin-top: 1.5rem;
+        }
+
+        .tier-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border-radius: 14px;
+            margin-bottom: 0.8rem;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tier-card.locked {
+            background: #fafafa;
+            border: 1px solid #eee;
+        }
+
+        .tier-card.unlocked {
+            background: linear-gradient(135deg, rgba(155, 89, 182, 0.06), rgba(240, 147, 251, 0.08));
+            border: 2px solid rgba(155, 89, 182, 0.2);
+        }
+
+        .tier-card.unlocked .tier-badge {
+            background: var(--purple);
+            color: var(--white);
+        }
+
+        .tier-card.just-unlocked {
+            animation: tierPop 0.5s ease-out;
+        }
+
+        @keyframes tierPop {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(155, 89, 182, 0.4);
+            }
+
+            50% {
+                transform: scale(1.02);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(155, 89, 182, 0);
+            }
+        }
+
+        .tier-badge {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            transition: all 0.3s;
+        }
+
+        .tier-card.locked .tier-badge {
+            background: #f0f0f0;
+            filter: grayscale(0.6);
+        }
+
+        .tier-info {
+            flex: 1;
+        }
+
+        .tier-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.15rem;
+        }
+
+        .tier-desc {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .tier-reward {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.2rem;
+        }
+
+        .tier-reward-tag {
+            padding: 0.2rem 0.6rem;
+            border-radius: 8px;
+            font-size: 0.72rem;
+            font-weight: 600;
+        }
+
+        .tier-reward-tag.coins {
+            background: rgba(255, 215, 0, 0.12);
+            color: var(--gold-dark);
+        }
+
+        .tier-reward-tag.frame {
+            background: rgba(155, 89, 182, 0.1);
+            color: var(--purple-dark);
+        }
+
+        .tier-reward-tag.claimed {
+            background: var(--accent-green-light);
+            color: var(--accent-green-dark);
+        }
+
+        .tier-check {
+            font-size: 1.2rem;
+        }
+
+        /* ===== Achievement Badges ===== */
+        .badge-section {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .badge-section h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.8rem;
+        }
+
+        .badge-item {
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .badge-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            margin: 0 auto 0.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .badge-item.locked .badge-icon {
+            background: #f0f0f0;
+            filter: grayscale(1) opacity(0.4);
+        }
+
+        .badge-item.unlocked .badge-icon {
+            background: linear-gradient(135deg, rgba(155, 89, 182, 0.12), rgba(240, 147, 251, 0.15));
+            box-shadow: 0 2px 12px rgba(155, 89, 182, 0.15);
+        }
+
+        @keyframes badgeUnlock {
+            0% {
+                transform: scale(0) rotate(-180deg);
+            }
+
+            60% {
+                transform: scale(1.2) rotate(10deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        .badge-item.just-earned .badge-icon {
+            animation: badgeUnlock 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+
+        .badge-name {
+            font-size: 0.68rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .badge-item.unlocked .badge-name {
+            color: var(--purple-dark);
+            font-weight: 600;
+        }
+
+        /* ===== Referral History ===== */
+        .history-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .history-card h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .history-list {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .history-list::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        .history-list::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.08);
+            border-radius: 2px;
+        }
+
+        .hist-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .hist-item:last-child {
+            border-bottom: none;
+        }
+
+        .hist-left {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .hist-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e0d5f5, #f3e7ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        .hist-name {
+            font-size: 0.82rem;
+            font-weight: 500;
+        }
+
+        .hist-time {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+        }
+
+        .hist-reward {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--gold-dark);
+        }
+
+        .hist-empty {
+            text-align: center;
+            color: var(--text-muted);
+            padding: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        /* ===== Confetti ===== */
+        .confetti {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9998;
+        }
+
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(80vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            animation: confettiFall 1.5s ease-out forwards;
+        }
+
+        /* ===== Toast ===== */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(120px);
+            background: var(--primary-black);
+            color: var(--white);
+            padding: 0.8rem 1.6rem;
+            border-radius: 14px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+            z-index: 9999;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: var(--primary-black);
+            color: #999;
+            text-align: center;
+            padding: 1.2rem;
+            font-size: 0.78rem;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 600px) {
+            header {
+                padding: 0.6rem 3%;
+            }
+
+            .nav-links {
+                gap: 0.6rem;
+            }
+
+            .nav-links a {
+                font-size: 0.75rem;
+            }
+
+            .ref-hero {
+                padding: 2rem 1.2rem 2rem;
+            }
+
+            .ref-hero h1 {
+                font-size: 1.6rem;
+            }
+
+            .code-text {
+                font-size: 1.3rem;
+                letter-spacing: 3px;
+                padding: 0.5rem 1rem;
+            }
+
+            .badge-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 0.5rem;
+            }
+
+            .badge-icon {
+                width: 44px;
+                height: 44px;
+                font-size: 1.2rem;
+            }
+
+            .tier-card {
+                padding: 0.8rem;
+                gap: 0.7rem;
+            }
+
+            .tier-badge {
+                width: 40px;
+                height: 40px;
+                font-size: 1.1rem;
+            }
+        }
+
+        ::selection {
+            background: #e0d5f5;
+            color: var(--purple-dark);
+        }
+    
+        /* ===== RWD & Hamburger Menu ===== */
+        .hamburger-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+            /* Positioning for absolute cases */
+            position: relative;
+        }
+
+        .hamburger-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #FFFFFF !important;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        /* Hamburger open state */
+        .hamburger-btn.open span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+        .hamburger-btn.open span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-btn.open span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+            /* Header Specific */
+            header {
+                padding: 0.8rem 5% !important;
+            }
+        
+            .hamburger-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 260px;
+                height: 100vh;
+                background-color: rgba(15, 15, 15, 0.95);
+                backdrop-filter: blur(15px);
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                justify-content: flex-start !important;
+                padding: 5rem 2rem 2rem;
+                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+                z-index: 999;
+                /* Reset existing gap to ensure clean layout */
+                gap: 1.5rem !important; 
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links a {
+                font-size: 1.15rem !important;
+                width: 100%;
+                padding-bottom: 0.8rem;
+                display: block;
+            }
+
+            /* Generic Resizing Fixes for Cards and Grids */
+            .stats-row {
+                flex-direction: column;
+                gap: 1.2rem !important;
+            }
+            
+            .card-grid, .shop-grid, .stamp-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            /* Fixes explicitly for admin dashboard columns */
+            .sidebar {
+                width: 100% !important;
+                position: static !important;
+                height: auto !important;
+                border-right: none !important;
+                border-bottom: 1px solid var(--border);
+            }
+            .main-content {
+                padding: 1.5rem !important;
+            }
+
+            /* Modal widths */
+            .modal-content, .task-modal-content, .shop-modal-content {
+                width: 90% !important;
+                margin: 10vh auto !important;
+                padding: 1.5rem !important;
+            }
+            
+            /* Pricing Tiers / Subscription Page */
+            .pricing-tier {
+                flex: none !important;
+                width: 100%;
+            }
+            .pricing-tiers {
+                flex-direction: column !important;
+                gap: 1.5rem !important;
+            }
+            .compare-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            /* Sponsor Dashboard Layout */
+            .dashboard-layout {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+            /* Force auth tools to hide when space is too tight or neatly align */
+            .header-right { margin-left: auto; gap: 0.5rem; }
+            .auth-info-bar, .user-auth { display: none !important; } /* Simplify header on mobile */
+            
+            /* Give hamburger priority */
+            .hamburger-btn { margin-left: 10px; }
+            
+            /* Logo resizing */
+            .logo-section span { font-size: 1rem; }
+        }
+
+        /* ===== Global Vertical Space Reduction (Mobile) ===== */
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+            /* Reduce padding on hero sections to save space */
+            .hero-section, .sub-hero, .wallet-hero, .profile-hero {
+                padding: 1.5rem 1rem 2.8rem !important;
+            }
+            
+            .hero-section h1, .sub-hero h1, .wallet-hero h1 {
+                font-size: 1.5rem !important;
+                margin-bottom: 0.3rem !important;
+            }
+            .hero-section p, .sub-hero p {
+                font-size: 0.9rem !important;
+            }
+
+            /* Main containers constraints */
+            .main-content, .dashboard-layout {
+                padding: 1rem !important;
+                
+            }
+
+            /* Status bars or quick stats */
+            .status-bar, .stats-row {
+                padding: 0.8rem 1rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            /* Info cards and section cards */
+            .info-card, .section-card, .shop-item, .task-card {
+                padding: 1rem !important;
+                margin-bottom: 0.8rem !important;
+            }
+            
+            .section-title {
+                margin: 1.5rem 0 1rem !important;
+            }
+            .section-title h2 {
+                font-size: 1.3rem !important;
+            }
+
+            /* Lists and rows inside cards */
+            ul.plan-features li, .reward-row, .task-row, .history-item {
+                padding: 0.4rem 0 !important;
+            }
+        }
+
+    
+        /* ===== Override: Use main-page mobile nav ===== */
+        .hamburger-btn#hamburger-toggle {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .hamburger-btn#hamburger-toggle {
+                display: block !important;
+            }
+            nav { display: none !important; }
+        }
+    
+        /* ===== Unified Nav+Hamburger Override ===== */
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.6rem;
+        }
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent;
+        }
+        nav a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+        #hamburger-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+        #hamburger-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+        .mobile-nav-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.95);
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        .mobile-nav-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .mobile-nav-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        .mobile-nav-content {
+            text-align: center;
+        }
+        .mobile-nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+        .mobile-nav-logo img {
+            height: 36px;
+        }
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .mobile-nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.2s;
+        }
+        .mobile-nav-links a:hover {
+            color: #9CC98D;
+        }
+        @media (max-width: 768px) {
+            nav { display: none !important; }
+            #hamburger-toggle { display: block !important; }
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <!-- 
+      【頁面功能說明 — referral.html】
+      推薦人計畫 (Referral Program) 頁面。展示使用者的專屬推薦碼，並以進度條 (Tiers) 方式顯示成功推薦的人數及可領取的獎勵（如獨家貼圖與金幣）。
+    -->
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo-section" style="text-decoration:none;">
+            <img src="../assets/images/logo.png" alt="InsureTech Logo">
+            <span>百保袋</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="consulting.html">保險諮詢</a></li>
+                <li><a href="dm.html">保單目錄</a></li>
+                <li><a href="budget.html">費用預算</a></li>
+                <li><a href="policy.html">智慧保單</a></li>
+                <li><a href="community.html">匿名社群</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-logo">
+                <img src="../assets/images/logo.png" alt="InsureTech Logo">
+                <span>百保袋</span>
+            </a>
+            <div class="mobile-nav-links">
+                <a href="consulting.html">保險諮詢</a>
+                <a href="dm.html">保單目錄</a>
+                <a href="budget.html">費用預算</a>
+                <a href="policy.html">智慧保單</a>
+                <a href="community.html">匿名社群</a>
+</div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="ref-hero">
+        <h1>🎁 推薦好友賺獎勵</h1>
+        <p>分享您的推薦碼，雙方都能獲得 Coins！</p>
+        <div class="hero-count">
+            已推薦 <span class="count-num" id="hero-count">0</span> 人
+        </div>
+    </section>
+
+    <div class="main-content">
+        <!-- Referral Code -->
+        <div class="code-card">
+            <h3>📋 您的專屬推薦碼</h3>
+            <div class="code-display">
+                <div class="code-text" id="ref-code">------</div>
+                <button class="copy-btn" id="copy-btn" onclick="copyCode()">📋 複製</button>
+            </div>
+            <div class="code-hint">分享此推薦碼給好友，好友註冊時輸入即可</div>
+        </div>
+
+        <!-- Simulate -->
+        <div class="sim-section">
+            <button class="sim-btn" onclick="simulateReferral()">
+                🚀 模擬新增推薦成功
+            </button>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-card">
+            <h3>📈 推薦進度</h3>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
+            </div>
+            <div class="progress-label">
+                <span class="current" id="prog-current">0 人</span>
+                <span id="prog-next">下一級：1 人</span>
+            </div>
+        </div>
+
+        <!-- Milestone Tiers -->
+        <div class="tiers" id="tier-list">
+            <!-- JS rendered -->
+        </div>
+
+        <!-- Achievement Badges -->
+        <div class="badge-section">
+            <h3>🏅 成就徽章</h3>
+            <div class="badge-grid" id="badge-grid">
+                <!-- JS rendered -->
+            </div>
+        </div>
+
+        <!-- Referral History -->
+        <div class="history-card">
+            <h3>👥 推薦紀錄</h3>
+            <div class="history-list" id="history-list">
+                <div class="hist-empty">尚無推薦紀錄</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span id="toast-icon"></span>
+        <span id="toast-msg"></span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 百保袋 InsureTech ｜ 此為 Demo 頁面</p>
+    </footer>
+
+    <script src="../scripts/auth.js">
+        // 【新手導讀 — referral.html 的 JavaScript】
+        // 此區塊讀取使用者的推薦次數並渲染進度條；提供「複製推薦碼」功能；處理領取階段性獎勵 (Claim Tier) 以及解鎖限定貼圖的邏輯。
+</script>
+    <script>
+        // getUserData / saveUserData / addHistory 由 auth.js 提供
+
+        // ===== Tier Config =====
+        const TIERS = [
+            { count: 1, icon: '🌱', title: '初心推薦者', desc: '推薦 1 位好友', coins: 10, frame: false, sticker: true },
+            { count: 3, icon: '🌿', title: '活躍推薦者', desc: '推薦 3 位好友', coins: 25, frame: false, sticker: false },
+            { count: 5, icon: '🌟', title: '明星推薦者', desc: '推薦 5 位好友', coins: 50, frame: true, sticker: true },
+            { count: 10, icon: '👑', title: '推薦大使', desc: '推薦 10 位好友', coins: 100, frame: false, sticker: true },
+        ];
+
+        // ===== Badge Config =====
+        const BADGES = [
+            { id: 'b1', icon: '🌱', name: '第一推薦', need: 1 },
+            { id: 'b2', icon: '🤝', name: '助人為樂', need: 2 },
+            { id: 'b3', icon: '🌿', name: '人氣王', need: 3 },
+            { id: 'b4', icon: '⭐', name: '五星評價', need: 5 },
+            { id: 'b5', icon: '🔥', name: '火熱推廣', need: 7 },
+            { id: 'b6', icon: '👑', name: '推薦大使', need: 10 },
+            { id: 'b7', icon: '💎', name: '鑽石推手', need: 15 },
+            { id: 'b8', icon: '🏆', name: '傳說推薦者', need: 20 },
+        ];
+
+        // Fake names for simulation
+        const FAKE_NAMES = [
+            '小明', '美玲', '志偉', '雅惠', '俊傑', '淑芬', '建宏', '麗華',
+            '家豪', '怡君', '宗翰', '佳蓉', '柏翰', '雅琪', '冠宇', '詩涵',
+            '承翰', '欣怡', '韋翔', '宜蓁',
+        ];
+
+        // ===== Data Keys (user-keyed) =====
+        function _refKey() {
+            const u = getAuthenticatedUser();
+            return 'referral_data_' + (u && u.id ? u.id : 'anon');
+        }
+
+        function getReferralData() {
+            const key = _refKey();
+            try {
+                const raw = localStorage.getItem(key);
+                if (!raw) return createFreshData();
+                return { ...createFreshData(), ...JSON.parse(raw) };
+            } catch { return createFreshData(); }
+        }
+
+        function saveReferralData(d) {
+            localStorage.setItem(_refKey(), JSON.stringify(d));
+        }
+
+        function createFreshData() {
+            return {
+                code: '',
+                count: 0,
+                claimed_tiers: [],    // tier.count values that have been claimed
+                referrals: [],        // { name, time }
+            };
+        }
+
+        // ===== Init =====
+        function initPage() {
+            let rd = getReferralData();
+            // 使用 auth.js 的固定推薦碼（存在 localUsers 中）
+            const fixedCode = (typeof getMyReferralCode === 'function') ? getMyReferralCode() : null;
+            if (fixedCode) {
+                rd.code = fixedCode;
+            } else if (!rd.code) {
+                // fallback: 如果 auth.js 尚未載入，用 username 產生
+                const u = getAuthenticatedUser();
+                const prefix = (u && u.username ? u.username.slice(0, 3).toUpperCase() : 'REF');
+                rd.code = prefix + '-0000';
+            }
+            saveReferralData(rd);
+            renderAll();
+        }
+
+        // ===== Render =====
+        function renderAll() {
+            const rd = getReferralData();
+            const data = getUserData();
+
+            // Header badge
+            const badge = document.getElementById('h-badge');
+            const level = data.vip_level || 'free';
+            if (badge) {
+                if (level === 'pro') { badge.textContent = '👑 VIP Pro'; badge.className = 'member-badge vip'; }
+                else if (level === 'basic') { badge.textContent = '⭐ VIP Basic'; badge.className = 'member-badge vip'; }
+                else { badge.textContent = 'Free'; badge.className = 'member-badge'; }
+            }
+
+            // Hero count
+            document.getElementById('hero-count').textContent = rd.count;
+
+            // Referral code
+            document.getElementById('ref-code').textContent = rd.code;
+
+            // Progress bar
+            renderProgress(rd);
+
+            // Tiers
+            renderTiers(rd);
+
+            // Badges
+            renderBadges(rd);
+
+            // History
+            renderHistory(rd);
+        }
+
+        function renderProgress(rd) {
+            const count = rd.count;
+            // Find next tier
+            let nextTier = TIERS.find(t => t.count > count);
+            let prevCount = 0;
+            if (!nextTier) {
+                // All tiers complete
+                document.getElementById('progress-fill').style.width = '100%';
+                document.getElementById('prog-current').textContent = count + ' 人';
+                document.getElementById('prog-next').textContent = '🎉 全階段完成！';
+                return;
+            }
+
+            // Find previous tier
+            const prevTierIdx = TIERS.indexOf(nextTier) - 1;
+            prevCount = prevTierIdx >= 0 ? TIERS[prevTierIdx].count : 0;
+
+            const range = nextTier.count - prevCount;
+            const progress = count - prevCount;
+            const pct = Math.min(100, Math.max(0, (progress / range) * 100));
+
+            document.getElementById('progress-fill').style.width = pct + '%';
+            document.getElementById('prog-current').textContent = count + ' 人';
+            document.getElementById('prog-next').textContent = `下一級：${nextTier.count} 人（${nextTier.title}）`;
+        }
+
+        function renderTiers(rd) {
+            const container = document.getElementById('tier-list');
+            container.innerHTML = TIERS.map(tier => {
+                const reached = rd.count >= tier.count;
+                const claimed = rd.claimed_tiers.includes(tier.count);
+                const statusClass = reached ? 'unlocked' : 'locked';
+
+                let rewardHTML = '';
+                if (claimed) {
+                    rewardHTML = '<span class="tier-reward-tag claimed">✓ 已領取</span>';
+                } else if (reached) {
+                    rewardHTML = `
+                        <span class="tier-reward-tag coins">+${tier.coins}🪙</span>
+                        ${tier.frame ? '<span class="tier-reward-tag frame">🖼️ 頭像框</span>' : ''}
+                        ${tier.sticker ? '<span class="tier-reward-tag frame">🌟 限定貼圖</span>' : ''}
+                    `;
+                } else {
+                    rewardHTML = `
+                        <span class="tier-reward-tag coins" style="opacity:0.5;">+${tier.coins}🪙</span>
+                        ${tier.frame ? '<span class="tier-reward-tag frame" style="opacity:0.5;">🖼️ 頭像框</span>' : ''}
+                        ${tier.sticker ? '<span class="tier-reward-tag frame" style="opacity:0.5;">🌟 限定貼圖</span>' : ''}
+                    `;
+                }
+
+                return `<div class="tier-card ${statusClass}" data-count="${tier.count}"
+                             ${reached && !claimed ? `onclick="claimTier(${tier.count})" style="cursor:pointer;"` : ''}>
+                    <div class="tier-badge">${tier.icon}</div>
+                    <div class="tier-info">
+                        <div class="tier-title">${tier.title}</div>
+                        <div class="tier-desc">${tier.desc}</div>
+                    </div>
+                    <div class="tier-reward">
+                        ${rewardHTML}
+                        ${reached && !claimed ? '<div style="font-size:0.68rem;color:#9b59b6;margin-top:0.2rem;">👆 點擊領取</div>' : ''}
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        function renderBadges(rd) {
+            const grid = document.getElementById('badge-grid');
+            grid.innerHTML = BADGES.map(b => {
+                const earned = rd.count >= b.need;
+                return `<div class="badge-item ${earned ? 'unlocked' : 'locked'}" data-id="${b.id}">
+                    <div class="badge-icon">${b.icon}</div>
+                    <div class="badge-name">${b.name}</div>
+                </div>`;
+            }).join('');
+        }
+
+        function renderHistory(rd) {
+            const el = document.getElementById('history-list');
+            if (!rd.referrals || rd.referrals.length === 0) {
+                el.innerHTML = '<div class="hist-empty">尚無推薦紀錄</div>';
+                return;
+            }
+            el.innerHTML = rd.referrals.slice(0, 20).map((r, i) => {
+                const initials = r.name.charAt(0);
+                return `<div class="hist-item">
+                    <div class="hist-left">
+                        <div class="hist-avatar">${initials}</div>
+                        <div>
+                            <div class="hist-name">${r.name}</div>
+                            <div class="hist-time">${r.time}</div>
+                        </div>
+                    </div>
+                    <div class="hist-reward">+10🪙</div>
+                </div>`;
+            }).join('');
+        }
+
+        // ===== Simulate Referral =====
+        function simulateReferral() {
+            let rd = getReferralData();
+            const prevCount = rd.count;
+
+            // Pick a random name
+            const usedNames = rd.referrals.map(r => r.name);
+            let available = FAKE_NAMES.filter(n => !usedNames.includes(n));
+            if (available.length === 0) available = FAKE_NAMES;
+            const name = available[Math.floor(Math.random() * available.length)];
+
+            rd.count++;
+            rd.referrals.unshift({
+                name: name,
+                time: new Date().toLocaleString('zh-TW')
+            });
+
+            saveReferralData(rd);
+
+            // Award base coins
+            let data = getUserData();
+            data.coins += 10;
+            saveUserData(data);
+            addHistory('earn', `推薦好友：${name}`, 10);
+
+            renderAll();
+
+            // Check for newly unlocked tiers
+            const newlyUnlocked = TIERS.filter(t => t.count === rd.count);
+            if (newlyUnlocked.length > 0) {
+                const tier = newlyUnlocked[0];
+                // Animate tier card
+                setTimeout(() => {
+                    const card = document.querySelector(`.tier-card[data-count="${tier.count}"]`);
+                    if (card) card.classList.add('just-unlocked');
+                }, 100);
+
+                // Animate badge
+                setTimeout(() => {
+                    const badge = BADGES.find(b => b.need === rd.count);
+                    if (badge) {
+                        const el = document.querySelector(`.badge-item[data-id="${badge.id}"]`);
+                        if (el) el.classList.add('just-earned');
+                    }
+                }, 200);
+
+                // Confetti burst
+                spawnConfetti();
+                showToast('🎉', `達成「${tier.title}」！點擊領取獎勵`);
+            } else {
+                // Check badge unlock
+                const newBadge = BADGES.find(b => b.need === rd.count);
+                if (newBadge) {
+                    setTimeout(() => {
+                        const el = document.querySelector(`.badge-item[data-id="${newBadge.id}"]`);
+                        if (el) el.classList.add('just-earned');
+                    }, 100);
+                    showToast('🏅', `解鎖徽章「${newBadge.name}」！`);
+                } else {
+                    showToast('🎉', `推薦成功！${name} 已加入，+10 Coins`);
+                }
+            }
+        }
+
+        // ===== Claim Tier =====
+        function claimTier(count) {
+            let rd = getReferralData();
+            if (rd.claimed_tiers.includes(count)) return;
+
+            const tier = TIERS.find(t => t.count === count);
+            if (!tier || rd.count < tier.count) return;
+
+            rd.claimed_tiers.push(count);
+            saveReferralData(rd);
+
+            // Grant coins
+            let data = getUserData();
+            data.coins += tier.coins;
+            saveUserData(data);
+            addHistory('earn', `推薦獎勵：${tier.title}`, tier.coins);
+
+            // 解鎖限定貼圖（如果該 tier 有 sticker 獎勵）
+            if (tier.sticker) {
+                const auth = getAuthenticatedUser();
+                if (auth) {
+                    const stickerKey = 'sticker_unlocks_' + auth.id;
+                    let arr;
+                    try { arr = JSON.parse(localStorage.getItem(stickerKey) || '[]'); } catch { arr = []; }
+                    const stickerId = 'stk_referral_t' + tier.count;
+                    if (!arr.includes(stickerId)) {
+                        arr.push(stickerId);
+                        localStorage.setItem(stickerKey, JSON.stringify(arr));
+                    }
+                }
+            }
+
+            renderAll();
+            spawnConfetti();
+            showToast('🏆', `已領取「${tier.title}」獎勵：+${tier.coins} Coins${tier.frame ? ' + 專屬頭像框' : ''}！`);
+        }
+
+        // ===== Copy Code =====
+        function copyCode() {
+            const rd = getReferralData();
+            navigator.clipboard.writeText(rd.code).then(() => {
+                const btn = document.getElementById('copy-btn');
+                btn.textContent = '✅ 已複製';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = '📋 複製';
+                    btn.classList.remove('copied');
+                }, 2000);
+            }).catch(() => {
+                // Fallback
+                const el = document.getElementById('ref-code');
+                const range = document.createRange();
+                range.selectNode(el);
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(range);
+                showToast('📋', '請按 Ctrl+C 複製推薦碼');
+            });
+        }
+
+        // ===== Confetti =====
+        function spawnConfetti() {
+            const colors = ['#9b59b6', '#f093fb', '#FFD700', '#9CC98D', '#ff6b6b', '#48dbfb'];
+            for (let i = 0; i < 20; i++) {
+                const p = document.createElement('div');
+                p.className = 'confetti-piece';
+                p.style.background = colors[i % colors.length];
+                p.style.left = (10 + Math.random() * 80) + 'vw';
+                p.style.top = '-10px';
+                p.style.position = 'fixed';
+                p.style.zIndex = '9998';
+                p.style.animationDelay = (Math.random() * 0.5) + 's';
+                p.style.animationDuration = (1 + Math.random() * 1) + 's';
+                document.body.appendChild(p);
+                setTimeout(() => p.remove(), 2500);
+            }
+        }
+
+        // ===== Toast =====
+        function showToast(icon, msg) {
+            const t = document.getElementById('toast');
+            document.getElementById('toast-icon').textContent = icon;
+            document.getElementById('toast-msg').textContent = msg;
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 3500);
+        }
+
+        // ===== Init =====
+        document.addEventListener('DOMContentLoaded', initPage);
+        window.addEventListener('userDataSync', renderAll);
+    </script>
+
+    <!-- ===== Hamburger Menu Logic ===== -->
+    
+    <script>
+    // Unified hamburger menu (injected by header standardization)
+    document.addEventListener('DOMContentLoaded', function() {
+        var btn = document.getElementById('hamburger-toggle');
+        var nav = document.getElementById('mobile-nav');
+        var close = document.getElementById('mobile-nav-close');
+        if (btn && nav) {
+            btn.onclick = function() { nav.classList.toggle('active'); };
+        }
+        if (close && nav) {
+            close.onclick = function() { nav.classList.remove('active'); };
+        }
+    });
+    </script>
+</body>
+</html>

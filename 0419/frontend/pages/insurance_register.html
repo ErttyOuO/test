@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保險員註冊與登入中心</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --panel-bg: #ffffff;
+            --text-dark: #121212;
+            --text-light: #333333;
+
+            --blue-bg: #bae6fd;
+            --blue-primary: #7dd3fc;
+            --blue-light: #f0f9ff;
+            --blue-hover: #38bdf8;
+            --blue-text: #0284c7;
+            /* 深一點的藍色，確保在白底上的對比度 */
+            --btn-text: #082f49;
+
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: var(--text-dark);
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: var(--panel-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h2 {
+            margin: 0;
+            color: var(--blue-text);
+            font-size: 28px;
+        }
+
+        .header p {
+            color: #64748b;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        .tab-group {
+            display: flex;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 12px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #64748b;
+            transition: all 0.2s;
+        }
+
+        .tab.active {
+            color: var(--blue-text);
+            border-bottom: 3px solid var(--blue-text);
+            margin-bottom: -2px;
+            /* overlap border */
+        }
+
+        .form-section {
+            display: none;
+            animation: fadeIn 0.3s;
+        }
+
+        .form-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #334155;
+            font-size: 14px;
+        }
+
+        .row-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        input[type="file"] {
+            width: 100%;
+            padding: 12px 14px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.2s;
+            box-sizing: border-box;
+            background-color: #f8fafc;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: var(--blue-text);
+            background-color: #ffffff;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: #475569;
+        }
+
+        button[type="submit"],
+        button[type="button"] {
+            background-color: var(--blue-bg);
+            color: var(--btn-text);
+            padding: 14px;
+            border: none;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        button:hover {
+            background-color: var(--blue-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .error-msg {
+            color: #ef4444;
+            font-size: 13px;
+            margin-top: 5px;
+            display: none;
+        }
+
+        /* 頂部導覽列 Navbar */
+        .global-nav {
+            background-color: #1c1c1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-item {
+            color: #a1a1aa;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 18px 0;
+            position: relative;
+            transition: color 0.2s;
+        }
+
+        .nav-item:hover {
+            color: white;
+        }
+
+        .nav-item.active {
+            color: white;
+        }
+
+        .nav-item.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body style="padding-top: 60px;">
+
+    <!-- 主站 Header -->
+    <header>
+        <a href="index.html" class="logo-section">
+            <img src="../assets/images/logo.png" alt="InsureTech Logo">
+            <span>百保袋</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="consulting.html">保險諮詢</a></li>
+                <li><a href="dm.html">保單目錄</a></li>
+                <li><a href="budget.html">費用預算</a></li>
+                <li><a href="policy.html">智慧保單</a></li>
+                <li><a href="community.html">匿名社群</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-toggle">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- 全局導覽列 -->
+    <nav class="global-nav">
+        <div class="nav-links">
+            <a href="insurance_register.html" class="nav-item active">保險員入口</a>
+            <a href="agent_profile.html" class="nav-item">個人主頁</a>
+            <a href="agent_chat_dashboard.html" class="nav-item">諮詢中心</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h2>保險從業人員入口</h2>
+            <p>請註冊或使用管理員帳號登入</p>
+        </div>
+
+        <div class="form-section active" style="display: block; animation: none;">
+            <form id="reg-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label><span style="color: red; margin-right: 4px;">*</span>帳號 (登入/註冊)</label>
+                    <input type="text" id="reg-username" placeholder="輸入帳號" required>
+                </div>
+
+                <div class="form-group">
+                    <label><span style="color: red; margin-right: 4px;">*</span>密碼</label>
+                    <input type="password" id="reg-password" placeholder="輸入密碼" required>
+                </div>
+
+                <div class="form-group row-group">
+                    <div style="flex: 1;">
+                        <label><span style="color: red; margin-right: 4px;">*</span>出生年月日 (需滿18歲)</label>
+                        <input type="date" id="reg-dob" required onchange="validateAgeAndExperience()">
+                    </div>
+                    <div style="flex: 1;">
+                        <label><span style="color: red; margin-right: 4px;">*</span>從業年資 (年)</label>
+                        <input type="number" id="reg-experience" min="0" required onchange="validateAgeAndExperience()"
+                            placeholder="如：5">
+                    </div>
+                </div>
+                <div id="age-exp-error" class="error-msg">年資不可超過 (年齡 - 18) 歲！</div>
+
+                <div class="form-group">
+                    <label><span style="color: red; margin-right: 4px;">*</span>認證方式 (擇一)</label>
+                    <div class="radio-group" style="display: flex; gap: 20px; margin-bottom: 10px;">
+                        <label style="font-weight: normal; display: flex; align-items: center; gap: 5px;">
+                            <input type="radio" name="verify_method" value="company" checked
+                                onchange="toggleVerifyMethod()">
+                            公司名稱 + 員工編號
+                        </label>
+                        <label style="font-weight: normal; display: flex; align-items: center; gap: 5px;">
+                            <input type="radio" name="verify_method" value="certificate"
+                                onchange="toggleVerifyMethod()">
+                            上傳專業證照
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 認證方式一：公司 + 員編 -->
+                <div id="method-company">
+                    <div class="form-group">
+                        <label><span style="color: red; margin-right: 4px;">*</span>所屬保險公司</label>
+                        <select id="reg-company" onchange="handleCompanyChange(this)">
+                            <option value="">請選擇</option>
+                            <option>富邦人壽</option>
+                            <option>國泰人壽</option>
+                            <option>南山人壽</option>
+                            <option>新光人壽</option>
+                            <option>凱基人壽 (中國)</option>
+                            <option>台灣人壽</option>
+                            <option>遠雄人壽</option>
+                            <option>全球人壽</option>
+                            <option>三商美邦人壽</option>
+                            <option>元大人壽</option>
+                            <option>宏泰人壽</option>
+                            <option>安聯人壽</option>
+                            <option>友邦人壽</option>
+                            <option>保誠人壽</option>
+                            <option>康健人壽</option>
+                            <option>合庫人壽</option>
+                            <option>臺銀人壽</option>
+                            <option>法國巴黎人壽</option>
+                            <option value="other">其他</option>
+                        </select>
+                        <input type="text" id="reg-company-other" placeholder="請輸入保險公司名稱"
+                            style="display: none; margin-top: 10px;">
+                    </div>
+
+                    <div class="form-group">
+                        <label><span style="color: red; margin-right: 4px;">*</span>員工編號</label>
+                        <input type="text" id="reg-emp-id" placeholder="輸入員工編號">
+                    </div>
+                </div>
+
+                <!-- 認證方式二：上傳證照 -->
+                <div id="method-certificate" style="display: none;">
+                    <div class="form-group">
+                        <label><span style="color: red; margin-right: 4px;">*</span>上傳專業證照</label>
+                        <input type="file" id="reg-certificate" accept="image/*,.pdf">
+                        <div style="font-size: 12px; color: #64748b; margin-top: 4px;">支援 JPG, PNG, PDF 格式</div>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms" style="margin: 0; font-weight: normal;"><span
+                            style="color: red; margin-right: 4px;">*</span>同意平台審核與使用條款</label>
+                </div>
+
+                <button type="submit">註冊 / 登入系統</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        // 設定生日最大值為 18 年前的今天
+        document.addEventListener('DOMContentLoaded', () => {
+            const dobInput = document.getElementById('reg-dob');
+            const today = new Date();
+            const minAgeDate = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
+            dobInput.max = minAgeDate.toISOString().split('T')[0];
+
+            // 初始設定必填欄位
+            toggleVerifyMethod();
+        });
+
+        function validateAgeAndExperience() {
+            const dob = document.getElementById('reg-dob').value;
+            const exp = document.getElementById('reg-experience').value;
+            const errorMsg = document.getElementById('age-exp-error');
+            const submitBtn = document.querySelector('button[type="submit"]');
+
+            if (dob && exp !== '') {
+                const birthDate = new Date(dob);
+                const today = new Date();
+                let age = today.getFullYear() - birthDate.getFullYear();
+                const m = today.getMonth() - birthDate.getMonth();
+                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                    age--;
+                }
+
+                if (parseInt(exp) > (age - 18)) {
+                    errorMsg.style.display = 'block';
+                    errorMsg.innerText = `年資 ${exp} 年不合理！您的年齡為 ${age} 歲，最多只能有 ${Math.max(0, age - 18)} 年資歷 (18歲起算)。`;
+                    submitBtn.disabled = true;
+                    submitBtn.style.opacity = '0.5';
+                    submitBtn.style.cursor = 'not-allowed';
+                } else {
+                    errorMsg.style.display = 'none';
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                    submitBtn.style.cursor = 'pointer';
+                }
+            } else {
+                errorMsg.style.display = 'none';
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = '1';
+                submitBtn.style.cursor = 'pointer';
+            }
+        }
+
+        function toggleVerifyMethod() {
+            const method = document.querySelector('input[name="verify_method"]:checked').value;
+            const companyDiv = document.getElementById('method-company');
+            const certDiv = document.getElementById('method-certificate');
+
+            const companySelect = document.getElementById('reg-company');
+            const empIdInput = document.getElementById('reg-emp-id');
+            const certInput = document.getElementById('reg-certificate');
+
+            if (method === 'company') {
+                companyDiv.style.display = 'block';
+                certDiv.style.display = 'none';
+
+                companySelect.required = true;
+                empIdInput.required = true;
+                certInput.required = false;
+            } else {
+                companyDiv.style.display = 'none';
+                certDiv.style.display = 'block';
+
+                companySelect.required = false;
+                empIdInput.required = false;
+                certInput.required = true;
+            }
+        }
+
+        function handleCompanyChange(selectObj) {
+            const otherCompanyInput = document.getElementById('reg-company-other');
+            if (selectObj.value === 'other') {
+                otherCompanyInput.style.display = 'block';
+                otherCompanyInput.required = true;
+            } else {
+                otherCompanyInput.style.display = 'none';
+                otherCompanyInput.required = false;
+            }
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            const user = document.getElementById('reg-username').value;
+            const pass = document.getElementById('reg-password').value;
+
+            // 檢查是否為管理員帳號
+            if (user === 'superuser' && pass === '0000') {
+                window.location.href = 'agent_profile.html';
+                return;
+            }
+
+            // 處理一般註冊
+            // 由於原生的 required 已阻擋不合規定的送出，所以可以直接跑到這裡
+            alert('註冊申請已送出，我們將盡快審核您的資料！');
+            document.getElementById('reg-form').reset();
+            document.getElementById('reg-company-other').style.display = 'none';
+            toggleVerifyMethod(); // reset display
+            validateAgeAndExperience(); // reset error state
+        }
+    </script>
+
+    <script src="../scripts/auth.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

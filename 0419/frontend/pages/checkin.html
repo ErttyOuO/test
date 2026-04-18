@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日簽到 - 百保袋 InsureTech</title>
+    <meta name="description" content="每日簽到領獎勵，連續簽到解鎖更多好禮">
+    <style>
+        :root {
+            --primary-black: #000000;
+            --accent-green: #9CC98D;
+            --accent-green-dark: #7BB369;
+            --accent-green-light: #c8e6be;
+            --bg-color: #FFF9F0;
+            --white: #FFFFFF;
+            --text-color: #333333;
+            --text-muted: #888888;
+            --gold: #FFD700;
+            --gold-dark: #b8860b;
+            --stamp-red: #E74C3C;
+            --stamp-red-dark: #C0392B;
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+            --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background-color: rgba(0, 0, 0, 0.92);
+            color: var(--white);
+            padding: 0.8rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--accent-green);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--primary-black);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--white);
+            border-bottom-color: var(--white);
+        }
+
+        .member-badge {
+            background: rgba(156, 201, 141, 0.15);
+            border: 1px solid rgba(156, 201, 141, 0.3);
+            color: var(--accent-green);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .member-badge.vip {
+            background: rgba(255, 215, 0, 0.15);
+            border-color: rgba(255, 215, 0, 0.3);
+            color: var(--gold);
+        }
+
+        /* ===== Hero ===== */
+        .checkin-hero {
+            background: linear-gradient(135deg, #f5e6d3 0%, #fce4c4 30%, #fdd9b5 60%, #f5d0a9 100%);
+            text-align: center;
+            padding: 2.5rem 2rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .checkin-hero::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle, rgba(231, 76, 60, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .checkin-hero h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4a3520;
+            margin-bottom: 0.4rem;
+        }
+
+        .checkin-hero h1 span {
+            color: var(--stamp-red);
+        }
+
+        .checkin-hero .sub {
+            font-size: 0.9rem;
+            color: #8b6f47;
+        }
+
+        .streak-banner {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(231, 76, 60, 0.1);
+            border: 1px solid rgba(231, 76, 60, 0.2);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+            color: var(--stamp-red-dark);
+            font-weight: 600;
+        }
+
+        /* ===== Stamp Card ===== */
+        .stamp-card-wrap {
+            max-width: 560px;
+            margin: -1.5rem auto 0;
+            padding: 0 1.2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stamp-card {
+            background: var(--white);
+            border-radius: 18px;
+            box-shadow: 0 8px 40px rgba(139, 111, 71, 0.12);
+            padding: 1.5rem;
+            border: 2px dashed #e8d5be;
+            position: relative;
+        }
+
+        .stamp-card::before {
+            content: '🎫';
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            font-size: 1.3rem;
+            background: var(--bg-color);
+            padding: 0 6px;
+        }
+
+        .stamp-card-title {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #5a4230;
+        }
+
+        .stamp-grid {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 12px;
+            margin-bottom: 1rem;
+            padding-bottom: 5px;
+            /* space for scrolling */
+            /* Hide scrollbar */
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .stamp-grid::-webkit-scrollbar {
+            display: none;
+        }
+
+        .stamp-cell {
+            flex: 0 0 85px;
+            /* Ensure 85px fixed width per card to maintain nice proportions horizontally */
+            scroll-snap-align: center;
+            aspect-ratio: 1;
+            border-radius: 14px;
+            border: 2px dashed #e0d0c0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: all 0.3s;
+            cursor: default;
+            background: #faf6f0;
+            gap: 1px;
+            padding: 2px;
+            overflow: hidden;
+        }
+
+        .stamp-cell .day-num {
+            font-size: 0.65rem;
+            color: #bba88a;
+            font-weight: 500;
+        }
+
+        .stamp-cell .stamp-icon {
+            font-size: 1.3rem;
+            transition: all 0.4s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stamp-cell .reward-label {
+            font-size: 0.55rem;
+            color: #bba88a;
+            font-weight: 500;
+            text-align: center;
+            line-height: 1.1;
+        }
+
+        /* Stamped */
+        .stamp-cell.stamped {
+            background: rgba(231, 76, 60, 0.04);
+            border: 2px solid rgba(231, 76, 60, 0.2);
+        }
+
+        .stamp-cell.stamped .stamp-icon {
+            opacity: 1;
+            filter: none;
+        }
+
+        .stamp-cell.stamped .reward-label {
+            color: var(--stamp-red-dark);
+        }
+
+        /* Today */
+        .stamp-cell.today {
+            border: 2px solid var(--stamp-red);
+            background: rgba(231, 76, 60, 0.06);
+            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+        }
+
+        /* Missed */
+        .stamp-cell.missed {
+            background: #f0ece6;
+            border: 2px dashed #ccc;
+            cursor: pointer;
+        }
+
+        .stamp-cell.missed:hover {
+            border-color: var(--accent-green);
+            box-shadow: 0 3px 12px rgba(156, 201, 141, 0.2);
+        }
+
+        .stamp-cell .miss-badge {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            font-size: 0.6rem;
+            background: #eee;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stamp-cell.missed .miss-badge {
+            display: flex;
+        }
+
+        /* Bonus cell */
+        .stamp-cell.bonus-cell {
+            border-color: var(--gold);
+            background: rgba(255, 215, 0, 0.05);
+        }
+
+        .stamp-cell.bonus-cell .reward-label {
+            color: var(--gold-dark);
+            font-weight: 600;
+        }
+
+        /* Stamp animation */
+        @keyframes stampSlam {
+            0% {
+                transform: scale(3) rotate(-20deg);
+                opacity: 0;
+            }
+
+            60% {
+                transform: scale(0.9) rotate(3deg);
+                opacity: 1;
+            }
+
+            80% {
+                transform: scale(1.1) rotate(-1deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes stampShake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            20% {
+                transform: translateX(-3px);
+            }
+
+            40% {
+                transform: translateX(3px);
+            }
+
+            60% {
+                transform: translateX(-2px);
+            }
+
+            80% {
+                transform: translateX(2px);
+            }
+        }
+
+        .stamp-cell.stamp-animate .stamp-icon {
+            animation: stampSlam 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+        }
+
+        .stamp-cell.stamp-animate {
+            animation: stampShake 0.4s 0.15s ease-out;
+        }
+
+        /* ===== Checkin Button ===== */
+        .checkin-action {
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        .checkin-btn {
+            width: 100%;
+            padding: 0.9rem;
+            border-radius: 14px;
+            border: none;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .checkin-btn.available {
+            background: linear-gradient(135deg, var(--stamp-red), var(--stamp-red-dark));
+            color: var(--white);
+            box-shadow: 0 4px 20px rgba(231, 76, 60, 0.3);
+        }
+
+        .checkin-btn.available:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+        }
+
+        .checkin-btn.done {
+            background: #f0ebe5;
+            color: #bba88a;
+            cursor: default;
+        }
+
+        /* ===== Rewards Section ===== */
+        .main-content {
+            max-width: 480px;
+            margin: 1.5rem auto;
+            padding: 0 1.2rem 2rem;
+        }
+
+        .section-card {
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: var(--shadow-soft);
+            padding: 1.3rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .section-card h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Reward list */
+        .reward-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #f5f0ea;
+        }
+
+        .reward-row:last-child {
+            border-bottom: none;
+        }
+
+        .reward-left {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+
+        .reward-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            background: #faf6f0;
+        }
+
+        .reward-name {
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .reward-desc {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+        }
+
+        .reward-badge {
+            padding: 0.25rem 0.6rem;
+            border-radius: 8px;
+            font-size: 0.72rem;
+            font-weight: 600;
+        }
+
+        .reward-badge.coins {
+            background: rgba(255, 215, 0, 0.1);
+            color: var(--gold-dark);
+        }
+
+        .reward-badge.ai {
+            background: rgba(156, 201, 141, 0.12);
+            color: var(--accent-green-dark);
+        }
+
+        .reward-badge.sticker {
+            background: rgba(231, 76, 60, 0.08);
+            color: var(--stamp-red-dark);
+        }
+
+        .reward-badge.consult {
+            background: rgba(52, 152, 219, 0.1);
+            color: #2980b9;
+        }
+
+        .reward-badge.claimed {
+            background: #f0ebe5;
+            color: #bba88a;
+        }
+
+        /* 7-day milestone */
+        .milestone-card {
+            background: linear-gradient(135deg, #fdf2e9, #fce4c4);
+            border: 2px solid rgba(255, 180, 60, 0.25);
+            border-radius: 16px;
+            padding: 1.3rem;
+            text-align: center;
+            margin-bottom: 1.2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .milestone-card::before {
+            content: '✨';
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            font-size: 1.2rem;
+        }
+
+        .milestone-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #8b6914;
+            margin-bottom: 0.4rem;
+        }
+
+        .milestone-card p {
+            font-size: 0.82rem;
+            color: #a07d3a;
+            margin-bottom: 0.8rem;
+        }
+
+        .milestone-items {
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .milestone-item {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 0.5rem 0.8rem;
+            border-radius: 12px;
+            font-size: 0.78rem;
+            font-weight: 500;
+            color: #8b6914;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .milestone-item.done {
+            background: rgba(156, 201, 141, 0.2);
+            color: var(--accent-green-dark);
+        }
+
+        /* Insurance Ad Banner */
+        .ad-banner {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            border-radius: 16px;
+            padding: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.2rem;
+            box-shadow: var(--shadow-soft);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .ad-banner:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .ad-banner-icon {
+            font-size: 2rem;
+        }
+
+        .ad-banner-text h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #2e7d32;
+            margin-bottom: 0.15rem;
+        }
+
+        .ad-banner-text p {
+            font-size: 0.75rem;
+            color: #558b2f;
+        }
+
+        .ad-banner-tag {
+            margin-left: auto;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            background: rgba(46, 125, 50, 0.12);
+            color: #2e7d32;
+            font-size: 0.65rem;
+            font-weight: 600;
+        }
+
+        /* ===== Modal ===== */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 5000;
+            backdrop-filter: blur(4px);
+        }
+
+        .modal-overlay.show {
+            display: flex;
+        }
+
+        .modal-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 2rem 1.8rem;
+            width: min(360px, 90vw);
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            animation: modalIn 0.3s ease-out;
+        }
+
+        @keyframes modalIn {
+            from {
+                transform: scale(0.9) translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .modal-btn {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 12px;
+            border: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-btn.ad {
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-green-dark));
+            color: var(--white);
+        }
+
+        .modal-btn.ad:hover {
+            box-shadow: 0 4px 15px rgba(156, 201, 141, 0.5);
+        }
+
+        .modal-btn.cancel {
+            background: #f0f0f0;
+            color: #666;
+        }
+
+        /* Ad Overlay */
+        .ad-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 6000;
+            flex-direction: column;
+            gap: 1rem;
+            color: var(--white);
+        }
+
+        .ad-overlay.show {
+            display: flex;
+        }
+
+        .ad-overlay .ad-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .ad-overlay .ad-timer {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-green);
+        }
+
+        .ad-overlay .ad-bar {
+            width: 240px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .ad-overlay .ad-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-green), var(--gold));
+            border-radius: 3px;
+            width: 0%;
+            transition: width 0.3s linear;
+        }
+
+        /* ===== Toast ===== */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(120px);
+            background: var(--primary-black);
+            color: var(--white);
+            padding: 0.8rem 1.6rem;
+            border-radius: 14px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+            z-index: 9999;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: var(--primary-black);
+            color: #999;
+            text-align: center;
+            padding: 1.2rem;
+            font-size: 0.78rem;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 600px) {
+            header {
+                padding: 0.6rem 3%;
+            }
+
+            .nav-links {
+                gap: 0.6rem;
+            }
+
+            .nav-links a {
+                font-size: 0.75rem;
+            }
+
+            .checkin-hero {
+                padding: 2rem 1rem 1.5rem;
+            }
+
+            .checkin-hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .stamp-grid {
+                gap: 5px;
+            }
+
+            .stamp-cell .stamp-icon {
+                font-size: 1.1rem;
+            }
+
+            .stamp-cup {
+                max-width: 36px;
+            }
+
+            .stamp-cell .day-num {
+                font-size: 0.55rem;
+            }
+
+            .stamp-cell .reward-label {
+                font-size: 0.5rem;
+            }
+        }
+
+        ::selection {
+            background: #fce4c4;
+            color: #4a3520;
+        }
+
+        /* Cup stamp images */
+        .stamp-cup {
+            width: 80%;
+            max-width: 48px;
+            height: auto;
+            aspect-ratio: 1;
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+
+        .stamp-cup.checked-cup {
+            filter: drop-shadow(0 0 6px rgba(156, 201, 141, 0.6));
+            animation: cupAppear 0.5s ease;
+        }
+
+        .stamp-cup.missed-cup {
+            filter: grayscale(0.5) opacity(0.5);
+        }
+
+        .stamp-cup.future-cup {
+            filter: opacity(0.25);
+        }
+
+        @keyframes cupAppear {
+            0% {
+                transform: scale(0.3) rotate(-15deg);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.2) rotate(5deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        .stamp-cell.stamped .stamp-cup {
+            animation: cupAppear 0.5s ease;
+        }
+
+        .stamp-animate .stamp-cup {
+            animation: stampBounce 0.6s ease !important;
+        }
+
+        @keyframes stampBounce {
+            0% {
+                transform: scale(0) rotate(-30deg);
+            }
+
+            40% {
+                transform: scale(1.4) rotate(10deg);
+            }
+
+            60% {
+                transform: scale(0.9) rotate(-5deg);
+            }
+
+            80% {
+                transform: scale(1.1) rotate(2deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        /* ===== RWD & Hamburger Menu ===== */
+        .hamburger-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+            /* Positioning for absolute cases */
+            position: relative;
+        }
+
+        .hamburger-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #FFFFFF !important;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        /* Hamburger open state */
+        .hamburger-btn.open span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .hamburger-btn.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-btn.open span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+
+            /* Header Specific */
+            header {
+                padding: 0.8rem 5% !important;
+            }
+
+            .hamburger-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 260px;
+                height: 100vh;
+                background-color: rgba(15, 15, 15, 0.95);
+                backdrop-filter: blur(15px);
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                justify-content: flex-start !important;
+                padding: 5rem 2rem 2rem;
+                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+                z-index: 999;
+                /* Reset existing gap to ensure clean layout */
+                gap: 1.5rem !important;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links a {
+                font-size: 1.15rem !important;
+                width: 100%;
+                padding-bottom: 0.8rem;
+                display: block;
+            }
+
+            /* Generic Resizing Fixes for Cards and Grids */
+            .stats-row {
+                flex-direction: column;
+                gap: 1.2rem !important;
+            }
+
+            .card-grid,
+            .shop-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            /* Fixes explicitly for admin dashboard columns */
+            .sidebar {
+                width: 100% !important;
+                position: static !important;
+                height: auto !important;
+                border-right: none !important;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .main-content {
+                padding: 1.5rem !important;
+            }
+
+            /* Modal widths */
+            .modal-content,
+            .task-modal-content,
+            .shop-modal-content {
+                width: 90% !important;
+                margin: 10vh auto !important;
+                padding: 1.5rem !important;
+            }
+
+            /* Pricing Tiers / Subscription Page */
+            .pricing-tier {
+                flex: none !important;
+                width: 100%;
+            }
+
+            .pricing-tiers {
+                flex-direction: column !important;
+                gap: 1.5rem !important;
+            }
+
+            .compare-table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            /* Sponsor Dashboard Layout */
+            .dashboard-layout {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+
+            /* Force auth tools to hide when space is too tight or neatly align */
+            .header-right {
+                margin-left: auto;
+                gap: 0.5rem;
+            }
+
+            .auth-info-bar,
+            .user-auth {
+                display: none !important;
+            }
+
+            /* Simplify header on mobile */
+
+            /* Give hamburger priority */
+            .hamburger-btn {
+                margin-left: 10px;
+            }
+
+            /* Logo resizing */
+            .logo-section span {
+                font-size: 1rem;
+            }
+        }
+
+        \n
+    
+        /* ===== Global Vertical Space Reduction (Mobile) ===== */
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+            /* Reduce padding on hero sections to save space */
+            .hero-section, .sub-hero, .wallet-hero, .profile-hero {
+                padding: 1.5rem 1rem 2.8rem !important;
+            }
+            
+            .hero-section h1, .sub-hero h1, .wallet-hero h1 {
+                font-size: 1.5rem !important;
+                margin-bottom: 0.3rem !important;
+            }
+            .hero-section p, .sub-hero p {
+                font-size: 0.9rem !important;
+            }
+
+            /* Main containers constraints */
+            .main-content, .dashboard-layout {
+                padding: 1rem !important;
+                
+            }
+
+            /* Status bars or quick stats */
+            .status-bar, .stats-row {
+                padding: 0.8rem 1rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            /* Info cards and section cards */
+            .info-card, .section-card, .shop-item, .task-card {
+                padding: 1rem !important;
+                margin-bottom: 0.8rem !important;
+            }
+            
+            .section-title {
+                margin: 1.5rem 0 1rem !important;
+            }
+            .section-title h2 {
+                font-size: 1.3rem !important;
+            }
+
+            /* Lists and rows inside cards */
+            ul.plan-features li, .reward-row, .task-row, .history-item {
+                padding: 0.4rem 0 !important;
+            }
+        }
+
+    
+        /* ===== Override: Use main-page mobile nav ===== */
+        .hamburger-btn#hamburger-toggle {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .hamburger-btn#hamburger-toggle {
+                display: block !important;
+            }
+            nav { display: none !important; }
+        }
+    
+        /* ===== Unified Nav+Hamburger Override ===== */
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.6rem;
+        }
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent;
+        }
+        nav a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+        #hamburger-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+        #hamburger-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+        .mobile-nav-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.95);
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        .mobile-nav-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .mobile-nav-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        .mobile-nav-content {
+            text-align: center;
+        }
+        .mobile-nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+        .mobile-nav-logo img {
+            height: 36px;
+        }
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .mobile-nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.2s;
+        }
+        .mobile-nav-links a:hover {
+            color: #9CC98D;
+        }
+        @media (max-width: 768px) {
+            nav { display: none !important; }
+            #hamburger-toggle { display: block !important; }
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <!-- 
+      【頁面功能說明 — checkin.html】
+      此頁面為每日簽到系統 (Daily Check-in)。包含：15 天簽到周期進度表 (Stamp Card)，以及底部的獎勵預覽。支援透過觀看廣告來補簽 (Makeup)。
+    -->
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo-section" style="text-decoration:none;">
+            <img src="../assets/images/logo.png" alt="InsureTech Logo">
+            <span>百保袋</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="consulting.html">保險諮詢</a></li>
+                <li><a href="dm.html">保單目錄</a></li>
+                <li><a href="budget.html">費用預算</a></li>
+                <li><a href="policy.html">智慧保單</a></li>
+                <li><a href="community.html">匿名社群</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-logo">
+                <img src="../assets/images/logo.png" alt="InsureTech Logo">
+                <span>百保袋</span>
+            </a>
+            <div class="mobile-nav-links">
+                <a href="consulting.html">保險諮詢</a>
+                <a href="dm.html">保單目錄</a>
+                <a href="budget.html">費用預算</a>
+                <a href="policy.html">智慧保單</a>
+                <a href="community.html">匿名社群</a>
+</div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="checkin-hero">
+        <h1>📮 每日<span>蓋章</span>簽到</h1>
+        <p class="sub">每天來蓋一個章，累積獎勵越來越豐富！</p>
+        <div class="streak-banner">
+            🔥 連續簽到 <strong id="streak-num">0</strong> 天
+        </div>
+    </section>
+
+    <!-- Stamp Card -->
+    <div class="stamp-card-wrap">
+        <div class="stamp-card">
+            <div class="stamp-card-title">📋 本週簽到卡（第 <span id="week-num">1</span> 週）</div>
+            <div class="stamp-grid" id="stamp-grid">
+                <!-- JS rendered -->
+            </div>
+            <div class="checkin-action">
+                <button class="checkin-btn available" id="checkin-btn" onclick="doCheckin()">
+                    🔴 蓋章簽到！
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- 7-Day Milestone -->
+        <div class="milestone-card">
+            <h3>🏆 7日連續簽到大獎</h3>
+            <p>連續簽到滿 7 天，解鎖以下所有獎勵！</p>
+            <div class="milestone-items">
+                <div class="milestone-item" id="m-coins">🪙 +30 Coins</div>
+                <div class="milestone-item" id="m-sticker">🐱 專屬貼圖</div>
+                <div class="milestone-item" id="m-consult">📞 優先諮詢</div>
+            </div>
+        </div>
+
+        <!-- Today's Reward -->
+        <div class="section-card">
+            <h3>🎁 每日簽到獎勵</h3>
+            <div class="reward-row">
+                <div class="reward-left">
+                    <div class="reward-icon">🪙</div>
+                    <div>
+                        <div class="reward-name">平台幣</div>
+                        <div class="reward-desc">每日簽到必得</div>
+                    </div>
+                </div>
+                <span class="reward-badge coins">+5 Coins</span>
+            </div>
+            <div class="reward-row">
+                <div class="reward-left">
+                    <div class="reward-icon">🤖</div>
+                    <div>
+                        <div class="reward-name">AI 功能加碼</div>
+                        <div class="reward-desc">第 3 天獎勵</div>
+                    </div>
+                </div>
+                <span class="reward-badge ai">+1 次 AI</span>
+            </div>
+            <div class="reward-row">
+                <div class="reward-left">
+                    <div class="reward-icon">🐱</div>
+                    <div>
+                        <div class="reward-name">隨機貼圖</div>
+                        <div class="reward-desc">第 5 天獎勵</div>
+                    </div>
+                </div>
+                <span class="reward-badge sticker">解鎖 1 張</span>
+            </div>
+            <div class="reward-row">
+                <div class="reward-left">
+                    <div class="reward-icon">📞</div>
+                    <div>
+                        <div class="reward-name">優先諮詢資格</div>
+                        <div class="reward-desc">第 7 天連續簽到</div>
+                    </div>
+                </div>
+                <span class="reward-badge consult">解鎖體驗</span>
+            </div>
+        </div>
+
+        <!-- Insurance Ad Bank -->
+        <div class="ad-banner" onclick="showToast('📢','已記錄點擊，感謝您的關注！')">
+            <div class="ad-banner-icon">🏥</div>
+            <div class="ad-banner-text">
+                <h4>南山人壽 — 健康有保障</h4>
+                <p>簽到滿 7 天可享諮詢優惠</p>
+            </div>
+            <div class="ad-banner-tag">合作夥伴</div>
+        </div>
+
+        <div class="ad-banner" onclick="showToast('📢','已記錄點擊，感謝您的關注！')"
+            style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);">
+            <div class="ad-banner-icon">🛡️</div>
+            <div class="ad-banner-text" style="color:#1565c0;">
+                <h4 style="color:#1565c0;">國泰人壽 — 全方位保障</h4>
+                <p style="color:#42a5f5;">新戶投保享簽到積分 2 倍</p>
+            </div>
+            <div class="ad-banner-tag" style="background:rgba(21,101,192,0.1);color:#1565c0;">合作夥伴</div>
+        </div>
+    </div>
+
+    <!-- Makeup Modal -->
+    <div class="modal-overlay" id="makeup-modal">
+        <div class="modal-card">
+            <div style="font-size:2.5rem;margin-bottom:0.5rem;">📺</div>
+            <h3>觀看廣告補簽</h3>
+            <p id="makeup-desc">您在 Day X 漏簽了！觀看一段廣告即可補回。</p>
+            <button class="modal-btn ad" id="btn-makeup-ad" onclick="startMakeupAd()">📺 觀看廣告補簽</button>
+            <div id="ad-cap-hint-checkin" style="font-size:0.72rem;margin-top:0.3rem;text-align:center;display:none;">
+            </div>
+            <button class="modal-btn cancel" onclick="closeMakeupModal()">取消</button>
+        </div>
+    </div>
+
+    <!-- Ad Overlay -->
+    <div class="ad-overlay" id="ad-overlay">
+        <div class="ad-title">📺 廣告播放中</div>
+        <div class="ad-timer" id="ad-timer">5</div>
+        <div class="ad-bar">
+            <div class="ad-bar-fill" id="ad-bar-fill"></div>
+        </div>
+        <div style="font-size:0.78rem;color:#888;">廣告結束後自動補簽</div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span id="toast-icon"></span>
+        <span id="toast-msg"></span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 百保袋 InsureTech ｜ 此為 Demo 頁面</p>
+    </footer>
+
+    <script src="../scripts/auth.js">
+        // 【新手導讀 — checkin.html 的 JavaScript】
+        // 此區塊處理簽到系統的核心邏輯：判斷今日是否簽到、產生簽到戳章 UI、發放 Coins/AI次數/貼圖 等獎勵，以及處理廣告補簽的互動流程。
+    </script>
+    <script src="../scripts/idb-files.js"></script>
+    <script src="../scripts/ad-sdk.js"></script>
+    <script>
+        // getUserData / saveUserData / getHistory / addHistory 由 auth.js 提供
+
+        // ===== Checkin Data Keys (user-keyed) =====
+        function _checkinKey() {
+            const u = getAuthenticatedUser();
+            return 'checkin_data_' + (u && u.id ? u.id : 'anon');
+        }
+
+        function getCheckinData() {
+            const key = _checkinKey();
+            try {
+                const raw = localStorage.getItem(key);
+                if (!raw) return createFreshCheckinData();
+                return { ...createFreshCheckinData(), ...JSON.parse(raw) };
+            } catch { return createFreshCheckinData(); }
+        }
+
+        function saveCheckinData(d) {
+            localStorage.setItem(_checkinKey(), JSON.stringify(d));
+        }
+
+        function createFreshCheckinData() {
+            return {
+                // stamps[i] = 'checked' | 'missed' | 'makeup' | ''
+                stamps: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+                current_day: 0,     // 0-indexed, which day we're on in the card (0-14)
+                streak: 0,          // consecutive days
+                last_checkin: '',    // YYYY-MM-DD
+                week_start: '',     // ISO date of when this card started
+                total_checkins: 0,
+                sticker_rewards: [],
+            };
+        }
+
+        // ===== Date Helpers =====
+        function getTodayStr() {
+            const d = new Date();
+            return d.getFullYear() + '-' +
+                String(d.getMonth() + 1).padStart(2, '0') + '-' +
+                String(d.getDate()).padStart(2, '0');
+        }
+
+        function daysBetween(a, b) {
+            if (!a || !b) return 999;
+            const da = new Date(a), db = new Date(b);
+            return Math.round((db - da) / 86400000);
+        }
+
+        function isToday(dateStr) {
+            return dateStr === getTodayStr();
+        }
+
+        // ===== Day Reward Config =====
+        // 15 day stamp card (3 weeks)
+        const DAY_CONFIG = [
+            { icon: '🐾', reward: '+5🪙', type: 'coins', value: 5 },        // Day 1
+            { icon: '🐾', reward: '+5🪙', type: 'coins', value: 5 },        // Day 2
+            { icon: '🤖', reward: '+1 AI', type: 'ai', value: 1 },          // Day 3
+            { icon: '🐾', reward: '+5🪙', type: 'coins', value: 5 },        // Day 4
+            { icon: '🐱', reward: '貼圖', type: 'sticker', value: 1 },      // Day 5
+            { icon: '🐾', reward: '+8🪙', type: 'coins', value: 8 },        // Day 6
+            { icon: '🏆', reward: '大獎', type: 'milestone', value: 30 },    // Day 7
+            { icon: '🐾', reward: '+5🪙', type: 'coins', value: 5 },        // Day 8
+            { icon: '🐾', reward: '+5🪙', type: 'coins', value: 5 },        // Day 9
+            { icon: '🤖', reward: '+1 AI', type: 'ai', value: 1 },          // Day 10
+            { icon: '🐾', reward: '+5🪙', type: 'coins', value: 5 },        // Day 11
+            { icon: '🐱', reward: '貼圖', type: 'sticker', value: 1 },      // Day 12
+            { icon: '🐾', reward: '+10🪙', type: 'coins', value: 10 },      // Day 13
+            { icon: '🐾', reward: '+5🪙', type: 'coins', value: 5 },        // Day 14
+            { icon: '👑', reward: '超級大獎', type: 'mega', value: 50 },      // Day 15
+        ];
+
+        // Stickers that can be unlocked
+        const CHECKIN_STICKERS = ['s01', 's02', 's03', 's04', 's05', 's06', 's07', 's08'];
+
+        let makeupDayIndex = -1;
+
+        // ===== Initialize Card =====
+        function initCard() {
+            let cd = getCheckinData();
+            const today = getTodayStr();
+
+            // === Sync check: if wallet checked in today but checkin_data didn't ===
+            const _syncData = getUserData();
+            if (isToday(_syncData.last_checkin) && !isToday(cd.last_checkin)) {
+                cd.last_checkin = _syncData.last_checkin;
+                cd.streak = _syncData.streak || cd.streak;
+                // Mark current day as checked
+                if (cd.current_day < 15 && cd.stamps[cd.current_day] === '') {
+                    cd.stamps[cd.current_day] = 'checked';
+                }
+                saveCheckinData(cd);
+            }
+
+            // First time: start the card
+            if (!cd.week_start) {
+                cd.week_start = today;
+                cd.current_day = 0;
+                saveCheckinData(cd);
+                return cd;
+            }
+
+            // Calculate how many days since card started
+            const daysSinceStart = daysBetween(cd.week_start, today);
+
+            // If card is complete (15 days), reset
+            if (daysSinceStart >= 15) {
+                cd = createFreshCheckinData();
+                cd.week_start = today;
+                cd.streak = getCheckinData().streak; // keep streak
+                saveCheckinData(cd);
+                return cd;
+            }
+
+            // Mark missed days
+            const lastCheckin = cd.last_checkin;
+            if (lastCheckin && lastCheckin !== today) {
+                const lastDay = daysBetween(cd.week_start, lastCheckin);
+                for (let i = lastDay + 1; i < daysSinceStart; i++) {
+                    if (i < 15 && cd.stamps[i] === '') {
+                        cd.stamps[i] = 'missed';
+                    }
+                }
+            } else if (!lastCheckin) {
+                // Never checked in, mark all past days as missed
+                for (let i = 0; i < daysSinceStart; i++) {
+                    if (cd.stamps[i] === '') cd.stamps[i] = 'missed';
+                }
+            }
+
+            cd.current_day = Math.min(daysSinceStart, 14);
+            saveCheckinData(cd);
+            return cd;
+        }
+
+        // ===== Render =====
+        function renderAll() {
+            const cd = initCard();
+            const data = getUserData();
+            const today = getTodayStr();
+
+            // Header (managed by auth.js)
+            updateHeaderInfo();
+
+            // Streak
+            document.getElementById('streak-num').textContent = cd.streak || 0;
+
+            // Week number
+            const weekNum = Math.floor(cd.current_day / 7) + 1;
+            document.getElementById('week-num').textContent = Math.ceil((cd.current_day + 1) / 15);
+
+            // Stamp grid
+            const grid = document.getElementById('stamp-grid');
+            grid.innerHTML = '';
+
+            for (let i = 0; i < 15; i++) {
+                const cfg = DAY_CONFIG[i];
+                const status = cd.stamps[i]; // '', 'checked', 'missed', 'makeup'
+                const isCurrentDay = (i === cd.current_day);
+                const isFuture = (i > cd.current_day);
+                const todayChecked = isToday(cd.last_checkin);
+
+                const cell = document.createElement('div');
+                cell.className = 'stamp-cell';
+
+                // Bonus cell (day 7 & 15)
+                if (i === 6 || i === 14) cell.classList.add('bonus-cell');
+
+                if (status === 'checked' || status === 'makeup') {
+                    cell.classList.add('stamped');
+                } else if (status === 'missed') {
+                    cell.classList.add('missed');
+                    cell.onclick = () => openMakeupModal(i);
+                } else if (isCurrentDay && !todayChecked) {
+                    cell.classList.add('today');
+                } else if (isCurrentDay && todayChecked) {
+                    cell.classList.add('stamped');
+                }
+
+                // Stamp icon — use cup images
+                let stampHTML = '';
+                if (status === 'checked' || status === 'makeup' || (isCurrentDay && todayChecked)) {
+                    stampHTML = '<img src="../assets/images/滿.png" class="stamp-cup checked-cup" alt="已簽到">';
+                } else if (status === 'missed') {
+                    stampHTML = '<img src="../assets/images/空.png" class="stamp-cup missed-cup" alt="漏簽">';
+                } else if (isFuture) {
+                    stampHTML = '<img src="../assets/images/空.png" class="stamp-cup future-cup" alt="未到">';
+                } else {
+                    stampHTML = '<img src="../assets/images/空.png" class="stamp-cup" alt="未簽到">';
+                }
+
+                cell.innerHTML = `
+                    <div class="day-num">Day ${i + 1}</div>
+                    <div class="stamp-icon">${stampHTML}</div>
+                    <div class="reward-label">${cfg.reward}</div>
+                    ${status === 'missed' ? '<div class="miss-badge">📺</div>' : ''}
+                `;
+
+                grid.appendChild(cell);
+            }
+
+            // Checkin button
+            const btn = document.getElementById('checkin-btn');
+            const todayChecked = isToday(cd.last_checkin);
+            if (todayChecked) {
+                btn.className = 'checkin-btn done';
+                btn.innerHTML = '✅ 今天已蓋章！明天再來';
+                btn.disabled = true;
+            } else {
+                btn.className = 'checkin-btn available';
+                btn.innerHTML = '🔴 蓋章簽到！';
+                btn.disabled = false;
+            }
+
+            // Milestone
+            const streak = cd.streak || 0;
+            document.getElementById('m-coins').className = 'milestone-item' + (streak >= 7 ? ' done' : '');
+            document.getElementById('m-sticker').className = 'milestone-item' + (streak >= 7 ? ' done' : '');
+            document.getElementById('m-consult').className = 'milestone-item' + (streak >= 7 ? ' done' : '');
+
+            // Auto scroll to current day
+            setTimeout(() => {
+                const cells = grid.querySelectorAll('.stamp-cell');
+                const targetCell = cells[cd.current_day] || cells[0];
+                if (targetCell && grid.scrollWidth > grid.clientWidth) {
+                    const scrollPos = targetCell.offsetLeft - grid.offsetLeft - (grid.clientWidth / 2) + (targetCell.clientWidth / 2);
+                    grid.scrollTo({ left: scrollPos, behavior: 'smooth' });
+                }
+            }, 100);
+        }
+
+        // ===== Check-in Action =====
+        function doCheckin() {
+            let cd = getCheckinData();
+            const today = getTodayStr();
+
+            if (isToday(cd.last_checkin)) {
+                showToast('⚠️', '今天已經蓋過章了！');
+                return;
+            }
+
+            const dayIdx = cd.current_day;
+            cd.stamps[dayIdx] = 'checked';
+
+            // Update streak
+            if (cd.last_checkin && daysBetween(cd.last_checkin, today) === 1) {
+                cd.streak = (cd.streak || 0) + 1;
+            } else if (!cd.last_checkin || daysBetween(cd.last_checkin, today) > 1) {
+                cd.streak = 1;
+            }
+
+            cd.last_checkin = today;
+            cd.total_checkins = (cd.total_checkins || 0) + 1;
+            saveCheckinData(cd);
+
+            // === Sync streak/last_checkin to userData (shared with wallet) ===
+            let _ud = getUserData();
+            _ud.last_checkin = today;
+            _ud.streak = cd.streak;
+            saveUserData(_ud);
+
+            // Grant reward
+            grantDayReward(dayIdx, cd.streak);
+
+            // Stamp animation
+            renderAll();
+            setTimeout(() => {
+                const cells = document.querySelectorAll('.stamp-cell');
+                if (cells[dayIdx]) {
+                    cells[dayIdx].classList.add('stamp-animate');
+                    setTimeout(() => cells[dayIdx].classList.remove('stamp-animate'), 600);
+                }
+            }, 50);
+        }
+
+        function grantDayReward(dayIdx, streak) {
+            const cfg = DAY_CONFIG[dayIdx];
+            let data = getUserData();
+            let rewardMsg = '';
+
+            switch (cfg.type) {
+                case 'coins':
+                    data.coins += cfg.value;
+                    addHistory('earn', `簽到 Day ${dayIdx + 1} 獎勵`, cfg.value);
+                    rewardMsg = `+${cfg.value} Coins！`;
+                    break;
+                case 'ai':
+                    data.bonus_ai_quota = (data.bonus_ai_quota || 0) + cfg.value;
+                    rewardMsg = `+${cfg.value} 次 AI 諮詢！`;
+                    break;
+                case 'sticker':
+                    unlockRandomSticker();
+                    data.coins += 3;
+                    addHistory('earn', '簽到解鎖貼圖 + 3 Coins', 3);
+                    rewardMsg = '解鎖隨機貼圖 + 3 Coins！';
+                    break;
+                case 'milestone':
+                    data.coins += cfg.value;
+                    data.bonus_ai_quota = (data.bonus_ai_quota || 0) + 2;
+                    unlockRandomSticker();
+                    addHistory('earn', '7日連續簽到大獎', cfg.value);
+                    rewardMsg = `🏆 7日大獎：+${cfg.value} Coins + 2次 AI + 貼圖！`;
+                    break;
+                case 'mega':
+                    data.coins += cfg.value;
+                    data.bonus_ai_quota = (data.bonus_ai_quota || 0) + 3;
+                    unlockRandomSticker();
+                    addHistory('earn', '15日超級大獎', cfg.value);
+                    rewardMsg = `👑 超級大獎：+${cfg.value} Coins + 3次 AI + 貼圖！`;
+                    break;
+            }
+
+            saveUserData(data);
+            showToast('🔴', rewardMsg);
+        }
+
+        function unlockRandomSticker() {
+            const u = getAuthenticatedUser();
+            const key = 'sticker_unlocks_' + (u && u.id ? u.id : 'anon');
+            let unlocked = [];
+            try { unlocked = JSON.parse(localStorage.getItem(key) || '[]'); } catch { }
+
+            const available = CHECKIN_STICKERS.filter(id => !unlocked.includes(id));
+            if (available.length === 0) return;
+
+            const pick = available[Math.floor(Math.random() * available.length)];
+            unlocked.push(pick);
+            localStorage.setItem(key, JSON.stringify(unlocked));
+        }
+
+        // ===== Makeup (missed day) =====
+        function openMakeupModal(dayIdx) {
+            makeupDayIndex = dayIdx;
+            document.getElementById('makeup-desc').textContent =
+                `您在 Day ${dayIdx + 1} 漏簽了！觀看一段廣告即可補回簽到。`;
+
+            // Cap 資訊
+            const adBtn = document.getElementById('btn-makeup-ad');
+            const capHint = document.getElementById('ad-cap-hint-checkin');
+            if (typeof AD_SDK !== 'undefined') {
+                const capInfo = AD_SDK.getRewardedCapInfo();
+                if (capInfo.exhausted) {
+                    adBtn.disabled = true;
+                    adBtn.textContent = '⏰ 今日次數已用完';
+                    capHint.style.display = 'block';
+                    capHint.style.color = '#e74c3c';
+                    capHint.textContent = `今日 ${capInfo.total} 次已用完，明天再來！`;
+                } else {
+                    adBtn.disabled = false;
+                    adBtn.textContent = `📺 觀看廣告補簽（剩餘 ${capInfo.remaining} 次）`;
+                    capHint.style.display = 'block';
+                    capHint.style.color = '#7BB369';
+                    capHint.textContent = `今日剩餘 ${capInfo.remaining}/${capInfo.total} 次`;
+                }
+            }
+
+            document.getElementById('makeup-modal').classList.add('show');
+        }
+
+        function closeMakeupModal() {
+            document.getElementById('makeup-modal').classList.remove('show');
+            makeupDayIndex = -1;
+        }
+
+        function startMakeupAd() {
+            // Cap 檢查
+            if (typeof AD_SDK !== 'undefined') {
+                const capInfo = AD_SDK.getRewardedCapInfo();
+                if (capInfo.exhausted) {
+                    showToast('⏰', '今日廣告次數已用完，明天再來！');
+                    return;
+                }
+            }
+
+            const targetDay = makeupDayIndex;
+            closeMakeupModal();
+
+            showRewardedAd({
+                placement: 'checkin',
+                onReward: () => { completeMakeup(targetDay); },
+                onCancel: () => { renderAll(); }
+            });
+        }
+
+        function completeMakeup(dayIdx) {
+            if (dayIdx < 0) return;
+            let cd = getCheckinData();
+            cd.stamps[dayIdx] = 'makeup';
+            saveCheckinData(cd);
+
+            // Grant partial reward (coins only, half value)
+            const cfg = DAY_CONFIG[dayIdx];
+            if (cfg.type === 'coins') {
+                let data = getUserData();
+                const halfVal = Math.ceil(cfg.value / 2);
+                data.coins += halfVal;
+                saveUserData(data);
+                addHistory('earn', `補簽 Day ${dayIdx + 1}（廣告）`, halfVal);
+                showToast('✅', `補簽成功！+${halfVal} Coins`);
+            } else {
+                showToast('✅', `Day ${dayIdx + 1} 補簽成功！`);
+            }
+
+            renderAll();
+
+            // Stamp animation
+            setTimeout(() => {
+                const cells = document.querySelectorAll('.stamp-cell');
+                if (cells[dayIdx]) {
+                    cells[dayIdx].classList.add('stamp-animate');
+                    setTimeout(() => cells[dayIdx].classList.remove('stamp-animate'), 600);
+                }
+            }, 50);
+        }
+
+        // ===== Toast =====
+        function showToast(icon, msg) {
+            const t = document.getElementById('toast');
+            document.getElementById('toast-icon').textContent = icon;
+            document.getElementById('toast-msg').textContent = msg;
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 3500);
+        }
+
+        // ===== Init =====
+        document.addEventListener('DOMContentLoaded', renderAll);
+        window.addEventListener('userDataSync', renderAll);
+    </script>
+
+    <!-- ===== Hamburger Menu Logic ===== -->
+    
+    \n
+    <script>
+    // Unified hamburger menu (injected by header standardization)
+    document.addEventListener('DOMContentLoaded', function() {
+        var btn = document.getElementById('hamburger-toggle');
+        var nav = document.getElementById('mobile-nav');
+        var close = document.getElementById('mobile-nav-close');
+        if (btn && nav) {
+            btn.onclick = function() { nav.classList.toggle('active'); };
+        }
+        if (close && nav) {
+            close.onclick = function() { nav.classList.remove('active'); };
+        }
+    });
+    </script>
+</body>
+
+</html>

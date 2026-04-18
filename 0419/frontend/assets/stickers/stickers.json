@@ -1,0 +1,130 @@
+[
+    {
+        "id": "s01",
+        "emoji": "🐱",
+        "name": "保險貓貓",
+        "desc": "最受歡迎的保險小助手",
+        "category": "保險日常",
+        "vip": false
+    },
+    {
+        "id": "s02",
+        "emoji": "🐶",
+        "name": "理賠汪汪",
+        "desc": "理賠流程專家",
+        "category": "保險日常",
+        "vip": false
+    },
+    {
+        "id": "s03",
+        "emoji": "🦊",
+        "name": "精算狐狸",
+        "desc": "精算你的每一分保費",
+        "category": "保險日常",
+        "vip": false
+    },
+    {
+        "id": "s04",
+        "emoji": "🐼",
+        "name": "保障熊貓",
+        "desc": "全方位保障代言人",
+        "category": "保險日常",
+        "vip": false
+    },
+    {
+        "id": "s05",
+        "emoji": "🐰",
+        "name": "健康兔兔",
+        "desc": "醫療險小幫手",
+        "category": "通用表情",
+        "vip": false
+    },
+    {
+        "id": "s06",
+        "emoji": "🦁",
+        "name": "威力獅王",
+        "desc": "壽險保障的王者",
+        "category": "通用表情",
+        "vip": false
+    },
+    {
+        "id": "s07",
+        "emoji": "🐸",
+        "name": "省錢蛙蛙",
+        "desc": "幫你找到最划算方案",
+        "category": "通用表情",
+        "vip": false
+    },
+    {
+        "id": "s08",
+        "emoji": "🦉",
+        "name": "智慧貓頭鷹",
+        "desc": "保險知識百科",
+        "category": "通用表情",
+        "vip": false
+    },
+    {
+        "id": "s09",
+        "emoji": "🐧",
+        "name": "企鵝管家",
+        "desc": "保單管理小幫手",
+        "category": "通用表情",
+        "vip": false
+    },
+    {
+        "id": "s10",
+        "emoji": "🦄",
+        "name": "獨角獸",
+        "desc": "夢幻保障方案設計師",
+        "category": "VIP 限定",
+        "vip": true
+    },
+    {
+        "id": "s11",
+        "emoji": "🐉",
+        "name": "金龍守護",
+        "desc": "VIP 專屬頂級貼圖",
+        "category": "VIP 限定",
+        "vip": true
+    },
+    {
+        "id": "s12",
+        "emoji": "🦋",
+        "name": "蝴蝶天使",
+        "desc": "優雅的理賠協助員",
+        "category": "VIP 限定",
+        "vip": true
+    },
+    {
+        "id": "s13",
+        "emoji": "🐬",
+        "name": "海豚顧問",
+        "desc": "深海般的專業諮詢",
+        "category": "VIP 限定",
+        "vip": true
+    },
+    {
+        "id": "s14",
+        "emoji": "🦅",
+        "name": "老鷹總監",
+        "desc": "VIP 專屬高階顧問",
+        "category": "VIP 限定",
+        "vip": true
+    },
+    {
+        "id": "s15",
+        "emoji": "🐙",
+        "name": "八爪章魚",
+        "desc": "多工處理保單達人",
+        "category": "保險日常",
+        "vip": false
+    },
+    {
+        "id": "s16",
+        "emoji": "🦜",
+        "name": "鸚鵡播報",
+        "desc": "即時通知你的理賠進度",
+        "category": "保險日常",
+        "vip": false
+    }
+]

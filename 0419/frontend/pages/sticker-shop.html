@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>貼圖商城 - 百保袋 InsureTech</title>
+    <meta name="description" content="百保袋專屬貼圖商城，解鎖可愛貼圖角色">
+    <style>
+        /* ====================================================================
+           【設計系統】全域 CSS 變數
+           ==================================================================== */
+        :root {
+            --bg: #0d1117;
+            --bg-card: #161b22;
+            --bg-card-hover: #1c2333;
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #e6edf3;
+            --text-dim: #8b949e;
+            --accent: #9CC98D;
+            --accent-dark: #7BB369;
+            --accent-dim: rgba(156, 201, 141, 0.12);
+            --gold: #FFD700;
+            --gold-dim: rgba(255, 215, 0, 0.12);
+            --red: #f85149;
+            --red-dim: rgba(248, 81, 73, 0.12);
+            --blue: #58a6ff;
+            --radius: 16px;
+            --font: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background: rgba(13, 17, 23, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.7rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .logo-icon {
+            width: 28px;
+            height: 28px;
+            background: var(--accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: #000;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .nav-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.8rem;
+            padding: 0.35rem 0.6rem;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--accent);
+            background: var(--accent-dim);
+        }
+
+        .coins-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.8rem;
+            background: var(--gold-dim);
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--gold);
+        }
+
+        /* ===== Hero ===== */
+        .shop-hero {
+            text-align: center;
+            padding: 2.5rem 1rem 1.5rem;
+            background: linear-gradient(135deg, rgba(156, 201, 141, 0.06) 0%, rgba(88, 166, 255, 0.04) 100%);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .shop-hero h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 0.4rem;
+        }
+
+        .shop-hero p {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        /* 統計條 */
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-item .num {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+
+        .stat-item .label {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        /* ===== 分類篩選 ===== */
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.45rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            background: transparent;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .filter-btn.active {
+            background: var(--accent);
+            color: #000;
+            border-color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* ===== 貼圖網格 ===== */
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 1rem;
+            max-width: 900px;
+            margin: 1.5rem auto;
+            padding: 0 1.5rem 3rem;
+        }
+
+        /* ===== 貼圖卡片 ===== */
+        .shop-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .shop-card:hover {
+            background: var(--bg-card-hover);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .shop-card.unlocked {
+            border-color: rgba(156, 201, 141, 0.25);
+        }
+
+        .shop-card.unlocked::after {
+            content: '✓';
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 22px;
+            height: 22px;
+            background: var(--accent);
+            color: #000;
+            font-size: 0.7rem;
+            font-weight: 700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 主圖區域 */
+        .card-img-area {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 0.6rem;
+            border-radius: 14px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(156, 201, 141, 0.1), rgba(96, 165, 250, 0.1));
+            position: relative;
+            transition: filter 0.3s;
+        }
+
+        .card-img-area img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-img-area .placeholder {
+            font-size: 2.5rem;
+        }
+
+        /* Emoji 角標 */
+        .emoji-badge {
+            position: absolute;
+            bottom: -2px;
+            right: -2px;
+            width: 22px;
+            height: 22px;
+            font-size: 0.8rem;
+            background: rgba(13, 17, 23, 0.9);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        .card-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.15rem;
+        }
+
+        .card-desc {
+            font-size: 0.68rem;
+            color: var(--text-dim);
+            margin-bottom: 0.4rem;
+            line-height: 1.3;
+        }
+
+        .card-category {
+            font-size: 0.65rem;
+            padding: 0.1rem 0.45rem;
+            border-radius: 8px;
+            background: var(--accent-dim);
+            color: var(--accent);
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* 上鎖效果 */
+        .shop-card.locked .card-img-area {
+            filter: grayscale(0.8) opacity(0.4);
+        }
+
+        .shop-card.locked .card-name,
+        .shop-card.locked .card-desc {
+            opacity: 0.5;
+        }
+
+        /* 解鎖按鈕 */
+        .unlock-btn {
+            width: 100%;
+            padding: 0.4rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .unlock-btn.buy {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: #000;
+        }
+
+        .unlock-btn.buy:hover {
+            filter: brightness(1.1);
+        }
+
+        .unlock-btn.owned {
+            background: rgba(156, 201, 141, 0.1);
+            color: var(--accent);
+            cursor: default;
+        }
+
+        .unlock-btn.vip-only {
+            background: var(--gold-dim);
+            color: var(--gold);
+            cursor: not-allowed;
+        }
+
+        /* VIP 標記 */
+        .vip-tag {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            font-size: 0.6rem;
+            font-weight: 700;
+            padding: 0.1rem 0.4rem;
+            border-radius: 6px;
+            background: var(--gold-dim);
+            color: var(--gold);
+        }
+
+        /* ===== 解鎖 Modal ===== */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(8px);
+            z-index: 5000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .modal-overlay.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-card {
+            background: #1c2333;
+            border-radius: var(--radius);
+            padding: 2rem;
+            width: min(380px, 90vw);
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            transform: scale(0.9);
+            transition: transform 0.3s;
+        }
+
+        .modal-overlay.show .modal-card {
+            transform: scale(1);
+        }
+
+        .modal-emoji-big {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .modal-desc {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            margin-bottom: 1.2rem;
+        }
+
+        .modal-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .modal-btn {
+            padding: 0.75rem;
+            border: none;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .modal-btn.coin-buy {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: #000;
+        }
+
+        .modal-btn.coin-buy:hover {
+            filter: brightness(1.1);
+        }
+
+        .modal-btn.coin-buy:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .modal-btn.ad-watch {
+            background: rgba(88, 166, 255, 0.12);
+            color: var(--blue);
+        }
+
+        .modal-btn.ad-watch:hover {
+            background: rgba(88, 166, 255, 0.2);
+        }
+
+        .modal-btn.cancel {
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-dim);
+        }
+
+        .modal-btn.cancel:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .coin-warn {
+            font-size: 0.75rem;
+            color: var(--red);
+            margin-top: -0.3rem;
+            display: none;
+        }
+
+        /* ===== 廣告模擬 ===== */
+        .ad-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 6000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .ad-overlay.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .ad-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .ad-timer {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+
+        .ad-bar {
+            width: 260px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .ad-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: var(--accent);
+            border-radius: 3px;
+            transition: width 0.1s linear;
+        }
+
+        /* ===== Toast ===== */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(120%);
+            background: #1c2333;
+            color: var(--text);
+            padding: 0.8rem 1.5rem;
+            border-radius: 14px;
+            font-size: 0.88rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 9999;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* ===== 解鎖動畫 ===== */
+        @keyframes popUnlock {
+            0% {
+                transform: scale(1);
+            }
+
+            40% {
+                transform: scale(1.25);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes confettiPop {
+            0% {
+                transform: scale(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1.5) rotate(360deg) translateY(-30px);
+                opacity: 0;
+            }
+        }
+
+        .shop-card.just-unlocked .card-img-area {
+            animation: popUnlock 0.5s ease;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            animation: confettiPop 0.8s ease forwards;
+            pointer-events: none;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .shop-card {
+            animation: fadeInUp 0.35s ease forwards;
+        }
+
+        /* ===== 空狀態 ===== */
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-dim);
+        }
+
+        .empty-state .icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-dim);
+            font-size: 0.72rem;
+            border-top: 1px solid var(--border);
+            background: rgba(255, 255, 255, 0.03);
+            margin-top: auto;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 600px) {
+            .shop-hero h1 {
+                font-size: 1.3rem;
+            }
+
+            .stats-row {
+                gap: 1rem;
+            }
+
+            .shop-grid {
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+                padding: 0 1rem 2rem;
+            }
+
+            .card-img-area {
+                width: 60px;
+                height: 60px;
+            }
+
+            .emoji-badge {
+                width: 18px;
+                height: 18px;
+                font-size: 0.65rem;
+            }
+
+            .nav-links a {
+                font-size: 0.72rem;
+                padding: 0.25rem 0.4rem;
+            }
+        }
+
+        ::selection {
+            background: var(--accent);
+            color: #000;
+        }
+
+        /* ===== RWD & Hamburger Menu ===== */
+        .hamburger-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+            /* Positioning for absolute cases */
+            position: relative;
+        }
+
+        .hamburger-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #FFFFFF !important;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        /* Hamburger open state */
+        .hamburger-btn.open span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .hamburger-btn.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-btn.open span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+
+            /* Header Specific */
+            header {
+                padding: 0.8rem 5% !important;
+            }
+
+            .hamburger-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 260px;
+                height: 100vh;
+                background-color: rgba(15, 15, 15, 0.95);
+                backdrop-filter: blur(15px);
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                justify-content: flex-start !important;
+                padding: 5rem 2rem 2rem;
+                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+                z-index: 999;
+                /* Reset existing gap to ensure clean layout */
+                gap: 1.5rem !important;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links a {
+                font-size: 1.15rem !important;
+                width: 100%;
+                padding-bottom: 0.8rem;
+                display: block;
+            }
+
+            /* Generic Resizing Fixes for Cards and Grids */
+            /* Removed stats-row and shop-grid overrides here so they use native mobile styles */
+            .card-grid,
+            .stamp-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+
+            .shop-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 1rem !important;
+                padding: 0 1rem 2rem !important;
+            }
+
+            /* Fixes explicitly for admin dashboard columns */
+            .sidebar {
+                width: 100% !important;
+                position: static !important;
+                height: auto !important;
+                border-right: none !important;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .main-content {
+                padding: 1.5rem !important;
+            }
+
+            /* Modal widths */
+            .modal-content,
+            .task-modal-content,
+            .shop-modal-content {
+                width: 90% !important;
+                margin: 10vh auto !important;
+                padding: 1.5rem !important;
+            }
+
+            /* Pricing Tiers / Subscription Page */
+            .pricing-tier {
+                flex: none !important;
+                width: 100%;
+            }
+
+            .pricing-tiers {
+                flex-direction: column !important;
+                gap: 1.5rem !important;
+            }
+
+            .compare-table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            /* Sponsor Dashboard Layout */
+            .dashboard-layout {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+
+            /* Force auth tools to hide when space is too tight or neatly align */
+            .header-right {
+                margin-left: auto;
+                gap: 0.5rem;
+            }
+
+            .auth-info-bar,
+            .user-auth {
+                display: none !important;
+            }
+
+            /* Simplify header on mobile */
+
+            /* Give hamburger priority */
+            .hamburger-btn {
+                display: block !important;
+                margin-left: 10px;
+            }
+
+            /* Logo resizing */
+            .logo-section span {
+                font-size: 1rem;
+            }
+        }
+
+        /* ===== Global Vertical Space Reduction (Mobile) ===== */
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+            }
+
+            /* Reduce padding on hero sections to save space */
+            .hero-section,
+            .sub-hero,
+            .wallet-hero,
+            .profile-hero {
+                padding: 1.5rem 1rem 2.8rem !important;
+            }
+
+            .hero-section h1,
+            .sub-hero h1,
+            .wallet-hero h1 {
+                font-size: 1.5rem !important;
+                margin-bottom: 0.3rem !important;
+            }
+
+            .hero-section p,
+            .sub-hero p {
+                font-size: 0.9rem !important;
+            }
+
+            /* Main containers constraints */
+            .main-content,
+            .dashboard-layout {
+                padding: 1rem !important;
+
+            }
+
+            /* Status bars or quick stats */
+            .status-bar,
+            .stats-row {
+                padding: 0.8rem 1rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            /* Info cards and section cards */
+            .info-card,
+            .section-card,
+            .shop-item,
+            .task-card {
+                padding: 1rem !important;
+                margin-bottom: 0.8rem !important;
+            }
+
+            .section-title {
+                margin: 1.5rem 0 1rem !important;
+            }
+
+            .section-title h2 {
+                font-size: 1.3rem !important;
+            }
+
+            /* Lists and rows inside cards */
+            ul.plan-features li,
+            .reward-row,
+            .task-row,
+            .history-item {
+                padding: 0.4rem 0 !important;
+            }
+        }
+    
+        /* ===== Override: Use main-page mobile nav ===== */
+        .hamburger-btn#hamburger-toggle {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .hamburger-btn#hamburger-toggle {
+                display: block !important;
+            }
+            nav { display: none !important; }
+        }
+    
+        /* ===== Unified Nav+Hamburger Override ===== */
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.6rem;
+        }
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent;
+        }
+        nav a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+        #hamburger-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+        #hamburger-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+        .mobile-nav-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.95);
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        .mobile-nav-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .mobile-nav-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        .mobile-nav-content {
+            text-align: center;
+        }
+        .mobile-nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+        .mobile-nav-logo img {
+            height: 36px;
+        }
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .mobile-nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.2s;
+        }
+        .mobile-nav-links a:hover {
+            color: #9CC98D;
+        }
+        @media (max-width: 768px) {
+            nav { display: none !important; }
+            #hamburger-toggle { display: block !important; }
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <!-- 
+      【頁面功能說明 — sticker-shop.html】
+      貼圖商城 (Sticker Shop) 頁面。供使用者瀏覽上架的貼圖包，並使用平台幣 (Coins) 進行解鎖購買。包含推薦貼圖與一般列表。
+    -->
+    <!-- ===== Header ===== -->
+    <header>
+        <a href="index.html" class="logo-section" style="text-decoration:none;">
+            <img src="../assets/images/logo.png" alt="InsureTech Logo">
+            <span>百保袋</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="consulting.html">保險諮詢</a></li>
+                <li><a href="dm.html">保單目錄</a></li>
+                <li><a href="budget.html">費用預算</a></li>
+                <li><a href="policy.html">智慧保單</a></li>
+                <li><a href="community.html">匿名社群</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-logo">
+                <img src="../assets/images/logo.png" alt="InsureTech Logo">
+                <span>百保袋</span>
+            </a>
+            <div class="mobile-nav-links">
+                <a href="consulting.html">保險諮詢</a>
+                <a href="dm.html">保單目錄</a>
+                <a href="budget.html">費用預算</a>
+                <a href="policy.html">智慧保單</a>
+                <a href="community.html">匿名社群</a>
+</div>
+        </div>
+    </div>
+
+    <!-- ===== Hero ===== -->
+    <section class="shop-hero">
+        <h1>🎨 貼圖商城</h1>
+        <p>收集可愛的保險小助手貼圖，讓你的留言更有趣！</p>
+        <div class="stats-row">
+            <div class="stat-item">
+                <div class="num" id="stat-unlocked">0</div>
+                <div class="label">已解鎖</div>
+            </div>
+            <div class="stat-item">
+                <div class="num" id="stat-total">0</div>
+                <div class="label">總數</div>
+            </div>
+            <div class="stat-item">
+                <div class="num" id="stat-coins">0</div>
+                <div class="label">Coins</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 分類篩選 ===== -->
+    <div class="filter-bar" id="filter-bar">
+        <button class="filter-btn active" data-filter="all" onclick="setFilter('all')">全部</button>
+        <button class="filter-btn" data-filter="unlocked" onclick="setFilter('unlocked')">已解鎖</button>
+        <button class="filter-btn" data-filter="locked" onclick="setFilter('locked')">未解鎖</button>
+        <!-- 動態分類按鈕由 JS 填入 -->
+    </div>
+
+    <!-- ===== 貼圖網格 ===== -->
+    <div class="shop-grid" id="shop-grid"></div>
+
+    <!-- ===== 解鎖 Modal ===== -->
+    <div class="modal-overlay" id="unlock-modal">
+        <div class="modal-card">
+            <div class="modal-emoji-big" id="modal-emoji">🐱</div>
+            <div class="modal-name" id="modal-name">保險貓貓</div>
+            <div class="modal-desc" id="modal-desc">最受歡迎的保險小助手</div>
+            <div class="modal-actions">
+                <button class="modal-btn coin-buy" id="btn-coin-buy" onclick="unlockWithCoins()">
+                    🪙 用 5 Coins 解鎖
+                </button>
+                <div class="coin-warn" id="coin-warn">⚠️ Coins 不足，可以看廣告免費解鎖</div>
+                <button class="modal-btn ad-watch" onclick="unlockWithAd()">
+                    📺 看廣告解鎖（免費）
+                </button>
+                <button class="modal-btn cancel" onclick="closeModal()">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== 廣告模擬 ===== -->
+    <div class="ad-overlay" id="ad-overlay">
+        <div class="ad-text">📺 廣告播放中...</div>
+        <div class="ad-timer" id="ad-timer">5</div>
+        <div class="ad-bar">
+            <div class="ad-bar-fill" id="ad-bar-fill"></div>
+        </div>
+        <div style="font-size:0.75rem;color:var(--text-dim);">廣告結束後自動解鎖貼圖</div>
+    </div>
+
+    <!-- ===== Toast ===== -->
+    <div class="toast" id="toast">
+        <span id="toast-icon"></span>
+        <span id="toast-msg"></span>
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>© 2026 百保袋 InsureTech ｜ 貼圖商城</p>
+    </footer>
+
+    <!-- ===== JavaScript ===== -->
+    <script src="../scripts/auth.js"></script>
+    <script src="../scripts/idb-files.js"></script>
+    <script src="../scripts/ad-sdk.js"></script>
+    <script>
+        // ====================================================================
+        // 【新手導讀 — sticker-shop.html 的 JavaScript】
+        // ====================================================================
+        // 貼圖商城前台：使用者可以瀏覽、解鎖（購買/看廣告）貼圖
+        //
+        // 資料來源：
+        //   1. fetch('../assets/stickers/stickers.json') 取得貼圖列表
+        //   2. localStorage('admin_sticker_data') 作為 fallback
+        //
+        // 解鎖狀態：
+        //   localStorage('unlocked_stickers') — 儲存已解鎖的 ID 陣列
+        //   （與 community-sticker-demo.html 共用）
+        //
+        // 【遷移須知】
+        //   - loadStickers()    → GET  /api/stickers
+        //   - unlockWithCoins() → POST /api/stickers/unlock { id, method: 'coins' }
+        //   - unlockWithAd()    → POST /api/stickers/unlock { id, method: 'ad' }
+        //   - getCoins()        → GET  /api/user/coins
+        // ====================================================================
+
+        // ===== 核心狀態 =====
+        let allStickers = [];            // 所有貼圖資料
+        let currentFilter = 'all';       // 目前篩選條件
+        let pendingUnlockId = null;      // 等待解鎖的貼圖 ID
+
+        // localStorage keys（與其他頁面共用）
+        const STICKER_DATA_KEY = 'admin_sticker_data';
+
+        // ===== User-keyed Unlock Storage =====
+        // 每位使用者的解鎖資料存在不同 key，避免多帳號互相覆蓋
+        // （與 stickers.html、checkin.html 一致）
+        function _unlockKey() {
+            const u = (typeof getAuthenticatedUser === 'function') ? getAuthenticatedUser() : null;
+            return u ? 'sticker_unlocks_' + u.id : 'sticker_unlocks_guest';
+        }
+
+        // Migration: 把舊的 global key 合併到 per-user key 後刪除
+        function migrateOldUnlocks() {
+            const oldKey = 'unlocked_stickers';
+            const old = localStorage.getItem(oldKey);
+            if (!old) return;
+            try {
+                const oldArr = JSON.parse(old);
+                if (Array.isArray(oldArr) && oldArr.length > 0) {
+                    const current = getUnlocked();
+                    const merged = [...new Set([...current, ...oldArr])];
+                    saveUnlocked(merged);
+                    console.log('[Shop] 已遷移舊解鎖資料，共', oldArr.length, '筆 → per-user key');
+                }
+            } catch (e) {
+                console.warn('[Shop] 遷移舊解鎖資料失敗:', e);
+            }
+            localStorage.removeItem(oldKey);
+        }
+
+        // ===== VIP 狀態檢查 =====
+        // 判斷當前使用者是否為 VIP（basic 或 pro）
+        function isUserVip() {
+            if (typeof getUserData === 'function') {
+                const data = getUserData();
+                const level = (data && data.vip_level) || 'free';
+                return level === 'basic' || level === 'pro';
+            }
+            return false;
+        }
+
+        // VIP 使用者自動解鎖所有 VIP 貼圖
+        function autoUnlockVipStickers() {
+            if (!isUserVip()) return;
+            const unlocked = getUnlocked();
+            let changed = false;
+            allStickers.forEach(s => {
+                if (s.vip && !unlocked.includes(s.id)) {
+                    unlocked.push(s.id);
+                    changed = true;
+                }
+            });
+            if (changed) {
+                saveUnlocked(unlocked);
+                console.log('[Shop] VIP 使用者 — 已自動解鎖 VIP 貼圖');
+            }
+        }
+
+
+        // ===== 載入貼圖列表 =====
+        // 【遷移須知】改為 GET /api/stickers
+        async function loadStickers() {
+            try {
+                const res = await fetch('../assets/stickers/stickers.json');
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                allStickers = await res.json();
+                console.log('[Shop] 從 stickers.json 載入，共', allStickers.length, '筆');
+            } catch (err) {
+                console.warn('[Shop] 無法載入 stickers.json:', err.message);
+                const cached = localStorage.getItem(STICKER_DATA_KEY);
+                if (cached) {
+                    try {
+                        allStickers = JSON.parse(cached);
+                        console.log('[Shop] 從 localStorage 載入，共', allStickers.length, '筆');
+                    } catch {
+                        allStickers = [];
+                    }
+                }
+            }
+        }
+
+
+        // ===== 解鎖狀態管理 =====
+        // 取得已解鎖的貼圖 ID 陣列
+        function getUnlocked() {
+            try { return JSON.parse(localStorage.getItem(_unlockKey()) || '[]'); } catch { return []; }
+        }
+
+        // 儲存已解鎖陣列
+        function saveUnlocked(arr) {
+            localStorage.setItem(_unlockKey(), JSON.stringify(arr));
+        }
+
+        // 查詢某貼圖是否已解鎖
+        function isUnlocked(id) {
+            return getUnlocked().includes(id);
+        }
+
+        // 解鎖某貼圖
+        function markUnlocked(id) {
+            const arr = getUnlocked();
+            if (!arr.includes(id)) {
+                arr.push(id);
+                saveUnlocked(arr);
+            }
+        }
+
+
+        // ===== Coins 管理 =====
+        // 讀取 Coins（從 auth.js 的 getUserData 或獨立管理）
+        function getCoins() {
+            // 優先使用 auth.js 的 getUserData
+            if (typeof getUserData === 'function') {
+                return getUserData().coins || 0;
+            }
+            // fallback：獨立 localStorage
+            return parseInt(localStorage.getItem('user_coins') || '50', 10);
+        }
+
+        // 扣除 Coins
+        function spendCoins(amount) {
+            if (typeof getUserData === 'function' && typeof saveUserData === 'function') {
+                const data = getUserData();
+                data.coins = Math.max(0, (data.coins || 0) - amount);
+                saveUserData(data);
+                return data.coins;
+            }
+            const current = getCoins();
+            const newVal = Math.max(0, current - amount);
+            localStorage.setItem('user_coins', String(newVal));
+            return newVal;
+        }
+
+
+        // ===== 篩選 =====
+        function setFilter(f) {
+            currentFilter = f;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.filter === f);
+            });
+            renderGrid();
+        }
+
+        // 建立動態分類按鈕
+        function buildCategoryFilters() {
+            const bar = document.getElementById('filter-bar');
+            const cats = [...new Set(allStickers.map(s => s.category).filter(Boolean))];
+            cats.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.dataset.filter = 'cat:' + cat;
+                btn.textContent = cat;
+                btn.onclick = () => setFilter('cat:' + cat);
+                bar.appendChild(btn);
+            });
+        }
+
+
+        // ===== 渲染 =====
+        function renderAll() {
+            renderStats();
+            renderGrid();
+        }
+
+        // 統計數字
+        function renderStats() {
+            const unlocked = getUnlocked();
+            const coins = getCoins();
+            document.getElementById('stat-unlocked').textContent = unlocked.length;
+            document.getElementById('stat-total').textContent = allStickers.length;
+            document.getElementById('stat-coins').textContent = coins;
+            document.getElementById('header-coins').textContent = coins;
+        }
+
+        // 貼圖網格
+        function renderGrid() {
+            const grid = document.getElementById('shop-grid');
+            const unlocked = getUnlocked();
+
+            // 篩選
+            let list = allStickers;
+            if (currentFilter === 'unlocked') {
+                list = list.filter(s => unlocked.includes(s.id));
+            } else if (currentFilter === 'locked') {
+                list = list.filter(s => !unlocked.includes(s.id));
+            } else if (currentFilter.startsWith('cat:')) {
+                const cat = currentFilter.slice(4);
+                list = list.filter(s => s.category === cat);
+            }
+
+            // 空狀態
+            if (list.length === 0) {
+                grid.innerHTML = `
+                    <div class="empty-state">
+                        <div class="icon">📭</div>
+                        <div>此分類沒有貼圖</div>
+                    </div>`;
+                return;
+            }
+
+            grid.innerHTML = list.map((s, i) => {
+                const owned = unlocked.includes(s.id);
+                const cardClass = owned ? 'unlocked' : 'locked';
+
+                // 主圖：有上傳圖片用 img，否則用 emoji 佔位
+                const imgInner = s._preview
+                    ? `<img src="${s._preview}" alt="${s.name}">`
+                    : `<span class="placeholder">${s.emoji || '🎨'}</span>`;
+
+                // 按鈕
+                const userIsVip = isUserVip();
+                let btnHTML;
+                if (owned) {
+                    btnHTML = `<button class="unlock-btn owned">✓ 已擁有</button>`;
+                } else if (s.vip && !userIsVip) {
+                    // 非 VIP 使用者無法解鎖 VIP 貼圖
+                    btnHTML = `<button class="unlock-btn vip-only">👑 VIP 專屬</button>`;
+                } else {
+                    // 一般貼圖，或 VIP 使用者解鎖 VIP 貼圖
+                    btnHTML = `<button class="unlock-btn buy" onclick="event.stopPropagation(); openUnlock('${s.id}')">🔓 解鎖</button>`;
+                }
+
+                return `
+                    <div class="shop-card ${cardClass}" 
+                         data-id="${s.id}" 
+                         style="animation-delay:${i * 0.03}s"
+                         onclick="handleCardClick('${s.id}')">
+                        ${s.vip ? '<div class="vip-tag">👑 VIP</div>' : ''}
+                        <div class="card-img-area">
+                            ${imgInner}
+                            <span class="emoji-badge">${s.emoji || ''}</span>
+                        </div>
+                        <div class="card-name">${s.name}</div>
+                        <div class="card-desc">${s.desc || ''}</div>
+                        <div class="card-category">${s.category || ''}</div>
+                        ${btnHTML}
+                    </div>`;
+            }).join('');
+        }
+
+
+        // ===== 卡片點擊 =====
+        function handleCardClick(id) {
+            if (isUnlocked(id)) {
+                showToast('😊', '你已經擁有這張貼圖！');
+                return;
+            }
+            const s = allStickers.find(x => x.id === id);
+            // 非 VIP 使用者點擊 VIP 貼圖 → 提示升級
+            if (s && s.vip && !isUserVip()) {
+                showToast('⭐', 'VIP 專屬貼圖，請先升級方案');
+                return;
+            }
+            openUnlock(id);
+        }
+
+
+        // ===== 解鎖 Modal =====
+        function openUnlock(id) {
+            const s = allStickers.find(x => x.id === id);
+            if (!s) return;
+
+            pendingUnlockId = id;
+            document.getElementById('modal-emoji').textContent = s.emoji || '🎨';
+            document.getElementById('modal-name').textContent = s.name;
+            document.getElementById('modal-desc').textContent = s.desc || '';
+
+            // 檢查 Coins
+            const coins = getCoins();
+            const buyBtn = document.getElementById('btn-coin-buy');
+            const warn = document.getElementById('coin-warn');
+            if (coins < 5) {
+                buyBtn.disabled = true;
+                warn.style.display = 'block';
+            } else {
+                buyBtn.disabled = false;
+                warn.style.display = 'none';
+            }
+
+            document.getElementById('unlock-modal').classList.add('show');
+        }
+
+        function closeModal() {
+            document.getElementById('unlock-modal').classList.remove('show');
+            pendingUnlockId = null;
+        }
+
+
+        // ===== 用 Coins 解鎖 =====
+        // 【遷移須知】改為 POST /api/stickers/unlock
+        function unlockWithCoins() {
+            if (!pendingUnlockId) return;
+            const coins = getCoins();
+            if (coins < 5) {
+                showToast('⚠️', 'Coins 不足！');
+                return;
+            }
+
+            const id = pendingUnlockId;
+            const s = allStickers.find(x => x.id === id);
+
+            // 扣幣
+            spendCoins(5);
+
+            // 如果有 addHistory 函式（auth.js）則記錄
+            if (typeof addHistory === 'function') {
+                addHistory('spend', '解鎖貼圖：' + (s ? s.name : id), -5);
+            }
+
+            closeModal();
+            completeUnlock(id);
+        }
+
+
+        // ===== 看廣告解鎖 =====
+        function unlockWithAd() {
+            const id = pendingUnlockId;
+            closeModal();
+
+            showRewardedAd({
+                placement: 'sticker',
+                onReward: () => { completeUnlock(id); },
+                onCancel: () => { }
+            });
+        }
+
+
+        // ===== 解鎖完成 =====
+        function completeUnlock(id) {
+            if (!id) return;
+            markUnlocked(id);
+            renderAll();
+
+            // 解鎖動畫
+            const card = document.querySelector(`.shop-card[data-id="${id}"]`);
+            if (card) {
+                card.classList.add('just-unlocked');
+                card.classList.remove('locked');
+                card.classList.add('unlocked');
+
+                // 彩紙粒子
+                const colors = ['#9CC98D', '#FFD700', '#ff6b6b', '#48dbfb', '#feca57'];
+                for (let i = 0; i < 8; i++) {
+                    const p = document.createElement('div');
+                    p.className = 'confetti';
+                    p.style.background = colors[i % colors.length];
+                    p.style.left = (25 + Math.random() * 50) + '%';
+                    p.style.top = (20 + Math.random() * 40) + '%';
+                    p.style.animationDelay = (Math.random() * 0.3) + 's';
+                    card.appendChild(p);
+                    setTimeout(() => p.remove(), 1000);
+                }
+
+                setTimeout(() => card.classList.remove('just-unlocked'), 800);
+            }
+
+            const s = allStickers.find(x => x.id === id);
+            showToast('🎉', `已解鎖「${s ? s.name : '貼圖'}」！`);
+        }
+
+
+        // ===== Toast =====
+        function showToast(icon, msg) {
+            const t = document.getElementById('toast');
+            document.getElementById('toast-icon').textContent = icon;
+            document.getElementById('toast-msg').textContent = msg;
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 3000);
+        }
+
+
+        // ===== 初始化 =====
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadStickers();
+            migrateOldUnlocks();           // 遷移舊 global key → per-user key
+            autoUnlockVipStickers();       // VIP 使用者自動解鎖 VIP 貼圖
+            buildCategoryFilters();
+            renderAll();
+        });
+
+        // 跨分頁同步（auth.js 發出的自訂事件）
+        window.addEventListener('userDataSync', renderAll);
+    </script>
+
+    <!-- ===== Hamburger Menu Logic ===== -->
+    
+    \n
+    <script>
+    // Unified hamburger menu (injected by header standardization)
+    document.addEventListener('DOMContentLoaded', function() {
+        var btn = document.getElementById('hamburger-toggle');
+        var nav = document.getElementById('mobile-nav');
+        var close = document.getElementById('mobile-nav-close');
+        if (btn && nav) {
+            btn.onclick = function() { nav.classList.toggle('active'); };
+        }
+        if (close && nav) {
+            close.onclick = function() { nav.classList.remove('active'); };
+        }
+    });
+    </script>
+</body>
+
+</html>

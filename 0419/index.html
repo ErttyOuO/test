@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="frontend/pages/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百保袋 | AI 保險決策平台</title>
+    <meta name="description" content="百保袋以 AI 協助你理解保單、分析風險與做出保險決策，打造更安心的保障規劃體驗。">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../components/unified-chat-components/unified-chat.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;800&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="home-saas home-warm-report site-transition-shell">
+    <header>
+        <a href="index.html" class="logo-section">
+            <img src="../assets/images/logo.png" alt="InsureTech Logo">
+            <span>百保袋</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="consulting.html">保險諮詢</a></li>
+                <li><a href="dm.html">保單目錄</a></li>
+                <li><a href="budget.html">費用預算</a></li>
+                <li><a href="policy.html">智慧保單</a></li>
+                <li><a href="community.html">匿名社群</a></li>
+                <li class="nav-quick" id="nav-quick-menu">
+                    <button class="nav-quick-toggle" id="nav-quick-toggle" type="button" aria-expanded="false">
+                        <span id="nav-quick-label">快速入口</span>
+                        <span>▾</span>
+                    </button>
+                    <div class="nav-quick-menu" id="nav-quick-list">
+                        <a href="#" data-auth-action="user-login" data-requires-guest="true">一般用戶登入</a>
+                        <a href="#" data-auth-action="user-register" data-requires-guest="true">一般用戶註冊</a>
+                        <a href="#" data-auth-action="agent-login" data-requires-guest="true">保險業務登入</a>
+                        <a href="#" data-auth-action="agent-register" data-requires-guest="true">保險業務註冊</a>
+                        <a href="profile.html" data-requires-auth="true" style="display:none;">前往個人中心</a>
+                        <a href="agent_profile.html" data-requires-auth="true" style="display:none;">前往業務後台</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-toggle" type="button" aria-label="開啟選單">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close" type="button">&times;</button>
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-logo">
+                <img src="../assets/images/logo.png" alt="InsureTech Logo">
+                <span>百保袋</span>
+            </a>
+            <div class="mobile-nav-links">
+                <a href="consulting.html">保險諮詢</a>
+                <a href="dm.html">保單目錄</a>
+                <a href="budget.html">費用預算</a>
+                <a href="policy.html">智慧保單</a>
+                <a href="community.html">匿名社群</a>
+                <a href="#" data-auth-action="user-login" data-requires-guest="true">一般用戶登入</a>
+                <a href="#" data-auth-action="agent-login" data-requires-guest="true">保險業務登入</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="saas-main">
+        <section class="saas-hero section-shell">
+            <div class="saas-container saas-hero-grid">
+                <div class="hero-copy" data-reveal>
+                    <span class="section-pill">AI 保障決策室</span>
+                    <h1>先看懂，再選擇。</h1>
+                    <p>像閱讀一份清楚的保障報告，把保單條款、生活情境與風險訊號整理成可理解的決策地圖。</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="consulting.html">開始 AI 保障健檢</a>
+                        <a class="btn btn-ghost" href="policy.html">整理我的保單</a>
+                    </div>
+                    <div class="hero-trust-row">
+                        <span>條款白話化</span>
+                        <span>保障缺口定位</span>
+                        <span>可銜接真人顧問</span>
+                    </div>
+                    <div class="hero-metric-strip" aria-label="百保袋平台重點">
+                        <article>
+                            <strong>30 秒</strong>
+                            <span>產出初步保障摘要</span>
+                        </article>
+                        <article>
+                            <strong>3 層</strong>
+                            <span>保單、情境、情緒交叉判讀</span>
+                        </article>
+                        <article>
+                            <strong>24H</strong>
+                            <span>隨時開始 AI 諮詢</span>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="hero-visual" data-reveal>
+                    <article class="hero-ai-panel">
+                        <header class="hero-ai-panel-top">
+                            <span class="chip chip-live">保障報告生成中</span>
+                            <a href="policy.html">上傳保單 →</a>
+                        </header>
+                        <div class="hero-ai-avatar-wrap">
+                            <img src="../assets/images/輪放/保險員團隊.png" alt="AI 顧問視覺">
+                        </div>
+                        <div class="hero-report-summary">
+                            <div class="report-summary-head">
+                                <span>保障完整度</span>
+                                <strong>82%</strong>
+                            </div>
+                            <div class="report-progress" aria-hidden="true"><span style="--score: 82%"></span></div>
+                            <p>醫療保障已有基礎，建議優先確認重大傷病與意外失能缺口。</p>
+                        </div>
+                        <div class="hero-chat-preview">
+                            <p class="bubble user">我現在的保單夠嗎？怕出事賠不到。</p>
+                            <p class="bubble ai">我先比對你的現有保障與常見風險缺口，30 秒給你第一版建議。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-decision section-shell">
+            <div class="saas-container" data-reveal>
+                <div class="section-head">
+                    <span class="section-pill">Decision Map</span>
+                    <h2>把複雜保單拆成一張可行動的決策地圖</h2>
+                    <p>平台不是只回覆問題，而是把輸入、分析與建議整理成有脈絡的保障報告。</p>
+                </div>
+
+                <div class="decision-grid">
+                    <article class="decision-card">
+                        <h3>輸入層</h3>
+                        <ul>
+                            <li><span>使用者煩惱</span><small>對醫療、意外、理賠的不安</small></li>
+                            <li><span>現有保單</span><small>保障額度、缺口與重複投保</small></li>
+                            <li><span>平台數據</span><small>同齡族群與理賠案例參考</small></li>
+                            <li><span>情緒分析</span><small>語氣緊張度與決策猶豫點</small></li>
+                        </ul>
+                    </article>
+
+                    <article class="decision-card decision-center">
+                        <div class="decision-spinner"></div>
+                        <h3>分析中...</h3>
+                        <p>多模型交叉比對保障覆蓋率、預算負擔與風險優先順序</p>
+                        <div class="decision-bars">
+                            <span style="--bar: 88%"></span>
+                            <span style="--bar: 70%"></span>
+                            <span style="--bar: 93%"></span>
+                        </div>
+                    </article>
+
+                    <article class="decision-card decision-suggest">
+                        <h3>AI 建議卡</h3>
+                        <div class="suggest-item">
+                            <strong>優先補強</strong>
+                            <p>實支實付醫療額度偏低，建議補足住院與手術費用區段。</p>
+                        </div>
+                        <div class="suggest-item">
+                            <strong>預算配置</strong>
+                            <p>每月保費建議維持收入 8% 內，避免現金流壓力。</p>
+                        </div>
+                        <div class="suggest-item">
+                            <strong>下一步</strong>
+                            <p>先上傳兩張現有保單，啟動完整缺口報告。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="journey section-shell">
+            <div class="saas-container">
+                <div class="section-head" data-reveal>
+                    <span class="section-pill">Guided Journey</span>
+                    <h2>三步驟，從不確定到能決定</h2>
+                    <p>每一步都像報告章節一樣清楚，讓新手也能知道下一步該做什麼。</p>
+                </div>
+
+                <div class="journey-flow" data-reveal>
+                    <article class="journey-card">
+                        <div class="journey-media">
+                            <img src="../assets/images/理賠焦慮.png" alt="發現問題" loading="lazy">
+                        </div>
+                        <div class="journey-body">
+                            <span class="journey-step">STEP 1</span>
+                            <h3>發現問題</h3>
+                            <p>輸入你現在最擔心的理賠或保障情境，快速定位痛點。</p>
+                        </div>
+                    </article>
+
+                    <span class="journey-arrow" aria-hidden="true">→</span>
+
+                    <article class="journey-card">
+                        <div class="journey-media">
+                            <img src="../assets/images/條款白話文.png" alt="AI 分析" loading="lazy">
+                        </div>
+                        <div class="journey-body">
+                            <span class="journey-step">STEP 2</span>
+                            <h3>AI 分析</h3>
+                            <p>系統整合保單內容、平台數據與情緒訊號，產生分析結果。</p>
+                        </div>
+                    </article>
+
+                    <span class="journey-arrow" aria-hidden="true">→</span>
+
+                    <article class="journey-card">
+                        <div class="journey-media">
+                            <img src="../assets/images/社群.png" alt="做出決策" loading="lazy">
+                        </div>
+                        <div class="journey-body">
+                            <span class="journey-step">STEP 3</span>
+                            <h3>做出決策</h3>
+                            <p>拿到 AI 建議後可直接行動，或進一步銜接真人專家確認方案。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-late section-shell">
+            <div class="saas-container">
+                <div class="section-head" data-reveal>
+                    <span class="section-pill">Tool Library</span>
+                    <h2>保障管理工具箱</h2>
+                    <p>完成主流程後，可以用這些工具延伸整理、比較、追蹤與升級你的保障管理。</p>
+                </div>
+
+                <div class="feature-grid-late" data-reveal>
+                    <a href="dm.html" class="feature-card-late">
+                        <div class="feature-visual float">
+                            <img class="feature-image" src="../assets/images/輪放/保單比對.png" alt="保單比較" loading="lazy">
+                        </div>
+                        <div class="feature-content">
+                            <h3>保單比較</h3>
+                            <p>快速比較不同保單方案，找到最適合你的選擇。</p>
+                        </div>
+                    </a>
+                    <a href="policy.html" class="feature-card-late">
+                        <div class="feature-visual float-delay">
+                            <img class="feature-image" src="../assets/images/輪放/上傳保單.png" alt="智慧保單" loading="lazy">
+                        </div>
+                        <div class="feature-content">
+                            <h3>智慧保單</h3>
+                            <p>AI 自動解析保單內容，建立完整保障視圖。</p>
+                        </div>
+                    </a>
+                    <a href="subscription.html" class="feature-card-late">
+                        <div class="feature-visual float">
+                            <img class="feature-image" src="../assets/images/輪放/升級會員.png" alt="尊榮會員" loading="lazy">
+                        </div>
+                        <div class="feature-content">
+                            <h3>尊榮會員</h3>
+                            <p>享有專屬分析與優先服務，打造更順暢的保障決策流程。</p>
+                        </div>
+                    </a>
+                    <a href="checkin.html" class="feature-card-late">
+                        <div class="feature-visual float-delay">
+                            <img class="feature-image" src="../assets/images/輪放/每日簽到.png" alt="每日任務" loading="lazy">
+                        </div>
+                        <div class="feature-content">
+                            <h3>每日任務</h3>
+                            <p>完成任務獲得回饋，建立長期保障管理習慣。</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../scripts/auth.js"></script>
+    <script src="../scripts/script.js?v=2"></script>
+    <script src="../components/unified-chat-components/emotion-detector.js"></script>
+    <script src="../components/unified-chat-components/ai-chat.js"></script>
+    <script src="../components/unified-chat-components/avatar-system.js"></script>
+    <script src="../components/unified-chat-components/voice-module.js"></script>
+    <script src="../components/unified-chat-components/voice-tts-module.js"></script>
+    <script src="../components/unified-chat-components/unified-chat-manager.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealEls = Array.from(document.querySelectorAll('[data-reveal]'));
+            const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const observerOptions = {
+                threshold: 0.2,
+                rootMargin: '0px 0px -5% 0px'
+            };
+
+            if (prefersReducedMotion) {
+                document.body.classList.add('reduced-motion');
+                revealEls.forEach((el) => el.classList.add('is-visible'));
+            } else if (!('IntersectionObserver' in window)) {
+                revealEls.forEach((el) => el.classList.add('is-visible'));
+            } else {
+                // ✅ 只保留 reveal observer，移除不必要的 floatObserver
+                const revealObserver = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (!entry.isIntersecting) return;
+                        entry.target.classList.add('is-visible');
+                        revealObserver.unobserve(entry.target);
+                    });
+                }, observerOptions);
+
+                revealEls.forEach((el) => revealObserver.observe(el));
+            }
+
+            // ⏳ 推迟 AI 聊天组件初始化至 3000ms，避免首屏阻塞
+            const initUnifiedChat = async () => {
+                try {
+                    const response = await fetch('http://localhost:8001/health', { timeout: 2000 });
+                    const backendAvailable = response.ok;
+
+                    window.unifiedChatManager = new UnifiedChatManager({
+                        apiBaseUrl: 'http://localhost:8001',
+                        position: 'bottom-right',
+                        defaultOpen: false,
+                        enableEmotionDetection: backendAvailable,
+                        enableVoiceInput: backendAvailable,
+                        enableAvatar: true
+                    });
+                } catch (error) {
+                    console.warn('AI 聊天初始化延迟', error);
+                    // 继续不影响首屏功能
+                }
+            };
+
+            // 用户交互或 3 秒后再初始化，不影响首屏性能
+            setTimeout(initUnifiedChat, 3000);
+        });
+    </script>
+</body>
+
+</html>
