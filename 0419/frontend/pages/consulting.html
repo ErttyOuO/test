@@ -6706,8 +6706,7 @@
                 gap: 0.2rem;
             }
 
-            #selection-shell .consulting-icon-large,
-            #selection-shell .consulting-item .consulting-desc {
+            #selection-shell .consulting-icon-large {
                 display: none;
             }
 
@@ -7189,8 +7188,11 @@
 
         #selection-shell .consulting-item {
             min-height: 320px;
+            width: 100%;
+            max-width: none;
             padding: 1.18rem;
             gap: 0.82rem;
+            text-align: left;
             color: #10233f;
             border-radius: 28px;
             border: 1px solid rgba(163, 184, 208, 0.18);
@@ -7313,6 +7315,8 @@
             line-height: 1.18;
             font-weight: 700;
             font-family: "Noto Serif TC", "Noto Sans TC", serif;
+            text-align: left;
+            letter-spacing: normal;
         }
 
         #selection-shell .consulting-item.selected h3 {
@@ -7322,15 +7326,20 @@
         #selection-shell .consulting-item .consulting-desc {
             display: block !important;
             margin: 0;
+            max-width: none;
             min-height: 0;
             color: #5d6c83;
             font-size: 0.9rem;
             line-height: 1.56;
+            text-align: left;
+            -webkit-line-clamp: unset;
+            line-clamp: unset;
         }
 
         #selection-shell .consulting-features {
             width: 100%;
             margin: 0;
+            max-width: none;
             order: initial;
             gap: 0.42rem;
             justify-content: flex-start;
@@ -7482,23 +7491,30 @@
             box-shadow: 0 18px 34px rgba(59, 130, 246, 0.28);
         }
 
-        #selection-shell .consulting-cta-row.floating {
-            position: static;
-            z-index: auto;
-            width: 100%;
-            margin-top: 1rem;
-            padding-top: 0.2rem;
+        #selection-shell .consulting-item.with-inline-cta {
+            position: relative;
+            padding-bottom: 5.4rem;
+        }
+
+        #selection-shell .consulting-item.with-inline-cta .consulting-cta-row.floating {
+            position: absolute;
+            left: 0.9rem;
+            right: 0.9rem;
+            bottom: 0.9rem;
+            z-index: 8;
+            width: auto;
+            margin: 0;
+            padding-top: 0;
+            transform: none;
             background: transparent;
             box-shadow: none;
         }
 
-        #selection-shell .consulting-cta-row.floating .consulting-cta-hint {
-            width: 100%;
-            max-width: none;
-            font-size: 0.82rem;
+        #selection-shell .consulting-item.with-inline-cta .consulting-cta-row.floating .consulting-cta-hint {
+            display: none;
         }
 
-        #selection-shell .consulting-cta-row.floating .start-consulting-btn {
+        #selection-shell .consulting-item.with-inline-cta .consulting-cta-row.floating .start-consulting-btn {
             width: 100%;
             min-width: 0;
             justify-content: center;
@@ -7542,6 +7558,23 @@
             #selection-shell .start-consulting-btn {
                 width: 100%;
                 min-width: 0;
+            }
+
+            #selection-shell .consulting-item.with-inline-cta {
+                padding-bottom: 1.18rem;
+            }
+
+            #selection-shell .consulting-item.with-inline-cta .consulting-cta-row.floating {
+                position: static;
+                left: auto;
+                right: auto;
+                bottom: auto;
+                width: 100%;
+                margin-top: 0.75rem;
+            }
+
+            #selection-shell .consulting-item.with-inline-cta .consulting-cta-row.floating .consulting-cta-hint {
+                display: block;
             }
         }
 
@@ -7664,35 +7697,35 @@
                 <div class="consulting-heading">
                     <span class="consulting-kicker">STEP 1</span>
                     <h2>選擇諮詢方式</h2>
-                    <p>想先快速看懂保障重點，就選 AI；想直接討論需求與規劃，就選真人。</p>
+                    <p>兩種模式都能回答你的問題；差別在回覆方式。AI 偏即時整理，真人偏深度討論。</p>
                 </div>
 
                 <div class="consulting-action-nudge" id="action-nudge">
                     <span class="nudge-dot"></span>
-                    <span class="nudge-text" id="nudge-text">點一張卡片，就能開始。</span>
+                    <span class="nudge-text" id="nudge-text">先選 AI 或真人，就能開始提問。</span>
                 </div>
 
                 <div class="consulting-trust-row" aria-label="保險諮詢特色">
-                    <span>快速開始</span>
-                    <span>模式清楚</span>
-                    <span>可再轉真人</span>
+                    <span>AI 可答疑</span>
+                    <span>真人可答疑</span>
+                    <span>可互相切換</span>
                 </div>
             </div>
 
             <div class="consulting-choice-panel">
                 <div class="consulting-layout" id="selection-layout">
-                    <article class="consulting-item mode-ai" id="agent-ai" onclick="selectAgent('ai')" role="button" tabindex="0" aria-pressed="false" aria-label="選擇 AI 保險員模式">
+                    <article class="consulting-item mode-ai" id="agent-ai" onclick="selectAgent('ai')" role="button" tabindex="0" aria-pressed="false" aria-label="選擇 AI 諮詢模式">
                         <div class="consulting-card-top">
-                            <span class="consulting-badge">AI 即時</span>
+                            <span class="consulting-badge">AI 諮詢</span>
                             <span class="consulting-selection-indicator" aria-hidden="true">✓</span>
                         </div>
                         <div class="consulting-card-copy">
                             <div class="consulting-card-header">
-                                <h3>快速問答</h3>
-                                <p class="consulting-desc">先看懂保障缺口、保單重點與名詞。</p>
+                                <h3>AI 即時諮詢</h3>
+                                <p class="consulting-desc">由 AI 即時回答保單與保障問題，快速整理重點給你。</p>
                             </div>
                             <ul class="consulting-features top-features">
-                                <li>⚡ 快速回覆</li>
+                                <li>⚡ 即時回答</li>
                                 <li>🧠 重點整理</li>
                                 <li>📊 缺口診斷</li>
                             </ul>
@@ -7702,24 +7735,24 @@
                         </div>
                         <div class="consulting-card-note">
                             <strong>適合情境：</strong>
-                            先搞懂，再決定下一步。
+                            想先快速釐清問題與方向。
                         </div>
                     </article>
 
-                    <article class="consulting-item mode-human" id="agent-human" onclick="selectAgent('human')" role="button" tabindex="0" aria-pressed="false" aria-label="選擇真人保險員模式">
+                    <article class="consulting-item mode-human" id="agent-human" onclick="selectAgent('human')" role="button" tabindex="0" aria-pressed="false" aria-label="選擇真人諮詢模式">
                         <div class="consulting-card-top">
-                            <span class="consulting-badge">真人深度</span>
+                            <span class="consulting-badge">真人諮詢</span>
                             <span class="consulting-selection-indicator" aria-hidden="true">✓</span>
                         </div>
                         <div class="consulting-card-copy">
                             <div class="consulting-card-header">
-                                <h3>深度規劃</h3>
-                                <p class="consulting-desc">把需求、預算與保障一起談清楚。</p>
+                                <h3>真人深度諮詢</h3>
+                                <p class="consulting-desc">由真人顧問回答需求與規劃問題，完整討論你的情境。</p>
                             </div>
                             <ul class="consulting-features top-features">
+                                <li>👤 真人回答</li>
                                 <li>💬 深度對談</li>
                                 <li>🎯 客製溝通</li>
-                                <li>📋 規劃建議</li>
                             </ul>
                         </div>
                         <div class="consulting-visual">
@@ -7727,7 +7760,7 @@
                         </div>
                         <div class="consulting-card-note">
                             <strong>適合情境：</strong>
-                            想直接討論完整方案。
+                            需要更完整的客製化解答。
                         </div>
                     </article>
                 </div>
@@ -10582,19 +10615,20 @@
         const selectedCard = document.getElementById(`agent-${type}`);
         if (!ctaRow || !selectedCard) return;
 
-        // 移除舊的浮動狀態
-        ctaRow.classList.remove('inline-under-card');
-        
-        // 設置相對定位上下文
+        document.querySelectorAll('.consulting-item').forEach((card) => {
+            card.classList.remove('with-inline-cta');
+            card.style.position = '';
+        });
+
         selectedCard.style.position = 'relative';
-        
-        // 將 CTA 放到卡片內部做為浮動覆蓋
+        selectedCard.classList.add('with-inline-cta');
+
         if (ctaRow.parentElement !== selectedCard) {
             selectedCard.appendChild(ctaRow);
         }
-        
-        // 啟用浮動樣式並顯示
-        ctaRow.classList.add('floating', 'with-inline-cta');
+
+        ctaRow.classList.add('floating');
+        ctaRow.classList.remove('inline-under-card', 'with-inline-cta');
         ctaRow.style.display = 'flex';
     }
 
